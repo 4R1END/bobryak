@@ -1,0 +1,45 @@
+$RED: red;
+$BLACK: black;
+$WHITE: white;
+
+$paddingXContainer1920: 75px;
+$paddingXContainer768: 50px;
+$paddingXContainer320: 15px;
+
+.container{
+    margin: 0 auto;
+
+    @include px1400{
+        max-width: 1920px;
+        padding: 0 $paddingXContainer1920;
+    }
+
+    @include px768-1399 {
+        padding: 0 $paddingXContainer768;
+    }
+
+    @include px767 {
+        padding: 0 $paddingXContainer320;
+    }
+}
+
+.open-modal{
+    overflow: hidden;
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        height: 1000%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: $BLACK;
+        opacity: 0.4;
+        z-index: 8;
+    }
+}
+
+.flex {
+    display: flex;
+}
