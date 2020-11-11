@@ -1,5 +1,5 @@
-$ dig bobryak.site.com +nostats +nocomments +nocmd
-> ;bobryak.site.com. IN A
-> bobryak.site.com. 3592 IN CNAME 4R1END.github.io.
+$ dig www.dev.bobryak.site.com +nostats +nocomments +nocmd
+> ;www.dev.bobryak.site.com. IN A
+> www.dev.bobryak.site.com. 3592 IN CNAME 4R1END.github.io.
 > 4R1END.github.io. 43192 IN CNAME GITHUB-PAGES-SERVER .
 > GITHUB-PAGES-SERVER . 22 IN A 192.0.2.1
