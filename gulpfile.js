@@ -1,4 +1,5 @@
 const autoPrefixer = require('gulp-autoprefixer');
+var ghPages = require('gulp-gh-pages');
 
 let project_folder = "dist";
 let source_folder = "src";
@@ -40,6 +41,7 @@ let { src, dest } = require('gulp'),
   rename = require("gulp-rename"), 
   uglify = require("gulp-uglify-es").default, 
   imagemin = require('gulp-imagemin'); 
+  // ghPages = require('gulp-gh-pages'); 
 
 function browserSync(params) {
   browsersync.init({
@@ -50,6 +52,11 @@ function browserSync(params) {
     notify: false
   })
 }
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
 
 function html() {
   return src(path.src.html)
