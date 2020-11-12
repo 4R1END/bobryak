@@ -54,7 +54,7 @@ function browserSync(params) {
 }
 
 gulp.task('deploy', function() {
-  return gulp.src('./dist/**/*')
+  return gulp.src('./dist/index.html')
     .pipe(ghPages());
 });
 
