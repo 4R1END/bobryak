@@ -20,12 +20,6 @@
   z-index: 8;
 }
 
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 body {
   font-family: 'MuseoSansCyrl', sans-serif;
   font-size: 16px;
@@ -100,8 +94,13 @@ p {
 }
 
 .header {
-  width: 100%;
-  height: 175px;
+  background-color: #ffffff;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (min-width: 1400px) {
