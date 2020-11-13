@@ -1,9 +1,57 @@
 .header {
+  height: auto;
   background-color: #ffffff;
   &__container {
     display: flex;
+    flex-direction:row;
+    justify-content: center;
+    padding: 10px 0px;
   }
 }
+
+.menu {
+  display: flex; 
+}
+
+.menu__body {
+  margin-left: auto;
+}
+
+.header__actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+}
+
+.menu__body {
+  flex: 1 1 auto;
+}
+
+.list__item {
+  margin: 0px 55px;
+}
+
+.menu__link {
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+  color: #0F5628;
+}
+
+.menu__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.actions-header__link {
+  margin: 0px 20px;
+}
+
+
+
 
 
 

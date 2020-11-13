@@ -8,19 +8,21 @@ $paddingXContainer320: 15px;
 
 .container{
     margin: 0 auto;
+    padding: 0 15px;
+    width: 1430px;
 
-    @include px1400{
-        max-width: 1920px;
-        padding: 0 $paddingXContainer1920;
-    }
+    // @include px1400{
+    //     max-width: 1920px;
+    //     padding: 0 $paddingXContainer1920;
+    // }
 
-    @include px768-1399 {
-        padding: 0 $paddingXContainer768;
-    }
+    // @include px768-1399 {
+    //     padding: 0 $paddingXContainer768;
+    // }
 
-    @include px767 {
-        padding: 0 $paddingXContainer320;
-    }
+    // @include px767 {
+    //     padding: 0 $paddingXContainer320;
+    // }
 }
 
 .open-modal{
