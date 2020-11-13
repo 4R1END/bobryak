@@ -1,5 +1,7 @@
 .container {
   margin: 0 auto;
+  padding: 0 15px;
+  width: 1430px;
 }
 
 .open-modal {
@@ -21,11 +23,10 @@
 }
 
 body {
-  font-family: 'MuseoSansCyrl', sans-serif;
-  font-size: 16px;
+  font-family: sans-serif;
+  font-size: 18px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  min-width: 375px;
   margin: 0 auto;
   padding: 0;
 }
@@ -94,6 +95,7 @@ p {
 }
 
 .header {
+  height: auto;
   background-color: #ffffff;
 }
 
@@ -101,23 +103,71 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0px;
 }
 
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1920px;
-    padding: 0 75px;
-  }
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-@media (max-width: 767px) {
-  .container {
-    padding: 0 15px;
-  }
+.menu__body {
+  margin-left: auto;
 }
 
-@media (min-width: 768px) and (max-width: 1399px) {
-  .container {
-    padding: 0 50px;
-  }
+.header__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.list__item {
+  margin: 0px 55px;
+}
+
+.menu__link {
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 22px;
+  color: #0F5628;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.actions-header__link {
+  margin: 0px 20px;
 }
