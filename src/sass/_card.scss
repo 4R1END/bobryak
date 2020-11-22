@@ -1,0 +1,129 @@
+.card {
+	padding: 0 10px 24px;
+	border-radius: 10px;
+	box-shadow: 5px 4px 18px rgba(0, 0, 0, 0.11);
+
+	&__image {
+		display: block;
+		margin-bottom: 25px;
+		position: relative;
+
+		&-main {
+			width: 100%;
+			border-radius: 10px;
+		}
+		&-like {
+			position: absolute;
+			bottom: 10px;
+			right: 8px;
+		}
+	}
+
+	&__content {
+		padding: 0 17px;
+	}
+
+	&__title {
+		margin-bottom: 10px;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	&__weight {
+		margin-bottom: 13px;
+		& label > input[type="radio"] {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			opacity: 0;
+		}
+
+		& label > span {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			z-index: -1;
+			width: 64px;
+			height: 24px;
+			border: 1px solid $main_color;
+			border-radius: 30px;
+			background-color: #fff;
+			font-weight: 300;
+			font-size: 10px;
+			line-height: 12px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+		&-middle,
+		&-big {
+			margin-left: -24px;	
+		}
+
+		&-middle,
+		&-light {
+			& > span {
+				width: 84px !important;
+			}
+		}
+
+		& label > input:checked + span {
+			background-color: $main-color;
+			color: #fff;
+			z-index: 10;
+		}
+	}
+
+	&__includ {
+		margin-bottom: 20px;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 13px;
+		& > span {
+			color: $main_color;
+		}
+	}
+
+	&__price {
+		margin-bottom: 14px;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	&__btn-block {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__btn-quantity {
+		width: 86px;
+		height: 37px;
+		box-sizing: border-box;
+		padding: 0 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: #FFFFFF;
+		border: 1px solid $main_color;
+		border-radius: 10px;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 22px;
+		&-up,
+		&-down {
+			border: none;
+			background: transparent;
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+
+	&__btn-basket {
+		width: 87px;
+		height: 37px;
+		border: none;
+		border-radius: 10px;
+		background-color: $main-color;
+	}
+}

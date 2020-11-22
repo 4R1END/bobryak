@@ -1,0 +1,49 @@
+.mission {
+
+	&__title {
+	}
+
+	&__content {
+		position: relative;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 77px;		
+	}
+
+	&__info {
+		position: absolute;
+		top: 66px;
+		left: 15px;
+		width: 588px;
+		height: 360px;
+		box-sizing: border-box;
+		padding: 45px 0 0 8px;
+		background: #FFFFFF;
+		box-shadow: 0px 10px 10px rgba(157, 219, 176, 0.25);
+	}
+
+	&__text {
+		margin-bottom: 43px;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 22px;
+		text-transform: lowercase;
+	}
+
+	&__link-more-info {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 20px;		
+		text-decoration-line: underline;
+		color: $main_color;
+
+	}
+
+	&__banner {
+		grid-column: 2/5;
+		height: 469px;
+		background-image: url('../img/mission_banner.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}

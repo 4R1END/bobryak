@@ -1,17 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Бобряк | Главная страница</title>
-  <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="css/normalize.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Бобряк | Главная страница</title>
+	<link rel="stylesheet" href="css/main.min.css">
 </head>
+
 <body>
-  @include('_header.html')
-  @include('_main.html')
-  @include('_footer.html')
-  
-  <script src="js/script.min.js"></script>
+	@@include('_header.html')
+	@@include('_main.html')
+	@@include('_footer.html')
+
+	
+	<script src="js/main.min.js"></script>
+	<script>
+		const mySwiperOffer = new Swiper('.swiper-container-offer', {
+			// Optional parameters
+			effect: 'coverflow',
+			coverflowEffect: {
+				rotate: 0,
+				depth: 170,
+				modifier: 2
+			},
+			slidesPerView: 3,
+			centeredSlides: true,
+			loop: true,
+			slideShadows: false,
+
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+
+		const mySwiper = new Swiper('.swiper-container', {
+			// Optional parameters
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
+			speed: 1000,
+			loop: true,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+
+			// If we need pagination
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true
+			},
+		})
+	</script>
 </body>
+
 </html>
