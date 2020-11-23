@@ -1,153 +1,2374 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Бобряк | Главная страница</title>
-  <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="css/normalize.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Бобряк | Главная страница</title>
+	<link rel="stylesheet" href="css/main.min.css">
 </head>
+
 <body>
-  <header class="header">
-  <div class="header__container container">
-
-    <div class="header__menu menu">
-
-      <!----- BURGER MENU ----->
-
-      <div class="burger-menu menu__icon icon-menu">
-        <span ></span>
-        <span ></span>
-        <span ></span>
-      </div>
-
-      <!----- MENU ----->
-
-      <nav class="menu__body">
-        <ul class="menu__list">
-          <li class="list__item"><a href="" class="menu__link">О нас</a></li>
-          <li class="list__item"><a href="" class="menu__link">Акции</a></li>
-          <li class="list__item"><a href="" class="menu__link">Каталог</a></li>
-          <li class="list__item"><a href="" class="menu__link header-logo"><img src="img/logo.png" alt="logo"></a></li>
-          <li class="list__item"><a href="" class="menu__link">Доставка</a></li>
-          <li class="list__item"><a href="" class="menu__link">Контакты</a></li>
-        </ul>
-      </nav>
-   </div>
-
-   <!----- SEARCH FORM / ACCOUNT / BASKET ----->
-
-   <div class="header__actions actions-header">
-
-     <!-- <div class="search-form">
-        <div class="close">
-          <a class="close-icon"></a>
-        </div>
-        <div class="search">
-          <a class="search-icon"></a>
-          <input type="text" class="input">
-        </div>
-     </div> -->
-
-     <a href="" class="actions-header__link search-icon" title="Поиск по сайту"><img src="img/search.png" alt="Поиск"></a>
-     <a href="" class="actions-header__link user-account-icon" title="Войти в личный кабинет"><img src="img/account.png" alt=""></a>
-     <a href="" class="actions-header__link shopping-icon" title="Корзина"><img src="img/shopping.png" alt=""></a>
-
-   </div>
-  </div>
+	<header class="header">
+	<div class="header__bg"></div>
+	<div class="container header__container">
+		<nav class="menu header__menu">
+			<ul class="menu__list">
+				<li class="menu__list-item">
+					<a href="" class="menu__link">
+						О нас
+					</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="" class="menu__link">
+						Акции
+					</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="" class="menu__link">
+						Каталог
+					</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="" class="menu__link">
+						<img src="img/logo.png" alt="бобряк">
+					</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="" class="menu__link">
+						Доставка
+					</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="" class="menu__link">
+						О нас
+					</a>
+				</li>				
+			</ul>
+		</nav>
+		<div class="header__auth auth">
+			<a href="#" class="auth__link">
+				<img src="img/icons/icon_search.svg" alt="поиск">
+			</a>
+			<a href="#" class="auth__link">
+				<img src="img/icons/icon_account.svg" alt="личный кабинет">
+			</a>
+			<a href="#" class="auth__link">
+				<img src="img/icons/icon_shopping.svg" alt="корзина">
+			</a>
+		</div>
+	</div>
 </header>
-  <main class="main">
-  <div class="container">
-    <section class="hero">
+	<main class="main">
+	<div class="container main__container">
+		<section class="hero">
+			<!----- SLIDER ----->
 
-      <!----- SLIDER ----->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="hero__image">
+							<img src="img/hero_social.jpg" alt="социальная миссия">
+						</div>
+						<div class="hero__content">
+							<h1 class="hero__title">
+								Социальная миссия
+								<span class="hero__subtitle">
+									10% с каждой покупки мы направляем <br>
+									на экологические мероприятия в Теберде!
+								</span>
+							</h1>
+							<a href="#" class="hero__link">
+								<button class="hero__btn">
+									подробнее
+								</button>
+							</a>
+						</div>
+					</div>
 
-      <div class="slider-container">
-        <div class="slider">
-          <div class="slider__wrapper">
-            <div class="slider__items">
+					<div class="swiper-slide">
+						<div class="hero__image">
+							<img src="img/hero_natural.jpg" alt="социальная миссия">
+						</div>
+						<div class="hero__content">
+							<h1 class="hero__title">
+								Вкусно. Натурально. Полезно.
+								<span class="hero__subtitle">
+									Народные рецепты кавказского долголетия <br>
+									из экологически-чистого региона Карачаево-Черкесии.
+								</span>
+							</h1>
+							<a href="#" class="hero__link">
+								<button class="hero__btn">
+									в каталог
+								</button>
+							</a>
+						</div>
+					</div>
 
-              <!-- Slider 1 -->
-
-              <!-- При уменьшении разрешении экрана, картинка слева о описание справа, плавно
-              смещаються в друг друга, картинка становиться бекграундом для описания -->
-
-              <div class="slider__item">
-                <div>
-                  <img src="" alt="">
-                  <article>
-                    <h2 class="title"></h2>
-                    <p></p>
-                    <a href=""></a>
-                  </article>
-                </div>
-              </div>
-
-                <!-- Slider 2 -->
-
-              <div class="slider__item">
-                <div>
-                  <img src="" alt="">
-                  <article>
-                    <h2 class="title"></h2>
-                    <p></p>
-                    <a href=""></a>
-                  </article>
-                </div>
-              </div>
-
-                <!-- Slider 3 -->
-
-              <div class="slider__item">
-                <div>
-                  <img src="" alt="">
-                  <article>
-                    <h2 class="title"></h2>
-                    <p></p>
-                    <a href=""></a>
-                  </article>
-                </div>
-              </div>
-              
-            </div>
-          </div>
-          <a class="slider__control slider__control--prev" href=""></a>
-          <a class="slider__control slider__control--next slider__control--show" href=""></a>
-        </div>
-
-      </div>
-
-    </section>
+					<div class="swiper-slide">
+						<div class="hero__image">
+							<img src="img/hero_social.jpg" alt="социальная миссия">
+						</div>
+						<div class="hero__content">
+							<h1 class="hero__title">
+								Социальная миссия
+								<span class="hero__subtitle">
+									10% с каждой покупки мы направляем <br>
+									на экологические мероприятия в Теберде!
+								</span>
+							</h1>
+							<a href="#" class="hero__link">
+								<button class="hero__btn">
+									подробнее
+								</button>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
 
 
-      <!----- OFFER ----->
+		<!----- OFFER ----->
 
-    <section class="offer"></section>
+		<section class="offer">
+			<h2 class="title offer__title">
+				Акции	
+				<span>
+					<a href="#" class="title__link">
+						смотреть все акции						
+					</a>
+				</span>
+			</h2>
+			<div class="swiper-container-offer">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="swiper-slide__content">
+							<h2 class="swiper-slide__title">
+								скидки на варенье!
+							</h2>
+							<p class="swiper-slide__text">
+								Акционный текст промокод на скидку
+							</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-slide__content">
+							<h2 class="swiper-slide__title">
+								скидки на варенье!
+							</h2>
+							<p class="swiper-slide__text">
+								Акционный текст промокод на скидку
+							</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-slide__content">
+							<h2 class="swiper-slide__title">
+								скидки на варенье!
+							</h2>
+							<p class="swiper-slide__text">
+								Акционный текст промокод на скидку
+							</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-slide__content">
+							<h2 class="swiper-slide__title">
+								скидки на варенье!
+							</h2>
+							<p class="swiper-slide__text">
+								Акционный текст промокод на скидку
+							</p>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="swiper-slide__content">
+							<h2 class="swiper-slide__title">
+								скидки на варенье!
+							</h2>
+							<p class="swiper-slide__text">
+								Акционный текст промокод на скидку
+							</p>
+						</div>
+					</div>
+				</div>				
+			</div>
+			<button class="swiper-button-next">
+				<img src="img/icons/arrow.svg" alt="следующий">
+			</button>
+			<button class="swiper-button-prev">
+				<img src="img/icons/arrow.svg" alt="предыдущий">
+			</button>
+		</section>
 
-      <!----- CATALOG ----->
+		<!----- CATALOG ----->
 
-    <section class="catalog"></section>
+		<section class="catalog">
+			<h2 class="title catalog__title">
+				Каталог
+			</h2>
+			<div class="catalog__tabs tabs">
+				<nav class="tabs__menu">
+					<button class="tabs__item tabs__btn-js tabs__item--active" data-tabs-path="cosmetics">
+						<img src="img/icons/icon_cosmetics.svg" alt="косметика">
+						<h3 class="tabs__title" >
+							косметика
+						</h3>
+					</button>
+					<button class="tabs__item tabs__btn-js" data-tabs-path="honey">
+						<img src="img/icons/icon_honey.svg" alt="мёд">
+						<h3 class="tabs__title">
+							мёд
+						</h3>
+					</button>
+					<button class="tabs__item tabs__btn-js" data-tabs-path="tea">
+						<img src="img/icons/icon_tea.svg" alt="чай">
+						<h3 class="tabs__title">
+							чай
+						</h3>
+					</button>
+					<button class="tabs__item tabs__btn-js" data-tabs-path="jam">
+						<img src="img/icons/icon_jam.svg" alt="варенье">
+						<h3 class="tabs__title">
+							варенье
+						</h3>
+					</button>
+				</nav>
+				<div class="catalog__promo">
+					<p>
+						Бережный ручной сбор ягод 
+и трав на горных вершинах
+					</p>
+				</div>
+				<div class="tabs__body">
+					<div class="tabs__block tabs__block--active" data-tabs-target="cosmetics">
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/card__img.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Балхам
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_balhav" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_balhav" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_balhav" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/plum_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из сливы
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_plum" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_plum" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_plum" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/raspberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из малины
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_raspberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_raspberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_raspberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/card__img.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Балхам
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_balhav" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_balhav" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_balhav" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/card__img.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Балхам
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_balhav" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_balhav" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_balhav" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/card__img.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Балхам
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_balhav" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_balhav" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_balhav" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/card__img.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Балхам
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_balhav" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_balhav" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_balhav" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/card__img.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Балхам
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_balhav" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_balhav" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_balhav" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="tabs__block--more">
+							<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/card__img.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Балхам
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_balhav" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_balhav" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_balhav" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+							<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/plum_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из сливы
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_plum" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_plum" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_plum" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+							<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/raspberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из малины
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_raspberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_raspberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_raspberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+							<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/card__img.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Балхам
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_balhav" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_balhav" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_balhav" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						</div>
+					</div>
+					<div class="tabs__block" data-tabs-target="honey">
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/raspberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из малины
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_raspberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_raspberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_raspberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/raspberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из малины
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_raspberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_raspberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_raspberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/raspberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из малины
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_raspberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_raspberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_raspberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/raspberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из малины
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_raspberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_raspberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_raspberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/raspberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из малины
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_raspberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_raspberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_raspberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/raspberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из малины
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_raspberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_raspberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_raspberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/raspberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из малины
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_raspberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_raspberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_raspberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/raspberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из малины
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_raspberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_raspberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_raspberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="tabs__block--more">
+							<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/card__img.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Балхам
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_balhav" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_balhav" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_balhav" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+							<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/plum_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из сливы
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_plum" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_plum" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_plum" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+							<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/raspberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из малины
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_raspberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_raspberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_raspberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+							<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/card__img.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Балхам
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_balhav" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_balhav" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_balhav" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						</div>
+					</div>
+					<div class="tabs__block" data-tabs-target="tea">
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/blueberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из черники
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_blueberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_blueberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_blueberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/blueberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из черники
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_blueberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_blueberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_blueberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/blueberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из черники
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_blueberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_blueberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_blueberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/blueberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из черники
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_blueberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_blueberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_blueberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/blueberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из черники
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_blueberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_blueberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_blueberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/blueberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из черники
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_blueberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_blueberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_blueberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/blueberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из черники
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_blueberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_blueberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_blueberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/blueberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из черники
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_blueberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_blueberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_blueberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+					</div>
+					<div class="tabs__block" data-tabs-target="jam">
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/blackberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из ежевики
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_blackberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_blackberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_blackberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/blackberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из ежевики
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_blackberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_blackberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_blackberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/blackberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из ежевики
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_blackberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_blackberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_blackberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/blackberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из ежевики
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_blackberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_blackberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_blackberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/blackberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из ежевики
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_blackberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_blackberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_blackberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/blackberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из ежевики
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_blackberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_blackberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_blackberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/blackberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из ежевики
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_blackberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_blackberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_blackberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+						<div class="card">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/blackberry_jam.png" alt="варенье">
+		<img class="card__image-like" src="img/icons/icon_like.svg" alt="понравилось">
+	</div>
+	<div class="card__content">
+		<h3 class="card__title">
+			Варенье из ежевики
+		</h3>
+		<div class="card__weight">
+			<label class="card__weight-light">
+				<input  type="radio" name="weight_blackberry" value="150" checked>
+				<span>150 гр</span>
+			</label>
+			<label class="card__weight-middle">
+				<input type="radio" name="weight_blackberry" value="200">
+				<span>200 гр</span>
+			</label>
+			<label class="card__weight-big">
+				<input type="radio" name="weight_blackberry" value="250">
+				<span>250 гр</span>
+			</label>
+		</div>
+		<div class="card__includ">
+			<span>Состав:</span> травяной сбор, ягоды 
+ежевики
+		</div>
+		<div class="card__price">
+			300 ₽
+		</div>
+		<div class="card__btn-block">
+			<div class="card__btn-quantity">
+				<button class="card__btn-quantity-down">
+					-
+				</button>
+				<span>1</span>				
+				<button class="card__btn-quantity-up">
+					+
+				</button>
+			</div>
+			<button class="card__btn-basket">
+				<img src="img/icons/icon_basket.svg" alt="корзина">
+			</button>
+		</div>
+	</div>
+</div>
+					</div>
+				</div>
+				<div class="catalog__btn-block">
+					<button class="catalog__btn btn--more-js">
+						Развернуть
+					</button>					
+					<a href="#" class="catalog__btn--link">
+						<button class="catalog__btn">
+							В каталог
+						</button>					
+					</a>
+				</div>
+			</div>
+		</section>
 
-      <!----- OUR-MISSION ----->
+		<!----- OUR-MISSION ----->
 
-    <section class="our-mission"></section>
+		<section class="mission">
+			<h2 class="title mission__title">
+				Наша миссия
+			</h2>
+			<div class="mission__content">
+				<div class="mission__info">
+					<img src="img/10.png" alt="10%">
+					<p class="mission__text">
+						с ваших покупок мы направляем на создание экологичной инфраструктуры в регионе
+					</p>
+					<a href="#" class="mission__link-more-info">
+						Подробнее
+					</a>
+				</div>
+				<div class="mission__banner"></div>
+			</div>
+		</section>
 
-      <!----- ABOUT ----->
+		<!----- ABOUT ----->
 
-    <section class="about">
-      <div class="section-container">
-        <section class="about-team"></section>
-        <section class="about-place"></section>
-        <section class="about-us"></section>
-        <section class="say-hello"></section>
-      </div>
-    </section>
+		<section class="about">
+			<h2 class="about__title title">
+				Наша команда
+				<span class="about__subtitle">
+					<p>
+						Вместе мы сделаем этот мир лучше!
+					</p>
+					<a href="#" class="title__link">
+						Больше добрых лиц						
+					</a>
+				</span>
+			</h2>
+			<div class="about__content">
+				<div class="about__faces faces">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="faces__foto">
+									<img src="img/fatima.jpg" alt="Фатима">
+								</div>
+								<div class="faces__text">
+									<h3 class="faces__name">
+										Фатима <span>Варит самое вкусное варенье</span> 
+									</h3>
+									<p class="faces__quote">
+										«Мы варим варенье по традиционным рецептам, позволяющим сохранять полезные качества, которыми щедро одарила наши 
+продукты местная природа.»
+									</p>	
+								</div>
+							</div>
 
-  </div>
+							<div class="swiper-slide">
+								<div class="faces__foto">
+									<img src="img/fatima.jpg" alt="Фатима">
+								</div>
+								<div class="faces__text">
+									<h3 class="faces__name">
+										Фатима <span>Варит самое вкусное варенье</span> 
+									</h3>
+									<p class="faces__quote">
+										«Мы варим варенье по традиционным рецептам, позволяющим 
+сохранять полезные качества, которыми щедро одарила наши 
+продукты местная природа.»
+									</p>	
+								</div>
+							</div>
 
+							<div class="swiper-slide">
+								<div class="faces__foto">
+									<img src="img/fatima.jpg" alt="Фатима">
+								</div>
+								<div class="faces__text">
+									<h3 class="faces__name">
+										Фатима <span>Варит самое вкусное варенье</span> 
+									</h3>
+									<p class="faces__quote">
+										«Мы варим варенье по традиционным рецептам, позволяющим 
+сохранять полезные качества, которыми щедро одарила наши 
+продукты местная природа.»
+									</p>	
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+
+				<div class="about__video">
+					<img src="img/video_product.png" alt="Видео о продукте">
+				</div>				
+			</div>
+		</section>
+		<section class="poster">
+			<div class="poster__content">
+				<div class="poster__info">
+					<h2 class="poster__title">
+						Тщательно отобранные рецепты
+					</h2>
+					<p class="poster__text">
+						Мы заботимся о природе и здоровье каждого покупателя, покупателя, поэтому вся продукция проходит наш дичный контроль, а 10% с покупок направляем на создание экологичной инфраструктуры в регионе
+					</p>				
+				</div>
+				<div class="poster__banner"></div>
+			</div>
+		</section>
+		<section class="mailing">
+			<div class="mailing__content">
+				<div class="mailing__text">
+					<h2 class="mailing__title">
+						Вы подписаны на нашу рассылку?
+						<span>
+							Не пропустите наши акции,<br> скидки, новости и идеи
+						</span>
+					</h2>
+					<form action="#" class="mailing__form">
+						<input class="mailing__email" type="email" placeholder="example@mail.ru">
+						<input class="mailing__btn-submit" type="submit" value="Подписаться">
+					</form>
+				</div>
+				<div class="mailing__img">
+					<img src="img/mailing_img.png" alt="Подпишись">
+				</div>
+			</div>
+		</section>
+	</div>
 </main>
-  
-  
-  <script src="js/script.min.js"></script>
+	<footer class="footer">
+	<div class="container footer__container">
+		<div class="footer__logo">
+			<img src="img/logo_footer.png" alt="Бобряк">
+		</div>
+		<nav class="footer__menu menu">
+			<ul class="menu__list">
+				<li class="menu__list-item">
+					<a href="#" class="menu__link">
+						О нас
+					</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#" class="menu__link">
+						Каталог
+					</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#" class="menu__link">
+						Акции
+					</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#" class="menu__link">
+						Доставка
+					</a>
+				</li>
+				<li class="menu__list-item">
+					<a href="#" class="menu__link">
+						Контакты
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="footer__paymethod paymethod">
+			<div class="paymethod__text">
+				Cпособы оплаты:
+				<span>
+					Картой или наличными
+				</span>
+			</div>
+			<div class="paymethod__icons">
+				<ul class="paymethod__list">
+					<li class="paymethod__item">
+						<img src="img/icons/mastercard.png" alt="mastercard">
+					</li>
+					<li class="paymethod__item">
+						<img src="img/icons/mir.png" alt="mir">
+					</li>
+					<li class="paymethod__item">
+						<img src="img/icons/visa.png" alt="visa">
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer__contacts contacts">
+			<div class="contacts__phone">
+				<a href="tel:+79257006828" class="contacts__link contacts__link-phone">
+					+79257006828
+				</a>
+			</div>
+			<div class="contacts__email">
+				<a href="mailto:bobryak.community@gmail.com" class="contacts__link contacts__link-email">
+					bobryak.community@gmail.com
+				</a>
+			</div>
+			<div class="contacts__social-icons social-icons">
+				<ul class="social-icons__list">
+					<li class="social-icons__item">
+						<a href="#" class="social-icons__link-vk">
+							
+						</a>
+					</li>
+					<li class="social-icons__item">
+						<a href="#" class="social-icons__link-insta">
+							
+						</a>
+					</li>
+					<li class="social-icons__item">
+						<a href="#" class="social-icons__link-fb">
+							
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+	
+	<script src="js/main.min.js"></script>
+	<script>
+		const mySwiperOffer = new Swiper('.swiper-container-offer', {
+			// Optional parameters
+			effect: 'coverflow',
+			coverflowEffect: {
+				rotate: 0,
+				depth: 250,
+				modifier: 1
+			},
+			slidesPerView: 3,
+			centeredSlides: true,
+			loop: true,
+			slideShadows: false,
+
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+
+		const mySwiper = new Swiper('.swiper-container', {
+			// Optional parameters
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
+			speed: 1000,
+			loop: true,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+
+			// If we need pagination
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true
+			},
+		})
+	</script>
 </body>
+
 </html>
