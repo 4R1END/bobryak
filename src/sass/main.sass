@@ -4,6 +4,13 @@
 *
 	margin: 0
 	padding: 0
+	box-sizing: border-box
+	&:focus, &:active		
+			outline: none		
+	&:focus-visible 
+		outline: 2px solid black
+		outline-offset: 2px
+	
 
 h1, h2, h3
 	margin: 0
@@ -34,6 +41,19 @@ main
 	font-size: 30px
 	line-height: 37px
 	color: $main-color
+	&__link 
+		display: flex
+		align-items: center	
+		font-size: 14px
+		font-weight: 300
+		line-height: 17px
+		color: $main_color
+		text-decoration: underline
+		&:after
+			content: url('../img/icons/arrow_view.svg')
+			margin-left: 14px
+		
+	
 
 @import "_fonts.sass"
 @import "_swiper.min.scss"
@@ -43,4 +63,8 @@ main
 @import "_catalog.scss"
 @import "_card.scss"
 @import "_mission.scss"
+@import "_about.scss"
+@import "_poster.scss"
+@import "_mailing.scss"
+
 

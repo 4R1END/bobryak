@@ -1,4 +1,5 @@
-.mission {
+.poster {
+	margin-bottom: 100px;
 	&__content {
 		position: relative;
 		display: grid;
@@ -13,17 +14,27 @@
 		width: 588px;
 		height: 360px;
 		box-sizing: border-box;
-		padding: 45px 0 0 8px;
+		padding: 73px 95px 0;
 		background: #FFFFFF;
 		box-shadow: 0px 10px 10px rgba(157, 219, 176, 0.25);
+	}
+
+	&__title {
+		margin-bottom: 32px;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 34px;
+		line-height: 41px;
+
 	}
 
 	&__text {
 		margin-bottom: 43px;
 		font-weight: 300;
-		font-size: 18px;
-		line-height: 22px;
-		text-transform: lowercase;
+		font-size: 16px;
+		line-height: 20px;
+		color: #5F5F5F;
+
 	}
 
 	&__link-more-info {
@@ -38,7 +49,7 @@
 	&__banner {
 		grid-column: 2/5;
 		height: 496px;
-		background-image: url('../img/mission_banner.jpg');
+		background-image: url('../img/poster_banner.png');
 		background-repeat: no-repeat;
 		background-size: cover;
 	}

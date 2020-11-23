@@ -73,8 +73,9 @@
 		}
 		&--active:after {
 			content: '';
+			margin-top: 6px;
 			width: 100%;
-			height: 1px;
+			height: 2px;
 			background-color: $grey;
 		}
 		&:focus {
@@ -109,12 +110,13 @@
 			display: none;
 			grid-template-columns: repeat(4, 1fr);
 			grid-gap: 77px;
-			&.active {
-				display: grid;
-			}
+			
 		}
 	}
 	&__block--active {
-		display: grid;		
+		display: grid;
+		& > .tabs__block--more.active {
+			display: grid;
+		}		
 	}
 }

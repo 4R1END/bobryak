@@ -84,8 +84,14 @@
 			<div class="swiper-container-offer">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<div class="swiper-slide__content">							
-						</div>						
+						<div class="swiper-slide__content">
+							<h2 class="swiper-slide__title">
+								скидки на варенье!
+							</h2>
+							<p class="swiper-slide__text">
+								Акционный текст промокод на скидку
+							</p>
+						</div>
 					</div>
 					<div class="swiper-slide">
 						<div class="swiper-slide__content">
@@ -145,7 +151,7 @@
 			</h2>
 			<div class="catalog__tabs tabs">
 				<nav class="tabs__menu">
-					<button class="tabs__item tabs__btn-js" data-tabs-path="cosmetics">
+					<button class="tabs__item tabs__btn-js tabs__item--active" data-tabs-path="cosmetics">
 						<img src="img/icons/icon_cosmetics.svg" alt="косметика">
 						<h3 class="tabs__title" >
 							косметика
@@ -202,6 +208,12 @@
 						@@include('cards/_card_raspberry.html')
 						@@include('cards/_card_raspberry.html')
 						@@include('cards/_card_raspberry.html')
+						<div class="tabs__block--more">
+							@@include('cards/_card.html')
+							@@include('cards/_card_plum.html')
+							@@include('cards/_card_raspberry.html')
+							@@include('cards/_card.html')
+						</div>
 					</div>
 					<div class="tabs__block" data-tabs-target="tea">
 						@@include('cards/_card_blueberry.html')
@@ -211,8 +223,10 @@
 						@@include('cards/_card_blueberry.html')
 						@@include('cards/_card_blueberry.html')
 						@@include('cards/_card_blueberry.html')
+						@@include('cards/_card_blueberry.html')
 					</div>
 					<div class="tabs__block" data-tabs-target="jam">
+						@@include('cards/_card_blackberry.html')
 						@@include('cards/_card_blackberry.html')
 						@@include('cards/_card_blackberry.html')
 						@@include('cards/_card_blackberry.html')
@@ -258,14 +272,108 @@
 		<!----- ABOUT ----->
 
 		<section class="about">
-			<div class="section-container">
-				<section class="about-team"></section>
-				<section class="about-place"></section>
-				<section class="about-us"></section>
-				<section class="say-hello"></section>
+			<h2 class="about__title title">
+				Наша команда
+				<span class="about__subtitle">
+					<p>
+						Вместе мы сделаем этот мир лучше!
+					</p>
+					<a href="#" class="title__link">
+						Больше добрых лиц						
+					</a>
+				</span>
+			</h2>
+			<div class="about__content">
+				<div class="about__faces faces">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="faces__foto">
+									<img src="img/fatima.jpg" alt="Фатима">
+								</div>
+								<div class="faces__text">
+									<h3 class="faces__name">
+										Фатима <span>Варит самое вкусное варенье</span> 
+									</h3>
+									<p class="faces__quote">
+										«Мы варим варенье по традиционным рецептам, позволяющим сохранять полезные качества, которыми щедро одарила наши 
+продукты местная природа.»
+									</p>	
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="faces__foto">
+									<img src="img/fatima.jpg" alt="Фатима">
+								</div>
+								<div class="faces__text">
+									<h3 class="faces__name">
+										Фатима <span>Варит самое вкусное варенье</span> 
+									</h3>
+									<p class="faces__quote">
+										«Мы варим варенье по традиционным рецептам, позволяющим 
+сохранять полезные качества, которыми щедро одарила наши 
+продукты местная природа.»
+									</p>	
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="faces__foto">
+									<img src="img/fatima.jpg" alt="Фатима">
+								</div>
+								<div class="faces__text">
+									<h3 class="faces__name">
+										Фатима <span>Варит самое вкусное варенье</span> 
+									</h3>
+									<p class="faces__quote">
+										«Мы варим варенье по традиционным рецептам, позволяющим 
+сохранять полезные качества, которыми щедро одарила наши 
+продукты местная природа.»
+									</p>	
+								</div>
+							</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+
+				<div class="about__video">
+					<img src="img/video_product.png" alt="Видео о продукте">
+				</div>				
 			</div>
 		</section>
-
+		<section class="poster">
+			<div class="poster__content">
+				<div class="poster__info">
+					<h2 class="poster__title">
+						Тщательно отобранные рецепты
+					</h2>
+					<p class="poster__text">
+						Мы заботимся о природе и здоровье каждого покупателя, покупателя, поэтому вся продукция проходит наш дичный контроль, а 10% с покупок направляем на создание экологичной инфраструктуры в регионе
+					</p>				
+				</div>
+				<div class="poster__banner"></div>
+			</div>
+		</section>
+		<section class="mailing">
+			<div class="mailing__content">
+				<div class="mailing__text">
+					<h2 class="mailing__title">
+						Вы подписаны на нашу рассылку?
+						<span>
+							Не пропустите наши акции,<br> скидки, новости и идеи
+						</span>
+					</h2>
+					<form action="#" class="mailing__form">
+						<input class="mailing__email" type="email" placeholder="example@mail.ru">
+						<input class="mailing__btn-submit" type="submit" value="Подписаться">
+					</form>
+				</div>
+				<div class="mailing__img">
+					<img src="img/mailing_img.png" alt="Подпишись">
+				</div>
+			</div>
+		</section>
 	</div>
-
 </main>
