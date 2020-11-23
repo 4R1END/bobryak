@@ -1,0 +1,113 @@
+.footer {
+	background-color: $green-light;
+
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		padding-top: 54px;
+		padding-bottom: 50px;
+	}
+
+	&__logo {
+	}
+
+	&__menu {
+	}
+
+	&__paymethod {
+	}
+
+	&__contacts {
+	}
+
+	.menu {
+
+		&__list {
+		}
+	
+		&__list-item {
+			margin-bottom: 20px;
+		}
+	
+		&__link {
+			font-style: normal;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 20px;
+			color: #000;
+		}
+	}
+	.paymethod {
+	
+		&__text {
+			margin-bottom: 23px;
+			font-family: 'Lato', sans-serif;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 19px;
+			& > span {
+				margin-top: 8px;
+				display: flex;
+				align-items: center;
+				font-size: 14px;
+				line-height: 17px;
+				&:before {
+					content: url('../img/icons/Credit_card.svg');
+					margin-right: 20px;
+				}
+			}
+		}
+		
+		&__list {
+			display: flex;
+		}	
+	
+		&__item:not(:last-child) {
+			margin-right: 27px;
+		}
+	}
+	.contacts {
+		display: flex;
+		flex-direction: column;
+		text-align: right;
+	
+		&__phone {
+			margin-bottom: 14px;
+		}
+	
+		&__link {
+			font-style: normal;
+			font-weight: 300;
+			font-size: 18px;
+			line-height: 22px;
+			color: #000000;
+		}
+	
+		&__link-phone {
+		}
+	
+		&__email {
+			margin-bottom: 19px;
+			font-size: 16px;
+			line-height: 20px;
+			text-decoration: underline;
+		}
+	}
+	.social-icons {
+	
+		&__list {
+			display: flex;
+			justify-content: flex-end;
+		}
+	
+		&__item {
+			margin-left: 20px;
+		}
+	
+		&__link {
+		}
+	}
+}
+
+

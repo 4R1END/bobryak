@@ -22,30 +22,32 @@
 
 	&__auth {	
 	}
-}
 
-.menu {
-	&__list {
+	.menu {
+		&__list {
+			display: flex;
+			align-items: center;
+		}
+	
+		&__list-item {
+			margin-left: 100px;
+		}
+	
+		&__link {
+			font-family: "Lato", sans-serif;
+			font-weight: 300;
+			color: $main_color;
+		}
+	}
+	.auth {
 		display: flex;
-		align-items: center;
-	}
-
-	&__list-item {
-		margin-left: 100px;
-	}
-
-	&__link {
-		font-family: "Lato", sans-serif;
-		font-weight: 300;
-		color: $main_color;
+		align-items: baseline;
+		&__link {
+		}
+		&__link:not(:last-child) {
+			margin-right: 35px;
+		}
 	}
 }
-.auth {
-	display: flex;
-	align-items: baseline;
-	&__link {
-	}
-	&__link:not(:last-child) {
-		margin-right: 35px;
-	}
-}
+
+

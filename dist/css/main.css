@@ -249,7 +249,7 @@ html {
 }
 
 main {
-  padding-bottom: 100px;
+  padding-bottom: 256px;
 }
 
 .container {
@@ -954,27 +954,27 @@ button.swiper-pagination-bullet {
   margin-top: 10px;
 }
 
-.menu__list {
+.header .menu__list {
   display: flex;
   align-items: center;
 }
 
-.menu__list-item {
+.header .menu__list-item {
   margin-left: 100px;
 }
 
-.menu__link {
+.header .menu__link {
   font-family: "Lato", sans-serif;
   font-weight: 300;
   color: #0F5628;
 }
 
-.auth {
+.header .auth {
   display: flex;
   align-items: baseline;
 }
 
-.auth__link:not(:last-child) {
+.header .auth__link:not(:last-child) {
   margin-right: 35px;
 }
 
@@ -1645,4 +1645,91 @@ button.swiper-pagination-bullet {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+}
+
+.footer {
+  background-color: #d1e5d1;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 54px;
+  padding-bottom: 50px;
+}
+
+.footer .menu__list-item {
+  margin-bottom: 20px;
+}
+
+.footer .menu__link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+}
+
+.footer .paymethod__text {
+  margin-bottom: 23px;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.footer .paymethod__text > span {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer .paymethod__text > span:before {
+  content: url("../img/icons/Credit_card.svg");
+  margin-right: 20px;
+}
+
+.footer .paymethod__list {
+  display: flex;
+}
+
+.footer .paymethod__item:not(:last-child) {
+  margin-right: 27px;
+}
+
+.footer .contacts {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.footer .contacts__phone {
+  margin-bottom: 14px;
+}
+
+.footer .contacts__link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.footer .contacts__email {
+  margin-bottom: 19px;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: underline;
+}
+
+.footer .social-icons__list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer .social-icons__item {
+  margin-left: 20px;
 }
