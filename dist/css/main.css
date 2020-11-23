@@ -217,7 +217,7 @@ template {
 
 *:focus,
 *:active {
-  outline: none;
+  outline: none !important;
 }
 
 *:focus-visible {
@@ -1645,6 +1645,7 @@ button.swiper-pagination-bullet {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .footer {
@@ -1732,4 +1733,25 @@ button.swiper-pagination-bullet {
 
 .footer .social-icons__item {
   margin-left: 20px;
+}
+
+.footer .social-icons__link-vk {
+  display: inline-block;
+  width: 30px;
+  height: 33px;
+  background-image: url("../img/icons/vk.svg");
+}
+
+.footer .social-icons__link-insta {
+  display: inline-block;
+  width: 25px;
+  height: 31px;
+  background-image: url("../img/icons/instagram.svg");
+}
+
+.footer .social-icons__link-fb {
+  display: inline-block;
+  width: 34px;
+  height: 33px;
+  background-image: url("../img/icons/Facebook.svg");
 }

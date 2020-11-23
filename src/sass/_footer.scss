@@ -105,7 +105,23 @@
 			margin-left: 20px;
 		}
 	
-		&__link {
+		&__link-vk {
+			display: inline-block;
+			width: 30px;
+			height: 33px;
+			background-image: url('../img/icons/vk.svg');
+		}
+		&__link-insta {
+			display: inline-block;
+			width: 25px;
+			height: 31px;
+			background-image: url('../img/icons/Instagram.svg');
+		}
+		&__link-fb {
+			display: inline-block;
+			width: 34px;
+			height: 33px;
+			background-image: url('../img/icons/Facebook.svg');
 		}
 	}
 }

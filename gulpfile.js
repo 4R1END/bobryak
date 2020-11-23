@@ -43,6 +43,13 @@ const gulp = require('gulp'),
 // webpHtml = require('gulp-webp-html'),
 // webpCss = require('gulp-webpcss');
 
+const ghPages = require('gulp-gh-pages');
+ 
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
+});
+
 function browserSync() {
 	browsersync.init({
 		server: {

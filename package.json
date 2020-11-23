@@ -17,6 +17,7 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-file-include": "^2.2.2",
     "gulp-gh-pages": "^0.5.4",
+    "gulp-github": "^0.3.6",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-image": "^6.2.1",
     "gulp-imagemin": "^7.1.0",
