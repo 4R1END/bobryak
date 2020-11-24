@@ -1,0 +1,37 @@
+.swiper-container-coverflow {
+	width: 90%;
+	margin: 0 auto;
+	overflow: hidden;
+	.swiper-slide {
+		&-shadow-left {
+			display: none;
+		}
+		&-shadow-right {
+			display: none;
+		}
+	}
+}
+
+
+
+.swiper-button-next,
+.swiper-button-prev {
+	top: 59%;
+	width: 35px !important;
+	height: 35px !important;
+	border-radius: 50%;
+	border: 1px solid #0f5628;
+	background-image: url('../img/icons/arrow.svg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	&:after {
+		content: "" !important;
+	}
+	&:active,
+	&:focus {
+		box-shadow: inset 2 2 20px grey;
+	}
+}
+.swiper-button-next {	
+	transform: rotate(180deg);
+}

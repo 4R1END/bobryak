@@ -28,9 +28,6 @@ button
 html
 	font-family: "Montserrat", sans-serif
 
-main
-	padding-bottom: 256px
-
 .container
 	max-width: 1280px
 	margin: 0 auto
@@ -53,19 +50,47 @@ main
 			content: url('../img/icons/arrow_view.svg')
 			margin-left: 14px
 		
+.mailing
+	&__form 
+			display: flex
+			align-items: center
+		
+	&__email 
+		width: 226px
+		height: 44px
+		padding-left: 10px
+		border: 1px solid $main_color
+		border-radius: 10px 0px 0px 10px
 	
+
+	&__btn-submit 
+		margin-left: -5px
+		width: 140px
+		height: 44px
+		background-color: $main_color
+		border: none
+		border-radius: 0px 10px 10px 0px
+		font-style: normal
+		font-weight: 300
+		font-size: 14px
+		line-height: 17px
+		color: #FFFFFF
+		cursor: pointer
+		
 
 @import "_fonts.sass"
 @import "_swiper.min.scss"
+@import "_swiper.scss"
 @import "_header.scss"
-@import "_hero.scss"
-@import "_offer.scss"
-@import "_catalog.scss"
+@import "main_page/_hero.scss"
+@import "main_page/_offer.scss"
+@import "main_page/_catalog.scss"
 @import "_card.scss"
-@import "_mission.scss"
-@import "_about.scss"
-@import "_poster.scss"
-@import "_mailing.scss"
+@import "main_page/_mission.scss"
+@import "main_page/_about.scss"
+@import "main_page/_poster.scss"
+@import "main_page/_mailing.scss"
 @import "_footer.scss"
+@import "team/_team.scss"
 
 

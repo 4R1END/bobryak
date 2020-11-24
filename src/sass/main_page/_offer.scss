@@ -7,11 +7,7 @@
 		align-items: baseline;
 	}	
 
-	.swiper-container-offer {
-		width: 90%;
-		margin: 0 auto;
-		overflow: hidden;
-	}
+	
 	.swiper-wrapper {
 	}
 	.swiper-slide {
@@ -21,12 +17,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		color: #fff;
-		&-shadow-left {
-			display: none;
-		}
-		&-shadow-right {
-			display: none;
-		}
+		
 		&__content {
 			display: flex;
 			flex-direction: column;
@@ -60,26 +51,5 @@
 	}
 	.swiper-slide[data-swiper-slide-index="5"] {
 		background-image: url('../img/offers_bg/sale_img4.png');
-	}
-	.swiper-button-next,
-	.swiper-button-prev {
-		top: 59%;
-		width: 35px !important;
-		height: 35px !important;
-		border-radius: 50%;
-		border: 1px solid #0f5628;
-		background: transparent;
-		&:after {
-			content: "" !important;
-		}
-		&:active,
-		&:focus {
-			box-shadow: inset 2 2 20px grey;
-		}
-	}
-	.swiper-button-next {
-		& > img {
-			transform: rotate(180deg);
-		}
-	}
+	}	
 }
