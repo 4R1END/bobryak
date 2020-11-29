@@ -1,6 +1,7 @@
 .offer {
 	position: relative;
 	&__title {
+		margin-top: 85px;
 		margin-bottom: 65px;
 		display: flex;
 		justify-content: space-between;
@@ -8,8 +9,6 @@
 	}	
 
 	
-	.swiper-wrapper {
-	}
 	.swiper-slide {
 		height: 355px;
 		border-radius: 10px;
