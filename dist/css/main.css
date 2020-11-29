@@ -1921,18 +1921,18 @@ button.swiper-pagination-bullet {
   height: 100%;
 }
 
-.aboutus .swiper-container-banner > .swiper-pagination-bullets {
+.aboutus .swiper-container-banner .swiper-pagination-bullets {
   bottom: 110px !important;
 }
 
-.aboutus .swiper-container-banner > .swiper-pagination-bullet {
-  margin: 0 20px !important;
+.aboutus .swiper-container-banner .swiper-pagination-bullet {
+  margin-right: 20px !important;
   width: 18px;
   height: 15px;
   background-color: #fff !important;
 }
 
-.aboutus .swiper-container-banner > .swiper-pagination-bullet-active {
+.aboutus .swiper-container-banner .swiper-pagination-bullet-active {
   width: 83px !important;
   height: 15px !important;
   border-radius: 10px !important;
@@ -2068,4 +2068,5 @@ button.swiper-pagination-bullet {
 
 .aboutus .hide {
   display: none;
+  transition: all 0.3s;
 }
