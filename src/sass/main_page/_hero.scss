@@ -78,6 +78,7 @@
 }
 
 .swiper-pagination-bullet {
+	margin-right: 10px;
 	background-color: $main-color;
 	opacity: 1 !important;
 	transition: all 0.3s ease;
@@ -86,7 +87,7 @@
 .swiper-pagination-bullet-active {
 	height: 8px !important;
 	width: 40px !important;
-	border-radius: 10px !important;
+	border-radius: 10px !important;	
 	transition: all 0.3s ease;
 
 }

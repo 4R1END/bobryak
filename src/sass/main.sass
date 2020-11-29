@@ -33,7 +33,6 @@ html
 	margin: 0 auto
 
 .title
-	margin-top: 85px
 	font-weight: 600
 	font-size: 30px
 	line-height: 37px
@@ -49,14 +48,31 @@ html
 		&:after
 			content: url('../img/icons/arrow_view.svg')
 			margin-left: 14px
-		
+
+.aboutus
+
+
 .mailing
+	display: flex
+	align-items: center
+	padding: 20px 0 30px
+	border-top: 1px solid #E9F7ED
+	&__text 
+		width: 50%
+		padding-left: 70px
+		font-weight: 600
+		font-size: 14px
+		line-height: 17px
+		color: $main_color
+	
+
 	&__form 
 			display: flex
 			align-items: center
+			width: 50%
 		
 	&__email 
-		width: 226px
+		width: 315px
 		height: 44px
 		padding-left: 10px
 		border: 1px solid $main_color
@@ -91,6 +107,6 @@ html
 @import "main_page/_poster.scss"
 @import "main_page/_mailing.scss"
 @import "_footer.scss"
-@import "team/_team.scss"
+@import "aboutus/_aboutus.scss"
 
 

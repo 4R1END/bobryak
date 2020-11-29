@@ -1,4 +1,5 @@
 @@include('swiper.min.js');
+@@include('aboutus.js');
 
 const btnDown = document.querySelectorAll(`.card__btn-quantity-down`); // кнопка убавить количество товара в карточке
 const btnUp = document.querySelectorAll(`.card__btn-quantity-up`); // кнопка прибавить количество товара в карточке
