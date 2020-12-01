@@ -11,10 +11,23 @@
 		outline: 2px solid black
 		outline-offset: 2px
 	
+html
+	font-family: "Montserrat", sans-serif
+	overflow-anchor: none
 
 h1, h2, h3
 	margin: 0
 	padding: 0
+	font-weight: 600
+
+h1
+	font-size: 36px
+
+h2
+	font-size: 30px
+
+h3
+	font-size: 20px
 
 ul
 	list-style-type: none
@@ -25,16 +38,12 @@ a
 button
 	cursor: pointer
 
-html
-	font-family: "Montserrat", sans-serif
-
 .container
 	max-width: 1280px
 	margin: 0 auto
 
 .title
-	font-weight: 600
-	font-size: 30px
+	position: relative	
 	line-height: 37px
 	color: $main-color
 	&__link 
@@ -49,8 +58,42 @@ html
 			content: url('../img/icons/arrow_view.svg')
 			margin-left: 14px
 
-.aboutus
+.crumbs
+	position: absolute
+	left: 0
+	top: 0
+	font-weight: 300
+	font-size: 14px
+	line-height: 17px	
+	color: #818181
+	&--active
+		text-decoration: underline
+		color: $main-color
+	&:hover
+		color: $main-color
 
+.btn
+	width: 240px
+	height: 50px
+	border: none
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25)
+	border-radius: 10px
+	font-family: 'Lato', sans-serif
+	text-transform: uppercase
+	color: #fff
+	font-size: 16px
+	font-weight: 700
+	line-height: 19px
+
+.btn--primary 	
+	background-color: $main-color	
+
+.btn--secondary 
+	background-color: $green-light
+	color: #000
+
+.btn--disable 
+	background-color: $grey
 
 .mailing
 	display: flex
@@ -77,20 +120,20 @@ html
 		padding-left: 10px
 		border: 1px solid $main_color
 		border-radius: 10px 0px 0px 10px
+		&--main
+			width: 226px
 	
 
 	&__btn-submit 
 		margin-left: -5px
 		width: 140px
-		height: 44px
-		background-color: $main_color
-		border: none
+		height: 44px	
 		border-radius: 0px 10px 10px 0px
-		font-style: normal
+		text-transform: none
+		font-family: 'Montserrat', sans-serif
 		font-weight: 300
 		font-size: 14px
 		line-height: 17px
-		color: #FFFFFF
 		cursor: pointer
 		
 

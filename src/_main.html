@@ -1,16 +1,16 @@
 <main class="main">
-	<div class="container main__container">
+	
 		<section class="hero">
 			<!----- SLIDER ----->
 
-			<div class="swiper-container">
+			<div class="swiper-container container">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<div class="hero__image">
-							<img src="img/hero_social.jpg" alt="социальная миссия">
-						</div>
+						
+							<img class="hero__img" src="img/hero_social.jpg" alt="социальная миссия">
+						
 						<div class="hero__content">
-							<h1 class="hero__title">
+							<h1 class="title hero__title">
 								Социальная миссия
 								<span class="hero__subtitle">
 									10% с каждой покупки мы направляем <br>
@@ -18,7 +18,7 @@
 								</span>
 							</h1>
 							<a href="#" class="hero__link">
-								<button class="hero__btn">
+								<button class="btn btn--secondary">
 									подробнее
 								</button>
 							</a>
@@ -26,11 +26,11 @@
 					</div>
 
 					<div class="swiper-slide">
-						<div class="hero__image">
-							<img src="img/hero_natural.jpg" alt="социальная миссия">
-						</div>
+						
+							<img class="hero__img" src="img/hero_natural.jpg" alt="социальная миссия">
+						
 						<div class="hero__content">
-							<h1 class="hero__title">
+							<h1 class="title hero__title">
 								Вкусно. Натурально. Полезно.
 								<span class="hero__subtitle">
 									Народные рецепты кавказского долголетия <br>
@@ -38,7 +38,7 @@
 								</span>
 							</h1>
 							<a href="#" class="hero__link">
-								<button class="hero__btn">
+								<button class="btn btn--secondary">
 									в каталог
 								</button>
 							</a>
@@ -46,11 +46,11 @@
 					</div>
 
 					<div class="swiper-slide">
-						<div class="hero__image">
-							<img src="img/hero_social.jpg" alt="социальная миссия">
-						</div>
+						
+							<img class="hero__img" src="img/hero_social.jpg" alt="социальная миссия">
+						
 						<div class="hero__content">
-							<h1 class="hero__title">
+							<h1 class="title hero__title">
 								Социальная миссия
 								<span class="hero__subtitle">
 									10% с каждой покупки мы направляем <br>
@@ -58,7 +58,7 @@
 								</span>
 							</h1>
 							<a href="#" class="hero__link">
-								<button class="hero__btn">
+								<button class="btn btn--secondary">
 									подробнее
 								</button>
 							</a>
@@ -71,7 +71,7 @@
 
 
 		<!----- OFFER ----->
-
+	<div class="container">	
 		<section class="offer">
 			<h2 class="title offer__title">
 				Акции	
@@ -143,13 +143,13 @@
 			</button>
 		</section>
 
-		<!----- CATALOG ----->
+		<!----- CATALOG-block ----->
 
-		<section class="catalog">
-			<h2 class="title catalog__title">
+		<section class="catalog-block">
+			<h2 class="title catalog-block__title">
 				Каталог
 			</h2>
-			<div class="catalog__tabs tabs">
+			<div class="catalog-block__tabs tabs">
 				<nav class="tabs__menu">
 					<button class="tabs__item tabs__btn-js tabs__item--active" data-tabs-path="cosmetics">
 						<img src="img/icons/icon_cosmetics.svg" alt="косметика">
@@ -176,7 +176,7 @@
 						</h3>
 					</button>
 				</nav>
-				<div class="catalog__promo">
+				<div class="catalog-block__promo">
 					<p>
 						Бережный ручной сбор ягод 
 и трав на горных вершинах
@@ -197,6 +197,10 @@
 							@@include('cards/_card_plum.html')
 							@@include('cards/_card_raspberry.html')
 							@@include('cards/_card.html')
+							@@include('cards/_card_raspberry.html')
+							@@include('cards/_card_raspberry.html')
+							@@include('cards/_card_raspberry.html')
+							@@include('cards/_card_raspberry.html')
 						</div>
 					</div>
 					<div class="tabs__block" data-tabs-target="honey">
@@ -213,6 +217,10 @@
 							@@include('cards/_card_plum.html')
 							@@include('cards/_card_raspberry.html')
 							@@include('cards/_card.html')
+							@@include('cards/_card_raspberry.html')
+							@@include('cards/_card_raspberry.html')
+							@@include('cards/_card_raspberry.html')
+							@@include('cards/_card_raspberry.html')
 						</div>
 					</div>
 					<div class="tabs__block" data-tabs-target="tea">
@@ -236,12 +244,12 @@
 						@@include('cards/_card_blackberry.html')
 					</div>
 				</div>
-				<div class="catalog__btn-block">
-					<button class="catalog__btn btn--more-js">
+				<div class="catalog-block__btn-block">
+					<button class="btn btn--primary btn--more-js">
 						Развернуть
 					</button>					
-					<a href="#" class="catalog__btn--link">
-						<button class="catalog__btn">
+					<a href="#" class="catalog-block__btn--link">
+						<button class="btn btn--primary">
 							В каталог
 						</button>					
 					</a>
@@ -367,8 +375,8 @@
 						</span>
 					</h2>
 					<form action="#" class="mailing__form">
-						<input class="mailing__email" type="email" placeholder="example@mail.ru">
-						<input class="mailing__btn-submit" type="submit" value="Подписаться">
+						<input class="mailing__email mailing__email--main" type="email" placeholder="example@mail.ru">
+						<input class="btn btn--primary mailing__btn-submit" type="submit" value="Подписаться">
 					</form>
 				</div>				
 					<img src="img/mailing_img.png" alt="Подпишись">				

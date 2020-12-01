@@ -2,30 +2,9 @@
 	&__title {
 		margin-top: 85px;
 		margin-bottom: 44px;
-		position: relative;
-		text-align: center;
-		& > span {
-			position: absolute;
-			left: 0;
-			top: 0;
-			font-weight: 300;
-			font-size: 14px;
-			line-height: 17px;			
-			color: #818181;
-			& > span {
-				text-decoration: underline;
-			}
-		}
+		text-align: center;	
 	}
-
-	&__content {
-		
-
-	}
-
-
-	.team {
-		
+	.team {		
 		.people-block {
 			display: flex;
 			background: #F0F0F3;
