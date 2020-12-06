@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Бобряк | О нас</title>
-	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="libs/swiper.min.css">
+	<link rel="stylesheet" href="css/aboutus.min.css">	
 </head>
 <body>
 	<header class="header">
@@ -23,7 +24,7 @@
 					</a>
 				</li>
 				<li class="menu__list-item">
-					<a href="" class="menu__link">
+					<a href="catalog.html" class="menu__link">
 						Каталог
 					</a>
 				</li>
@@ -62,7 +63,7 @@
 			<section class="aboutus__content">
 				<section class="team">
 					<h2 class="aboutus__title title">
-						<span class="crumbs">Главная - <span class="crumbs--active">Наша команда</span></span> Наша команда
+						<span class="aboutus__crumbs crumbs">Главная - <span class="crumbs--active">Наша команда</span></span> Наша команда
 					</h2>
 					<div class="aboutus__navigation navigation">
 						<button class="navigation__btn navigation__btn--mission-js">
@@ -149,10 +150,10 @@
 										<p class="team__persons-slide-text">
 											Ахмед собственоручно собирает ягоды и чайные листы
 										</p>
-									</div>							
+									</div>
 								</div>
-								<div class="swiper-pagination"></div>						
-							</div>
+								<div class="swiper-pagination"></div>
+							</div>							
 						</div>
 					</div>
 
@@ -191,10 +192,8 @@
 										Сортировка  и просушка чайных листов
 									</h3>
 								</div>
-							</div>
-							
+							</div>							
 						</div>
-
 						<div class="swiper-button-prev"></div>
 						<div class="swiper-button-next"></div>					
 					</div>										
@@ -371,7 +370,7 @@
 					</a>
 				</li>
 				<li class="menu__list-item">
-					<a href="#" class="menu__link">
+					<a href="catalog.html" class="menu__link">
 						Каталог
 					</a>
 				</li>
@@ -446,7 +445,8 @@
 		</div>
 	</div>
 </footer>
-	<script src="js/main.min.js"></script>
+	<script src="libs/swiper.min.js"></script>
+	<script src="js/aboutus.min.js"></script>
 	<script>
 		const mySwiperOffer = new Swiper('.swiper-container-coverflow', {
 			// Optional parameters
@@ -481,12 +481,11 @@
 				disableOnInteraction: false,
 			},
 
-			// If we need pagination
 			pagination: {
 				el: '.swiper-pagination',
 				clickable: true
 			},
-		})
+		});
 	</script>
 </body>
 </html>

@@ -6,27 +6,6 @@
 		margin-bottom: 84px;
 	}
 
-	&__promo {
-		margin-bottom: 100px;
-		height: 292px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background-color: rgba(255, 255, 255, 80%);
-		background-image: url(../img/blueberries-bg.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;;
-		font-size: 30px;
-		font-weight: 700;
-		line-height: 37px;
-		color: #fff;
-		& > p {
-			max-width: 500px;
-			text-align: center;
-			text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
-		}
-	}
-
 	&__btn-block {
 		display: flex;
 		justify-content: space-between;

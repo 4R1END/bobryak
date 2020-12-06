@@ -1,16 +1,17 @@
 @import "_normalize.scss"
 @import "_variabels.scss"
+@import "_fonts.sass"
 
 *
 	margin: 0
 	padding: 0
 	box-sizing: border-box
-	&:focus, &:active		
-			outline: none !important	
-	&:focus-visible 
+	&:focus, &:active
+		outline: none !important
+	&:focus-visible
 		outline: 2px solid black
 		outline-offset: 2px
-	
+
 html
 	font-family: "Montserrat", sans-serif
 	overflow-anchor: none
@@ -37,18 +38,20 @@ a
 
 button
 	cursor: pointer
+	border: none
+	background: transparent
 
 .container
 	max-width: 1280px
 	margin: 0 auto
 
 .title
-	position: relative	
+	position: relative
 	line-height: 37px
 	color: $main-color
-	&__link 
+	&__link
 		display: flex
-		align-items: center	
+		align-items: center
 		font-size: 14px
 		font-weight: 300
 		line-height: 17px
@@ -59,14 +62,12 @@ button
 			margin-left: 14px
 
 .crumbs
-	position: absolute
-	left: 0
-	top: 0
 	font-weight: 300
 	font-size: 14px
-	line-height: 17px	
+	line-height: 17px
 	color: #818181
 	&--active
+		margin-left: 8px
 		text-decoration: underline
 		color: $main-color
 	&:hover
@@ -85,36 +86,54 @@ button
 	font-weight: 700
 	line-height: 19px
 
-.btn--primary 	
-	background-color: $main-color	
+.btn--primary
+	background-color: $main-color
 
-.btn--secondary 
+.btn--secondary
 	background-color: $green-light
 	color: #000
 
-.btn--disable 
+.btn--disable
 	background-color: $grey
+
+.banner-promo
+	margin-bottom: 100px
+	height: 292px
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: rgba(255, 255, 255, 80%)
+	background-image: url(../img/blueberries-bg.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	font-size: 30px
+	font-weight: 700
+	line-height: 37px
+	color: #fff
+	& > p
+		max-width: 500px
+		text-align: center
+		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4)
 
 .mailing
 	display: flex
 	align-items: center
 	padding: 20px 0 30px
 	border-top: 1px solid #E9F7ED
-	&__text 
+	&__text
 		width: 50%
 		padding-left: 70px
 		font-weight: 600
 		font-size: 14px
 		line-height: 17px
 		color: $main_color
-	
 
-	&__form 
-			display: flex
-			align-items: center
-			width: 50%
-		
-	&__email 
+	&__form
+		display: flex
+		align-items: center
+		width: 50%
+
+	&__email
 		width: 315px
 		height: 44px
 		padding-left: 10px
@@ -122,12 +141,11 @@ button
 		border-radius: 10px 0px 0px 10px
 		&--main
 			width: 226px
-	
 
-	&__btn-submit 
+	&__btn-submit
 		margin-left: -5px
 		width: 140px
-		height: 44px	
+		height: 44px
 		border-radius: 0px 10px 10px 0px
 		text-transform: none
 		font-family: 'Montserrat', sans-serif
@@ -135,21 +153,9 @@ button
 		font-size: 14px
 		line-height: 17px
 		cursor: pointer
-		
 
-@import "_fonts.sass"
-@import "_swiper.min.scss"
 @import "_swiper.scss"
+@import "_custom-select.scss"
 @import "_header.scss"
-@import "main_page/_hero.scss"
-@import "main_page/_offer.scss"
-@import "main_page/_catalog.scss"
-@import "_card.scss"
-@import "main_page/_mission.scss"
-@import "main_page/_about.scss"
-@import "main_page/_poster.scss"
-@import "main_page/_mailing.scss"
 @import "_footer.scss"
-@import "aboutus/_aboutus.scss"
-
 

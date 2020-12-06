@@ -1,0 +1,56 @@
+.choices {
+	&::after {
+		content: url('../img/icons/arrow-select.svg') !important;
+		border-style: none !important;
+		right: 30px !important;
+		top: 30% !important;
+	}
+
+	.choices__inner {
+		display: flex;
+		align-items: center;
+		padding-left: 18px;
+		width: 300px;
+		height: 50px;
+		border: 1px solid $main_color;
+		border-radius: 10px;
+		background-color: #fff;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 17px;
+	}
+}
+
+.choices.is-open:after {
+	margin-top: 0 !important;
+	border: none !important;
+}
+
+.is-open {
+	.choices__inner {
+		border: 1px solid $main_color;
+		border-radius: 10px;
+		border-bottom-left-radius: 0 !important;
+		border-bottom-right-radius: 0 !important;
+	}
+
+	.choices__list--dropdown {
+		border: 1px solid $main_color;
+		border-top: 1px solid $green-light;
+		border-radius: 0 0 10px 10px;	
+		.choices__item {
+			padding-left: 20px;
+		}	
+	}
+
+	
+
+	.choices__item--selectable {
+		&.is-highlighted {
+			background-color: $green-light;
+		}
+		&:after {
+			display: none;
+		}
+	}
+} 

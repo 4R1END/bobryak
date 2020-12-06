@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Бобряк | Каталог</title>
+	<link rel="stylesheet" href="libs/choices.min.css">
+	<link rel="stylesheet" href="libs/nouislider.min.css">
+	<link rel="stylesheet" href="libs/swiper.min.css">
+	<link rel="stylesheet" href="css/catalog.min.css">
+	
+</head>
+<body>
+	@@include('_header.html')
+	<main class="catalog">
+		<div class="container">
+			<div class="catalog__crumbs crumbs">
+				<a href="index.html" class="crumbs__link">
+					Главная
+				</a>
+				&nbsp; - <span class="crumbs--active">Каталог</span>
+			</div>
+			<h2 class="catalog__title title">
+				Каталог
+				<span>382 шт</span>
+			</h2>
+			<div class="catalog__descr">
+				Ароматное варенье из чёрной бузины редко можно заметить на полках в магазинах,<br> но среди местных жителей
+				Кавказа оно любимо и популярно благодаря своим общеукрепляющим свойствам.
+			</div>
+			<div class="catalog__content">
+				<sidebar class="catalog__filters filters">
+					<div class="filters__checked-filters">
+						<div class="filters__checked-filter">
+							<span>Низкогорный</span>
+						</div>
+					</div>
+					<button class="filters__btn-clear">Очистить фильтр</button>
+					<ul class="filters__list">
+						<li class="filters__item category-filter">
+							<h4 class="filters__title">
+								Категории
+							</h4>
+							<div class="filters__body">
+								<label class="filters__label">
+									<input type="checkbox" class="filters__checkbox category-filter__item" name="category" value="tea" checked>
+									<span>Чай</span>
+								</label>
+								<label class="filters__label">
+									<input type="checkbox" class="filters__checkbox category-filter__item" name="category" value="honey">
+									<span>Мёд</span>
+								</label>
+								<label class="filters__label">
+									<input type="checkbox" class="filters__checkbox category-filter__item" name="category" value="jam">
+									<span>Варенье</span>
+								</label>
+							</div>
+						</li>
+						<li class="filters__item">
+							<h4 class="filters__title">
+								Объём
+							</h4>
+							<div class="filters__body">
+
+							</div>
+						</li>
+						<li class="filters__item type-filters">
+							<h4 class="filters__title">
+								Вид
+							</h4>
+							<div class="filters__body type-filters__body">
+								<label class="filters__label">
+									<input type="checkbox" class="filters__checkbox" name="type" value="high-mount">
+									<span>Высокогорный</span>
+								</label>
+								<label class="filters__label">
+									<input type="checkbox" class="filters__checkbox" name="type" value="low-mount">
+									<span>Низкогорный</span>
+								</label>
+								<label class="filters__label">
+									<input type="checkbox" class="filters__checkbox" name="type" value="deal">
+									<span>Еловый</span>
+								</label>
+								<label class="filters__label">
+									<input type="checkbox" class="filters__checkbox" name="type" value="tonic">
+									<span>Тонизирующий</span>
+								</label>
+								<label class="filters__label">
+									<input type="checkbox" class="filters__checkbox" name="type" value="calmig">
+									<span>Успокаивающий</span>
+								</label>
+								<button class="filters__more-btn type-filter__btn"></button>
+							</div>							
+						</li>
+						<li class="filters__item price-filter">
+							<h4 class="filters__title">
+								Цена
+							</h4>
+							<div class="filters__body price-filter__body">
+								<input type="text" class="price-filter__input" placeholder="100" id="input-min">
+								<span>-</span>
+								<input type="text" class="price-filter__input" placeholder="10000" id="input-max">
+								<div class="price-filter__slider" id="range-slider"></div>
+								<div class="price-filter__price-index">
+									<span>100 p</span>
+									<span>10000 p</span>
+								</div>
+							</div>
+						</li>
+						<li class="filters__item">
+							<h4 class="filters__title">
+								Цвет
+							</h4>
+							<div class="filters__body">
+								
+							</div>
+						</li>
+					</ul>
+					<button class="btn btn--primary filters__btn--apply">Применить</button>
+				</sidebar>
+				<section class="catalog__main">
+					<div class="catalog__options">
+						<label class="catalog__range-label">
+							<span>Сортировать по</span>
+							<select name="range" id="" class="catalog__range js-choice">
+								<option value="popular">Популярности</option>
+								<option value="new">По новинкам</option>
+								<option value="sale">По скидкам</option>
+								<option value="price-up">По возрастанию цены</option>
+								<option value="price-down">По убыванию цены</option>
+							</select>
+						</label>
+						<div class="catalog__range-view">
+							<button class="btn-range-quadro">
+								<img src="img/icons/quadro.svg" alt="показывать карточками">
+							</button>
+							<button class="btn-range-list">
+								<img src="img/icons/list.svg" alt="показывать списком">
+							</button>
+						</div>
+					</div>
+					<div class="banner-promo">
+						<p>
+							Бережный ручной сбор ягод и трав на горных вершинах
+						</p>
+					</div>
+					<div class="catalog__cards grid">
+						@@include('cards/_card.html')
+						@@include('cards/_card.html')
+						@@include('cards/_card.html')
+						@@include('cards/_card.html')
+						@@include('cards/_card.html')
+						@@include('cards/_card.html')
+						@@include('cards/_card.html')
+						@@include('cards/_card.html')
+						@@include('cards/_card.html')
+						@@include('cards/_card.html')
+					</div>
+					<button class="btn btn--primary catalog__btn">
+						дальше
+					</button>
+				</section>
+			</div>
+			<section class="catalog__tabs tabs">
+				<div class="tabs__btns">
+					<button class="tabs__btn active">
+						Вам может понравиться
+					</button>
+					<button class="tabs__btn">
+						Просмотренные товары
+					</button>
+				</div>
+				<div class="tabs__body">
+					<div class="tabs__would-like-products">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									@@include('cards/_card_raspberry.html')
+								</div>
+								<div class="swiper-slide">
+									@@include('cards/_card_elder.html')
+								</div>
+								<div class="swiper-slide">
+									@@include('cards/_card_plum.html')
+								</div>
+								<div class="swiper-slide">
+									@@include('cards/_card_blackberry.html')
+								</div>
+								<div class="swiper-slide">
+									@@include('cards/_card_blueberry.html')
+								</div>
+								<div class="swiper-slide">
+									@@include('cards/_card_raspberry.html')
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs__viewed-producrs"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</section>
+			@@include('_mailing-section.html')
+		</div>
+	</main>
+	@@include('_footer.html')
+	<script src="libs/izotop.min.js"></script>
+	<script src="libs/choices.min.js"></script>
+	<script src="libs/nouislider.min.js"></script>
+	<script src="libs/swiper.min.js"></script>
+	<script src="js/catalog.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			slidesPerView: 4,
+			spaceBetween: 65,
+			loop: true,
+
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
+
+</body>
+
+</html>

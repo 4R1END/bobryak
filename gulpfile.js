@@ -8,13 +8,15 @@ const path = {
 		html: projectFolder + '/',
 		css: projectFolder + '/css/',
 		js: projectFolder + '/js/',
+		libs: projectFolder + '/libs/',
 		img: projectFolder + '/img/',
 		fonts: projectFolder + '/fonts/'
 	},
 	src: {
 		html: [sourceFolder + '/*.html', '!' + sourceFolder + '/_*.html'],
-		css: sourceFolder + '/sass/main.sass',
-		js: sourceFolder + '/js/main.js',
+		css: [sourceFolder + '/sass/**/*.{sass,scss}', '!' + sourceFolder + '/sass/**/_*.{sass.scss}'],
+		js: [sourceFolder + '/js/**/*.js', '!' + sourceFolder + '/js/**/_*.js'],
+		libs: sourceFolder + '/libs/**/*.{css,js,scss}',
 		img: sourceFolder + '/img/**/*.{jpg,gif,png,svg,ico,webp}',
 		fonts: sourceFolder + '/fonts/*.ttf'
 	},
@@ -22,6 +24,7 @@ const path = {
 		html: sourceFolder + '/**/*.html',
 		css: sourceFolder + '/sass/**/*.{sass,scss}',
 		js: sourceFolder + '/js/**/*.js',
+		libs: sourceFolder + '/libs/**/*.{css,js,scss}',
 		img: sourceFolder + '/img/**/*.{jpg,gif,png,svg,ico,webp}'
 	},
 	clean: './' + projectFolder + '/'
@@ -100,6 +103,11 @@ const js = () => {
 		.pipe(browsersync.stream())
 };
 
+const libs = () => {
+	return gulp.src(path.src.libs)
+	.pipe(gulp.dest(path.build.libs))
+}
+
 const images = () => {
 	return gulp.src(path.src.img)
 		// .pipe(webp({
@@ -132,6 +140,7 @@ const watchFiles = () => {
 	gulp.watch([path.watch.html], html);
 	gulp.watch([path.watch.css], css);
 	gulp.watch([path.watch.js], js);
+	gulp.watch([path.watch.libs], libs);
 	gulp.watch([path.watch.img], images);
 };
 
@@ -139,13 +148,14 @@ const clean = () => {
 	return del(path.clean)
 };
 
-const build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
+const build = gulp.series(clean, gulp.parallel(js, css, html, libs, images, fonts));
 const watch = gulp.parallel(build, watchFiles, browserSync);
 
 
 exports.build = build;
 exports.fonts = fonts;
 exports.images = images;
+exports.libs = libs;
 exports.js = js;
 exports.css = css;
 exports.html = html;
