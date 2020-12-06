@@ -689,3 +689,291 @@ button {
   height: 33px;
   background-image: url("../img/icons/Facebook.svg");
 }
+
+.aboutus__title {
+  margin-top: 85px;
+  margin-bottom: 44px;
+  text-align: center;
+}
+
+.aboutus__crumbs {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.aboutus .team .people-block {
+  display: flex;
+  background: #F0F0F3;
+  box-shadow: 10px 10px 30px rgba(174, 174, 192, 0.4), -10px -10px 30px #FFFFFF;
+}
+
+.aboutus .team__persons {
+  padding: 100px 37px 0 32px;
+}
+
+.aboutus .team__persons-slide {
+  padding: 490px 26px 0;
+  background-color: #EDF5ED;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.aboutus .team__persons-slide-ahmed {
+  background-image: url("/../img/aboutus/aboutus_banner.png");
+}
+
+.aboutus .team__persons-slide:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.aboutus .team__persons-slide-text {
+  z-index: 10;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 131.1%;
+  color: #fff;
+}
+
+.aboutus .team__more-persons-link {
+  margin-bottom: 24px;
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #0F5628;
+}
+
+.aboutus .team__more-persons-link:after {
+  content: url("/../img/icons/arrow_view.svg");
+  display: block;
+  margin-top: 10px;
+  transform: rotate(90deg);
+}
+
+.aboutus .navigation {
+  margin-bottom: 50px;
+}
+
+.aboutus .navigation__btn {
+  border: none;
+  background: transparent;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #878787;
+}
+
+.aboutus .navigation__btn:first-child {
+  margin-right: 20px;
+}
+
+.aboutus .navigation__btn--active {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #0F5628;
+}
+
+.aboutus .persons__list {
+  margin-bottom: 73px;
+}
+
+.aboutus .persons__list-item {
+  display: flex;
+}
+
+.aboutus .person:not(:last-child) {
+  margin-bottom: 91px;
+}
+
+.aboutus .person__ava {
+  margin-right: 60px;
+  border-radius: 10px;
+}
+
+.aboutus .person__name {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.aboutus .person__name span {
+  margin-top: 10px;
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.aboutus .person__quot {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 136.3%;
+}
+
+.aboutus .swiper-container-banner {
+  width: 528px;
+  height: 100%;
+}
+
+.aboutus .swiper-container-banner .swiper-pagination-bullets {
+  bottom: 110px !important;
+}
+
+.aboutus .swiper-container-banner .swiper-pagination-bullet {
+  margin-right: 20px !important;
+  width: 18px;
+  height: 15px;
+  background-color: #fff !important;
+}
+
+.aboutus .swiper-container-banner .swiper-pagination-bullet-active {
+  width: 83px !important;
+  height: 15px !important;
+  border-radius: 10px !important;
+}
+
+.aboutus .production-block {
+  position: relative;
+  margin-bottom: 135px;
+}
+
+.aboutus .production-block__slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  height: 352px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutus .production-block__slide:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.aboutus .production-block__slide-1 {
+  background-image: url("/../img/aboutus/production_bg1.png");
+}
+
+.aboutus .production-block__slide-2 {
+  background-image: url("/../img/aboutus/production_bg1.png");
+}
+
+.aboutus .production-block__slide-3 {
+  background-image: url("/../img/aboutus/production_bg1.png");
+}
+
+.aboutus .production-block__slide-4 {
+  background-image: url("/../img/aboutus/production_bg1.png");
+}
+
+.aboutus .production-block__slide-5 {
+  background-image: url("/../img/aboutus/production_bg1.png");
+}
+
+.aboutus .production-block__slide-title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 131.1%;
+  color: #FFF;
+}
+
+.aboutus .mission {
+  margin-bottom: 156px;
+}
+
+.aboutus .mission__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutus .mission__title {
+  margin-bottom: 35px;
+}
+
+.aboutus .content__block {
+  display: flex;
+}
+
+.aboutus .content__block-info {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 53px 108px;
+  background-color: #0F5628;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 35px;
+}
+
+.aboutus .content__block-info.min-line-height {
+  padding: 42px 83px 42px 93px;
+  line-height: 25px;
+}
+
+.aboutus .block__descr {
+  width: 50%;
+  padding-right: 70px;
+  margin-left: auto;
+}
+
+.aboutus .block__descr p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.aboutus .block__descr p:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.aboutus .block__descr .attention {
+  font-weight: 700;
+}
+
+.aboutus .block__img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 17px;
+  max-width: 50%;
+  position: relative;
+}
+
+.aboutus .block__img img:nth-child(1) {
+  grid-column: 1/4;
+}
+
+.aboutus .swiper-pagination-mission {
+  top: 420px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.aboutus .hide {
+  display: none;
+  transition: all 0.3s;
+}
