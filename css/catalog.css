@@ -715,6 +715,32 @@ button {
   background: transparent;
 }
 
+.card__badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 23px;
+  height: 23px;
+  position: absolute;
+  top: 15px;
+  right: -9px;
+  border-radius: 10px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: #0F5628;
+}
+
+.card__badge.card__badge-latest {
+  width: 110px;
+  background: #64BC62;
+}
+
+.card__badge.card__badge-hit {
+  font-weight: 900;
+  background: #FFE07D;
+}
+
 .card__content {
   padding: 0 17px;
 }
@@ -894,6 +920,10 @@ button {
   grid-gap: 77px;
 }
 
+.catalog__cards .card.hide {
+  display: none;
+}
+
 .catalog__btn {
   align-self: center;
 }
@@ -961,6 +991,8 @@ button {
 
 .filters__checked-filter {
   display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 4px;
   padding: 6px 10px 7px 8px;
   border: 1px solid #0F5628;
   border-radius: 10px;
@@ -970,7 +1002,7 @@ button {
   color: #0F5628;
 }
 
-.filters__checked-filter > span:after {
+.filters__checked-filter .filter-remove {
   content: 'x';
   margin-left: 7px;
   cursor: pointer;
