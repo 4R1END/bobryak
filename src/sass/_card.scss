@@ -19,6 +19,34 @@
 			border: none;
 			background: transparent;
 		}
+		
+	}
+
+	&__badge {	
+		display: flex;
+		align-items: center;	
+		justify-content: center;
+		padding: 0 23px;
+		height: 23px;
+		position: absolute;
+		top: 15px;
+		right: -9px;		
+		border-radius: 10px;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 15px;
+		color: $main_color;
+		
+		&.card__badge-latest {
+			width: 110px;
+			background: #64BC62;
+			
+		}
+
+		&.card__badge-hit {			
+			font-weight: 900;
+			background: #FFE07D;
+		}
 	}
 
 	&__content {

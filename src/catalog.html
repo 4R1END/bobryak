@@ -32,9 +32,10 @@
 			<div class="catalog__content">
 				<sidebar class="catalog__filters filters">
 					<div class="filters__checked-filters">
-						<div class="filters__checked-filter">
+						<!-- <div class="filters__checked-filter">
 							<span>Низкогорный</span>
-						</div>
+							<button class="filter-remove">x</button>
+						</div> -->
 					</div>
 					<button class="filters__btn-clear">Очистить фильтр</button>
 					<ul class="filters__list">
@@ -44,7 +45,7 @@
 							</h4>
 							<div class="filters__body">
 								<label class="filters__label">
-									<input type="checkbox" class="filters__checkbox category-filter__item" name="category" value="tea" checked>
+									<input type="checkbox" class="filters__checkbox category-filter__item" name="category" value="tea">
 									<span>Чай</span>
 								</label>
 								<label class="filters__label">
@@ -123,7 +124,7 @@
 					<div class="catalog__options">
 						<label class="catalog__range-label">
 							<span>Сортировать по</span>
-							<select name="range" id="" class="catalog__range js-choice">
+							<select name="range" id="sortselect" class="catalog__range js-choice">
 								<option value="popular">Популярности</option>
 								<option value="new">По новинкам</option>
 								<option value="sale">По скидкам</option>
@@ -145,15 +146,15 @@
 							Бережный ручной сбор ягод и трав на горных вершинах
 						</p>
 					</div>
-					<div class="catalog__cards grid">
+					<div class="catalog__cards">
 						@@include('cards/_card.html')
-						@@include('cards/_card.html')
-						@@include('cards/_card.html')
-						@@include('cards/_card.html')
-						@@include('cards/_card.html')
-						@@include('cards/_card.html')
-						@@include('cards/_card.html')
-						@@include('cards/_card.html')
+						@@include('cards/_card_raspberry.html')
+						@@include('cards/_card_blackberry.html')						
+						@@include('cards/_card_pear.html')
+						@@include('cards/_card_plum.html')
+						@@include('cards/_card_blueberry.html')
+						@@include('cards/_card_elder.html')
+						@@include('cards/_card_cranberry.html')
 						@@include('cards/_card.html')
 						@@include('cards/_card.html')
 					</div>
