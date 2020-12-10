@@ -953,7 +953,7 @@ button {
 .catalog__cards.list .card {
   max-height: 330px;
   display: flex;
-  padding: 52px 70px 60px 30px;
+  padding: 52px 70px 0px 30px;
   box-shadow: 0px 2px 76px rgba(3, 120, 39, 0.14);
   border-radius: 20px;
 }
