@@ -75,9 +75,7 @@ rangeListBtn.addEventListener(`click`, () => {
 		el.setAttribute(`fill`, `#9D9D9C`);
 		el.setAttribute(`stroke`, `#9D9D9C`);
 	});
-	cardsCatalog.classList.add(`list`);
-	rangeQuadroBtn.classList.remove(`active`);
-	rangeListBtn.classList.add(`active`);
+	cardsCatalog.classList.add(`list`);	
 });
 
 rangeQuadroBtn.addEventListener(`click`, () => {
@@ -89,9 +87,7 @@ rangeQuadroBtn.addEventListener(`click`, () => {
 		el.setAttribute(`fill`, `#9D9D9C`);
 		el.setAttribute(`stroke`, `#9D9D9C`);
 	});
-	cardsCatalog.classList.remove(`list`);
-	rangeQuadroBtn.classList.add(`active`);
-	rangeListBtn.classList.remove(`active`);
+	cardsCatalog.classList.remove(`list`);	
 });
 
 const btnApplyFilters = document.querySelector(`.filters__btn--apply`);
