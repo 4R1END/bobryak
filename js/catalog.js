@@ -62,6 +62,38 @@ filtersTitle.forEach(el => {
 	});
 });
 
+const rangeListBtn = document.querySelector(`.btn-range-list`);
+const rangeQuadroBtn = document.querySelector(`.btn-range-quadro`);
+const cardsCatalog = document.querySelector(`.catalog__cards`);
+
+rangeListBtn.addEventListener(`click`, () => {
+	rangeListBtn.querySelectorAll(`.btn-range-list rect`).forEach(el => {
+		el.setAttribute(`fill`, `#0F5628`);
+		el.setAttribute(`stroke`, `#0F5628`);
+	});
+	rangeQuadroBtn.querySelectorAll(`.btn-range-quadro rect`).forEach(el => {
+		el.setAttribute(`fill`, `#9D9D9C`);
+		el.setAttribute(`stroke`, `#9D9D9C`);
+	});
+	cardsCatalog.classList.add(`list`);
+	rangeQuadroBtn.classList.remove(`active`);
+	rangeListBtn.classList.add(`active`);
+});
+
+rangeQuadroBtn.addEventListener(`click`, () => {
+	rangeQuadroBtn.querySelectorAll(`.btn-range-quadro rect`).forEach(el => {
+		el.setAttribute(`fill`, `#0F5628`);
+		el.setAttribute(`stroke`, `#0F5628`);
+	});
+	rangeListBtn.querySelectorAll(`.btn-range-list rect`).forEach(el => {
+		el.setAttribute(`fill`, `#9D9D9C`);
+		el.setAttribute(`stroke`, `#9D9D9C`);
+	});
+	cardsCatalog.classList.remove(`list`);
+	rangeQuadroBtn.classList.add(`active`);
+	rangeListBtn.classList.remove(`active`);
+});
+
 const btnApplyFilters = document.querySelector(`.filters__btn--apply`);
 const catalogCards = document.querySelector(`.catalog__cards`);
 const cards = catalogCards.querySelectorAll(`.card`);
@@ -119,8 +151,6 @@ btnApplyFilters.addEventListener(`click`, () => {
 			el.classList.remove('hide');
 		};		
 	});
-
-	
 
 	checkedValues.forEach((el, i) => {	
 		checkedFiltersBlock.insertAdjacentHTML('afterBegin',`
@@ -225,3 +255,46 @@ sortSelect.addEventListener(`change`, () => {
 
 
 ;
+
+
+document.addEventListener('DOMContentLoaded', () => {
+	const tabs = document.querySelector(`.tabs`);
+	const tabsBlock = document.querySelectorAll(`.tabs__block`);
+	const tabsBtn = document.querySelectorAll(`.tabs__btn-js`);
+
+	// клик по табам в каталоге
+	if (tabs) {
+		tabs.addEventListener('click', (e) => {
+			if (e.target.classList.contains(`tabs__btn-js`)) {
+				tabsBtn.forEach(el => {
+					el.classList.remove(`tabs__item--active`);
+				})
+				e.target.classList.add(`tabs__item--active`);
+				const tabsPath = e.target.dataset.tabsPath;
+				tabsHandler(tabsPath);
+			}
+		});
+	}
+	// обработчик клика по табам 
+	const tabsHandler = (path) => {
+		tabsBlock.forEach(el => {
+			el.classList.remove(`tabs__block--active`);
+		});
+		moreProductsBlock.forEach(el => {
+			el.classList.remove(`active`);
+		});
+		document.querySelector(`[data-tabs-target="${path}"]`).classList.add(`tabs__block--active`);
+	}
+});
+
+;
+const moreProductsBtn = document.querySelector(`.btn--more-js`); //кнопка развернуть 
+const moreProductsBlock = document.querySelectorAll(`.block-more-js`); //скрыте блоки скарточками товаров
+
+
+// клик по кнопке развернуть
+moreProductsBtn.onclick = () => {
+	moreProductsBlock.forEach(el => {
+		el.classList.add(`active`);
+	});
+};;

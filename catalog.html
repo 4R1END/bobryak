@@ -9,8 +9,9 @@
 	<link rel="stylesheet" href="libs/nouislider.min.css">
 	<link rel="stylesheet" href="libs/swiper.min.css">
 	<link rel="stylesheet" href="css/catalog.min.css">
-	
+
 </head>
+
 <body>
 	<header class="header">
 	<div class="header__bg"></div>
@@ -141,7 +142,7 @@
 									<span>Успокаивающий</span>
 								</label>
 								<button class="filters__more-btn type-filter__btn"></button>
-							</div>							
+							</div>
 						</li>
 						<li class="filters__item price-filter">
 							<h4 class="filters__title">
@@ -163,7 +164,7 @@
 								Цвет
 							</h4>
 							<div class="filters__body">
-								
+
 							</div>
 						</li>
 					</ul>
@@ -182,11 +183,23 @@
 							</select>
 						</label>
 						<div class="catalog__range-view">
-							<button class="btn-range-quadro">
-								<img src="img/icons/quadro.svg" alt="показывать карточками">
+							<button class="btn-range-quadro active">
+								<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="0.5" y="0.5" width="8.8667" height="8.8667" rx="1.5" fill="#9D9D9C" stroke="#9D9D9C"/>
+									<rect x="13.3604" y="0.5" width="8.8667" height="8.8667" rx="1.5" fill="#9D9D9C" stroke="#9D9D9C"/>
+									<rect x="0.5" y="13.3591" width="8.8667" height="8.8667" rx="1.5" fill="#9D9D9C" stroke="#9D9D9C"/>
+									<rect x="13.3604" y="13.3591" width="8.8667" height="8.8667" rx="1.5" fill="#9D9D9C" stroke="#9D9D9C"/>
+								</svg>
 							</button>
-							<button class="btn-range-list">
-								<img src="img/icons/list.svg" alt="показывать списком">
+							<button class="btn-range-list">								
+								<svg width="29" height="21" viewBox="0 0 29 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="8.52441" y="0.351807" width="19.7079" height="3.79907" fill="#9D9D9C"/>
+									<rect x="8.52441" y="8.46448" width="19.7079" height="3.79907" fill="#9D9D9C"/>
+									<rect x="0.183594" y="8.46448" width="4.42264" height="3.79907" fill="#9D9D9C"/>
+									<rect x="0.183594" y="0.351807" width="4.42264" height="3.79907" fill="#9D9D9C"/>
+									<rect x="0.183594" y="16.5776" width="4.42264" height="3.79907" fill="#9D9D9C"/>
+									<rect x="8.52441" y="16.5776" width="19.7079" height="3.79907" fill="#9D9D9C"/>
+								</svg>	
 							</button>
 						</div>
 					</div>
@@ -201,47 +214,95 @@
 		<img class="card__image-main" src="img/cards/card__img.png" alt="варенье">
 		<button  class="card__image-like">
 			<img src="img/icons/icon_like.svg" alt="понравилось">
-		</button>
-		
+		</button>		
 	</div>
 	<div class="card__content">
-		<h3 class="card__title">
-			Балхам
-		</h3>
-		<div class="card__weight">
-			<label class="card__weight-light">
-				<input  type="radio" name="weight_balhav" value="150" checked>
-				<span>150 гр</span>
-			</label>
-			<label class="card__weight-middle">
-				<input type="radio" name="weight_balhav" value="200">
-				<span>200 гр</span>
-			</label>
-			<label class="card__weight-big">
-				<input type="radio" name="weight_balhav" value="250">
-				<span>250 гр</span>
-			</label>
-		</div>
-		<div class="card__includ">
-			<span>Состав:</span> травяной сбор, ягоды 
-ежевики
-		</div>
-		<div class="card__price">
-			100 ₽
-		</div>
-		<div class="card__btn-block">
-			<div class="card__btn-quantity">
-				<button class="card__btn-quantity-down">
-					-
-				</button>
-				<span>1</span>				
-				<button class="card__btn-quantity-up">
-					+
+		<div class="card__content--quadro">		
+			<h3 class="card__title">
+				Балхам
+			</h3>			
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_balhav" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_balhav" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_balhav" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды ежевики
+			</div>
+			<div class="card__price">
+				100 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
 				</button>
 			</div>
-			<button class="card__btn-basket">
-				<img src="img/icons/icon_basket.svg" alt="корзина">
-			</button>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Балхам
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					100 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -256,43 +317,92 @@
 		</button>
 	</div>
 	<div class="card__content">
-		<h3 class="card__title">
-			Варенье из малины
-		</h3>
-		<div class="card__weight">
-			<label class="card__weight-light">
-				<input  type="radio" name="weight_raspberry" value="150" checked>
-				<span>150 гр</span>
-			</label>
-			<label class="card__weight-middle">
-				<input type="radio" name="weight_raspberry" value="200">
-				<span>200 гр</span>
-			</label>
-			<label class="card__weight-big">
-				<input type="radio" name="weight_raspberry" value="250">
-				<span>250 гр</span>
-			</label>
-		</div>
-		<div class="card__includ">
-			<span>Состав:</span> травяной сбор, ягоды 
-ежевики
-		</div>
-		<div class="card__price">
-			1000 ₽
-		</div>
-		<div class="card__btn-block">
-			<div class="card__btn-quantity">
-				<button class="card__btn-quantity-down">
-					-
-				</button>
-				<span>1</span>				
-				<button class="card__btn-quantity-up">
-					+
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из малины
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_raspberry" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_raspberry" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_raspberry" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды ежевики
+			</div>
+			<div class="card__price">
+				1000 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
 				</button>
 			</div>
-			<button class="card__btn-basket">
-				<img src="img/icons/icon_basket.svg" alt="корзина">
-			</button>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из малины
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					1000 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -304,7 +414,8 @@
 		</button>
 	</div>
 	<div class="card__content">
-		<h3 class="card__title">
+		<div class="card__content--quadro">
+			<h3 class="card__title">
 			Варенье из ежевики
 		</h3>
 		<div class="card__weight">
@@ -322,8 +433,7 @@
 			</label>
 		</div>
 		<div class="card__includ">
-			<span>Состав:</span> травяной сбор, ягоды 
-ежевики
+			<span>Состав:</span> травяной сбор, ягоды ежевики
 		</div>
 		<div class="card__price">
 			500 ₽
@@ -342,8 +452,57 @@
 				<img src="img/icons/icon_basket.svg" alt="корзина">
 			</button>
 		</div>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из ежевики
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					500 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
+		</div>
 	</div>
-</div>						
+</div>
 						<div class="card" data-f="jam" data-new="1" data-popular="60" data-sale="60">
 	<div class="card__image">
 		<img class="card__image-main" src="img/cards/pear_jam.png" alt="варенье">
@@ -352,43 +511,92 @@
 		</button>
 	</div>
 	<div class="card__content">
-		<h3 class="card__title">
-			Варенье из груши
-		</h3>
-		<div class="card__weight">
-			<label class="card__weight-light">
-				<input  type="radio" name="weight_pear" value="150" checked>
-				<span>150 гр</span>
-			</label>
-			<label class="card__weight-middle">
-				<input type="radio" name="weight_pear" value="200">
-				<span>200 гр</span>
-			</label>
-			<label class="card__weight-big">
-				<input type="radio" name="weight_pear" value="250">
-				<span>250 гр</span>
-			</label>
-		</div>
-		<div class="card__includ">
-			<span>Состав:</span> травяной сбор, ягоды 
-ежевики
-		</div>
-		<div class="card__price">
-			900 ₽
-		</div>
-		<div class="card__btn-block">
-			<div class="card__btn-quantity">
-				<button class="card__btn-quantity-down">
-					-
-				</button>
-				<span>1</span>				
-				<button class="card__btn-quantity-up">
-					+
-				</button>
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из груши
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_pear" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_pear" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_pear" value="250">
+					<span>250 гр</span>
+				</label>
 			</div>
-			<button class="card__btn-basket">
-				<img src="img/icons/icon_basket.svg" alt="корзина">
-			</button>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды ежевики
+			</div>
+			<div class="card__price">
+				900 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
+				</button>
+			</div>			
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из груши
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					900 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -403,43 +611,92 @@
 		</button>
 	</div>
 	<div class="card__content">
-		<h3 class="card__title">
-			Варенье из сливы
-		</h3>
-		<div class="card__weight">
-			<label class="card__weight-light">
-				<input  type="radio" name="weight_plum" value="150" checked>
-				<span>150 гр</span>
-			</label>
-			<label class="card__weight-middle">
-				<input type="radio" name="weight_plum" value="200">
-				<span>200 гр</span>
-			</label>
-			<label class="card__weight-big">
-				<input type="radio" name="weight_plum" value="250">
-				<span>250 гр</span>
-			</label>
-		</div>
-		<div class="card__includ">
-			<span>Состав:</span> травяной сбор, ягоды 
-ежевики
-		</div>
-		<div class="card__price">
-			300 ₽
-		</div>
-		<div class="card__btn-block">
-			<div class="card__btn-quantity">
-				<button class="card__btn-quantity-down">
-					-
-				</button>
-				<span>1</span>				
-				<button class="card__btn-quantity-up">
-					+
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из сливы
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_plum" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_plum" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_plum" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды ежевики
+			</div>
+			<div class="card__price">
+				300 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
 				</button>
 			</div>
-			<button class="card__btn-basket">
-				<img src="img/icons/icon_basket.svg" alt="корзина">
-			</button>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из сливы
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					300 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -451,43 +708,93 @@
 		</button>
 	</div>
 	<div class="card__content">
-		<h3 class="card__title">
-			Варенье из черники
-		</h3>
-		<div class="card__weight">
-			<label class="card__weight-light">
-				<input  type="radio" name="weight_blueberry" value="150" checked>
-				<span>150 гр</span>
-			</label>
-			<label class="card__weight-middle">
-				<input type="radio" name="weight_blueberry" value="200">
-				<span>200 гр</span>
-			</label>
-			<label class="card__weight-big">
-				<input type="radio" name="weight_blueberry" value="250">
-				<span>250 гр</span>
-			</label>
-		</div>
-		<div class="card__includ">
-			<span>Состав:</span> травяной сбор, ягоды 
-ежевики
-		</div>
-		<div class="card__price">
-			600 ₽
-		</div>
-		<div class="card__btn-block">
-			<div class="card__btn-quantity">
-				<button class="card__btn-quantity-down">
-					-
-				</button>
-				<span>1</span>				
-				<button class="card__btn-quantity-up">
-					+
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из черники
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_blueberry" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_blueberry" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_blueberry" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды 
+	ежевики
+			</div>
+			<div class="card__price">
+				600 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
 				</button>
 			</div>
-			<button class="card__btn-basket">
-				<img src="img/icons/icon_basket.svg" alt="корзина">
-			</button>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из черники
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					600 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -502,43 +809,92 @@
 		</button>
 	</div>
 	<div class="card__content">
-		<h3 class="card__title">
-			Варенье из бузины
-		</h3>
-		<div class="card__weight">
-			<label class="card__weight-light">
-				<input  type="radio" name="weight_elder" value="150" checked>
-				<span>150 гр</span>
-			</label>
-			<label class="card__weight-middle">
-				<input type="radio" name="weight_elder" value="200">
-				<span>200 гр</span>
-			</label>
-			<label class="card__weight-big">
-				<input type="radio" name="weight_elder" value="250">
-				<span>250 гр</span>
-			</label>
-		</div>
-		<div class="card__includ">
-			<span>Состав:</span> травяной сбор, ягоды 
-ежевики
-		</div>
-		<div class="card__price">
-			800 ₽
-		</div>
-		<div class="card__btn-block">
-			<div class="card__btn-quantity">
-				<button class="card__btn-quantity-down">
-					-
-				</button>
-				<span>1</span>				
-				<button class="card__btn-quantity-up">
-					+
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из бузины
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_elder" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_elder" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_elder" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды 	ежевики
+			</div>
+			<div class="card__price">
+				800 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
 				</button>
 			</div>
-			<button class="card__btn-basket">
-				<img src="img/icons/icon_basket.svg" alt="корзина">
-			</button>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из бузины
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					800 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -550,161 +906,1094 @@
 		</button>
 	</div>
 	<div class="card__content">
-		<h3 class="card__title">
-			Варенье из клюквы
-		</h3>
-		<div class="card__weight">
-			<label class="card__weight-light">
-				<input  type="radio" name="weight_cranberry" value="150" checked>
-				<span>150 гр</span>
-			</label>
-			<label class="card__weight-middle">
-				<input type="radio" name="weight_cranberry" value="200">
-				<span>200 гр</span>
-			</label>
-			<label class="card__weight-big">
-				<input type="radio" name="weight_cranberry" value="250">
-				<span>250 гр</span>
-			</label>
-		</div>
-		<div class="card__includ">
-			<span>Состав:</span> травяной сбор, ягоды 
-ежевики
-		</div>
-		<div class="card__price">
-			700 ₽
-		</div>
-		<div class="card__btn-block">
-			<div class="card__btn-quantity">
-				<button class="card__btn-quantity-down">
-					-
-				</button>
-				<span>1</span>				
-				<button class="card__btn-quantity-up">
-					+
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из клюквы
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_cranberry" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_cranberry" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_cranberry" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды ежевики
+			</div>
+			<div class="card__price">
+				700 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
 				</button>
 			</div>
-			<button class="card__btn-basket">
-				<img src="img/icons/icon_basket.svg" alt="корзина">
-			</button>
 		</div>
-	</div>
-</div>
-						<div class="card" data-f="honey" data-new="7" data-popular="5" data-sale="30">
-	<div class="card__image">
-		<img class="card__image-main" src="img/cards/card__img.png" alt="варенье">
-		<button  class="card__image-like">
-			<img src="img/icons/icon_like.svg" alt="понравилось">
-		</button>
-		
-	</div>
-	<div class="card__content">
-		<h3 class="card__title">
-			Балхам
-		</h3>
-		<div class="card__weight">
-			<label class="card__weight-light">
-				<input  type="radio" name="weight_balhav" value="150" checked>
-				<span>150 гр</span>
-			</label>
-			<label class="card__weight-middle">
-				<input type="radio" name="weight_balhav" value="200">
-				<span>200 гр</span>
-			</label>
-			<label class="card__weight-big">
-				<input type="radio" name="weight_balhav" value="250">
-				<span>250 гр</span>
-			</label>
-		</div>
-		<div class="card__includ">
-			<span>Состав:</span> травяной сбор, ягоды 
-ежевики
-		</div>
-		<div class="card__price">
-			100 ₽
-		</div>
-		<div class="card__btn-block">
-			<div class="card__btn-quantity">
-				<button class="card__btn-quantity-down">
-					-
-				</button>
-				<span>1</span>				
-				<button class="card__btn-quantity-up">
-					+
-				</button>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из клюквы
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
 			</div>
-			<button class="card__btn-basket">
-				<img src="img/icons/icon_basket.svg" alt="корзина">
-			</button>
-		</div>
-	</div>
-</div>
-						<div class="card" data-f="honey" data-new="7" data-popular="5" data-sale="30">
-	<div class="card__image">
-		<img class="card__image-main" src="img/cards/card__img.png" alt="варенье">
-		<button  class="card__image-like">
-			<img src="img/icons/icon_like.svg" alt="понравилось">
-		</button>
-		
-	</div>
-	<div class="card__content">
-		<h3 class="card__title">
-			Балхам
-		</h3>
-		<div class="card__weight">
-			<label class="card__weight-light">
-				<input  type="radio" name="weight_balhav" value="150" checked>
-				<span>150 гр</span>
-			</label>
-			<label class="card__weight-middle">
-				<input type="radio" name="weight_balhav" value="200">
-				<span>200 гр</span>
-			</label>
-			<label class="card__weight-big">
-				<input type="radio" name="weight_balhav" value="250">
-				<span>250 гр</span>
-			</label>
-		</div>
-		<div class="card__includ">
-			<span>Состав:</span> травяной сбор, ягоды 
-ежевики
-		</div>
-		<div class="card__price">
-			100 ₽
-		</div>
-		<div class="card__btn-block">
-			<div class="card__btn-quantity">
-				<button class="card__btn-quantity-down">
-					-
-				</button>
-				<span>1</span>				
-				<button class="card__btn-quantity-up">
-					+
-				</button>
-			</div>
-			<button class="card__btn-basket">
-				<img src="img/icons/icon_basket.svg" alt="корзина">
-			</button>
-		</div>
-	</div>
-</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					700 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
 					</div>
-					<button class="btn btn--primary catalog__btn">
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+						<div class="card" data-f="honey" data-new="7" data-popular="5" data-sale="30">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/card__img.png" alt="варенье">
+		<button  class="card__image-like">
+			<img src="img/icons/icon_like.svg" alt="понравилось">
+		</button>		
+	</div>
+	<div class="card__content">
+		<div class="card__content--quadro">		
+			<h3 class="card__title">
+				Балхам
+			</h3>			
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_balhav" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_balhav" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_balhav" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды ежевики
+			</div>
+			<div class="card__price">
+				100 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
+				</button>
+			</div>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Балхам
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					100 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+						<div class="card" data-f="honey" data-new="7" data-popular="5" data-sale="30">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/card__img.png" alt="варенье">
+		<button  class="card__image-like">
+			<img src="img/icons/icon_like.svg" alt="понравилось">
+		</button>		
+	</div>
+	<div class="card__content">
+		<div class="card__content--quadro">		
+			<h3 class="card__title">
+				Балхам
+			</h3>			
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_balhav" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_balhav" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_balhav" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды ежевики
+			</div>
+			<div class="card__price">
+				100 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
+				</button>
+			</div>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Балхам
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					100 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+						<div class="card" data-f="jam" data-new="11" data-popular="70" data-sale="70">
+	<div class="card__image">
+		<div class="card__badge card__badge-latest">
+			Новинка
+		</div>
+		<img class="card__image-main" src="img/cards/elder_jam.png" alt="варенье">
+		<button  class="card__image-like">
+			<img src="img/icons/icon_like.svg" alt="понравилось">
+		</button>
+	</div>
+	<div class="card__content">
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из бузины
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_elder" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_elder" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_elder" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды 	ежевики
+			</div>
+			<div class="card__price">
+				800 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
+				</button>
+			</div>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из бузины
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					800 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+						<div class="card" data-f="jam" data-new="2" data-popular="80" data-sale="70">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/cranberry_jam.png" alt="варенье">
+		<button  class="card__image-like">
+			<img src="img/icons/icon_like.svg" alt="понравилось">
+		</button>
+	</div>
+	<div class="card__content">
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из клюквы
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_cranberry" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_cranberry" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_cranberry" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды ежевики
+			</div>
+			<div class="card__price">
+				700 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
+				</button>
+			</div>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из клюквы
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					700 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+						<div class="block-more block-more-js catalog__cards--more">
+							<div class="card" data-f="jam" data-new="10" data-popular="50" data-sale="50">
+	<div class="card__image">
+		<div class="card__badge card__badge-latest">
+			Новинка
+		</div>		
+		<img class="card__image-main" src="img/cards/plum_jam.png" alt="варенье">
+		<button  class="card__image-like">
+			<img src="img/icons/icon_like.svg" alt="понравилось">
+		</button>
+	</div>
+	<div class="card__content">
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из сливы
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_plum" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_plum" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_plum" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды ежевики
+			</div>
+			<div class="card__price">
+				300 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
+				</button>
+			</div>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из сливы
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					300 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+							<div class="card" data-f="jam" data-new="3" data-popular="90" data-sale="80">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/blueberry_jam.png" alt="варенье">
+		<button  class="card__image-like">
+			<img src="img/icons/icon_like.svg" alt="понравилось">
+		</button>
+	</div>
+	<div class="card__content">
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из черники
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_blueberry" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_blueberry" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_blueberry" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды 
+	ежевики
+			</div>
+			<div class="card__price">
+				600 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
+				</button>
+			</div>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из черники
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					600 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+							<div class="card" data-f="jam" data-new="11" data-popular="70" data-sale="70">
+	<div class="card__image">
+		<div class="card__badge card__badge-latest">
+			Новинка
+		</div>
+		<img class="card__image-main" src="img/cards/elder_jam.png" alt="варенье">
+		<button  class="card__image-like">
+			<img src="img/icons/icon_like.svg" alt="понравилось">
+		</button>
+	</div>
+	<div class="card__content">
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из бузины
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_elder" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_elder" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_elder" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды 	ежевики
+			</div>
+			<div class="card__price">
+				800 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
+				</button>
+			</div>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из бузины
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					800 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+							<div class="card" data-f="jam" data-new="2" data-popular="80" data-sale="70">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/cranberry_jam.png" alt="варенье">
+		<button  class="card__image-like">
+			<img src="img/icons/icon_like.svg" alt="понравилось">
+		</button>
+	</div>
+	<div class="card__content">
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из клюквы
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_cranberry" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_cranberry" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_cranberry" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды ежевики
+			</div>
+			<div class="card__price">
+				700 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
+				</button>
+			</div>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из клюквы
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					700 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+							<div class="card" data-f="honey" data-new="7" data-popular="5" data-sale="30">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/card__img.png" alt="варенье">
+		<button  class="card__image-like">
+			<img src="img/icons/icon_like.svg" alt="понравилось">
+		</button>		
+	</div>
+	<div class="card__content">
+		<div class="card__content--quadro">		
+			<h3 class="card__title">
+				Балхам
+			</h3>			
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_balhav" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_balhav" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_balhav" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды ежевики
+			</div>
+			<div class="card__price">
+				100 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
+				</button>
+			</div>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Балхам
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					100 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+							<div class="card" data-f="honey" data-new="7" data-popular="5" data-sale="30">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/card__img.png" alt="варенье">
+		<button  class="card__image-like">
+			<img src="img/icons/icon_like.svg" alt="понравилось">
+		</button>		
+	</div>
+	<div class="card__content">
+		<div class="card__content--quadro">		
+			<h3 class="card__title">
+				Балхам
+			</h3>			
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_balhav" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_balhav" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_balhav" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды ежевики
+			</div>
+			<div class="card__price">
+				100 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
+				</button>
+			</div>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Балхам
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					100 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+						</div>
+					</div>
+					<button class="btn btn--primary catalog__btn-more-products btn--more-js">
 						дальше
 					</button>
 				</section>
 			</div>
 			<section class="catalog__tabs tabs">
-				<div class="tabs__btns">
-					<button class="tabs__btn active">
+				<nav class="tabs__menu">
+					<button class="tabs__item tabs__item--active tabs__btn-js" data-tabs-path="would_like">
 						Вам может понравиться
 					</button>
-					<button class="tabs__btn">
+					<button class="tabs__item tabs__btn-js" data-tabs-path="last_seen">
 						Просмотренные товары
 					</button>
-				</div>
+				</nav>
 				<div class="tabs__body">
-					<div class="tabs__would-like-products">
+					<div class="tabs__block tabs__block--active" data-tabs-target="would_like">
 						<div class="swiper-container">
 							<div class="swiper-wrapper">
 								<div class="swiper-slide">
@@ -719,43 +2008,92 @@
 		</button>
 	</div>
 	<div class="card__content">
-		<h3 class="card__title">
-			Варенье из малины
-		</h3>
-		<div class="card__weight">
-			<label class="card__weight-light">
-				<input  type="radio" name="weight_raspberry" value="150" checked>
-				<span>150 гр</span>
-			</label>
-			<label class="card__weight-middle">
-				<input type="radio" name="weight_raspberry" value="200">
-				<span>200 гр</span>
-			</label>
-			<label class="card__weight-big">
-				<input type="radio" name="weight_raspberry" value="250">
-				<span>250 гр</span>
-			</label>
-		</div>
-		<div class="card__includ">
-			<span>Состав:</span> травяной сбор, ягоды 
-ежевики
-		</div>
-		<div class="card__price">
-			1000 ₽
-		</div>
-		<div class="card__btn-block">
-			<div class="card__btn-quantity">
-				<button class="card__btn-quantity-down">
-					-
-				</button>
-				<span>1</span>				
-				<button class="card__btn-quantity-up">
-					+
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из малины
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_raspberry" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_raspberry" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_raspberry" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды ежевики
+			</div>
+			<div class="card__price">
+				1000 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
 				</button>
 			</div>
-			<button class="card__btn-basket">
-				<img src="img/icons/icon_basket.svg" alt="корзина">
-			</button>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из малины
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					1000 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -772,43 +2110,92 @@
 		</button>
 	</div>
 	<div class="card__content">
-		<h3 class="card__title">
-			Варенье из бузины
-		</h3>
-		<div class="card__weight">
-			<label class="card__weight-light">
-				<input  type="radio" name="weight_elder" value="150" checked>
-				<span>150 гр</span>
-			</label>
-			<label class="card__weight-middle">
-				<input type="radio" name="weight_elder" value="200">
-				<span>200 гр</span>
-			</label>
-			<label class="card__weight-big">
-				<input type="radio" name="weight_elder" value="250">
-				<span>250 гр</span>
-			</label>
-		</div>
-		<div class="card__includ">
-			<span>Состав:</span> травяной сбор, ягоды 
-ежевики
-		</div>
-		<div class="card__price">
-			800 ₽
-		</div>
-		<div class="card__btn-block">
-			<div class="card__btn-quantity">
-				<button class="card__btn-quantity-down">
-					-
-				</button>
-				<span>1</span>				
-				<button class="card__btn-quantity-up">
-					+
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из бузины
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_elder" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_elder" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_elder" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды 	ежевики
+			</div>
+			<div class="card__price">
+				800 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
 				</button>
 			</div>
-			<button class="card__btn-basket">
-				<img src="img/icons/icon_basket.svg" alt="корзина">
-			</button>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из бузины
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					800 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -825,43 +2212,92 @@
 		</button>
 	</div>
 	<div class="card__content">
-		<h3 class="card__title">
-			Варенье из сливы
-		</h3>
-		<div class="card__weight">
-			<label class="card__weight-light">
-				<input  type="radio" name="weight_plum" value="150" checked>
-				<span>150 гр</span>
-			</label>
-			<label class="card__weight-middle">
-				<input type="radio" name="weight_plum" value="200">
-				<span>200 гр</span>
-			</label>
-			<label class="card__weight-big">
-				<input type="radio" name="weight_plum" value="250">
-				<span>250 гр</span>
-			</label>
-		</div>
-		<div class="card__includ">
-			<span>Состав:</span> травяной сбор, ягоды 
-ежевики
-		</div>
-		<div class="card__price">
-			300 ₽
-		</div>
-		<div class="card__btn-block">
-			<div class="card__btn-quantity">
-				<button class="card__btn-quantity-down">
-					-
-				</button>
-				<span>1</span>				
-				<button class="card__btn-quantity-up">
-					+
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из сливы
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_plum" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_plum" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_plum" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды ежевики
+			</div>
+			<div class="card__price">
+				300 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
 				</button>
 			</div>
-			<button class="card__btn-basket">
-				<img src="img/icons/icon_basket.svg" alt="корзина">
-			</button>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из сливы
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					300 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -875,7 +2311,8 @@
 		</button>
 	</div>
 	<div class="card__content">
-		<h3 class="card__title">
+		<div class="card__content--quadro">
+			<h3 class="card__title">
 			Варенье из ежевики
 		</h3>
 		<div class="card__weight">
@@ -893,8 +2330,7 @@
 			</label>
 		</div>
 		<div class="card__includ">
-			<span>Состав:</span> травяной сбор, ягоды 
-ежевики
+			<span>Состав:</span> травяной сбор, ягоды ежевики
 		</div>
 		<div class="card__price">
 			500 ₽
@@ -913,6 +2349,55 @@
 				<img src="img/icons/icon_basket.svg" alt="корзина">
 			</button>
 		</div>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из ежевики
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					500 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 								</div>
@@ -925,43 +2410,93 @@
 		</button>
 	</div>
 	<div class="card__content">
-		<h3 class="card__title">
-			Варенье из черники
-		</h3>
-		<div class="card__weight">
-			<label class="card__weight-light">
-				<input  type="radio" name="weight_blueberry" value="150" checked>
-				<span>150 гр</span>
-			</label>
-			<label class="card__weight-middle">
-				<input type="radio" name="weight_blueberry" value="200">
-				<span>200 гр</span>
-			</label>
-			<label class="card__weight-big">
-				<input type="radio" name="weight_blueberry" value="250">
-				<span>250 гр</span>
-			</label>
-		</div>
-		<div class="card__includ">
-			<span>Состав:</span> травяной сбор, ягоды 
-ежевики
-		</div>
-		<div class="card__price">
-			600 ₽
-		</div>
-		<div class="card__btn-block">
-			<div class="card__btn-quantity">
-				<button class="card__btn-quantity-down">
-					-
-				</button>
-				<span>1</span>				
-				<button class="card__btn-quantity-up">
-					+
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из черники
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_blueberry" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_blueberry" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_blueberry" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды 
+	ежевики
+			</div>
+			<div class="card__price">
+				600 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
 				</button>
 			</div>
-			<button class="card__btn-basket">
-				<img src="img/icons/icon_basket.svg" alt="корзина">
-			</button>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из черники
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					600 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -978,29 +2513,136 @@
 		</button>
 	</div>
 	<div class="card__content">
-		<h3 class="card__title">
-			Варенье из малины
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из малины
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_raspberry" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_raspberry" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_raspberry" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды ежевики
+			</div>
+			<div class="card__price">
+				1000 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
+				</button>
+			</div>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из малины
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					1000 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+					<div class="tabs__block" data-tabs-target="last_seen">
+						<!-- <div class="swiper-container-last-seen">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="card" data-f="tea" data-new="4" data-popular="10" data-sale="90">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/blackberry_jam.png" alt="варенье">
+		<button  class="card__image-like">
+			<img src="img/icons/icon_like.svg" alt="понравилось">
+		</button>
+	</div>
+	<div class="card__content">
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+			Варенье из ежевики
 		</h3>
 		<div class="card__weight">
 			<label class="card__weight-light">
-				<input  type="radio" name="weight_raspberry" value="150" checked>
+				<input  type="radio" name="weight_blackberry" value="150" checked>
 				<span>150 гр</span>
 			</label>
 			<label class="card__weight-middle">
-				<input type="radio" name="weight_raspberry" value="200">
+				<input type="radio" name="weight_blackberry" value="200">
 				<span>200 гр</span>
 			</label>
 			<label class="card__weight-big">
-				<input type="radio" name="weight_raspberry" value="250">
+				<input type="radio" name="weight_blackberry" value="250">
 				<span>250 гр</span>
 			</label>
 		</div>
 		<div class="card__includ">
-			<span>Состав:</span> травяной сбор, ягоды 
-ежевики
+			<span>Состав:</span> травяной сбор, ягоды ежевики
 		</div>
 		<div class="card__price">
-			1000 ₽
+			500 ₽
 		</div>
 		<div class="card__btn-block">
 			<div class="card__btn-quantity">
@@ -1016,15 +2658,572 @@
 				<img src="img/icons/icon_basket.svg" alt="корзина">
 			</button>
 		</div>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из ежевики
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					500 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card" data-f="jam" data-new="11" data-popular="70" data-sale="70">
+	<div class="card__image">
+		<div class="card__badge card__badge-latest">
+			Новинка
+		</div>
+		<img class="card__image-main" src="img/cards/elder_jam.png" alt="варенье">
+		<button  class="card__image-like">
+			<img src="img/icons/icon_like.svg" alt="понравилось">
+		</button>
+	</div>
+	<div class="card__content">
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из бузины
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_elder" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_elder" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_elder" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды 	ежевики
+			</div>
+			<div class="card__price">
+				800 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
+				</button>
+			</div>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из бузины
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					800 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card" data-f="jam" data-new="10" data-popular="50" data-sale="50">
+	<div class="card__image">
+		<div class="card__badge card__badge-latest">
+			Новинка
+		</div>		
+		<img class="card__image-main" src="img/cards/plum_jam.png" alt="варенье">
+		<button  class="card__image-like">
+			<img src="img/icons/icon_like.svg" alt="понравилось">
+		</button>
+	</div>
+	<div class="card__content">
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из сливы
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_plum" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_plum" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_plum" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды ежевики
+			</div>
+			<div class="card__price">
+				300 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
+				</button>
+			</div>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из сливы
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					300 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card" data-f="jam" data-new="5" data-popular="100" data-sale="40">
+	<div class="card__image">
+		<div class="card__badge card__badge-hit">
+			Хит
+		</div>
+		<img class="card__image-main" src="img/cards/raspberry_jam.png" alt="варенье">
+		<button  class="card__image-like">
+			<img src="img/icons/icon_like.svg" alt="понравилось">
+		</button>
+	</div>
+	<div class="card__content">
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из малины
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_raspberry" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_raspberry" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_raspberry" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды ежевики
+			</div>
+			<div class="card__price">
+				1000 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
+				</button>
+			</div>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из малины
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					1000 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card" data-f="jam" data-new="3" data-popular="90" data-sale="80">
+	<div class="card__image">
+		<img class="card__image-main" src="img/cards/blueberry_jam.png" alt="варенье">
+		<button  class="card__image-like">
+			<img src="img/icons/icon_like.svg" alt="понравилось">
+		</button>
+	</div>
+	<div class="card__content">
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из черники
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_blueberry" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_blueberry" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_blueberry" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды 
+	ежевики
+			</div>
+			<div class="card__price">
+				600 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
+				</button>
+			</div>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из черники
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					600 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="card" data-f="jam" data-new="5" data-popular="100" data-sale="40">
+	<div class="card__image">
+		<div class="card__badge card__badge-hit">
+			Хит
+		</div>
+		<img class="card__image-main" src="img/cards/raspberry_jam.png" alt="варенье">
+		<button  class="card__image-like">
+			<img src="img/icons/icon_like.svg" alt="понравилось">
+		</button>
+	</div>
+	<div class="card__content">
+		<div class="card__content--quadro">
+			<h3 class="card__title">
+				Варенье из малины
+			</h3>
+			<div class="card__weight">
+				<label class="card__weight-light">
+					<input  type="radio" name="weight_raspberry" value="150" checked>
+					<span>150 гр</span>
+				</label>
+				<label class="card__weight-middle">
+					<input type="radio" name="weight_raspberry" value="200">
+					<span>200 гр</span>
+				</label>
+				<label class="card__weight-big">
+					<input type="radio" name="weight_raspberry" value="250">
+					<span>250 гр</span>
+				</label>
+			</div>
+			<div class="card__includ">
+				<span>Состав:</span> травяной сбор, ягоды ежевики
+			</div>
+			<div class="card__price">
+				1000 ₽
+			</div>
+			<div class="card__btn-block">
+				<div class="card__btn-quantity">
+					<button class="card__btn-quantity-down">
+						-
+					</button>
+					<span>1</span>				
+					<button class="card__btn-quantity-up">
+						+
+					</button>
+				</div>
+				<button class="card__btn-basket">
+					<img src="img/icons/icon_basket.svg" alt="корзина">
+				</button>
+			</div>
+		</div>
+		<div class="card__content--list content">
+			<div class="content__block">
+				<div class="card__badge card__badge-hit">
+					Хит
+				</div>
+				<h3 class="card__title">
+					Варенье из малины
+				</h3>
+				<div class="card__descr">
+					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...   
+					<button class="card__btn--more-descr">Подробнее</button> 
+				</div>
+			</div>
+
+			<div class="content__block">
+				<div class="card__price">
+					1000 ₽
+				</div>
+				<div class="card__weight">
+					<label class="card__weight-light">
+						<input  type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="card__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="card__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>			
+				<div class="card__btn-block">
+					<div class="card__btn-quantity">
+						<button class="card__btn-quantity-down">
+							-
+						</button>
+						<span>1</span>				
+						<button class="card__btn-quantity-up">
+							+
+						</button>
+					</div>
+					<button class="card__btn-basket">
+						<img src="img/icons/icon_basket.svg" alt="корзина">
+					</button>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 								</div>
 							</div>
-						</div>
+						</div> -->
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
 					</div>
-					<div class="tabs__viewed-producrs"></div>
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
+
 				</div>
 			</section>
 			<section class="mailing">
@@ -1126,16 +3325,32 @@
 		</div>
 	</div>
 </footer>
-	<script src="libs/izotop.min.js"></script>
 	<script src="libs/choices.min.js"></script>
 	<script src="libs/nouislider.min.js"></script>
 	<script src="libs/swiper.min.js"></script>
 	<script src="js/catalog.min.js"></script>
 	<script>
-		var swiper = new Swiper('.swiper-container', {
+		const swiperLastSeen = new Swiper('.swiper-container-last-seen', {
 			slidesPerView: 4,
 			spaceBetween: 65,
 			loop: true,
+			observer: true,
+			observParents: true,
+			observSlideChildren: true,
+
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+
+		const swiper = new Swiper('.swiper-container', {
+			slidesPerView: 4,
+			spaceBetween: 65,
+			loop: true,
+			observer: true,
+			observParents: true,
+			observSlideChildren: true,
 
 			navigation: {
 				nextEl: '.swiper-button-next',

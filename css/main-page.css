@@ -370,6 +370,14 @@ button {
   background-color: #C4C4C4;
 }
 
+.block-more {
+  display: none;
+}
+
+.block-more.active {
+  display: grid;
+}
+
 .banner-promo {
   margin-bottom: 100px;
   height: 292px;
@@ -745,6 +753,10 @@ button {
   padding: 0 17px;
 }
 
+.card__content--list {
+  display: none;
+}
+
 .card__title {
   margin-bottom: 10px;
   font-weight: 600;
@@ -977,16 +989,9 @@ button {
 
 .tabs__block--more {
   grid-column: 1/5;
-  display: none;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 77px;
 }
 
 .tabs__block--active {
-  display: grid;
-}
-
-.tabs__block--active > .tabs__block--more.active {
   display: grid;
 }
 
