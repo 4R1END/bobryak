@@ -1,8 +1,5 @@
 
-const moreProductsBtn = document.querySelector(`.btn--more-js`); //кнопка развернуть 
-const moreproductsBlock = document.querySelectorAll(`.tabs__block--more`); //скрыте блоки скарточками товаров
 
-// переключение по категориям каталога
 document.addEventListener('DOMContentLoaded', () => {
 	const tabs = document.querySelector(`.tabs`);
 	const tabsBlock = document.querySelectorAll(`.tabs__block`);
@@ -21,21 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
 			}
 		});
 	}
-	// обработчик клика по иконкам категорий в каталоге
+	// обработчик клика по табам 
 	const tabsHandler = (path) => {
 		tabsBlock.forEach(el => {
 			el.classList.remove(`tabs__block--active`);
 		});
-		moreproductsBlock.forEach(el => {
+		moreProductsBlock.forEach(el => {
 			el.classList.remove(`active`);
 		});
 		document.querySelector(`[data-tabs-target="${path}"]`).classList.add(`tabs__block--active`);
 	}
 });
 
-// клик по кнопке развернуть
-moreProductsBtn.onclick = () => {
-	moreproductsBlock.forEach(el => {
-		el.classList.add(`active`);
-	});
-};

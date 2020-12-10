@@ -370,6 +370,14 @@ button {
   background-color: #C4C4C4;
 }
 
+.block-more {
+  display: none;
+}
+
+.block-more.active {
+  display: grid;
+}
+
 .banner-promo {
   margin-bottom: 100px;
   height: 292px;

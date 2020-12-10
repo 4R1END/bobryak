@@ -2,12 +2,12 @@
 	padding: 0 10px 24px;
 	border-radius: 10px;
 	box-shadow: 5px 4px 18px rgba(0, 0, 0, 0.11);
-
+	
 	&__image {
 		display: block;
 		margin-bottom: 25px;
 		position: relative;
-
+		
 		&-main {
 			width: 100%;
 			border-radius: 10px;
@@ -51,6 +51,9 @@
 
 	&__content {
 		padding: 0 17px;
+		&--list {
+			display: none;
+		}
 	}
 
 	&__title {
@@ -156,4 +159,9 @@
 		border-radius: 10px;
 		background-color: $main-color;
 	}
+
+	
 }
+
+
+

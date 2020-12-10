@@ -62,17 +62,11 @@
 		grid-template-columns: repeat(4, 1fr);
 		grid-gap: 77px;	
 		&--more {
-			grid-column: 1/5;
-			display: none;
-			grid-template-columns: repeat(4, 1fr);
-			grid-gap: 77px;
+			grid-column: 1/5;			
 			
 		}
 	}
 	&__block--active {
 		display: grid;
-		& > .tabs__block--more.active {
-			display: grid;
-		}		
 	}
 }

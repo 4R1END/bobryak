@@ -56,8 +56,6 @@ btnApplyFilters.addEventListener(`click`, () => {
 		};		
 	});
 
-	
-
 	checkedValues.forEach((el, i) => {	
 		checkedFiltersBlock.insertAdjacentHTML('afterBegin',`
 			<div class="filters__checked-filter"  data-f="${selectedCheckBoxes[i].value}">
