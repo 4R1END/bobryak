@@ -47,7 +47,7 @@ const gulp = require('gulp'),
 // webpCss = require('gulp-webpcss');
 
 const ghPages = require('gulp-gh-pages');
- 
+
 gulp.task('deploy', function() {
   return gulp.src('./dist/**/*')
     .pipe(ghPages());

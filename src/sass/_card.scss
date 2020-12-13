@@ -1,3 +1,4 @@
+@import '_custom-checkbox.scss';
 .card {
 	padding: 0 10px 24px;
 	border-radius: 10px;
@@ -7,6 +8,7 @@
 		display: block;
 		margin-bottom: 25px;
 		position: relative;
+		cursor: pointer;
 		
 		&-main {
 			width: 100%;
@@ -61,50 +63,11 @@
 		font-weight: 600;
 		font-size: 16px;
 		line-height: 20px;
+		cursor: pointer;
 	}
 
 	&__weight {
 		margin-bottom: 13px;
-		& label > input[type="radio"] {
-			position: absolute;
-			width: 1px;
-			height: 1px;
-			opacity: 0;
-		}
-
-		& label > span {
-			display: inline-flex;
-			justify-content: center;
-			align-items: center;
-			z-index: -1;
-			width: 64px;
-			height: 24px;
-			border: 1px solid $main_color;
-			border-radius: 30px;
-			background-color: #fff;
-			font-weight: 300;
-			font-size: 10px;
-			line-height: 12px;
-			cursor: pointer;
-			transition: all 0.3s ease;
-		}
-		&-middle,
-		&-big {
-			margin-left: -24px;	
-		}
-
-		&-middle,
-		&-light {
-			& > span {
-				width: 84px !important;
-			}
-		}
-
-		& label > input:checked + span {
-			background-color: $main-color;
-			color: #fff;
-			z-index: 10;
-		}
 	}
 
 	&__includ {
@@ -129,29 +92,6 @@
 		justify-content: space-between;
 	}
 
-	&__btn-quantity {
-		width: 86px;
-		height: 37px;
-		box-sizing: border-box;
-		padding: 0 10px;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		background: #FFFFFF;
-		border: 1px solid $main_color;
-		border-radius: 10px;
-		font-weight: 300;
-		font-size: 18px;
-		line-height: 22px;
-		&-up,
-		&-down {
-			border: none;
-			background: transparent;
-			font-size: 20px;
-			line-height: 24px;
-		}
-	}
-
 	&__btn-basket {
 		width: 87px;
 		height: 37px;
@@ -161,6 +101,28 @@
 	}
 
 	
+}
+
+.quantity-block {
+	width: 86px;
+	height: 37px;		
+	padding: 0 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #FFFFFF;
+	border: 1px solid $main_color;
+	border-radius: 10px;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 22px;
+	&__btn-up,
+	&__btn-down {
+		border: none;
+		background: transparent;
+		font-size: 20px;
+		line-height: 24px;
+	}
 }
 
 

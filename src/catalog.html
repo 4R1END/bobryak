@@ -13,7 +13,9 @@
 </head>
 
 <body>
+	@@include('_popup.html')
 	@@include('_header.html')
+	
 	<main class="catalog">
 		<div class="container">
 			<div class="catalog__crumbs crumbs">
@@ -186,75 +188,12 @@
 					</button>
 				</section>
 			</div>
-			<section class="catalog__tabs tabs">
-				<nav class="tabs__menu">
-					<button class="tabs__item tabs__item--active tabs__btn-js" data-tabs-path="would_like">
-						Вам может понравиться
-					</button>
-					<button class="tabs__item tabs__btn-js" data-tabs-path="last_seen">
-						Просмотренные товары
-					</button>
-				</nav>
-				<div class="tabs__body">
-					<div class="tabs__block tabs__block--active" data-tabs-target="would_like">
-						<div class="swiper-container">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									@@include('cards/_card_raspberry.html')
-								</div>
-								<div class="swiper-slide">
-									@@include('cards/_card_elder.html')
-								</div>
-								<div class="swiper-slide">
-									@@include('cards/_card_plum.html')
-								</div>
-								<div class="swiper-slide">
-									@@include('cards/_card_blackberry.html')
-								</div>
-								<div class="swiper-slide">
-									@@include('cards/_card_blueberry.html')
-								</div>
-								<div class="swiper-slide">
-									@@include('cards/_card_raspberry.html')
-								</div>
-							</div>
-						</div>
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
-					</div>
-					<div class="tabs__block" data-tabs-target="last_seen">
-						<!-- <div class="swiper-container-last-seen">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									@@include('cards/_card_blackberry.html')
-								</div>
-								<div class="swiper-slide">
-									@@include('cards/_card_elder.html')
-								</div>
-								<div class="swiper-slide">
-									@@include('cards/_card_plum.html')
-								</div>
-								<div class="swiper-slide">
-									@@include('cards/_card_raspberry.html')
-								</div>
-								<div class="swiper-slide">
-									@@include('cards/_card_blueberry.html')
-								</div>
-								<div class="swiper-slide">
-									@@include('cards/_card_raspberry.html')
-								</div>
-							</div>
-						</div> -->
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
-					</div>
-
-				</div>
-			</section>
+			@@include('_tabs_products.html')
 			@@include('_mailing-section.html')
 		</div>
 	</main>
 	@@include('_footer.html')
+	@@include('_popup.html')
 	<script src="libs/choices.min.js"></script>
 	<script src="libs/nouislider.min.js"></script>
 	<script src="libs/swiper.min.js"></script>

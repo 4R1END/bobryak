@@ -1,5 +1,7 @@
 @import "main.sass";
 @import "_card.scss";
+@import "_tabs_products.scss";
+@import "_popup.scss";
 
 .catalog {
 	padding-top: 122px;
@@ -32,9 +34,6 @@
 		margin-bottom: 98px;
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-	}
-
-	&__filters {
 	}
 
 	&__main {
@@ -145,7 +144,7 @@
 							color: #35492E;		
 						}
 						.card__price {
-							margin-top: 19px;
+							margin-top: 45px;
 							margin-bottom: 37px;
 						}
 						.card__weight {
@@ -177,13 +176,7 @@
 	.banner-promo {
 		border-radius: 10px;
 	}
-
-	.swiper-container,
-	.swiper-container-last-seen {
-		padding: 0 15px;
-		width: 95%;
-	}
-	
+		
 	.swiper-button-prev {
 		top: 50%;
 		left: -30px;
@@ -415,42 +408,4 @@
 	}
 }
 
-.tabs {
-	margin-bottom: 88px;
 
-	&__menu {
-		margin-bottom: 58px;
-	}
-
-	&__item {
-		width: 300px;
-		height: 46px;
-		border: 1px solid #0f5628;
-		border-radius: 10px 10px 0px 0px;
-		font-family: "Lato", sans-serif;
-		font-weight: 500;
-		font-size: 18px;
-		line-height: 22px;
-		color: $main_color;
-		&--active {
-			background-color: $main-color;
-			color: #fff;
-		}
-		&:nth-child(2) {
-			margin-left: -23px;
-		}
-	}
-
-	&__body {
-		position: relative;
-	}
-
-	&__block {
-		display: none;
-		min-width: 0;
-		&--active {
-			display: block;
-		}		
-	}
-	
-}

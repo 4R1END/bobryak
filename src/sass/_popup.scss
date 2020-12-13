@@ -1,0 +1,146 @@
+.popup-container {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 20;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	&.active {
+		display: flex;
+	}
+}
+.popup {
+	z-index: 100;
+	width: 1260px;
+	max-height: 508px;
+	padding: 18px 18px 70px 50px;
+	background-color: #fff;
+	overflow: hidden;
+		&__header {
+			display: flex;
+			justify-content: flex-end;			
+		}
+
+		&__close {
+			cursor: pointer;
+		}
+
+		&__body {
+			display: flex;
+		}
+
+		&__img-block {
+			margin-right: 30px;
+		}
+
+		&__img {
+			display: block;
+			object-fit: cover;
+		}
+
+		&__content {
+		}
+
+		&__title {
+			margin-bottom: 70px;
+			line-height: 37px;
+		}
+
+		&__weight {
+			margin-bottom: 36px;
+			display: inline-block;
+			margin-right: 47px;
+			& label > span {
+				width: 100px;
+				height: 38px;
+				font-weight: 300;
+				font-size: 14px;
+				line-height: 17px;
+				letter-spacing: 1.8px;
+			}
+			& label:nth-child(1) > span,
+			& label:nth-child(2) > span {				
+				width: 131px;
+			}
+			& label:nth-child(3) > span,
+			& label:nth-child(2) > span {				
+				margin-left: -10px;
+			}
+			
+		}
+
+		&__price {
+			display: inline-block;
+			font-size: 28px;
+			line-height: 34px;
+			letter-spacing: 1.8px;
+		}
+
+		&__descr {
+			margin-bottom: 2px;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		&__structure {
+			margin-bottom: 38px;
+			font-weight: 300;
+			font-size: 16px;
+			line-height: 24px;
+			color: $main_color;
+		}
+
+		&__more-link {
+			margin-right: 77px;
+			display: inline-block;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 22px;
+			letter-spacing: 1.8px;
+			text-decoration: underline;
+			color: #000;
+		}
+
+		&__quantity-block {
+			margin-right: 42px;
+			display: inline-flex;
+			width: 120px;
+			height: 51px;
+			font-weight: 300;
+			font-size: 24px;
+			line-height: 29px;			
+			letter-spacing: 1.8px;
+		}
+
+		&__btn-add-cart {
+			display: inline-block;
+			width: 295px;
+			height: 75px;
+		}
+}
+.weight-checkbox {
+
+		&__weight-light {
+		}
+
+		&__weight-middle {
+		}
+
+		&__weight-big {
+		}
+}
+.quantity-block {
+
+		&__btn-down {
+		}
+
+		&__btn-up {
+		}
+}
+.btn {
+}
+.btn--primary {
+}

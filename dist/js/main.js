@@ -41,8 +41,8 @@ moreProductsBtn.onclick = () => {
 		el.classList.add(`active`);
 	});
 };;
-const btnDown = document.querySelectorAll(`.card__btn-quantity-down`); // кнопка убавить количество товара в карточке
-const btnUp = document.querySelectorAll(`.card__btn-quantity-up`); // кнопка прибавить количество товара в карточке
+const btnDown = document.querySelectorAll(`.quantity-block__btn-down`); // кнопка убавить количество товара в карточке
+const btnUp = document.querySelectorAll(`.quantity-block__btn-up`); // кнопка прибавить количество товара в карточке
 const price = document.querySelectorAll(`.card__price`);
 
 // клик по кнопке убавить количество товара
@@ -64,7 +64,9 @@ btnUp.forEach(el => {
 
 price.forEach(el => {
 	el.closest(`.card`).dataset['price'] = parseInt(el.textContent);
-});
+})
+
+;
 
 
 
