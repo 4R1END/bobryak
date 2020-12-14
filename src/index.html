@@ -6,16 +6,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Бобряк | Главная страница</title>
 	<link rel="stylesheet" href="libs/swiper.min.css">
-	<link rel="stylesheet" href="css\main-page.min.css">	
+	<link rel="stylesheet" href="css/main-page.min.css">	
 </head>
 
 <body>
-	@@include('_header.html')
+	@@include('_header.html' {"prefix": ""})
 	@@include('_main.html')
 	@@include('_footer.html')
 	
 	<script src="libs/swiper.min.js"></script>
-	<script src="js\main.min.js"></script>
+	<script src="js/main.min.js"></script>
 	<script>
 		const mySwiperOffer = new Swiper('.swiper-container-coverflow', {
 			// Optional parameters

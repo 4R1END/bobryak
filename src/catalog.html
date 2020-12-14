@@ -14,7 +14,7 @@
 
 <body>
 	@@include('_popup.html')
-	@@include('_header.html')
+	@@include('_header.html', {"prefix": ""})
 
 	<main class="catalog">
 		<div class="container">
@@ -164,7 +164,7 @@
 					</div>
 					<div class="catalog__cards">
 						@@loop('cards/_card.html', 'cards/cards_data.json')
-						
+
 						
 					</div>
 					<button class="btn btn--primary catalog__btn-more-products btn--more-js">
