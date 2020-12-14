@@ -1,0 +1,72 @@
+@import "main.sass";
+
+.promo {
+
+	&__title {
+		margin-top: 85px;
+		margin-bottom: 70px;
+		text-align: center;			
+	}
+
+	&__crumbs {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	&__content {
+		margin-bottom: 75px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 77px;
+	}
+
+	&__item {
+		height: 343px;
+	}
+
+	&__btn-block {
+		margin-bottom: 80px;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.promo-item {
+	padding: 75px 145px 0 80px;
+	background: $green-light;
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	&__title {	
+		font-weight: 600;
+		font-size: 52px;
+		line-height: 63px;
+		color: $main_color;
+	}
+
+	&__subtitle {
+		margin-top: 23px;
+		display: block;
+		font-size: 24px;
+		line-height: 29px;
+	}
+}
+.promo-item--present {
+	background-image: url('../img/promo/present_bg.png');
+}
+.promo-item--delivery {
+	background-image: url('../img/promo/delivery_bg.png');
+}
+.promo-item--sale {
+	padding: 135px 178px 40px 122px;
+	background-image: url('../img/promo/sale_bg.png');
+}
+.promo-item--register {
+	padding: 135px 50px 0 90px;
+	background-image: url('../img/promo/register_bg.png');
+}
+
+

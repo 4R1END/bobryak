@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Бобряк | Акции</title>
+	<link rel="stylesheet" href="css/promo.min.css">
+</head>
+<body>
+	@@include('_header.html', {"prefix": ""})
+	<main class="promo">
+		<div class="container">
+			<h2 class="title promo__title">
+				<span class="crumbs promo__crumbs">
+					Главная - <span class="crumbs--active">Акции</span>
+				</span>
+				Акции
+			</h2>
+			<section class="promo__content">
+				<div class="promo__item promo-item promo-item--present">
+					<h3 class="promo-item__title">
+						Подарок за покупку!
+						<span class="promo-item__subtitle">
+							промокод: BOBR
+						</span>
+					</h3>
+				</div>
+
+				<div class="promo__item promo-item promo-item--delivery">
+					<h3 class="promo-item__title">
+						Бесплатная доставка!
+						<span class="promo-item__subtitle">
+							При заказе на сумму <br> от 2000 руб.
+						</span>
+					</h3>
+				</div>
+
+				<div class="promo__item promo-item promo-item--sale">
+					<h3 class="promo-item__title">
+						-25% на варенье 						
+					</h3>
+				</div>
+
+				<div class="promo__item promo-item promo-item--register">
+					<h3 class="promo-item__title">
+						Скидка 10% <br> за регистрацию						
+					</h3>
+				</div>
+			</section>
+			<div class="promo__btn-block">
+				<button class="btn btn--primary btn__more-js">
+					Развернуть
+				</button>
+				<button class="btn btn--disable">
+					Свернуть
+				</button>
+			</div>
+			@@include('_mailing-section.html')
+		</div>	
+	</main>
+	@@include('_footer.html', {"prefix": ""})
+</body>
+</html>
