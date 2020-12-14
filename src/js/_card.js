@@ -21,5 +21,7 @@ btnUp.forEach(el => {
 
 price.forEach(el => {
 	el.closest(`.card`).dataset['price'] = parseInt(el.textContent);
-})
+});
+
+
 

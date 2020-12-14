@@ -184,84 +184,20 @@
 				</div>
 				<div class="tabs__body">
 					<div class="tabs__block tabs__block--active" data-tabs-target="cosmetics">
-						@@include('cards/_card.html')
-						@@include('cards/_card_plum.html')
-						@@include('cards/_card_raspberry.html')
-						@@include('cards/_card.html')
-						@@include('cards/_card.html')
-						@@include('cards/_card.html')
-						@@include('cards/_card.html')
-						@@include('cards/_card.html')
-						<div class="block-more tabs__block tabs__block--more block-more-js">
-							@@include('cards/_card.html')
-							@@include('cards/_card_plum.html')
-							@@include('cards/_card_raspberry.html')
-							@@include('cards/_card.html')
-							@@include('cards/_card_raspberry.html')
-							@@include('cards/_card_raspberry.html')
-							@@include('cards/_card_raspberry.html')
-							@@include('cards/_card_raspberry.html')
-						</div>
+						@@loop('cards/_card.html', 'cards/cards_data.json')
+						
 					</div>
 					<div class="tabs__block" data-tabs-target="honey">
-						@@include('cards/_card_raspberry.html')
-						@@include('cards/_card_raspberry.html')
-						@@include('cards/_card_raspberry.html')
-						@@include('cards/_card_raspberry.html')
-						@@include('cards/_card_raspberry.html')
-						@@include('cards/_card_raspberry.html')
-						@@include('cards/_card_raspberry.html')
-						@@include('cards/_card_raspberry.html')
-						<div class="block-more tabs__block tabs__block--more block-more-js">
-							@@include('cards/_card.html')
-							@@include('cards/_card_plum.html')
-							@@include('cards/_card_raspberry.html')
-							@@include('cards/_card.html')
-							@@include('cards/_card_raspberry.html')
-							@@include('cards/_card_raspberry.html')
-							@@include('cards/_card_raspberry.html')
-							@@include('cards/_card_raspberry.html')
-						</div>
+						@@loop('cards/_card.html', 'cards/cards_data.json')
+						
 					</div>
 					<div class="tabs__block" data-tabs-target="tea">
-						@@include('cards/_card_blueberry.html')
-						@@include('cards/_card_blueberry.html')
-						@@include('cards/_card_blueberry.html')
-						@@include('cards/_card_blueberry.html')
-						@@include('cards/_card_blueberry.html')
-						@@include('cards/_card_blueberry.html')
-						@@include('cards/_card_blueberry.html')
-						@@include('cards/_card_blueberry.html')
-						<div class="block-more tabs__block tabs__block--more block-more-js">
-							@@include('cards/_card.html')
-							@@include('cards/_card_plum.html')
-							@@include('cards/_card_raspberry.html')
-							@@include('cards/_card.html')
-							@@include('cards/_card_raspberry.html')
-							@@include('cards/_card_raspberry.html')
-							@@include('cards/_card_raspberry.html')
-							@@include('cards/_card_raspberry.html')
-						</div>
+						@@loop('cards/_card.html', 'cards/cards_data.json')
+						
 					</div>
 					<div class="tabs__block" data-tabs-target="jam">
-						@@include('cards/_card_blackberry.html')
-						@@include('cards/_card_blackberry.html')
-						@@include('cards/_card_blackberry.html')
-						@@include('cards/_card_blackberry.html')
-						@@include('cards/_card_blackberry.html')
-						@@include('cards/_card_blackberry.html')
-						@@include('cards/_card_blackberry.html')
-						@@include('cards/_card_blackberry.html')
-						<div class="block-more tabs__block tabs__block--more block-more-js">
-							@@include('cards/_card.html')
-							@@include('cards/_card_plum.html')
-							@@include('cards/_card_raspberry.html')
-							@@include('cards/_card.html')
-							@@include('cards/_card_raspberry.html')
-							@@include('cards/_card_raspberry.html')
-							@@include('cards/_card_raspberry.html')
-							@@include('cards/_card_raspberry.html')
-						</div>
+						@@loop('cards/_card.html', 'cards/cards_data.json')
+						
 					</div>
 				</div>
 				<div class="catalog-block__btn-block">

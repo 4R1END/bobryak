@@ -1,17 +1,17 @@
-const btnApplyFilters = document.querySelector(`.filters__btn--apply`);
-const catalogCards = document.querySelector(`.catalog__cards`);
-const cards = catalogCards.querySelectorAll(`.card`);
-const checkedFiltersBlock = document.querySelector(`.filters__checked-filters`)
-const clearFiltersBtn = document.querySelector(`.filters__btn-clear`);
+const btnApplyFilters = document.querySelector(`.filters__btn--apply`); //кнопка "применить фильтры"
+const checkedFiltersBlock = document.querySelector(`.filters__checked-filters`); //поле с уже отмеченными фильтрами
+const clearFiltersBtn = document.querySelector(`.filters__btn-clear`); // унопка "очистить фильтры"
 
-let checkedValues;
+let checkedValues; //выбранные значения
 
+//функция получения выбранных значений
 function getCheckedCheckBoxes() {
-	const selectedCheckBoxes = document.querySelectorAll('.filters__checkbox:checked');
+	const selectedCheckBoxes = document.querySelectorAll('.filters__checkbox:checked'); 
 	checkedValues = Array.from(selectedCheckBoxes).map(cb => cb.value);	
   return checkedValues; 
 };
 
+// функция очистки всех выбранных фильтров из поля отмеченных фильтров
 const clearFilters = () => {
 	while (checkedFiltersBlock.firstChild) {
 		checkedFiltersBlock.removeChild(checkedFiltersBlock.firstChild);
@@ -28,7 +28,7 @@ btnApplyFilters.addEventListener(`click`, () => {
 	clearFilters();
 	getCheckedCheckBoxes();
 	
-	cards.forEach(el => {
+	cardsOfCatalog.forEach(el => {
 		const cardPrice = el.dataset['price'];
 		const cardFilter =el.dataset['f'];
 		const filterValue = (fValue) => {
@@ -56,6 +56,7 @@ btnApplyFilters.addEventListener(`click`, () => {
 		};		
 	});
 
+	// добавление выбранного фильтра в поле отмеченных фильтров
 	checkedValues.forEach((el, i) => {	
 		checkedFiltersBlock.insertAdjacentHTML('afterBegin',`
 			<div class="filters__checked-filter"  data-f="${selectedCheckBoxes[i].value}">
@@ -72,11 +73,10 @@ clearFiltersBtn.addEventListener(`click`, () => {
 	document.querySelectorAll(`input[type="checkbox"]`).forEach(el => {
 		el.checked = false;
 	});
-	cards.forEach(el => {
+	cardsOfCatalog.forEach(el => {
 		el.classList.remove('hide');
 	});
 });
-
 
 	checkedFiltersBlock.addEventListener(`click`, (e) => {
 		const selectedCheckBoxes = document.querySelectorAll('.filters__checkbox:checked');
@@ -86,6 +86,10 @@ clearFiltersBtn.addEventListener(`click`, () => {
 				if (el.value === e.target.closest(`.filters__checked-filter`).dataset['f']) {
 					el.checked = false;
 				};
+			});
+			const filterValue = e.target.closest(`filters__checked-filter`).dataset['f'];
+			document.querySelectorAll(`.card[data-f="${filterValue}"]`).forEach(el => {
+				el.classList.remove('hide');
 			});
 		};
 	});

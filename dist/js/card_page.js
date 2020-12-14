@@ -21,7 +21,9 @@ btnUp.forEach(el => {
 
 price.forEach(el => {
 	el.closest(`.card`).dataset['price'] = parseInt(el.textContent);
-})
+});
+
+
 
 ;
 
@@ -49,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		tabsBlock.forEach(el => {
 			el.classList.remove(`tabs__block--active`);
 		});
-		moreProductsBlock.forEach(el => {
+		document.querySelectorAll(`.card[data-round]`).forEach(el => {
 			el.classList.remove(`active`);
 		});
 		document.querySelector(`[data-tabs-target="${path}"]`).classList.add(`tabs__block--active`);

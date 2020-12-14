@@ -148,6 +148,7 @@
 			width: 18px;
 			height: 15px;
 			background-color: #fff !important;
+			transition: all 0.5s ease-in-out;
 			&-active {
 				width: 83px !important;
 				height: 15px !important;
@@ -221,11 +222,13 @@
 	.content {
 		&__block {
 			display: flex;
+			margin-bottom: 70px;
 		}
 
-		&__block-info {
+		&__block-info {			
 			max-width: 1100px;
 			margin: 0 auto;
+			margin-bottom: 120px;
 			padding: 53px 108px;
 			background-color: $main-color;
 			border-radius: 5px;
@@ -276,6 +279,19 @@
 		top: 420px;
 		left: 50%;
 		transform: translateX(-50%);
+		.swiper-pagination-bullet {			
+			width: 9px;
+			height: 8px;
+			background-color: $main-color;
+			transition: all 0.5s ease-in-out;
+			&-active {
+				width: 43px;
+				border-radius: 10px;
+			}
+		}
+		.swiper-pagination-bullet:not(:last-child) {			
+			margin-right: 10px;
+		}
 	}
 
 	.hide {

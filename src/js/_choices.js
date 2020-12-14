@@ -1,3 +1,5 @@
+// инициализация объекта кастомного селекта
+
 const defaultSelect = () => {
 	const element = document.querySelector('.js-choice');
 	const choices = new Choices(element, {

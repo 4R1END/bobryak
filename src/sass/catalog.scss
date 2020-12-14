@@ -98,6 +98,14 @@
 				padding: 52px 70px 0px 30px;
 				box-shadow: 0px 2px 76px rgba(3, 120, 39, 0.14);
 				border-radius: 20px;
+				&[data-round="1"],
+				&[data-round="2"] {
+					display: none;
+				}
+				&[data-round="1"].active,
+				&[data-round="2"].active {
+					display: flex;
+				}
 				&__image {
 					margin-right: 60px;
 					min-width: 275px;

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Бобряк | Варенье из клюквы</title>
+	<link rel="stylesheet" href="../libs/swiper.min.css">
+	<link rel="stylesheet" href="../css/card_page.css">
+</head>
+<body>
+	@@include('../_header.html')
+		@@include('_card_page.html', {
+			"title": "Варенье из клюквы",			
+			"price": "900",
+			"imgsrc": "../img/cards/cranberry.png",			
+			"descr": "Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства..."
+		})
+			@@include('../_mission_block.html')
+			@@include('../_tabs_products.html')
+			@@include('../_mailing-section.html')
+		</div>
+	</main>
+	@@include('../_footer.html')
+	<script src="../libs/swiper.min.js"></script>
+	<script src="../js/card_page.min.js"></script>
+	<script>
+		const swiper = new Swiper('.swiper-container', {
+			slidesPerView: 4,
+			spaceBetween: 65,
+			loop: true,
+			observer: true,
+			observParents: true,
+			observSlideChildren: true,
+
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
+</body>
+</html>

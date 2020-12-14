@@ -3,6 +3,14 @@
 	padding: 0 10px 24px;
 	border-radius: 10px;
 	box-shadow: 5px 4px 18px rgba(0, 0, 0, 0.11);
+	&[data-round="1"],
+	&[data-round="2"] {
+		display: none;
+	}
+	&[data-round="1"].active,
+	&[data-round="2"].active {
+		display: block;
+	}
 	
 	&__image {
 		display: block;

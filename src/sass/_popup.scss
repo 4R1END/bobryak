@@ -33,11 +33,12 @@
 
 		&__img-block {
 			margin-right: 30px;
+			flex: 1 1 48%;
+			max-width: 48%;
 		}
 
 		&__img {
-			display: block;
-			object-fit: cover;
+			height: 100%;
 		}
 
 		&__content {
