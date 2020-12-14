@@ -73,12 +73,23 @@ cards.forEach(el => {
 	const cardDescr = el.querySelector(`.card__descr`).innerText.replace(/[\r\n]+/gm, "");
 	const linkPath = el.dataset['name'];
 
+	const cardQuantity = el.querySelectorAll(`.quantity-block`);
+
+	// cardQuantity.forEach(el => {
+	// 	el.addEventListener(`click`, () => {
+	// 		if(parseInt(cardQuantity[0].children[1].innerText) > 1) {
+	// 			cardQuantity[1].children[1].innerText = cardQuantity[0].children[1].textContent;
+	// 		};
+	// 		if(parseInt(cardQuantity[1].children[1].innerText) > 1) {
+	// 			cardQuantity[0].children[1].innerText = cardQuantity[1].children[1].textContent;
+	// 		};
+	// 	});	
+	// });
+
+	
 
 
-	const setParam = (e) => {
-		const cardQuantity = el.querySelectorAll(`.quantity-block`);
-		cardQuantityArray = Array.from(cardQuantity);
-
+	const setParam = (e) => {		
 		if (e.target.classList.contains(`card__image-main`) || e.target.classList.contains(`card__title`) || e.target.classList.contains(`card__btn--more-descr`)) {
 			popupContainer.classList.add(`active`);
 			popupContainer.querySelector(`.popup__img`).setAttribute('src', `${cardImg}`);

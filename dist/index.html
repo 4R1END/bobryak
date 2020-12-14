@@ -6,17 +6,74 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Бобряк | Главная страница</title>
 	<link rel="stylesheet" href="libs/swiper.min.css">
-	<link rel="stylesheet" href="css/main-page.min.css">	
+	<link rel="stylesheet" href="css/main-page.min.css">
 </head>
 
 <body>
+	<div class="popup-container">
+	<div class="popup">
+		<div class="popup__header">
+			<img class="popup__close" src="img/icons/close.svg" alt="закрыть">
+		</div>
+		<div class="popup__body">
+			<div class="popup__img-block">
+				<img src="" alt="Ежевика" class="popup__img">
+			</div>
+			<div class="popup__content">
+				<h2 class="popup__title"></h2>
+				<div class="popup__weight weight-checkbox">
+					<label class="weight-checkbox__weight-light">
+						<input type="radio" name="weight_balhav" value="150" checked>
+						<span>150 гр</span>
+					</label>
+					<label class="weight-checkbox__weight-middle">
+						<input type="radio" name="weight_balhav" value="200">
+						<span>200 гр</span>
+					</label>
+					<label class="weight-checkbox__weight-big">
+						<input type="radio" name="weight_balhav" value="250">
+						<span>250 гр</span>
+					</label>
+				</div>
+
+				<div class="popup__price">
+					250₽
+				</div>
+				<div class="popup__descr">
+					Наш высокогорный чай традиционное изготавливается из натуральных трав ягод и фруктов, бережно собранных в
+					ручную...
+				</div>
+				<div class="popup__structure">
+					Состав: травяной сбор, ягоды
+				</div>
+				<a href="#" class="popup__more-link">
+					ПОДРОБНЕЕ
+				</a>
+				<div class="popup__quantity-block quantity-block">
+					<button class="quantity-block__btn-down">
+						-
+					</button>
+					<span>1</span>
+					<button class="quantity-block__btn-up">
+						+
+					</button>
+				</div>
+				<button class="btn btn--primary popup__btn-add-cart">
+					Добавить в корзину
+				</button>
+			</div>
+
+		</div>
+	</div>
+</div>
+</div>
 	<header class="header">
 	<div class="header__bg"></div>
 	<div class="container header__container">
 		<nav class="menu header__menu">
 			<ul class="menu__list">
 				<li class="menu__list-item">
-					<a href="@@prefix/aboutus.html" class="menu__link">
+					<a href="/aboutus.html" class="menu__link">
 						О нас
 					</a>
 				</li>
@@ -26,13 +83,13 @@
 					</a>
 				</li>
 				<li class="menu__list-item">
-					<a href="@@prefix/catalog.html" class="menu__link">
+					<a href="/catalog.html" class="menu__link">
 						Каталог
 					</a>
 				</li>
 				<li class="menu__list-item">
-					<a href="@@prefix/index.html" class="menu__link">
-						<img src="@@prefix/img/logo.png" alt="бобряк">
+					<a href="/index.html" class="menu__link">
+						<img src="/img/logo.png" alt="бобряк">
 					</a>
 				</li>
 				<li class="menu__list-item">
@@ -49,13 +106,13 @@
 		</nav>
 		<div class="header__auth auth">
 			<a href="#" class="auth__link">
-				<img src="@@prefix/img/icons/icon_search.svg" alt="поиск">
+				<img src="/img/icons/icon_search.svg" alt="поиск">
 			</a>
 			<a href="#" class="auth__link">
-				<img src="@@prefix/img/icons/icon_account.svg" alt="личный кабинет">
+				<img src="/img/icons/icon_account.svg" alt="личный кабинет">
 			</a>
 			<a href="#" class="auth__link">
-				<img src="@@prefix/img/icons/icon_shopping.svg" alt="корзина">
+				<img src="/img/icons/icon_shopping.svg" alt="корзина">
 			</a>
 		</div>
 	</div>
@@ -99,7 +156,7 @@
 								из экологически-чистого региона Карачаево-Черкесии.
 							</span>
 						</h1>
-						<a href="#" class="hero__link">
+						<a href="catalog.html" class="hero__link">
 							<button class="btn btn--secondary">
 								в каталог
 							</button>
@@ -3542,18 +3599,18 @@
 </main>
 	<footer class="footer">
 	<div class="container footer__container">
-		<a href="../index.html" class="footer__logo">
-			<img src="../img/logo_footer.png" alt="Бобряк">
+		<a href="/index.html" class="footer__logo">
+			<img src="/img/logo_footer.png" alt="Бобряк">
 		</a>
 		<nav class="footer__menu menu">
 			<ul class="menu__list">
 				<li class="menu__list-item">
-					<a href="../aboutus.html" class="menu__link">
+					<a href="/aboutus.html" class="menu__link">
 						О нас
 					</a>
 				</li>
 				<li class="menu__list-item">
-					<a href="../catalog.html" class="menu__link">
+					<a href="/catalog.html" class="menu__link">
 						Каталог
 					</a>
 				</li>
@@ -3584,13 +3641,13 @@
 			<div class="paymethod__icons">
 				<ul class="paymethod__list">
 					<li class="paymethod__item">
-						<img src="../img/icons/mastercard.png" alt="mastercard">
+						<img src="/img/icons/mastercard.png" alt="mastercard">
 					</li>
 					<li class="paymethod__item">
-						<img src="../img/icons/mir.png" alt="mir">
+						<img src="/img/icons/mir.png" alt="mir">
 					</li>
 					<li class="paymethod__item">
-						<img src="../img/icons/visa.png" alt="visa">
+						<img src="/img/icons/visa.png" alt="visa">
 					</li>
 				</ul>
 			</div>
@@ -3628,7 +3685,7 @@
 		</div>
 	</div>
 </footer>
-	
+
 	<script src="libs/swiper.min.js"></script>
 	<script src="js/main.min.js"></script>
 	<script>
