@@ -752,6 +752,16 @@ button {
   box-shadow: 5px 4px 18px rgba(0, 0, 0, 0.11);
 }
 
+.card[data-round="1"],
+.card[data-round="2"] {
+  display: none;
+}
+
+.card[data-round="1"].active,
+.card[data-round="2"].active {
+  display: block;
+}
+
 .card__image {
   display: block;
   margin-bottom: 25px;
@@ -958,12 +968,12 @@ button {
 
 .popup__img-block {
   margin-right: 30px;
+  flex: 1 1 48%;
+  max-width: 48%;
 }
 
 .popup__img {
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 100%;
 }
 
 .popup__title {
@@ -1139,6 +1149,16 @@ button {
   padding: 52px 70px 0px 30px;
   box-shadow: 0px 2px 76px rgba(3, 120, 39, 0.14);
   border-radius: 20px;
+}
+
+.catalog__cards.list .card[data-round="1"],
+.catalog__cards.list .card[data-round="2"] {
+  display: none;
+}
+
+.catalog__cards.list .card[data-round="1"].active,
+.catalog__cards.list .card[data-round="2"].active {
+  display: flex;
 }
 
 .catalog__cards.list .card__image {

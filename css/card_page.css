@@ -800,6 +800,16 @@ button {
   box-shadow: 5px 4px 18px rgba(0, 0, 0, 0.11);
 }
 
+.card[data-round="1"],
+.card[data-round="2"] {
+  display: none;
+}
+
+.card[data-round="1"].active,
+.card[data-round="2"].active {
+  display: block;
+}
+
 .card__image {
   display: block;
   margin-bottom: 25px;
@@ -975,6 +985,10 @@ button {
   margin: 43px 0;
 }
 
+.card-page__crumbs a {
+  color: #818181;
+}
+
 .card-page__content {
   display: flex;
   margin-bottom: 80px;
@@ -989,8 +1003,13 @@ button {
   grid-column-gap: 19px;
 }
 
+.card-page__images img {
+  border-radius: 10px;
+}
+
 .card-page__images img:nth-child(1) {
   grid-column: 1/4;
+  width: 100%;
 }
 
 .card-page__data {

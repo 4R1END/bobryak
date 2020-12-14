@@ -752,6 +752,16 @@ button {
   box-shadow: 5px 4px 18px rgba(0, 0, 0, 0.11);
 }
 
+.card[data-round="1"],
+.card[data-round="2"] {
+  display: none;
+}
+
+.card[data-round="1"].active,
+.card[data-round="2"].active {
+  display: block;
+}
+
 .card__image {
   display: block;
   margin-bottom: 25px;

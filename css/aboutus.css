@@ -845,6 +845,7 @@ button {
   width: 18px;
   height: 15px;
   background-color: #fff !important;
+  transition: all 0.5s ease-in-out;
 }
 
 .aboutus .swiper-container-banner .swiper-pagination-bullet-active {
@@ -924,11 +925,13 @@ button {
 
 .aboutus .content__block {
   display: flex;
+  margin-bottom: 70px;
 }
 
 .aboutus .content__block-info {
   max-width: 1100px;
   margin: 0 auto;
+  margin-bottom: 120px;
   padding: 53px 108px;
   background-color: #0F5628;
   border-radius: 5px;
@@ -979,6 +982,22 @@ button {
   top: 420px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.aboutus .swiper-pagination-mission .swiper-pagination-bullet {
+  width: 9px;
+  height: 8px;
+  background-color: #0F5628;
+  transition: all 0.5s ease-in-out;
+}
+
+.aboutus .swiper-pagination-mission .swiper-pagination-bullet-active {
+  width: 43px;
+  border-radius: 10px;
+}
+
+.aboutus .swiper-pagination-mission .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 10px;
 }
 
 .aboutus .hide {

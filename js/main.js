@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		tabsBlock.forEach(el => {
 			el.classList.remove(`tabs__block--active`);
 		});
-		moreProductsBlock.forEach(el => {
+		document.querySelectorAll(`.card[data-round]`).forEach(el => {
 			el.classList.remove(`active`);
 		});
 		document.querySelector(`[data-tabs-target="${path}"]`).classList.add(`tabs__block--active`);
@@ -31,16 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 ;
-const moreProductsBtn = document.querySelector(`.btn--more-js`); //кнопка развернуть 
-const moreProductsBlock = document.querySelectorAll(`.block-more-js`); //скрыте блоки скарточками товаров
-
-
-// клик по кнопке развернуть
-moreProductsBtn.onclick = () => {
-	moreProductsBlock.forEach(el => {
-		el.classList.add(`active`);
-	});
-};;
 const btnDown = document.querySelectorAll(`.quantity-block__btn-down`); // кнопка убавить количество товара в карточке
 const btnUp = document.querySelectorAll(`.quantity-block__btn-up`); // кнопка прибавить количество товара в карточке
 const price = document.querySelectorAll(`.card__price`);
@@ -64,10 +54,69 @@ btnUp.forEach(el => {
 
 price.forEach(el => {
 	el.closest(`.card`).dataset['price'] = parseInt(el.textContent);
-})
+});
+
+
 
 ;
 
 
+const cosmeticsBlock = document.querySelector(`.tabs__block[data-tabs-target="cosmetics"]`)
+const cardsCosmetics = cosmeticsBlock.querySelectorAll(`.card`);
+const honeyBlock = document.querySelector(`.tabs__block[data-tabs-target="honey"]`)
+const cardsHoney = honeyBlock.querySelectorAll(`.card`);
+const teaBlock = document.querySelector(`.tabs__block[data-tabs-target="tea"]`)
+const cardsTea = teaBlock.querySelectorAll(`.card`);
+const jamBlock = document.querySelector(`.tabs__block[data-tabs-target="jam"]`)
+const cardsJam = jamBlock.querySelectorAll(`.card`);
+
+const setDataRoundPer4 = (el, i) => {
+	if (i <= 3) {
+		el.setAttribute(`data-round`, `0`);
+	};
+	if (i > 3 && i < 8) {
+		el.setAttribute(`data-round`, `1`);
+	};
+	if (i > 7 && i < 12) {
+		el.setAttribute(`data-round`, `2`);
+	};
+	if (i > 11 && i < 16) {
+		el.setAttribute(`data-round`, `3`);
+	};
+};
+
+cardsCosmetics.forEach((el,i) => {
+	setDataRoundPer4(el, i)
+});
+cardsHoney.forEach((el,i) => {
+	setDataRoundPer4(el, i)
+});
+cardsTea.forEach((el,i) => {
+	setDataRoundPer4(el, i)
+});
+cardsJam.forEach((el,i) => {
+	setDataRoundPer4(el, i)
+});
 
 
+
+const moreProductsBtn = document.querySelector(`.btn--more-js`); //кнопка развернуть 
+
+const cardsFirstRound = document.querySelectorAll(`.card[data-round="1"]`);
+const cardsSecondRound = document.querySelectorAll(`.card[data-round="2"]`);
+
+// клик по кнопке развернуть
+moreProductsBtn.addEventListener(`click`, () => {
+	console.log(cardsFirstRound);
+	cardsSecondRound.forEach(el => {
+		console.log(cardsFirstRound[0].classList.contains(`active`));
+		if(cardsFirstRound[0].classList.contains(`active`) && !el.classList.contains(`active`)) {
+			el.classList.add(`active`);
+		};
+	});
+	cardsFirstRound.forEach(el => {
+		if(!el.classList.contains(`active`)) {
+			el.classList.add(`active`);
+		}
+	});
+});;
