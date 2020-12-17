@@ -57,14 +57,37 @@ const defaultSelect = () => {
 };
 
 defaultSelect();;
+const popupContainer = document.querySelector(`.popup-container`);
+
+const popupOpen = (elem) => {
+	elem.addEventListener(`click`, () => {
+		popupContainer.classList.add(`active`);
+	});
+};
+
+popupContainer.addEventListener(`click`, (e) => {
+	if (e.target.classList.contains(`popup__close`)) {
+		popupContainer.classList.remove(`active`);
+	};
+	if (e.target.classList.contains(`popup-container`)) {
+		popupContainer.classList.remove(`active`);
+	};
+});;
 
 const cards = document.querySelectorAll(`.card`);
 const catalog = document.querySelector(`.catalog__cards`);
 const cardsOfCatalog = catalog.querySelectorAll(`.card`);
 const rangeListBtn = document.querySelector(`.btn-range-list`);
 const rangeQuadroBtn = document.querySelector(`.btn-range-quadro`);
-const popupContainer = document.querySelector(`.popup-container`);
 const filtersTitle = document.querySelectorAll(`.filters__title`);
+const paginationLine = document.querySelector(`.pagination__line`);
+const paginationLineComplete = document.querySelector(`.pagination__line`);
+console.log(paginationLineComplete);
+const generalCountCards = cardsOfCatalog.length;
+const currentCountCardsBlock = document.querySelector(`.pagination__current`);
+const generalCountCardsBlock = document.querySelector(`.pagination__general`);
+
+
 
 const setDataRoundPer3 = (el, i) => {
 	if (i <= 2) {
@@ -153,7 +176,7 @@ cards.forEach(el => {
 			popupContainer.querySelector(`.popup__price`).innerText = cardPrice;
 			popupContainer.querySelector(`.popup__quantity-block`).children[1].innerText = cardQuantity[0].children[1].textContent;
 			popupContainer.querySelector(`.popup__descr`).innerText = cardDescr;
-			popupContainer.querySelector(`.popup__more-link`).setAttribute(`href`, `cards/card_${linkPath}.html`);
+			popupContainer.querySelector(`.popup__more-link`).setAttribute(`href`, `card_${linkPath}.html`);
 		};
 	};
 
@@ -165,25 +188,38 @@ cards.forEach(el => {
 	});
 });
 
-popupContainer.addEventListener(`click`, (e) => {
-	if (e.target.classList.contains(`popup__close`)) {
-		popupContainer.classList.remove(`active`);
-	};
-	if (e.target.classList.contains(`popup-container`)) {
-		popupContainer.classList.remove(`active`);
-	};
+// i общее число карточек, j текущее число карточек
+const fillPaginationLine = (i, j) => {
+	return (100 / i) * j;
+};
+
+document.addEventListener(`DOMContentLoaded`, () => {
+	generalCountCardsBlock.innerText = generalCountCards;
+	let countActiveCards = document.querySelectorAll(`.card.active`).length;
+		currentCountCardsBlock.innerText = countActiveCards;
+		paginationLineComplete.style.width = `${fillPaginationLine(generalCountCards, countActiveCards)}%`
+	document.querySelector(`.btn--more-js`).addEventListener(`click`, () => {
+		countActiveCards = document.querySelectorAll(`.card.active`).length;
+		currentCountCardsBlock.innerText = countActiveCards;
+		paginationLineComplete.style.width = `${fillPaginationLine(generalCountCards, countActiveCards)}%`
+	});
 });
 
 
 
 const moreProductsBtn = document.querySelector(`.btn--more-js`); //кнопка развернуть 
 
+const cardsShow = document.querySelectorAll(`.card[data-round="0"]`);
 const cardsFirstRound = document.querySelectorAll(`.card[data-round="1"]`);
 const cardsSecondRound = document.querySelectorAll(`.card[data-round="2"]`);
 
+
+cardsShow.forEach(el => {
+	el.classList.add(`active`);
+});
 // клик по кнопке развернуть
 moreProductsBtn.addEventListener(`click`, () => {
-	console.log(cardsFirstRound);
+	
 	cardsSecondRound.forEach(el => {
 		console.log(cardsFirstRound[0].classList.contains(`active`));
 		if(cardsFirstRound[0].classList.contains(`active`) && !el.classList.contains(`active`)) {
