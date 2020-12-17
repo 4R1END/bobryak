@@ -3,6 +3,11 @@
 @import "_tabs_products.scss";
 @import "_popup.scss";
 
+.popup-catalog {
+	max-height: 508px;
+	padding: 18px 18px 70px 50px;
+}
+
 .catalog {
 	padding-top: 122px;
 
@@ -184,16 +189,10 @@
 	.banner-promo {
 		border-radius: 10px;
 	}
-		
-	.swiper-button-prev {
-		top: 50%;
-		left: -30px;
-	}
-	.swiper-button-next {
-		top: 50%;
-		right: -30px;
-	}
 
+	&__pagination {
+		text-align: center;
+	}
 
 	.noUi-connects {
 		height: 3px;
@@ -414,6 +413,33 @@
 	&__btn {
 		align-self: center;
 	}
+}
+
+.pagination {
+	&__line-block {
+		width: 254px;
+		margin: 10px auto 20px; 
+	}
+	&__line {
+		
+		position: relative;
+		display: block;		
+		text-align: center;
+		width: 30%;
+		height: 2px;
+		background-color: $main_color;
+		&::before {
+			content: "";
+			z-index: -1;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 253px;
+			height: 100%;
+			background-color: $grey;
+		}
+	}
+	
 }
 
 

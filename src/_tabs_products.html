@@ -12,7 +12,7 @@
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						@@include('cards/_card.html', {
+						@@include('_card.html', {
 							"title": "Варенье из малины",
 							"name": "raspberry",
 							"filter": "tea",
@@ -22,13 +22,13 @@
 							"round": "",
 							"structure": "травяной сбор, ягоды ежевики",
 							"price": "800",
-							"imgsrc": "../img/cards/raspberry.png",
+							"imgsrc": "img/cards/raspberry.png",
 							"badge": "<div class='card__badge card__badge-hit'>Хит</div>",
 							"descr": "Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства..."
 						})
 					</div>
 					<div class="swiper-slide">
-						@@include('cards/_card.html', {
+						@@include('_card.html', {
 							"title": "Варенье из бузины",
 							"name": "elder",
 							"filter": "jam",
@@ -38,13 +38,13 @@
 							"round": "",
 							"structure": "травяной сбор, ягоды ежевики",
 							"price": "500",
-							"imgsrc": "../img/cards/elder.png",
+							"imgsrc": "img/cards/elder.png",
 							"badge": "<div class='card__badge card__badge-latest'>Новинка</div>",
 							"descr": "Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства..."
 						})
 					</div>
 					<div class="swiper-slide">
-						@@include('cards/_card.html', 	{
+						@@include('_card.html', 	{
 							"title": "Варенье из сливы",
 							"name": "plum",
 							"filter": "jam",
@@ -54,13 +54,13 @@
 							"round": "",
 							"structure": "травяной сбор, ягоды ежевики",
 							"price": "600",
-							"imgsrc": "../img/cards/plum.png",
+							"imgsrc": "img/cards/plum.png",
 							"badge": "<div class='card__badge card__badge-latest'>Новинка</div>",
 							"descr": "Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства..."
 						})
 					</div>
 					<div class="swiper-slide">
-						@@include('cards/_card.html', {
+						@@include('_card.html', {
 							"title": "Варенье из ежевики",
 							"name": "blackberry",
 							"filter": "jam",
@@ -70,13 +70,13 @@
 							"round": "",
 							"structure": "травяной сбор, ягоды ежевики",
 							"price": "300",
-							"imgsrc": "../img/cards/blackberry.png",
+							"imgsrc": "img/cards/blackberry.png",
 							"badge": "<div class='card__badge card__badge-latest'>Новинка</div>",
 							"descr": "Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства..."
 						})
 					</div>
 					<div class="swiper-slide">
-						@@include('cards/_card.html', 	{
+						@@include('_card.html', 	{
 							"title": "Варенье из черники",
 							"name": "blueberry",
 							"filter": "jam",
@@ -86,13 +86,13 @@
 							"round": "",
 							"structure": "травяной сбор, ягоды ежевики",
 							"price": "400",
-							"imgsrc": "../img/cards/blueberry.png",
+							"imgsrc": "img/cards/blueberry.png",
 							"badge": "",
 							"descr": "Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства..."
 						})
 					</div>
 					<div class="swiper-slide">
-						@@include('cards/_card.html', {
+						@@include('_card.html', {
 							"title": "Варенье из груши",
 							"name": "pear",
 							"filter": "jam",
@@ -102,7 +102,7 @@
 							"round": "",
 							"structure": "травяной сбор, ягоды ежевики",
 							"price": "700",
-							"imgsrc": "../img/cards/pear.png",
+							"imgsrc": "img/cards/pear.png",
 							"badge": "",
 							"descr": "Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства..."
 						})
@@ -112,7 +112,109 @@
 			<div class="swiper-button-prev"></div>
 			<div class="swiper-button-next"></div>
 		</div>
-		<div class="tabs__block" data-tabs-target="last_seen">			
+		<div class="tabs__block" data-tabs-target="last_seen">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						@@include('_card.html', {
+							"title": "Варенье из малины",
+							"name": "raspberry",
+							"filter": "tea",
+							"new": "6",
+							"popular": "4",
+							"sale": "70",
+							"round": "",
+							"structure": "травяной сбор, ягоды ежевики",
+							"price": "800",
+							"imgsrc": "img/cards/raspberry.png",
+							"badge": "<div class='card__badge card__badge-hit'>Хит</div>",
+							"descr": "Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства..."
+						})
+					</div>
+					<div class="swiper-slide">
+						@@include('_card.html', {
+							"title": "Варенье из бузины",
+							"name": "elder",
+							"filter": "jam",
+							"new": "3",
+							"popular": "7",
+							"sale": "40",
+							"round": "",
+							"structure": "травяной сбор, ягоды ежевики",
+							"price": "500",
+							"imgsrc": "img/cards/elder.png",
+							"badge": "<div class='card__badge card__badge-latest'>Новинка</div>",
+							"descr": "Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства..."
+						})
+					</div>
+					<div class="swiper-slide">
+						@@include('_card.html', 	{
+							"title": "Варенье из сливы",
+							"name": "plum",
+							"filter": "jam",
+							"new": "4",
+							"popular": "6",
+							"sale": "50",
+							"round": "",
+							"structure": "травяной сбор, ягоды ежевики",
+							"price": "600",
+							"imgsrc": "img/cards/plum.png",
+							"badge": "<div class='card__badge card__badge-latest'>Новинка</div>",
+							"descr": "Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства..."
+						})
+					</div>
+					<div class="swiper-slide">
+						@@include('_card.html', {
+							"title": "Варенье из ежевики",
+							"name": "blackberry",
+							"filter": "jam",
+							"new": "1",
+							"popular": "9",
+							"sale": "20",
+							"round": "",
+							"structure": "травяной сбор, ягоды ежевики",
+							"price": "300",
+							"imgsrc": "img/cards/blackberry.png",
+							"badge": "<div class='card__badge card__badge-latest'>Новинка</div>",
+							"descr": "Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства..."
+						})
+					</div>
+					<div class="swiper-slide">
+						@@include('_card.html', 	{
+							"title": "Варенье из черники",
+							"name": "blueberry",
+							"filter": "jam",
+							"new": "2",
+							"popular": "8",
+							"sale": "30",
+							"round": "",
+							"structure": "травяной сбор, ягоды ежевики",
+							"price": "400",
+							"imgsrc": "img/cards/blueberry.png",
+							"badge": "",
+							"descr": "Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства..."
+						})
+					</div>
+					<div class="swiper-slide">
+						@@include('_card.html', {
+							"title": "Варенье из груши",
+							"name": "pear",
+							"filter": "jam",
+							"new": "5",
+							"popular": "5",
+							"sale": "60",
+							"round": "",
+							"structure": "травяной сбор, ягоды ежевики",
+							"price": "700",
+							"imgsrc": "img/cards/pear.png",
+							"badge": "",
+							"descr": "Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства..."
+						})
+					</div>
+				</div>
+			</div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>			
 		</div>
 	</div>
 </section>

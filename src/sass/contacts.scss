@@ -1,0 +1,134 @@
+@import 'main.sass';
+@import '_popup.scss';
+
+.popup-contacts {
+	width: 828px;
+	height: 796px;
+	padding: 22px;	
+	
+	&__form {
+		display: flex;
+		flex-direction: column;
+		& label:not(:last-child) {
+			margin-bottom: 16px;
+			& .input {
+				display: block;
+				margin-top: 8px;
+			}			
+		}
+	}
+	
+	input[type="submit"] {
+		margin-top: 44px;
+		width: 300px;
+	}
+
+	.popup__header {
+		display: flex;
+		flex-direction: flex-end
+	}
+	.popup__body {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+
+
+.contacts {
+
+	.crumbs {
+		margin-top: 121px;
+	}
+
+	.title {
+		margin-top: 16px;
+		margin-bottom: 42px;
+	}
+
+
+	&__content {
+		margin-bottom: 106px;
+		background-image: url('../img/contacts/contacts_bg.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+	}
+
+	&__info {
+		width: 43%;
+		padding-left: 57px;
+		padding-top: 52px;	
+		padding-bottom: 31px;
+		background: rgba(250, 250, 250, 0.7);
+		backdrop-filter: blur(10px);
+	}
+
+	&__title {
+		margin-bottom: 26px;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: 1px;
+	}
+
+	&__text {
+		margin-bottom: 30px;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	&__socail-list {
+		margin-top: 60px;
+		display: flex;
+		margin-bottom: 31px;
+	}
+
+	&__social-link:not(:last-child) {
+		margin-right: 30px;
+	}
+
+	&__social-item {
+		width: 60px;
+		height: 48px;
+		background: #FFFFFF;
+		background-repeat: no-repeat;
+		background-position: center center;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 10px;
+	}
+
+	&__social-link:nth-child(1) > li {
+		background-image: url('../img/contacts/instagram.svg');
+	}
+
+	&__social-link:nth-child(2) > li {
+		background-image: url('../img/contacts/vk.svg');
+	}
+
+	&__social-link:nth-child(3) > li {
+		background-image: url('../img/contacts/youtube.svg');
+	}
+
+	&__social-link:nth-child(4) > li {
+		background-image: url('../img/contacts/fb.svg');
+	}
+
+	&__distrib {
+		margin-bottom: 80px;
+		& .container {
+			display: flex;			
+		}
+	}
+	&__inviting {
+		margin-left: 127px;		
+		padding-top: 100px;
+		padding-right: 108px;
+	}
+}
+
+
+

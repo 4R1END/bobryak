@@ -17,7 +17,7 @@
 								на экологические мероприятия в Теберде!
 							</span>
 						</h1>
-						<a href="#" class="hero__link">
+						<a href="aboutus.html" class="hero__link">
 							<button class="btn btn--secondary">
 								подробнее
 							</button>
@@ -57,7 +57,7 @@
 								на экологические мероприятия в Теберде!
 							</span>
 						</h1>
-						<a href="#" class="hero__link">
+						<a href="aboutus.html" class="hero__link">
 							<button class="btn btn--secondary">
 								подробнее
 							</button>
@@ -76,7 +76,7 @@
 			<h2 class="title offer__title">
 				Акции
 				<span>
-					<a href="#" class="title__link">
+					<a href="promo.html" class="title__link">
 						смотреть все акции
 					</a>
 				</span>
@@ -184,19 +184,19 @@
 				</div>
 				<div class="tabs__body">
 					<div class="tabs__block tabs__block--active" data-tabs-target="cosmetics">
-						@@loop('cards/_card.html', 'cards/cards_data.json')
+						@@loop('_card.html', 'json/cards_data.json')
 						
 					</div>
 					<div class="tabs__block" data-tabs-target="honey">
-						@@loop('cards/_card.html', 'cards/cards_data.json')
+						@@loop('_card.html', 'json/cards_data.json')
 						
 					</div>
 					<div class="tabs__block" data-tabs-target="tea">
-						@@loop('cards/_card.html', 'cards/cards_data.json')
+						@@loop('_card.html', 'json/cards_data.json')
 						
 					</div>
 					<div class="tabs__block" data-tabs-target="jam">
-						@@loop('cards/_card.html', 'cards/cards_data.json')
+						@@loop('_card.html', 'json/cards_data.json')
 						
 					</div>
 				</div>
@@ -215,7 +215,7 @@
 
 		<!----- OUR-MISSION ----->
 
-		@@include('_mission_block.html')
+		@@include('_mission_block.html', {"prefix": ""})
 
 		<!----- ABOUT ----->
 

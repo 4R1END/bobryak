@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/contacts.min.css">
+	<title>Бобряк | Контакты</title>
+</head>
+<body>
+	<div class="popup-container">
+		<div class="popup popup-contacts">
+			<div class="popup__header">
+				<img class="popup__close" src="img/icons/close.svg" alt="закрыть">
+			</div>
+			<div class="popup__body">
+				<form action="#" class="popup-contacts__form">
+					<label>
+						Имя<span>*</span>
+						<input class="input" type="text" name="name">
+					</label>
+					<label>
+						Фамилия <span>*</span>
+						<input class="input" type="text" name="surname">
+					</label>
+					<label>
+						Email
+						<input class="input" type="tel" name="email">
+					</label>
+					<label>
+						Телефон <span>*</span>
+						<input class="input" type="email" name="phone">
+					</label>				
+						<input class="btn btn--primary" type="submit" name="submit">				
+				</form>
+			</div>
+		</div>
+	</div>
+	@@include("_header.html")
+	<main class="contacts">
+		<div class="container">
+			<div class="crumbs contacts__crumbs">
+				<a href="index.html">Главная</a> - <span class="crumbs--active">
+					Контакты
+				</span>
+			</div>
+			<h2 class="title title--center">
+				Контакты
+			</h2>			
+		</div>
+		<section class="contacts__content">
+				<div class="container">
+					<div class="contacts__info">
+						<h3 class="contacts__title">
+							Офис
+						</h3>
+						<p class="contacts__text">
+							Офис Россия, Карачаево-Черкессия, г.Теберда <br> 8-927-280-5-290 <br>
+							welcome@bobryak.ru
+						</p>
+						<h3 class="contacts__title">
+							Партнёрам
+						</h3>
+						<p class="contacts__text">
+							Россия, Карачаево-Черкессия,Теберда <br> 8-968-858-00-55 <br>
+							partner@bobryak.ru
+						</p>
+						<ul class="contacts__socail-list">
+							<a class="contacts__social-link" href="#">
+								<li class="contacts__social-item">
+									
+								</li>
+							</a>
+							<a class="contacts__social-link" href="#">
+								<li class="contacts__social-item">
+								
+								</li>
+							</a>
+							<a class="contacts__social-link" href="#">
+								<li class="contacts__social-item">
+								
+								</li>
+							</a>
+							<a class="contacts__social-link" href="#">
+								<li class="contacts__social-item">
+									
+								</li>
+							</a>
+						</ul>
+					</div>
+				</div>
+		</section>	
+		<section class="contacts__distrib">
+			<div class="container">
+				<img src="img/contacts/together.png" alt="Приглашаем партнёров">
+				<div class="contacts__inviting">
+					<h3 class="contacts__title">
+						Стань частью нашей команды!
+					</h3>
+					<p class="contacts__text">
+						Приглашаем к открытию представительства в вашем городе! <br> Вы получите подробное описание продукции, пробные образцы, оперативную поддержку и гибкую систему скидок. <br> Сотрудничаем как с юридическими, так и с физическими лицами.			
+					</p>
+					<button class="btn btn--primary btn-open-form">
+						заполнить анкету
+					</button>
+				</div>
+			</div>
+		</section>
+	</main>
+	<div class="container">
+		@@include('_mailing-section.html')
+	</div>	
+	@@include("_footer.html")	
+	<script src="js/contacts.js"></script>
+</body>
+</html>
