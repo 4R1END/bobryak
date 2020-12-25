@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Бобряк | Корзина товаров</title>
+	<link rel="stylesheet" href="libs/swiper.min.css">
+	<link rel="stylesheet" href="css/cart.min.css">
+</head>
+
+<body>
+	@@include("_header.html")
+	<main class="cart">
+		<div class="container">
+			<div class="cart__steps steps">
+				<div class="steps__item active">
+					<div class="cart__step">
+						1
+					</div>
+					<span>Корзина</span>
+				</div>
+				<div class="steps__item">
+
+				</div>
+				<div class="steps__item">
+					<div class="cart__step">
+						2
+					</div>
+					<span>Доставка</span>
+				</div>
+				<div class="steps__item">
+
+				</div>
+				<div class="steps__item">
+					<div class="cart__step">
+						3
+					</div>
+					<span>Отплата</span>
+				</div>
+			</div>
+			<div class="cart__info">
+				<img src="img/cart/leaf.png" alt="Свежесть">
+				<p>
+					10% от суммы заказа мы направляем на создание экологичной инфраструктуры в регионе
+				</p>
+			</div>
+			<div class="cart__content">
+				<table class="cart__products-list products">
+					<caption class="products__title">
+						Корзина
+					</caption>
+					<thead class="thead">
+						<tr>
+							<th>
+								Наименование товара
+							</th>
+							<th>
+								Цена за ед.
+							</th>
+							<th>
+								Количество
+							</th>
+							<th>
+								Итого
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="product">
+							<td class="products__product-name">
+								<img src="img/cards/balham.png" alt="Балхам">
+								<div class="product__options">
+									<h3 class="product__title">
+										Балхам
+									</h3>
+									<div class="product__weight weight-checkbox">
+										<label class="weight-checkbox__weight-light">
+											<input type="radio" name="weight_balham" value="150" checked>
+											<span>150 гр</span>
+										</label>
+										<label class="weight-checkbox__weight-middle">
+											<input type="radio" name="weight_balham" value="200">
+											<span>200 гр</span>
+										</label>
+										<label class="weight-checkbox__weight-big">
+											<input type="radio" name="weight_balham" value="250">
+											<span>250 гр</span>
+										</label>
+									</div>
+								</div>
+							</td>
+							<td class="products__price">
+								1350 ₽
+							</td>
+							<td class="products__quantity">
+								<div class="product__quantity-block quantity-block">
+									<button class="quantity-block__btn-down">
+										-
+									</button>
+									<span>1</span>
+									<button class="quantity-block__btn-up">
+										+
+									</button>
+								</div>
+							</td>
+							<td class="products__sum">
+								1350 ₽
+							</td>
+							<td class="products__delete">
+								<img src="img/icons/close.svg" alt="удалить">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<sidebar class="cart__sidebar sidebar">
+					<h2 class="sidebar__title">
+						Итого <span class="sidebar__sum">2420 ₽</span>
+					</h2>
+					<div class="sidebar__sale">
+						Скидка <span>- 350 ₽</span>
+					</div>
+					<div class="sidebar__promocode">
+						<label class="custom-checkbox">
+							<input type="checkbox" name="promocode" value="promocode">
+							<span>У вас есть промокод?</span>
+						</label>
+					</div>
+					<button class="btn btn--primary sidebar__btn-order">
+						Оформить заказ
+					</button>
+					<div class="sidebar__free-delivery">
+						Бесплатная доставка от 2000₽
+					</div>
+					<div class="sidebar__good-quality">
+						<img src="img/cart/good_quality.svg" alt="Гарантия качества">
+						<p>
+							<span>Гарантия качества</span>
+							Не понравилось? <br> Вернем или обменяем товар в течение недели
+						</p>
+					</div>
+				</sidebar>
+			</div>
+
+			@@include("_tabs_products.html")
+			@@include('_mailing-section.html')
+		</div>
+	</main>
+	@@include("_footer.html")
+	<script src="js/cart.min.js"></script>
+	<script src="libs/swiper.min.js"></script>
+	<script>
+		const swiper = new Swiper('.swiper-container', {
+			slidesPerView: 4,
+			spaceBetween: 65,
+			loop: true,
+			observer: true,
+			observeParents: true,
+			observeSlideChildren: true,
+
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
+</body>
+
+</html>

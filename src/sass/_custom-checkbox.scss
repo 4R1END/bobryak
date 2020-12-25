@@ -48,3 +48,38 @@
 		z-index: 10;
 	}
 }
+
+.custom-checkbox {
+	& span {
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		&::before {
+			content: '';
+			margin-right: 5px;
+			display: inline-block;
+			width: 17px;
+			height: 17px;
+			border: 1px solid $main_color;
+			border-radius: 5px;
+		}
+		&::after {
+			content: url('../img/icons/checkbox.svg');
+			position: absolute;
+			left: 3px;
+			top: 2px;
+			opacity: 0;
+		}
+	}
+
+	& input[type="checkbox"] {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		opacity: 0;
+	}
+
+	& > input[type="checkbox"]:checked + span::after {
+		opacity: 1;
+	}	
+}

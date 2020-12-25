@@ -768,6 +768,41 @@ button {
   z-index: 10;
 }
 
+.custom-checkbox span {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.custom-checkbox span::before {
+  content: '';
+  margin-right: 5px;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #0F5628;
+  border-radius: 5px;
+}
+
+.custom-checkbox span::after {
+  content: url("../img/icons/checkbox.svg");
+  position: absolute;
+  left: 3px;
+  top: 2px;
+  opacity: 0;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.custom-checkbox > input[type="checkbox"]:checked + span::after {
+  opacity: 1;
+}
+
 .card {
   padding: 0 10px 24px;
   border-radius: 10px;
@@ -1421,45 +1456,13 @@ button {
 }
 
 .filters__label > span {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
 }
 
-.filters__label > span::before {
-  content: '';
-  margin-right: 5px;
-  display: inline-block;
-  width: 17px;
-  height: 17px;
-  border: 1px solid #0F5628;
-  border-radius: 5px;
-}
-
-.filters__label > span::after {
-  content: url(".././img/icons/checkbox.svg");
-  position: absolute;
-  left: 3px;
-  top: 2px;
-  opacity: 0;
-}
-
-.filters__label > input[type="checkbox"]:checked + span::after {
-  opacity: 1;
-}
-
 .filters__label:not(:last-child) {
   margin-bottom: 15px;
-}
-
-.filters__checkbox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
 }
 
 .filters__more-btn {
