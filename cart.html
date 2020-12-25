@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Бобряк | Варенье из бузины</title>
+	<title>Бобряк | Корзина товаров</title>
 	<link rel="stylesheet" href="libs/swiper.min.css">
-	<link rel="stylesheet" href="css/card_page.css">
+	<link rel="stylesheet" href="css/cart.min.css">
 </head>
+
 <body>
 	<header class="header">
 	<div class="header__bg"></div>
@@ -58,133 +60,137 @@
 		</div>
 	</div>
 </header>
-		<main class="card-page">
-	<div class="container">
-		<div class="crumbs card-page__crumbs">
-			<a href="index.html">
-				Главная
-			</a> -
-			<a href="catalog.html">
-				Каталог
-			</a>
-			- Варенье -
-			<span class="crumbs--active">Варенье из бузины</span>
-		</div>
-		<section class="card-page__content">
-			<div class="card-page__images">
-				<img src="img/cards/elder.png" alt="Варенье из бузины">
-				<img src="img/cards_page/elder_mini.png" alt="">
-				<img src="img/cards_page/elder_mini-2.png" alt="">
-				<img src="img/cards_page/elder_mini-3.png" alt="">
+	<main class="cart">
+		<div class="container">
+			<div class="cart__steps steps">
+				<div class="steps__item active">
+					<div class="cart__step">
+						1
+					</div>
+					<span>Корзина</span>
+				</div>
+				<div class="steps__item">
+
+				</div>
+				<div class="steps__item">
+					<div class="cart__step">
+						2
+					</div>
+					<span>Доставка</span>
+				</div>
+				<div class="steps__item">
+
+				</div>
+				<div class="steps__item">
+					<div class="cart__step">
+						3
+					</div>
+					<span>Отплата</span>
+				</div>
 			</div>
-			<div class="card-page__data">
-				<h1 class="card-page__title title">Варенье из бузины</h1>
-				<div class="card-page__options">
-					<div class="card-page__weight weight-checkbox">
-						<label class="weight-checkbox__weight-light">
-							<input type="radio" name="weight_balhav" value="150" checked>
-							<span>150 гр</span>
-						</label>
-						<label class="weight-checkbox__weight-middle">
-							<input type="radio" name="weight_balhav" value="200">
-							<span>200 гр</span>
-						</label>
-						<label class="weight-checkbox__weight-big">
-							<input type="radio" name="weight_balhav" value="250">
-							<span>250 гр</span>
+			<div class="cart__info">
+				<img src="img/cart/leaf.png" alt="Свежесть">
+				<p>
+					10% от суммы заказа мы направляем на создание экологичной инфраструктуры в регионе
+				</p>
+			</div>
+			<div class="cart__content">
+				<table class="cart__products-list products">
+					<caption class="products__title">
+						Корзина
+					</caption>
+					<thead class="thead">
+						<tr>
+							<th>
+								Наименование товара
+							</th>
+							<th>
+								Цена за ед.
+							</th>
+							<th>
+								Количество
+							</th>
+							<th>
+								Итого
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="product">
+							<td class="products__product-name">
+								<img src="img/cards/balham.png" alt="Балхам">
+								<div class="product__options">
+									<h3 class="product__title">
+										Балхам
+									</h3>
+									<div class="product__weight weight-checkbox">
+										<label class="weight-checkbox__weight-light">
+											<input type="radio" name="weight_balham" value="150" checked>
+											<span>150 гр</span>
+										</label>
+										<label class="weight-checkbox__weight-middle">
+											<input type="radio" name="weight_balham" value="200">
+											<span>200 гр</span>
+										</label>
+										<label class="weight-checkbox__weight-big">
+											<input type="radio" name="weight_balham" value="250">
+											<span>250 гр</span>
+										</label>
+									</div>
+								</div>
+							</td>
+							<td class="products__price">
+								1350 ₽
+							</td>
+							<td class="products__quantity">
+								<div class="product__quantity-block quantity-block">
+									<button class="quantity-block__btn-down">
+										-
+									</button>
+									<span>1</span>
+									<button class="quantity-block__btn-up">
+										+
+									</button>
+								</div>
+							</td>
+							<td class="products__sum">
+								1350 ₽
+							</td>
+							<td class="products__delete">
+								<img src="img/icons/close.svg" alt="удалить">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<sidebar class="cart__sidebar sidebar">
+					<h2 class="sidebar__title">
+						Итого <span class="sidebar__sum">2420 ₽</span>
+					</h2>
+					<div class="sidebar__sale">
+						Скидка <span>- 350 ₽</span>
+					</div>
+					<div class="sidebar__promocode">
+						<label class="custom-checkbox">
+							<input type="checkbox" name="promocode" value="promocode">
+							<span>У вас есть промокод?</span>
 						</label>
 					</div>
-					<div class="card-page__price">
-						500 &nbsp; ₽
+					<button class="btn btn--primary sidebar__btn-order">
+						Оформить заказ
+					</button>
+					<div class="sidebar__free-delivery">
+						Бесплатная доставка от 2000₽
 					</div>
-					<div class="card-page__quantity-block quantity-block">
-						<button class="quantity-block__btn-down">
-							-
-						</button>
-						<span>1</span>
-						<button class="quantity-block__btn-up">
-							+
-						</button>
+					<div class="sidebar__good-quality">
+						<img src="img/cart/good_quality.svg" alt="Гарантия качества">
+						<p>
+							<span>Гарантия качества</span>
+							Не понравилось? <br> Вернем или обменяем товар в течение недели
+						</p>
 					</div>
-				</div>
-				<div class="card-page__descr">
-					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...
-				</div>
-				<div class="card-page__use-method">
-					<span>Способ применения: </span>нет ограничений по количеству потребления
-				</div>
-				<div class="card-page__structure">
-					<span>Состав:</span>
-					<p>Ягода, вода, сахар</p>
-					<p>Пищевая ценность на 100 г:</p>
-					<p>белки - 3 г, жиры - 33 г, углеводы - 6 г</p>
-					<p>Энергетическая ценность на 100 г: - 660 ккал</p>
-				</div>
-				<button class="btn btn--primary btn--add-cart">Добавить в корзину</button>
+				</sidebar>
 			</div>
 
-		</section>
-		<section class="card-page__product-pluses pluses">
-			<div class=" pluses__item pluses__item--natural">
-				<img src="img/cards_page/Checkmark.svg" alt="натуральные ингридиенты">
-				<span>Только натуральные ингредиенты</span>
-			</div>
-			<div class="pluses__item pluses__item--good-quality">
-				<img src="img/cards_page/good_quality.svg" alt="ручной сбор">
-				<span>Каждая ягода отобрана в ручную</span>
-			</div>
-			<div class="pluses__item pluses__item--delivery">
-				<img src="img/cards_page/girl_runnig.svg" alt="ручной сбор">
-				<span>Доставка по Москве в день заказа</span>
-			</div>
-		</section>
-		<section class="card-page__info info">
-			<div class="info__item">
-				<h2 class="info__title">
-					Описание
-				</h2>
-				<p class="info__text">
-					Ароматное варенье из чёрной бузины редко можно заметить на полках в магазинах, но среди местных жителей
-					Кавказа оно любимо и популярно благодаря своим общеукрепляющим свойствам.
-				</p>
-			</div>
-			<div class="info__item">
-				<h2 class="info__title">
-					Действие на организм
-				</h2>
-				<p class="info__text">
-					Высокая концентрация клетчатки способствует выведению из организма «плохого» холестерина, что, в конечном
-					счете, снижает вероятность развития заболеваний сердечно-сосудистой системы. Чашка чая с вареньем из бузины
-					снимет умственную усталость, поможет взбодриться и поднимет настроение.
-				</p>
-			</div>
-			<div class="info__item">
-				<h2 class="info__title">
-					Особенности
-				</h2>
-				<p class="info__text">
-					Бузина также укрепляет иммунную систему, выводит болезнетворные вещества, и в результате организм начинает
-					лучше сопротивляться бактериям и вирусам.
-				</p>
-			</div>
-		</section>
-			<section class="mission">
-	<h2 class="title mission__title">
-		Наша миссия
-	</h2>
-	<div class="mission__content">
-		<div class="mission__info">
-			<img src="img/10.png" alt="10%">
-			<p class="mission__text">
-				с ваших покупок мы направляем на создание экологичной инфраструктуры в регионе
-			</p>
-			<a href="#" class="mission__link-more-info">
-				Подробнее
-			</a>
-		</div>
-		<div class="mission__banner"></div>
-	</div>
-</section>
 			<section class="tabs">
 	<nav class="tabs__menu">
 		<button class="tabs__item tabs__item--active tabs__btn-js" data-tabs-path="would_like">
@@ -1524,8 +1530,8 @@
 		</div>
 	</div>
 </footer>
+	<script src="js/cart.min.js"></script>
 	<script src="libs/swiper.min.js"></script>
-	<script src="js/card_page.min.js"></script>
 	<script>
 		const swiper = new Swiper('.swiper-container', {
 			slidesPerView: 4,
@@ -1542,4 +1548,5 @@
 		});
 	</script>
 </body>
+
 </html>
