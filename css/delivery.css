@@ -211,14 +211,16 @@ template {
 
 @font-face {
   font-family: 'Lato';
+  font-style: normal;
   font-weight: 700;
-  src: url("../fonts/Lato-Bold.ttf");
+  src: local("Lato Bold"), local("Lato-Bold"), url("../fonts/Lato-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Lato';
+  font-style: normal;
   font-weight: 300;
-  src: url("../fonts/Lato-Light.ttf");
+  src: local("Lato Light"), local("Lato-Light"), url("../fonts/Lato-Light.ttf") format("truetype");
 }
 
 @font-face {
@@ -320,6 +322,7 @@ button {
 .title__link {
   display: flex;
   align-items: center;
+  position: relative;
   font-size: 14px;
   font-weight: 300;
   line-height: 17px;
@@ -332,7 +335,7 @@ button {
   position: absolute;
   bottom: 6px;
   right: 36px;
-  width: 145px;
+  width: 80%;
   height: 1px;
   background-color: #0F5628;
 }
@@ -354,8 +357,19 @@ button {
 
 .crumbs--active {
   margin-left: 8px;
-  text-decoration: underline;
+  position: relative;
   color: #0F5628;
+}
+
+.crumbs--active:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #0F5628;
 }
 
 .crumbs:hover {
@@ -377,6 +391,7 @@ button {
 }
 
 .input {
+  padding-left: 20px;
   width: 300px;
   height: 50px;
   border: 1px solid #0F5628;
@@ -490,7 +505,7 @@ button {
 
 .swiper-button-next,
 .swiper-button-prev {
-  top: 50%;
+  top: 60%;
   width: 35px !important;
   height: 35px !important;
   border-radius: 50%;

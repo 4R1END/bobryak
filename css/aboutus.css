@@ -211,14 +211,16 @@ template {
 
 @font-face {
   font-family: 'Lato';
+  font-style: normal;
   font-weight: 700;
-  src: url("../fonts/Lato-Bold.ttf");
+  src: local("Lato Bold"), local("Lato-Bold"), url("../fonts/Lato-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Lato';
+  font-style: normal;
   font-weight: 300;
-  src: url("../fonts/Lato-Light.ttf");
+  src: local("Lato Light"), local("Lato-Light"), url("../fonts/Lato-Light.ttf") format("truetype");
 }
 
 @font-face {
@@ -320,6 +322,7 @@ button {
 .title__link {
   display: flex;
   align-items: center;
+  position: relative;
   font-size: 14px;
   font-weight: 300;
   line-height: 17px;
@@ -332,7 +335,7 @@ button {
   position: absolute;
   bottom: 6px;
   right: 36px;
-  width: 145px;
+  width: 80%;
   height: 1px;
   background-color: #0F5628;
 }
@@ -354,8 +357,19 @@ button {
 
 .crumbs--active {
   margin-left: 8px;
-  text-decoration: underline;
+  position: relative;
   color: #0F5628;
+}
+
+.crumbs--active:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #0F5628;
 }
 
 .crumbs:hover {
@@ -377,6 +391,7 @@ button {
 }
 
 .input {
+  padding-left: 20px;
   width: 300px;
   height: 50px;
   border: 1px solid #0F5628;
@@ -490,7 +505,7 @@ button {
 
 .swiper-button-next,
 .swiper-button-prev {
-  top: 50%;
+  top: 60%;
   width: 35px !important;
   height: 35px !important;
   border-radius: 50%;
@@ -750,6 +765,9 @@ button {
 
 .aboutus .team__persons {
   padding: 100px 37px 0 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .aboutus .team__persons-slide {
@@ -785,14 +803,14 @@ button {
 }
 
 .aboutus .team__more-persons-link {
+  text-align: center;
   margin-bottom: 24px;
-  display: block;
+  display: inline-block;
+  position: relative;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
   color: #0F5628;
 }
 
@@ -801,6 +819,17 @@ button {
   display: block;
   margin-top: 10px;
   transform: rotate(90deg);
+}
+
+.aboutus .team__more-persons-link:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 34%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #0F5628;
 }
 
 .aboutus .navigation {
@@ -821,9 +850,19 @@ button {
 }
 
 .aboutus .navigation__btn--active {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  position: relative;
   color: #0F5628;
+}
+
+.aboutus .navigation__btn--active:before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #0F5628;
 }
 
 .aboutus .persons__list {
@@ -943,7 +982,7 @@ button {
 }
 
 .aboutus .mission {
-  margin-bottom: 156px;
+  margin-bottom: 125px;
 }
 
 .aboutus .mission__content {
@@ -958,6 +997,10 @@ button {
 .aboutus .content__block {
   display: flex;
   margin-bottom: 70px;
+}
+
+.aboutus .content__block:last-child {
+  margin-bottom: 0;
 }
 
 .aboutus .content__block-info {
@@ -984,6 +1027,11 @@ button {
   margin-left: auto;
 }
 
+.aboutus .block__descr--lefted {
+  margin-left: 0;
+  padding-right: 160px;
+}
+
 .aboutus .block__descr p {
   font-weight: 300;
   font-size: 18px;
@@ -996,6 +1044,15 @@ button {
 
 .aboutus .block__descr .attention {
   font-weight: 700;
+}
+
+.aboutus .block__slider {
+  max-width: 50%;
+  position: relative;
+}
+
+.aboutus .block__slider.top-offset {
+  padding-top: 27px;
 }
 
 .aboutus .block__img {
@@ -1014,6 +1071,10 @@ button {
   top: 420px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.aboutus .swiper-pagination-mission--first {
+  top: 447px;
 }
 
 .aboutus .swiper-pagination-mission .swiper-pagination-bullet {
