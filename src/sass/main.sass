@@ -60,7 +60,15 @@ button
 		font-weight: 300
 		line-height: 17px
 		color: $main_color
-		text-decoration: underline
+		&:before 
+			content: ''
+			display: block
+			position: absolute
+			bottom: 6px
+			right: 36px
+			width: 145px
+			height: 1px
+			background-color: $main-color
 		&:after
 			content: url('../img/icons/arrow_view.svg')
 			margin-left: 14px

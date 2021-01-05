@@ -51,4 +51,8 @@
 	.swiper-slide[data-swiper-slide-index="5"] {
 		background-image: url('../img/offers_bg/sale_img4.png');
 	}	
+
+	.swiper-button-next, .swiper-button-prev {
+		top: 62%;
+	}
 }
