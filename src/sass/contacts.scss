@@ -2,13 +2,19 @@
 @import '_popup.scss';
 
 .popup-contacts {
-	width: 828px;
-	height: 796px;
+	width: 500px;
+	height: 600px;
 	padding: 22px;	
 	
 	&__form {
 		display: flex;
 		flex-direction: column;
+		label {
+			color: #868C88;
+			& span {
+				color: #F25950;
+			}
+		}
 		& label:not(:last-child) {
 			margin-bottom: 16px;
 			& .input {
@@ -21,11 +27,11 @@
 	input[type="submit"] {
 		margin-top: 44px;
 		width: 300px;
+		cursor: pointer;
 	}
 
 	.popup__header {
 		display: flex;
-		flex-direction: flex-end
 	}
 	.popup__body {
 		height: 100%;
@@ -63,7 +69,7 @@
 		padding-top: 52px;	
 		padding-bottom: 31px;
 		background: rgba(250, 250, 250, 0.7);
-		backdrop-filter: blur(10px);
+		backdrop-filter: blur(4px);
 	}
 
 	&__title {

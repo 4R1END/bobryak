@@ -1,6 +1,6 @@
 @import "_normalize.scss"
 @import "_variabels.scss"
-@import "_fonts.sass"
+@import "_fonts.scss"
 
 *
 	margin: 0
@@ -56,6 +56,7 @@ button
 	&__link
 		display: flex
 		align-items: center
+		position: relative
 		font-size: 14px
 		font-weight: 300
 		line-height: 17px
@@ -66,7 +67,7 @@ button
 			position: absolute
 			bottom: 6px
 			right: 36px
-			width: 145px
+			width: 80%
 			height: 1px
 			background-color: $main-color
 		&:after
@@ -81,8 +82,18 @@ button
 		color: #818181
 	&--active
 		margin-left: 8px
-		text-decoration: underline
+		position: relative
 		color: $main-color
+		&:before 
+			content: ''
+			display: block
+			position: absolute
+			bottom: 2px
+			left: 0
+			width: 100%
+			height: 1px
+			background-color: $main-color
+			
 	&:hover
 		color: $main-color
 
@@ -100,6 +111,7 @@ button
 	line-height: 19px
 
 .input 
+	padding-left: 20px
 	width: 300px
 	height: 50px	
 	border: 1px solid $main-color

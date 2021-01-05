@@ -75,6 +75,7 @@
 
 	&__content {
 		display: flex;
+		justify-content: space-between;
 	}
 
 	&__products-list {
@@ -148,6 +149,10 @@
 		display: block;
 		font-size: 14px;
 		line-height: 17px;
+	}
+
+	&__quantity-block {
+		width: 89px;
 	}
 
 }

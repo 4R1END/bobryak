@@ -10,12 +10,14 @@
 	<div class="popup-container">
 		<div class="popup popup-contacts">
 			<div class="popup__header">
-				<img class="popup__close" src="img/icons/close.svg" alt="закрыть">
+				<button class="popup__close">
+					<img  src="img/icons/close.svg" alt="закрыть">
+				</button>				
 			</div>
 			<div class="popup__body">
 				<form action="#" class="popup-contacts__form">
 					<label>
-						Имя<span>*</span>
+						Имя <span>*</span>
 						<input class="input" type="text" name="name">
 					</label>
 					<label>
@@ -24,11 +26,11 @@
 					</label>
 					<label>
 						Email
-						<input class="input" type="tel" name="email">
+						<input class="input" type="email" name="email">
 					</label>
 					<label>
 						Телефон <span>*</span>
-						<input class="input" type="email" name="phone">
+						<input class="input" type="tel" name="phone">
 					</label>				
 						<input class="btn btn--primary" type="submit" name="submit">				
 				</form>

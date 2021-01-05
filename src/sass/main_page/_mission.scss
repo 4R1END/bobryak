@@ -30,11 +30,21 @@
 	}
 
 	&__link-more-info {
+		position: relative;
 		font-weight: 300;
 		font-size: 16px;
-		line-height: 20px;		
-		text-decoration-line: underline;
+		line-height: 20px;	
 		color: $main_color;
+		&:before {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			position: absolute;
+			bottom: 2px;
+			left: 0;
+			background-color: $main_color;
+		}
 
 	}
 

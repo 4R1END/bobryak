@@ -69,20 +69,13 @@
 	}
 
 	&__range-view {
+		display: flex;
+		align-items: flex-end;
 		.btn-range-quadro {
 			margin-right: 27px;
 			
 		}
 		.btn-range-list {
-			margin-right: 27px;
-			width: 28px;
-			height: 23px;
-			background-image: url(../img/icons/list.svg);
-			background-repeat: no-repeat;
-			background-position: center center;
-			&.active {
-				background-image: url(../img/icons/list_active.svg);
-			}
 		}
 	}
 

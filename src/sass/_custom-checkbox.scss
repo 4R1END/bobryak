@@ -54,6 +54,7 @@
 		position: relative;
 		display: inline-flex;
 		align-items: center;
+		cursor: pointer;
 		&::before {
 			content: '';
 			margin-right: 5px;
@@ -61,13 +62,13 @@
 			width: 17px;
 			height: 17px;
 			border: 1px solid $main_color;
-			border-radius: 5px;
+			border-radius: 5px;			
 		}
 		&::after {
 			content: url('../img/icons/checkbox.svg');
 			position: absolute;
-			left: 3px;
-			top: 2px;
+			left: 4px;
+			top: 1px;
 			opacity: 0;
 		}
 	}

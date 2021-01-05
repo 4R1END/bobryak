@@ -1,4 +1,4 @@
-@import '_custom-checkbox.scss';
+@import "_custom-checkbox.scss";
 .card {
 	padding: 0 10px 24px;
 	border-radius: 10px;
@@ -11,13 +11,13 @@
 	&[data-round="2"].active {
 		display: block;
 	}
-	
+
 	&__image {
 		display: block;
 		margin-bottom: 25px;
 		position: relative;
 		cursor: pointer;
-		
+
 		&-main {
 			width: 100%;
 			border-radius: 10px;
@@ -29,33 +29,31 @@
 			border: none;
 			background: transparent;
 		}
-		
 	}
 
-	&__badge {	
+	&__badge {
 		display: flex;
-		align-items: center;	
+		align-items: center;
 		justify-content: center;
 		padding: 0 23px;
 		height: 23px;
 		position: absolute;
 		top: 15px;
-		right: -9px;		
+		right: -9px;
 		border-radius: 10px;
 		font-weight: 300;
 		font-size: 12px;
 		line-height: 15px;
 		color: $main_color;
-		
+
 		&.card__badge-latest {
 			width: 110px;
-			background: #64BC62;
-			
+			background: #64bc62;
 		}
 
-		&.card__badge-hit {			
+		&.card__badge-hit {
 			font-weight: 900;
-			background: #FFE07D;
+			background: #ffe07d;
 		}
 	}
 
@@ -107,18 +105,15 @@
 		border-radius: 10px;
 		background-color: $main-color;
 	}
-
-	
 }
 
 .quantity-block {
 	width: 86px;
-	height: 37px;		
-	padding: 0 10px;
+	height: 37px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: #FFFFFF;
+	background: #ffffff;
 	border: 1px solid $main_color;
 	border-radius: 10px;
 	font-weight: 300;
@@ -126,12 +121,14 @@
 	line-height: 22px;
 	&__btn-up,
 	&__btn-down {
+		width: 100%;
 		border: none;
 		background: transparent;
 		font-size: 20px;
 		line-height: 24px;
+	}	
+	& span {
+		text-align: center;
+		min-width: 25px !important;
 	}
 }
-
-
-
