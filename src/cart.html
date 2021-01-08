@@ -13,9 +13,9 @@
 	@@include("_header.html")
 	<main class="cart">
 		<div class="container">
-			<div class="cart__steps steps">
+			<div class="steps">
 				<div class="steps__item active">
-					<div class="cart__step">
+					<div class="step">
 						1
 					</div>
 					<span>Корзина</span>
@@ -24,7 +24,7 @@
 
 				</div>
 				<div class="steps__item">
-					<div class="cart__step">
+					<div class="step">
 						2
 					</div>
 					<span>Доставка</span>
@@ -33,13 +33,13 @@
 
 				</div>
 				<div class="steps__item">
-					<div class="cart__step">
+					<div class="step">
 						3
 					</div>
 					<span>Оплата</span>
 				</div>
 			</div>
-			<div class="cart__info">
+			<div class="cart__info info">
 				<img src="img/cart/leaf.png" alt="Свежесть">
 				<p>
 					10% от суммы заказа мы направляем на создание экологичной инфраструктуры в регионе
@@ -61,14 +61,14 @@
 							<th>
 								Количество
 							</th>
-							<th>
+							<th class="thead__sum">
 								Итого
 							</th>
 						</tr>
 					</thead>
-					<tbody>
+					<tbody class="tbody">
 						<tr class="product">
-							<td class="products__product-name">
+							<td class="product__name">
 								<img src="img/cards/balham.png" alt="Балхам">
 								<div class="product__options">
 									<h3 class="product__title">
@@ -76,7 +76,53 @@
 									</h3>
 									<div class="product__weight weight-checkbox">
 										<label class="weight-checkbox__weight-light">
-											<input type="radio" name="weight_balham" value="150" checked>
+											<input type="radio" name="weight_balham" value="150" >
+											<span>150 гр</span>
+										</label>
+										<label class="weight-checkbox__weight-middle">
+											<input type="radio" name="weight_balham" value="200" checked>
+											<span>200 гр</span>
+										</label>
+										<label class="weight-checkbox__weight-big">
+											<input type="radio" name="weight_balham" value="250">
+											<span>250 гр</span>
+										</label>
+									</div>
+								</div>
+							</td>
+							<td class="product__price" data-150="1350" data-200="1570" data-250="1800">
+								1350 ₽
+							</td>
+							<td class="product__quantity">
+								<div class="product__quantity-block quantity-block">
+									<button class="quantity-block__btn-down">
+										-
+									</button>
+									<span>1</span>
+									<button class="quantity-block__btn-up">
+										+
+									</button>
+								</div>
+							</td>
+							<td class="product__sum">
+								1350 ₽
+							</td>
+							<td class="product__delete">
+								<button class="btn-remove-product-js">
+									<img src="img/icons/close.svg" alt="удалить">
+								</button>
+							</td>
+						</tr>
+						<tr class="product">
+							<td class="product__name">
+								<img src="img/cards/balham.png" alt="Балхам">
+								<div class="product__options">
+									<h3 class="product__title">
+										Балхам
+									</h3>
+									<div class="product__weight weight-checkbox">
+										<label class="weight-checkbox__weight-light">
+											<input type="radio" name="weight_balham" value="150">
 											<span>150 гр</span>
 										</label>
 										<label class="weight-checkbox__weight-middle">
@@ -90,10 +136,10 @@
 									</div>
 								</div>
 							</td>
-							<td class="products__price">
+							<td class="product__price" data-150="1350" data-200="1570" data-250="1800">
 								1350 ₽
 							</td>
-							<td class="products__quantity">
+							<td class="product__quantity">
 								<div class="product__quantity-block quantity-block">
 									<button class="quantity-block__btn-down">
 										-
@@ -104,27 +150,33 @@
 									</button>
 								</div>
 							</td>
-							<td class="products__sum">
+							<td class="product__sum">
 								1350 ₽
 							</td>
-							<td class="products__delete">
-								<img src="img/icons/close.svg" alt="удалить">
+							<td class="product__delete">
+								<button class="btn-remove-product-js">
+									<img src="img/icons/close.svg" alt="удалить">
+								</button>
 							</td>
 						</tr>
 					</tbody>
 				</table>
-				<sidebar class="cart__sidebar sidebar">
+				<aside class="cart__sidebar sidebar">
 					<h2 class="sidebar__title">
-						Итого <span class="sidebar__sum">2420 ₽</span>
+						Итого <span class="sidebar__sum">0 ₽</span>
 					</h2>
 					<div class="sidebar__sale">
-						Скидка <span>- 350 ₽</span>
+						Скидка <span>0 ₽</span>
 					</div>
 					<div class="sidebar__promocode">
-						<label class="custom-checkbox">
-							<input type="checkbox" name="promocode" value="promocode">
+						<label class="custom-checkbox sidebar__label-checkbox">
+							<input class="promo-checkbox" type="checkbox" name="promocode" value="promocode">
 							<span>У вас есть промокод?</span>
 						</label>
+						<input type="text" class="input sidebar__input">
+						<button class="clear-input">
+							<img src="img/cart/close.svg" alt="стереть	">
+						</button>
 					</div>
 					<button class="btn btn--primary sidebar__btn-order">
 						Оформить заказ
@@ -139,7 +191,7 @@
 							Не понравилось? <br> Вернем или обменяем товар в течение недели
 						</p>
 					</div>
-				</sidebar>
+				</aside>
 			</div>
 
 			@@include("_tabs_products.html")

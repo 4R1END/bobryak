@@ -84,3 +84,44 @@
 		opacity: 1;
 	}	
 }
+
+.custom-radio {
+	& span {
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		cursor: pointer;
+		&::before {
+			content: '';
+			margin-right: 5px;
+			display: inline-block;
+			width: 17px;
+			height: 17px;
+			border: 1px solid $main_color;
+			border-radius: 50%;			
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			left: 4px;
+			top: 50%;
+			width: 11px;
+			height: 11px;
+			background-color: $main-color;
+			border-radius: 50%;
+			transform: translateY(-45%);
+			opacity: 0;
+		}
+	}
+
+	& input[type="radio"] {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		opacity: 0;
+	}
+
+	& > input[type="radio"]:checked + span::after {
+		opacity: 1;
+	}	
+}

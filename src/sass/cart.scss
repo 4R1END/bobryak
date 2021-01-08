@@ -6,7 +6,7 @@
 .cart {
 	margin-top: 126px;
 
-	&__steps {
+	.steps {
 		display: flex;
 		justify-content: center;
 		align-items: center;		
@@ -49,7 +49,7 @@
 		}		 
 	}
 
-	&__step {
+	.step {
 		width: 75px;
 		height: 75px;
 		display: flex;
@@ -62,7 +62,7 @@
 		color: $green-light;
 	}
 
-	&__info {
+	.info {
 		margin-bottom: 80px;
 		width: 460px;
 		font-weight: 300;
@@ -79,8 +79,7 @@
 	}
 
 	&__products-list {
-		margin-right: 128px;
-		max-width: 740px;
+		width: 740px;
 
 	}
 
@@ -94,24 +93,40 @@
 
 .products {
 	border-collapse: collapse;
-	
 
 	td, th {
 		text-align: left;
+		box-sizing: border-box;
 	}
-	td {
-		padding-right: 40px;
-	}
-
+	
 	th {		
 		padding-bottom: 5px;
 		font-weight: 300;
 		font-size: 12px;
 		line-height: 15px;
+		
+	}
+	
+	.thead {
 		border-bottom: 1px solid $grey;
+		&.hide {
+			display: none;
+		}
+		&__sum {
+			padding-left: 30px;
+		}
 	}
 
-	tbody tr:nth-child(1) td {
+	.tbody.empty {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: $grey;
+	}
+
+
+
+	.tbody tr td {
 		padding-top: 30px;
 	}
 
@@ -122,25 +137,7 @@
 		font-size: 24px;
 		line-height: 29px;
 	}
-
-	&__product-name {	
-		display: flex;
-		align-items: center;		
-		& img {			
-			margin-right: 20px;
-			width: 88px;
-			height: 88px;
-			object-fit: cover;
-			border-radius: 10px;
-		}
-	}
-
-	&__delete {
-		& img {
-			width: 16px;
-			height: 16px;
-		}
-	}
+	
 }
 .product {
 
@@ -151,20 +148,46 @@
 		line-height: 17px;
 	}
 
+	&__name {	
+		display: flex;
+		align-items: center;
+		width: 325px;
+		& img {			
+			margin-right: 20px;
+			width: 88px;
+			height: 88px;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+	}
+
+	&__price {
+		width: 108px;
+	}
+
+	&__quantity {
+		width: 136px;
+	}
+
+	&__sum {
+		padding-right: 0 !important;
+		width: 136px;
+	}
+
+	&__delete {
+		padding-right: 0 !important;
+		& img {
+			width: 16px;
+			height: 16px;
+		}
+	}
+
 	&__quantity-block {
 		width: 89px;
 	}
 
 }
 
-.quantity-block {
-
-	&__btn-down {
-	}
-
-	&__btn-up {
-	}
-}
 .sidebar {
 	padding: 26px;
 
@@ -195,10 +218,35 @@
 
 	&__promocode {
 		margin-bottom: 40px;
+		position: relative;
 		& span {
 			font-weight: 300;
 			font-size: 14px;
 			line-height: 17px;
+		}
+	}
+
+	&__input {
+		margin-top: 30px;
+		padding-left: 24px;
+		width: 190px;
+		display: none;
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 24px;
+		text-transform: uppercase;		
+		&.active {
+			display: block;
+		}
+	}
+
+	.clear-input {
+		display: none;
+		position: absolute;
+		top: 66%;
+		right: 52%;
+		&.active {
+			display: block;
 		}
 	}
 
@@ -209,6 +257,10 @@
 		font-size: 16px;
 		line-height: 19px;
 		text-transform: uppercase;
+		&:disabled {
+			background: #c4c4c4;
+			pointer-events: none;
+		}
 	}
 
 	&__free-delivery {

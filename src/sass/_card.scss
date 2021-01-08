@@ -1,4 +1,8 @@
 @import "_custom-checkbox.scss";
+.products-wrapper {
+	display: none;
+}
+
 .card {
 	padding: 0 10px 24px;
 	border-radius: 10px;
@@ -122,6 +126,7 @@
 	&__btn-up,
 	&__btn-down {
 		width: 100%;
+		height: 100%;
 		border: none;
 		background: transparent;
 		font-size: 20px;

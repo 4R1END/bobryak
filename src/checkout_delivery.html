@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Бобряк | Доставка</title>
+	<link rel="stylesheet" href="libs/choices.min.css">
+	<link rel="stylesheet" href="libs/simplebar.css">
+	<link rel="stylesheet" href="css/checkout_delivery.min.css">
+</head>
+
+<body>
+	@@include("_header.html")
+	<main class="delivery">
+		<div class="container">
+			<div class="steps">
+				<div class="steps__item active">
+					<div class="step">
+						1
+					</div>
+					<span>Корзина</span>
+				</div>
+				<div class="steps__item active">
+
+				</div>
+				<div class="steps__item active">
+					<div class="step">
+						2
+					</div>
+					<span>Доставка</span>
+				</div>
+				<div class="steps__item">
+
+				</div>
+				<div class="steps__item">
+					<div class="step">
+						3
+					</div>
+					<span>Оплата</span>
+				</div>
+			</div>
+			<div class="delivery__mission-text">
+				<img src="img/cart/leaf.png" alt="Свежесть">
+				<p>
+					10% от суммы заказа мы направляем на создание экологичной инфраструктуры в регионе
+				</p>
+			</div>
+			<div class="delivery__content">
+				<div class="delivery__info info">
+					<h2 class="info__title">
+						Доставка
+					</h2>
+					<div class="info__location">
+						<span>Москва</span>
+					</div>
+					<div class="info__delivery-methods">
+						<div class="info__delivery-method delivery-method">
+							<h3 class="delivery-method__title">
+								Самовывоз
+							</h3>
+							<p class="delivery-method__text">
+								г. Москва, Волоколамское шоссе,15
+							</p>
+							<p class="delivery-method__text">
+								пн-пт с 10.00 до 19.00
+							</p>
+							<p class="delivery-method__text">
+								<span>Бесплатно</span>
+							</p>
+							<a href="#" class="delivery-method__link">
+								Смотреть на карте
+							</a>
+						</div>
+						<div class="info__delivery-method delivery-method active">
+							<h3 class="delivery-method__title">
+								Доставка
+							</h3>
+							<p class="delivery-method__text">
+								<span>Москва</span> - доставка <br>
+								на следующий день с 10.00 до 19.00
+							</p>
+							<p class="delivery-method__text">
+								<span>Регионы</span> - 7 дней с даты <br> оформления заказа с 10.00 до 19.00
+							</p>
+							<p class="delivery-method__text">
+								<span>Стоимость</span> - 300 руб.
+							</p>
+						</div>
+					</div>
+					<div class="info__user-data">
+						<div class="info__subtitle">
+							Контактные данные
+						</div>
+						<label class="info__adress-list">
+							<span>Адрес</span>
+							<select name="adress" id="adress" class="js-choice">
+								<option value=""> ул. Героев Панфиловцев, д.85, кв. 45</option>
+								<option value=""> ул. Героев Панфиловцев, д.85, кв. 45</option>
+								<option value=""> ул. Героев Панфиловцев, д.85, кв. 45</option>
+							</select>
+						</label>
+						<label class="info__new-adress-radio custom-radio">
+							<input type="radio">
+							<span>Указать новый адрес</span>
+						</label>
+						<label class="info__new-adress-input">
+							<span>Адрес (улица, дом, квартира/офис)</span>
+							<input type="text" class="input info__input">
+						</label>
+					</div>
+					<div class="info__delivery-date">
+						<h2 class="info__subtitle">
+							Выберите дату доставки
+						</h2>
+						<div class="info__block-body">
+							<div class="info__cell date-js">
+								25 сентября
+							</div>
+							<div class="info__cell date-js">
+								26 сентября
+							</div>
+							<div class="info__cell date-js">
+								27 сентября
+							</div>
+							<div class="info__cell date-js">
+								28 сентября
+							</div>
+							<div class="info__cell date-js">
+								29 сентября
+							</div>
+							<div class="info__cell date-js">
+								30 сентября
+							</div>
+							<div class="info__cell date-js">
+								1 октября
+							</div>
+							<div class="info__cell date-js">
+								Другая дата
+							</div>
+						</div>
+					</div>
+					<div class="info__delivery-time">
+						<h2 class="info__subtitle">
+							Выберите время доставки
+						</h2>
+						<div class="info__block-body">
+							<div class="info__cell time-js">
+								8:00 - 12:00
+							</div>
+							<div class="info__cell time-js">
+								12:00 - 15:00
+							</div>
+							<div class="info__cell time-js active">
+								15:00 - 18:00
+							</div>
+							<div class="info__cell time-js">
+								18:00 - 22:00
+							</div>
+						</div>
+					</div>
+					<button class="btn btn--primary info__btn-next">
+						Далее
+					</button>
+				</div>
+
+				<aside class="delivery__sidebar sidebar">
+					<h2 class="sidebar__title">
+						Ваш заказ
+					</h2>
+					<ul class="sidebar__order-list" data-simplebar>
+						<li class="sidebar__order-item order-item">
+							<img src="img/cards/balham.png" alt="балхам">
+							<div class="order-item__name">
+								Балхам
+							</div>
+							<div class="order-item__weight">
+								150 гр
+							</div>
+							<div class="order-item__quantity">
+								1 шт
+							</div>
+							<div class="order-item__price">
+								350₽
+							</div>
+							<button class="order-item__close">
+								<img src="img/cart/close.svg" alt="удалить">
+							</button>
+						</li>
+						<li class="sidebar__order-item order-item">
+							<img src="img/cards/balham.png" alt="балхам">
+							<div class="order-item__name">
+								Балхам
+							</div>
+							<div class="order-item__weight">
+								150 гр
+							</div>
+							<div class="order-item__quantity">
+								1 шт
+							</div>
+							<div class="order-item__price">
+								350₽
+							</div>
+							<button class="order-item__close">
+								<img src="img/cart/close.svg" alt="удалить">
+							</button>
+						</li>
+						<li class="sidebar__order-item order-item">
+							<img src="img/cards/balham.png" alt="балхам">
+							<div class="order-item__name">
+								Балхам
+							</div>
+							<div class="order-item__weight">
+								150 гр
+							</div>
+							<div class="order-item__quantity">
+								1 шт
+							</div>
+							<div class="order-item__price">
+								350₽
+							</div>
+							<button class="order-item__close">
+								<img src="img/cart/close.svg" alt="удалить">
+							</button>
+						</li>
+						<li class="sidebar__order-item order-item">
+							<img src="img/cards/balham.png" alt="балхам">
+							<div class="order-item__name">
+								Балхам
+							</div>
+							<div class="order-item__weight">
+								150 гр
+							</div>
+							<div class="order-item__quantity">
+								1 шт
+							</div>
+							<div class="order-item__price">
+								350₽
+							</div>
+							<button class="order-item__close">
+								<img src="img/cart/close.svg" alt="удалить">
+							</button>
+						</li>
+					</ul>
+
+					<button class="btn btn--secondary sidebar__btn-order">
+						изменить заказ
+					</button>
+					<div class="sidebar__fast-delivery">
+						<img src="img/icons/delivery.svg" alt="Оперативная доставка">
+						<p>
+							<span>
+								Оперативная доставка
+							</span>
+							Доставка по Москве на следующий день
+						</p>
+					</div>
+
+				</aside>
+			</div>
+		</div>
+	</main>
+	@@include("_footer.html")
+	<script src="libs/simplebar.js"></script>
+	<script src="libs/choices.min.js"></script>
+	<script src="js/checkout_delivery.min.js"></script>
+	<script>
+		const defaultSelect = () => {
+			const element = document.querySelector('.js-choice');
+			const choices = new Choices(element, {
+				searchEnabled: false
+			});
+		};
+
+		defaultSelect();
+	</script>
+</body>
+
+</html>
