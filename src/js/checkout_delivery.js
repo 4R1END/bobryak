@@ -1,10 +1,13 @@
-const deliveryMethod = document.querySelectorAll(`.delivery-method`)
+const deliveryMethods = document.querySelectorAll(`.delivery-method`);
+const deliverySelfContent = document.querySelector(`.info__by-self-content`);
+const deliveryCourierContent = document.querySelector(`.info__by-courier-content`);
 const newAdressRadio = document.querySelector(`.info__new-adress-radio input`);
 const newAdressInput = document.querySelector(`.info__new-adress-input`);
 const timeCell = document.querySelectorAll(`.time-js`);
 const dateCell = document.querySelectorAll(`.date-js`);
 const productsList = document.querySelector(`.simplebar-content`);
 const btnProductDelete = document.querySelectorAll(`.order-item__close`);
+const btnNextStep = document.querySelector(`.info__btn-next`);
 
 
 newAdressRadio.addEventListener(`click`, () => {
@@ -26,10 +29,31 @@ const changeCell = (element) => {
 	});
 };
 
-changeCell(deliveryMethod);
+const toggleTabsMethod = () => {
+	deliveryMethods.forEach(el => {
+		el.addEventListener(`click`, () => {
+			if(el.hasAttribute(`data-by-self`)) {
+				deliverySelfContent.classList.remove(`active`);
+				deliveryCourierContent.classList.remove(`active`);
+				deliverySelfContent.classList.add(`active`);
+			};
+			if(el.hasAttribute(`data-by-courier`)) {
+				deliverySelfContent.classList.remove(`active`);
+				deliveryCourierContent.classList.remove(`active`);
+				deliveryCourierContent.classList.add(`active`);
+			};
+			if (el.classList.contains(`active`)) {
+				btnNextStep.classList.remove(`btn--disable`);
+				btnNextStep.classList.add(`btn--primary`);
+			};
+		});
+	});
+};
+
+changeCell(deliveryMethods);
 changeCell(timeCell);
 changeCell(dateCell);
-
+toggleTabsMethod();
 
 btnProductDelete.forEach(el => {
 	el.addEventListener(`click`, () => {

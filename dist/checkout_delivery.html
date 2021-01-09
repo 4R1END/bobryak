@@ -104,7 +104,7 @@
 						<span>Москва</span>
 					</div>
 					<div class="info__delivery-methods">
-						<div class="info__delivery-method delivery-method">
+						<div class="info__delivery-method delivery-method" data-by-self>
 							<h3 class="delivery-method__title">
 								Самовывоз
 							</h3>
@@ -121,7 +121,7 @@
 								Смотреть на карте
 							</a>
 						</div>
-						<div class="info__delivery-method delivery-method active">
+						<div class="info__delivery-method delivery-method" data-by-courier>
 							<h3 class="delivery-method__title">
 								Доставка
 							</h3>
@@ -137,78 +137,88 @@
 							</p>
 						</div>
 					</div>
-					<div class="info__user-data">
-						<div class="info__subtitle">
-							Контактные данные
+					<div class="info__by-courier-content">
+						<div class="info__user-data">
+							<div class="info__subtitle">
+								Контактные данные
+							</div>
+							<label class="info__adress-list">
+								<span>Адрес</span>
+								<select name="adress" id="adress" class="js-choice">
+									<option value=""> ул. Героев Панфиловцев, д.85, кв. 45</option>
+									<option value=""> ул. Героев Панфиловцев, д.85, кв. 45</option>
+									<option value=""> ул. Героев Панфиловцев, д.85, кв. 45</option>
+								</select>
+							</label>
+							<label class="info__new-adress-radio custom-radio">
+								<input type="radio">
+								<span>Указать новый адрес</span>
+							</label>
+							<label class="info__new-adress-input">
+								<span>Адрес (улица, дом, квартира/офис)</span>
+								<input type="text" class="input info__input">
+							</label>
 						</div>
-						<label class="info__adress-list">
-							<span>Адрес</span>
-							<select name="adress" id="adress" class="js-choice">
-								<option value=""> ул. Героев Панфиловцев, д.85, кв. 45</option>
-								<option value=""> ул. Героев Панфиловцев, д.85, кв. 45</option>
-								<option value=""> ул. Героев Панфиловцев, д.85, кв. 45</option>
-							</select>
-						</label>
-						<label class="info__new-adress-radio custom-radio">
-							<input type="radio">
-							<span>Указать новый адрес</span>
-						</label>
-						<label class="info__new-adress-input">
-							<span>Адрес (улица, дом, квартира/офис)</span>
-							<input type="text" class="input info__input">
-						</label>
-					</div>
-					<div class="info__delivery-date">
-						<h2 class="info__subtitle">
-							Выберите дату доставки
-						</h2>
-						<div class="info__block-body">
-							<div class="info__cell date-js">
-								25 сентября
-							</div>
-							<div class="info__cell date-js">
-								26 сентября
-							</div>
-							<div class="info__cell date-js">
-								27 сентября
-							</div>
-							<div class="info__cell date-js">
-								28 сентября
-							</div>
-							<div class="info__cell date-js">
-								29 сентября
-							</div>
-							<div class="info__cell date-js">
-								30 сентября
-							</div>
-							<div class="info__cell date-js">
-								1 октября
-							</div>
-							<div class="info__cell date-js">
-								Другая дата
-							</div>
-						</div>
-					</div>
-					<div class="info__delivery-time">
-						<h2 class="info__subtitle">
-							Выберите время доставки
-						</h2>
-						<div class="info__block-body">
-							<div class="info__cell time-js">
-								8:00 - 12:00
-							</div>
-							<div class="info__cell time-js">
-								12:00 - 15:00
-							</div>
-							<div class="info__cell time-js active">
-								15:00 - 18:00
-							</div>
-							<div class="info__cell time-js">
-								18:00 - 22:00
+						<div class="info__delivery-date">
+							<h2 class="info__subtitle">
+								Выберите дату доставки
+							</h2>
+							<div class="info__block-body">
+								<div class="info__cell date-js">
+									25 сентября
+								</div>
+								<div class="info__cell date-js">
+									26 сентября
+								</div>
+								<div class="info__cell date-js">
+									27 сентября
+								</div>
+								<div class="info__cell date-js">
+									28 сентября
+								</div>
+								<div class="info__cell date-js">
+									29 сентября
+								</div>
+								<div class="info__cell date-js">
+									30 сентября
+								</div>
+								<div class="info__cell date-js">
+									1 октября
+								</div>
+								<div class="info__cell date-js">
+									Другая дата
+								</div>
 							</div>
 						</div>
+						<div class="info__delivery-time">
+							<h2 class="info__subtitle">
+								Выберите время доставки
+							</h2>
+							<div class="info__block-body">
+								<div class="info__cell time-js">
+									8:00 - 12:00
+								</div>
+								<div class="info__cell time-js">
+									12:00 - 15:00
+								</div>
+								<div class="info__cell time-js active">
+									15:00 - 18:00
+								</div>
+								<div class="info__cell time-js">
+									18:00 - 22:00
+								</div>
+							</div>
+						</div>
 					</div>
-					<button class="btn btn--primary info__btn-next">
+					<div class="info__by-self-content">
+						<label>
+							<span>
+								Комментарий к заказу (необязательно)
+							</span>
+							<textarea name="comment" cols="30" rows="10"></textarea>
+						</label>
+					</div>
+					<button class="btn btn--disable info__btn-next">
 						Далее
 					</button>
 				</div>

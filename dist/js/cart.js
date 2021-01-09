@@ -211,9 +211,16 @@ product.forEach(el => {
 		if (countProducts === 0) {
 			tableHead.classList.add(`hide`);
 			tableBody.classList.add(`empty`);
-			tableBody.append(`Корзина пуста`);
+			tableBody.insertAdjacentHTML(`afterbegin`, `<span>Корзина пуста</span>`);
 			generalSum.innerText = `0 ₽`;
-			btnOrder.disabled = true;
+			btnOrder.classList.remove(`btn--primary`);
+			btnOrder.classList.add(`btn--disable`);
+		} else {
+			tableHead.classList.remove(`hide`);
+			tableBody.classList.remove(`empty`);
+			tableBody.querySelector(`span`).remove();
+			btnOrder.classList.add(`btn--primary`);
+			btnOrder.classList.remove(`btn--disable`);
 		};
 		counterHandler();
 		let productsList = document.querySelector(`.tbody`);
