@@ -409,6 +409,7 @@ button {
 
 .btn--disable {
   background-color: #C4C4C4;
+  pointer-events: none;
 }
 
 .block-more {
@@ -623,7 +624,7 @@ button {
 }
 
 .header .menu__link {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   color: #0F5628;
 }
@@ -1329,6 +1330,39 @@ button {
   margin-bottom: 8px;
 }
 
+.info__by-courier-content {
+  display: none;
+}
+
+.info__by-courier-content.active {
+  display: block;
+}
+
+.info__by-self-content {
+  display: none;
+}
+
+.info__by-self-content label span {
+  margin-bottom: 8px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #868C88;
+}
+
+.info__by-self-content textarea {
+  margin-bottom: 50px;
+  width: 300px;
+  height: 155px;
+  border: 1px solid #0F5628;
+  border-radius: 10px;
+  resize: none;
+}
+
+.info__by-self-content.active {
+  display: block;
+}
+
 .info__user-data {
   margin-bottom: 111px;
   display: flex;
@@ -1462,6 +1496,7 @@ button {
   font-size: 10px;
   line-height: 12px;
   color: #0F5628;
+  pointer-events: none;
 }
 
 .delivery-method span {
@@ -1473,8 +1508,13 @@ button {
   color: #000 !important;
 }
 
+.delivery-method.active .delivery-method__link {
+  pointer-events: auto;
+}
+
 .sidebar {
   padding: 27px;
+  margin-bottom: 245px;
   width: 522px;
   max-height: 658px;
   border: 1px solid #0F5628;
@@ -1490,6 +1530,7 @@ button {
 }
 
 .sidebar__order-list {
+  margin-right: -27px;
   margin-bottom: 40px;
   padding-right: 80px;
   height: 328px;

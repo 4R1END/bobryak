@@ -409,6 +409,7 @@ button {
 
 .btn--disable {
   background-color: #C4C4C4;
+  pointer-events: none;
 }
 
 .block-more {
@@ -623,7 +624,7 @@ button {
 }
 
 .header .menu__link {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 300;
   color: #0F5628;
 }
@@ -1218,7 +1219,7 @@ button {
   color: #0F5628;
 }
 
-.cart .steps__item.active .cart__step {
+.cart .steps__item.active .step {
   border: 2px solid #0F5628;
   color: #0F5628;
 }
@@ -1445,10 +1446,18 @@ button {
   display: block;
 }
 
+.sidebar__order-link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
 .sidebar__btn-order {
   margin-bottom: 45px;
   width: 354px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
