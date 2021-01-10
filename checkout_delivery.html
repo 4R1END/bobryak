@@ -11,6 +11,52 @@
 </head>
 
 <body>
+	<div class="popup-container">
+		<div class="popup">
+			<div class="popup__header">
+				<h2 class="popup__title">
+					Выберите пункт самовывоза
+				</h2>
+				<button class="popup__close"></button>
+			</div>
+			<div class="popup__body">
+				<div class="popup__map">
+					<img src="img/map.png" alt="Выбери пункт самовывоза">
+				</div>
+				<div class="popup__info">
+					<ul class="popup__points-list">
+						<li>
+							<label class="custom-radio">
+								<input type="radio" name="point">
+								<span>ул. Генерала Тюленева 47/5</span>	
+							</label>
+						</li>
+						<li>
+							<label class="custom-radio">
+								<input type="radio" name="point">
+								<span>ул. Красных партизановских отрядов 25</span>	
+							</label>
+						</li>
+						<li>
+							<label class="custom-radio">
+								<input type="radio" name="point">
+								<span>ул. Семенцовская 75</span>	
+							</label>
+						</li>
+						<li>
+							<label class="custom-radio">
+								<input type="radio" name="point">
+								<span>ул. Зои Ященко 128/6</span>	
+							</label>
+						</li>
+					</ul>
+					<button class="btn btn--secondary popup__btn-save">
+						сохранить
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<header class="header">
 	<div class="header__bg"></div>
 	<div class="container header__container">
@@ -117,13 +163,13 @@
 							<p class="delivery-method__text">
 								<span>Бесплатно</span>
 							</p>
-							<a href="#" class="delivery-method__link">
+							<button class="delivery-method__btn-map">
 								Смотреть на карте
-							</a>
+							</button>
 						</div>
 						<div class="info__delivery-method delivery-method" data-by-courier>
 							<h3 class="delivery-method__title">
-								Доставка
+								Доставка курьером
 							</h3>
 							<p class="delivery-method__text">
 								<span>Москва</span> - доставка <br>
