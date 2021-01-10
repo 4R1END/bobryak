@@ -1,3 +1,5 @@
+@@include('_popup.js');
+
 const deliveryMethods = document.querySelectorAll(`.delivery-method`);
 const deliverySelfContent = document.querySelector(`.info__by-self-content`);
 const deliveryCourierContent = document.querySelector(`.info__by-courier-content`);
@@ -8,6 +10,9 @@ const dateCell = document.querySelectorAll(`.date-js`);
 const productsList = document.querySelector(`.simplebar-content`);
 const btnProductDelete = document.querySelectorAll(`.order-item__close`);
 const btnNextStep = document.querySelector(`.info__btn-next`);
+const btnMapSeen = document.querySelector(`.delivery-method__link`);
+
+
 
 
 newAdressRadio.addEventListener(`click`, () => {
@@ -65,4 +70,10 @@ btnProductDelete.forEach(el => {
 			`);
 		};
 	});
-})
+});
+
+document.addEventListener(`click`, (e) => {
+	if (e.target.classList.contains(`delivery-method__btn-map`)) {
+		popupContainer.classList.add(`active`);
+	}
+});

@@ -281,7 +281,9 @@
 		line-height: 12px;
 	}
 
-	&__link {
+	&__btn-map {
+		margin-top: 5px;
+		text-align: left;
 		font-weight: 300;
 		font-size: 10px;
 		line-height: 12px;
@@ -294,8 +296,9 @@
 	&.active {	
 		border: 2px solid $main_color;
 		color: #000 !important;
-		& .delivery-method__link {
+		& .delivery-method__btn-map {
 			pointer-events: auto;
+			color: $main_color;
 		}		
 	}
 }
@@ -305,7 +308,7 @@
 	padding: 27px;
 	margin-bottom: 245px;
 	width: 522px;
-	max-height: 658px;
+	height: 658px;
 	border: 1px solid $main_color;
 	box-sizing: border-box;
 	border-radius: 30px;
@@ -401,4 +404,82 @@
 
 .simplebar-scrollbar.simplebar-visible:before {
 	opacity: 1;
+}
+
+
+.popup-container {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 20;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	&.active {
+		display: flex;
+	}
+}
+.popup {
+	z-index: 100;
+	padding: 47px 40px 30px;
+	width: 1168px;
+	height: 620px; 	
+	background-color: #fff;
+	overflow: hidden;
+		&__header {
+			margin-bottom: 27px;
+			display: flex;
+			justify-content: space-between;	
+			align-items: center;		
+		}
+
+		&__title {
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 29px;
+		}
+
+		&__close {			
+			cursor: pointer;
+			width: 20px;
+			height: 20px;
+			background-image: url('../img/cart/close.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+
+		&__body {
+			display: flex;
+		} 	
+
+		&__map {
+			padding-top: 20px;
+			margin-right: 40px;
+		}
+
+		&__info {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			& label span {
+				font-weight: 300;
+				font-size: 14px;
+				line-height: 17px;
+			}
+
+			.custom-radio span::before {
+				margin-right: 12px;
+			}
+		}
+
+		&__points-list {
+			& li {
+				margin-bottom: 33px;
+			}
+		}
+
+		&__btn-save {
+			margin-bottom: 20px;
+		}
 }

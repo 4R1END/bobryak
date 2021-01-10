@@ -11,7 +11,6 @@ const rangeQuadroBtn = document.querySelector(`.btn-range-quadro`);
 const filtersTitle = document.querySelectorAll(`.filters__title`);
 const paginationLine = document.querySelector(`.pagination__line`);
 const paginationLineComplete = document.querySelector(`.pagination__line`);
-console.log(paginationLineComplete);
 const generalCountCards = cardsOfCatalog.length;
 const currentCountCardsBlock = document.querySelector(`.pagination__current`);
 const generalCountCardsBlock = document.querySelector(`.pagination__general`);
