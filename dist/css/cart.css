@@ -302,6 +302,14 @@ button {
   background: transparent;
 }
 
+button > a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
@@ -1266,6 +1274,11 @@ button {
 
 .cart .info img {
   display: block;
+}
+
+.cart__mission-text img {
+  margin-left: 20px;
+  margin-bottom: -15px;
 }
 
 .cart__content {

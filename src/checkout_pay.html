@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Бобряк | Оплата</title>
+	<link rel="stylesheet" href="libs/simplebar.css">
+	<link rel="stylesheet" href="css/checkout_pay.min.css">
+</head>
+
+<body>
+	@@include("_header.html")
+	<main class="pay">
+		<div class="container">
+			<div class="steps">
+				<div class="steps__item active">
+					<div class="step">
+						1
+					</div>
+					<span>Корзина</span>
+				</div>
+				<div class="steps__item active">
+
+				</div>
+				<div class="steps__item active">
+					<div class="step">
+						2
+					</div>
+					<span>Доставка</span>
+				</div>
+				<div class="steps__item active">
+
+				</div>
+				<div class="steps__item active">
+					<div class="step">
+						3
+					</div>
+					<span>Оплата</span>
+				</div>
+			</div>
+			<div class="pay__mission-text">
+				<img src="img/cart/leaf.png" alt="Свежесть">
+				<p>
+					10% от суммы заказа мы направляем на создание экологичной инфраструктуры в регионе
+				</p>
+			</div>
+			<div class="pay__content">
+				<div class="pay__info info">
+					<h2 class="info__title">
+						Спосбо оплаты
+					</h2>
+					<ul class="info__pay-method">
+						<li>
+							<label class="custom-radio">
+								<input type="radio" name="payment" value="cash">
+								<span>Наличными курьеру</span>
+							</label>
+						</li>
+						<li>
+							<label class="custom-radio">
+								<input type="radio" name="payment" value="cash">
+								<span>Cloud Payments</span>
+							</label>
+						</li>
+						<li>
+							<label class="custom-radio">
+								<input type="radio" name="payment" value="cash">
+								<span>Картой Онлайн</span>
+								<ul class="credit-card-list">
+									<li class="credit-card-item">
+										<img src="img/icons/mastercard.png" alt="mastercard">
+									</li>
+									<li class="credit-card-item">
+										<img src="img/icons/mir.png" alt="mir">
+									</li>
+									<li class="credit-card-item">
+										<img src="img/icons/visa.png" alt="visa">
+									</li>
+									<li class="credit-card-item">
+										<img src="img/icons/logos_google-pay.svg" alt="google pay">
+									</li>
+									<li class="credit-card-item">
+										<img src="img/icons/apple_pay.svg" alt="apple pay">
+									</li>
+								</ul>								
+							</label>
+							
+						</li>
+					</ul>
+					<button class="btn btn--primary info__btn-tofinish">
+						<a href="#">
+							Оформить покупку
+						</a>						
+					</button>
+					<button class="btn btn--secondary info__btn-back">
+						<a href="checkout_delivery.html">
+							Назад
+						</a>						
+					</button>
+				</div>
+
+				<aside class="pay__sidebar sidebar">
+					<h2 class="sidebar__title">
+						Ваш заказ
+					</h2>
+					<ul class="sidebar__order-list" data-simplebar>
+						<li class="sidebar__order-item order-item">
+							<img src="img/cards/balham.png" alt="балхам">
+							<div class="order-item__name">
+								Балхам
+							</div>
+							<div class="order-item__weight">
+								150 гр
+							</div>
+							<div class="order-item__quantity">
+								1 шт
+							</div>
+							<div class="order-item__price">
+								350₽
+							</div>
+						</li>
+						<li class="sidebar__order-item order-item">
+							<img src="img/cards/balham.png" alt="балхам">
+							<div class="order-item__name">
+								Балхам
+							</div>
+							<div class="order-item__weight">
+								150 гр
+							</div>
+							<div class="order-item__quantity">
+								1 шт
+							</div>
+							<div class="order-item__price">
+								350₽
+							</div>
+						</li>
+						<li class="sidebar__order-item order-item">
+							<img src="img/cards/balham.png" alt="балхам">
+							<div class="order-item__name">
+								Балхам
+							</div>
+							<div class="order-item__weight">
+								150 гр
+							</div>
+							<div class="order-item__quantity">
+								1 шт
+							</div>
+							<div class="order-item__price">
+								350₽
+							</div>
+						</li>
+						<li class="sidebar__order-item order-item">
+							<img src="img/cards/balham.png" alt="балхам">
+							<div class="order-item__name">
+								Балхам
+							</div>
+							<div class="order-item__weight">
+								150 гр
+							</div>
+							<div class="order-item__quantity">
+								1 шт
+							</div>
+							<div class="order-item__price">
+								350₽
+							</div>
+						</li>
+					</ul>
+
+					<div class="sidebar__price-block">
+						<div class="sidebar__fullprice">
+							<span>Итого</span>
+							<span>2420 ₽</span>
+						</div>
+						<div class="sidebar__discount">
+							<span>Скидка</span>
+							<span>- 350 ₽</span>
+						</div>
+						<div class="sidebar__promocode">
+							<span>Промокод “BOBRTOP”</span>
+							<span>- 500 ₽</span>
+						</div>
+					</div>
+					<div class="sidebar__safe-payment">
+						<img src="img/icons/ssl.svg" alt="ssl">
+						<p>
+							<span>Безопасный платеж</span>
+							Используем SSL протокол, для защиты ваших данных при оплате онлайн
+						</p>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</main>
+	@@include("_footer.html")
+	<script src="libs/simplebar.js"></script>
+	<script src="js/checkout_pay.min.js"></script>	
+</body>
+
+</html>

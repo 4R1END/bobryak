@@ -302,6 +302,14 @@ button {
   background: transparent;
 }
 
+button > a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;

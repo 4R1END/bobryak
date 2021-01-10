@@ -1,8 +1,5 @@
 @import "main.sass";
-@import "_card.scss";
 @import "_custom-checkbox.scss";
-@import "_custom-select.scss";
-
 
 .delivery {
 	margin-top: 126px;
@@ -71,6 +68,13 @@
 		line-height: 24px;
 		& img {
 			display: block;
+		}
+	}
+	
+	&__mission-text {
+		& img {
+			margin-left: 20px;
+			margin-bottom: -15px;
 		}
 	}
 

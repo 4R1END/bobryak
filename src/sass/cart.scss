@@ -73,6 +73,13 @@
 		}
 	}
 
+	&__mission-text {
+		& img {
+			margin-left: 20px;
+			margin-bottom: -15px;
+		}
+	}
+
 	&__content {
 		display: flex;
 		justify-content: space-between;
