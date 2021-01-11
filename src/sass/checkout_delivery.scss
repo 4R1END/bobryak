@@ -149,6 +149,7 @@
 			color: #868C88;
 		}
 		& textarea {
+			padding: 15px;
 			margin-bottom: 50px;	
 			width: 300px;
 			height: 155px;
@@ -487,3 +488,34 @@
 			margin-bottom: 20px;
 		}
 }
+
+.calendar	{
+	padding-left: 27px;
+	text-transform: lowercase;
+	&:placeholder-shown {
+		text-transform: capitalize;
+		color: #fff !important;
+	}
+}
+
+.datepicker {
+	left: 600px !important;
+}
+
+.datepicker-cell.day {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #262D33;
+}
+
+.datepicker-cell.selected, .datepicker-cell.selected:hover {
+	border-radius: 50%;
+	background: $main-color;
+	color: #fff;
+}
+
+.datepicker-cell.focused:not(.selected) {
+	border-radius: 50%;
+}
+

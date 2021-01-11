@@ -11,6 +11,7 @@ const productsList = document.querySelector(`.simplebar-content`);
 const btnProductDelete = document.querySelectorAll(`.order-item__close`);
 const btnNextStep = document.querySelector(`.info__btn-next`);
 const btnMapSeen = document.querySelector(`.delivery-method__link`);
+const calendar = document.querySelector(`.calendar`);
 
 
 
@@ -77,3 +78,9 @@ document.addEventListener(`click`, (e) => {
 		popupContainer.classList.add(`active`);
 	}
 });
+
+const calendarWrapper = document.querySelector(`.datepicker__wrapper`);
+
+// calendar.addEventListener(`click`, (e) => {
+// 	calendar.innerHTML = calendar.getAttribute(`data-value`);
+// })
