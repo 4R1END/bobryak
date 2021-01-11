@@ -247,6 +247,12 @@ template {
   src: url("../fonts/Montserrat-Light.ttf");
 }
 
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1042,6 +1048,7 @@ button > a {
 }
 
 .info__by-self-content textarea {
+  padding: 15px;
   margin-bottom: 50px;
   width: 300px;
   height: 155px;
@@ -1389,4 +1396,46 @@ button > a {
 
 .popup__btn-save {
   margin-bottom: 20px;
+}
+
+.calendar {
+  padding-left: 27px;
+  text-transform: lowercase;
+}
+
+.calendar:-moz-placeholder-shown {
+  text-transform: capitalize;
+  color: #fff !important;
+}
+
+.calendar:-ms-input-placeholder {
+  text-transform: capitalize;
+  color: #fff !important;
+}
+
+.calendar:placeholder-shown {
+  text-transform: capitalize;
+  color: #fff !important;
+}
+
+.datepicker {
+  left: 600px !important;
+}
+
+.datepicker-cell.day {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #262D33;
+}
+
+.datepicker-cell.selected,
+.datepicker-cell.selected:hover {
+  border-radius: 50%;
+  background: #0F5628;
+  color: #fff;
+}
+
+.datepicker-cell.focused:not(.selected) {
+  border-radius: 50%;
 }

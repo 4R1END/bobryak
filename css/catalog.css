@@ -247,6 +247,12 @@ template {
   src: url("../fonts/Montserrat-Light.ttf");
 }
 
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;

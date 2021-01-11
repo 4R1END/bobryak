@@ -7,6 +7,7 @@
 	<title>Бобряк | Доставка</title>
 	<link rel="stylesheet" href="libs/choices.min.css">
 	<link rel="stylesheet" href="libs/simplebar.css">
+	<link rel="stylesheet" href="libs/datepicker.min.css">
 	<link rel="stylesheet" href="css/checkout_delivery.min.css">
 </head>
 
@@ -231,9 +232,9 @@
 								<div class="info__cell date-js">
 									1 октября
 								</div>
-								<div class="info__cell date-js">
-									Другая дата
-								</div>
+								<input type="text" id="calendar" class="info__cell date-js calendar" placeholder="Другая дата" data-date>
+								
+								
 							</div>
 						</div>
 						<div class="info__delivery-time">
@@ -457,6 +458,8 @@
 </footer>
 	<script src="libs/simplebar.js"></script>
 	<script src="libs/choices.min.js"></script>
+	<script src="libs/datepicker.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.1/dist/js/locales/ru.js"></script> -->
 	<script src="js/checkout_delivery.min.js"></script>
 	<script>
 		const defaultSelect = () => {
@@ -467,6 +470,28 @@
 		};
 
 		defaultSelect();
+		(function () {
+			Datepicker.locales.ru = {
+				days: ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"],
+				daysShort: ["Вск", "Пнд", "Втр", "Срд", "Чтв", "Птн", "Суб"],
+				daysMin: ["Вс", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+				months: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"],
+				monthsShort: ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"],
+				today: "Сегодня",
+				clear: "Очистить",
+				format: "d M",
+				weekStart: 1,
+				monthsTitle: 'Месяцы'
+			};
+		}());
+		
+		const datepicker = new Datepicker(document.getElementById('calendar'), {
+			autohide: true,
+			language: "ru"
+		});
+		
+		
+		
 	</script>
 </body>
 
