@@ -990,18 +990,18 @@ button > a {
   line-height: 29px;
 }
 
-.info__pay-method {
+.info__pay-methods {
   margin-bottom: 100px;
   width: 522px;
 }
 
-.info__pay-method > li {
+.info__pay-methods > li {
   padding: 17px 30px 16px;
   border: 1px solid #0F5628;
   border-radius: 10px;
 }
 
-.info__pay-method > li:not(:last-child) {
+.info__pay-methods > li:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -1015,12 +1015,12 @@ button > a {
   display: inline-block;
 }
 
-.info__btn-tofinish,
+.info__btn-checkout,
 .info__btn-back {
   display: block;
 }
 
-.info__btn-tofinish {
+.info__btn-checkout {
   margin-bottom: 40px;
 }
 

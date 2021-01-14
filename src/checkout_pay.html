@@ -50,22 +50,22 @@
 					<h2 class="info__title">
 						Спосбо оплаты
 					</h2>
-					<ul class="info__pay-method">
+					<ul class="info__pay-methods">
 						<li>
 							<label class="custom-radio">
-								<input type="radio" name="payment" value="cash">
+								<input class="paymethod" type="radio" name="payment" value="cash">
 								<span>Наличными курьеру</span>
 							</label>
 						</li>
 						<li>
 							<label class="custom-radio">
-								<input type="radio" name="payment" value="cash">
+								<input class="paymethod" type="radio" name="payment" value="cloud">
 								<span>Cloud Payments</span>
 							</label>
 						</li>
 						<li>
 							<label class="custom-radio">
-								<input type="radio" name="payment" value="cash">
+								<input class="paymethod" type="radio" name="payment" value="card">
 								<span>Картой Онлайн</span>
 								<ul class="credit-card-list">
 									<li class="credit-card-item">
@@ -88,7 +88,7 @@
 
 						</li>
 					</ul>
-					<button class="btn btn--primary info__btn-tofinish">
+					<button class="btn btn--disable info__btn-checkout">
 						<a href="ready_order.html">
 							Оформить покупку
 						</a>

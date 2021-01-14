@@ -54,11 +54,11 @@
 .slide {
 	padding-top: 217px;
 	height: 350px;
-	background: url('../img/cart/mounts.jpg') no-repeat;
+	background: url('../img/cart/mounts2.jpg') no-repeat;
 	background-size: cover;
 	border-radius: 10px;	
 	&:nth-child(2) {
-		background: url('../img/cart/mounts2.jpg') no-repeat;
+		background: url('../img/cart/mounts.jpg') no-repeat;
 		background-size: cover;
 	}
 	&:nth-child(3) {
@@ -191,13 +191,11 @@
 	width: 90%;
 	
 	.swiper-slide {
-		opacity: 0;
-		transition: opacity 1s;
+		opacity: 0;		
 	}
 	.swiper-slide-active,
 	.swiper-slide-prev,
 	.swiper-slide-next {
-		opacity: 1;
-		transition: opacity 1s;
+		opacity: 1;	
 	}
 }

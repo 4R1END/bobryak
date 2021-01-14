@@ -96,7 +96,7 @@
 		line-height: 29px;
 	}
 
-	&__pay-method {
+	&__pay-methods {
 		margin-bottom: 100px;		
 		width: 522px;
 		& > li {
@@ -118,12 +118,12 @@
 		}
 	}
 
-	&__btn-tofinish, 
+	&__btn-checkout, 
 	&__btn-back {
 		display: block;
 	}
 
-	&__btn-tofinish {
+	&__btn-checkout {
 		margin-bottom: 40px;
 	}
 
