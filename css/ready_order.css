@@ -816,13 +816,13 @@ button > a {
 .slide {
   padding-top: 217px;
   height: 350px;
-  background: url("../img/cart/mounts.jpg") no-repeat;
+  background: url("../img/cart/mounts2.jpg") no-repeat;
   background-size: cover;
   border-radius: 10px;
 }
 
 .slide:nth-child(2) {
-  background: url("../img/cart/mounts2.jpg") no-repeat;
+  background: url("../img/cart/mounts.jpg") no-repeat;
   background-size: cover;
 }
 
@@ -949,12 +949,10 @@ button > a {
 
 .swiper-container-coverflow .swiper-slide {
   opacity: 0;
-  transition: opacity 1s;
 }
 
 .swiper-container-coverflow .swiper-slide-active,
 .swiper-container-coverflow .swiper-slide-prev,
 .swiper-container-coverflow .swiper-slide-next {
   opacity: 1;
-  transition: opacity 1s;
 }
