@@ -11,6 +11,7 @@
 	}
 
 	.steps__item {
+		width: 92px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -490,11 +491,11 @@
 }
 
 .calendar	{
-	padding-left: 27px;
 	text-transform: lowercase;
+	background: transparent;
+	color: #000;
 	&:placeholder-shown {
-		text-transform: capitalize;
-		color: #fff !important;
+		color: #000;
 	}
 }
 

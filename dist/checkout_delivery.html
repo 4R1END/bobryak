@@ -232,7 +232,7 @@
 								<div class="info__cell date-js">
 									1 октября
 								</div>
-								<input type="text" id="calendar" class="info__cell date-js calendar" placeholder="Другая дата" data-date>
+								<input type="button" id="calendar" class="info__cell date-js calendar" placeholder="Другая дата" data-date>
 								
 								
 							</div>
@@ -487,7 +487,8 @@
 		
 		const datepicker = new Datepicker(document.getElementById('calendar'), {
 			autohide: true,
-			language: "ru"
+			language: "ru",
+			todayHighlight: true
 		});
 		
 		

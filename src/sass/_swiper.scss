@@ -14,8 +14,9 @@
 }
 
 .swiper-button-next,
-.swiper-button-prev {
-	top: 60%;
+.swiper-button-prev,
+.swiper-btn-next,
+.swiper-btn-prev {
 	width: 35px !important;
 	height: 35px !important;
 	border-radius: 50%;
@@ -25,17 +26,14 @@
 	background-repeat: no-repeat;
 	background-position: center center;
 	&:after {
-		content: "" !important;
+		content: "";
 	}
 	&:active,
 	&:focus {
 		box-shadow: inset 2 2 20px grey;
 	}
 }
-.swiper-button-next {	
-	right: -30px;
+.swiper-button-next,
+.swiper-btn-next {	
 	transform: rotate(180deg);
-}
-.swiper-button-prev {	
-	left: -30px;
 }

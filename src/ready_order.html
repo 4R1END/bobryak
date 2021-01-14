@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Бобряк | Заказ оформлен</title>
+	<link rel="stylesheet" href="libs/swiper.min.css">	
+	<link rel="stylesheet" href="css/ready_order.min.css">
+</head>
+
+<body>
+	@@include("_header.html")
+		<div class="container">
+			<main class="order">
+				<button class="btn btn--primary order__btn-toindex">
+					<a href="index.html">
+						НА главную
+					</a>
+				</button>
+				<div class="order__yourhelp">
+					Благодаря вашему участию в июле этого года мы оказали финасовую поддержку <br> природоохранному заповеднику Карачаево-Черкессии 
+				</div>
+				<div class="order__slider">
+					<div class="swiper-container-coverflow">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slide">
+								<div class="slide__text">
+									Главные ворота природоохранного заповедника Карачаево-Черкессии
+								</div>
+							</div>
+							<div class="swiper-slide slide">
+								
+							</div>
+							<div class="swiper-slide slide">
+								
+							</div>
+						</div>										
+					</div>
+					<button class="swiper-button-next"></button>
+					<button class="swiper-button-prev"></button>
+				</div>
+				
+				<h2 class="order__thankfull">
+					Спасибо за заказ!
+				</h2>
+				<div class="order__info info">
+					<h3 class="info__title">
+						Ваш заказ
+					</h3>
+					<div class="info__body">
+						<div class="info__image-slider">
+							<div class="swiper-container-order">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img src="img/cards/balham.png" alt="Балхам">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/cards/elder.png" alt="Бузина">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/cards/pear.png" alt="Груша">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/cards/raspberry.png" alt="Малина">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/cards/pear.png" alt="Груша">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/cards/raspberry.png" alt="Малина">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/cards/pear.png" alt="Груша">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/cards/raspberry.png" alt="Малина">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/cards/raspberry.png" alt="Малина">
+									</div>
+									<div class="swiper-slide">
+										<img src="img/cards/raspberry.png" alt="Малина">
+									</div>
+								</div>								
+							</div>
+							<button class="swiper-btn-prev"></button>
+							<button class="swiper-btn-next"></button>
+						</div>
+						<div class="order__data">
+							<div class="order__number">
+								<span class="key">Номер заказа</span>
+								<span class="value">
+									758459
+								</span>
+							</div>
+							<div class="order__adress">
+								<span class="key">
+									Адрес доставки
+								</span>
+								<span class="value">
+									г. Екатеринбург, ул. Брунная 18, кв.13
+								</span>
+							</div>
+							<div class="order__pay-method">
+								<span class="key">
+									Тип оплаты
+								</span>
+								<span class="value">
+									1980 руб. наличными курьеру
+								</span>
+							</div>
+							<div class="order__date-getting">
+								<span class="key">
+									Дата получения заказа
+								</span>
+								<span class="value">
+									30 сентября, в период с 9:00 до 15:00
+								</span>
+							</div>
+							<div class="order__steps">
+								<ul class="steps-list">
+									<li class="steps__item">
+										<img src="img/icons/loading.png" alt="обработка заказа">
+										<span>
+											1. Обработка заказа
+										</span>
+									</li>
+									<li class="steps__item">
+										<img src="img/icons/bundle_order.png" alt="сборка заказа">
+										<span>
+											2. Сбор заказа
+										</span>
+									</li>
+									<li class="steps__item">
+										<img src="img/icons/worldwide_delivery.png" alt="доставка заказа">
+										<span>
+											3. Доставка
+										</span>
+									</li>
+									<li class="steps__item">
+										<img src="img/icons/happy_getting.png" alt="получение заказа">
+										<span>
+											4. Получение
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>						
+					</div>
+					<button class="btn btn--primary order__btn-to-profil">
+						<a href="#">
+							в профиль
+						</a>
+					</button>
+				</div>
+		
+			</main>
+			@@include("_mailing-section.html")
+		</div>
+	@@include("_footer.html")
+	
+	<script src="libs/swiper.min.js"></script>
+	
+	<script>
+		const mySwiper = new Swiper('.swiper-container-coverflow', {
+			// Optional parameters
+			effect: 'coverflow',
+			coverflowEffect: {
+				rotate: 0,
+				depth: 100,
+				modifier: 1,
+				stretch: 0,
+				slideShadows: false,
+			},
+			grabCursor: true,
+			slidesPerView: 3,
+			centeredSlides: true,
+			loop: true,
+			
+
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+
+		const swiperOrder = new Swiper('.swiper-container-order', {
+			slidesPerColumn: 2,
+			slidesPerView: 2,
+			spaceBetween: 20,			
+			navigation: {
+				nextEl: '.swiper-btn-next',
+				prevEl: '.swiper-btn-prev'
+			}
+		});
+		
+	</script>
+</body>
+
+</html>

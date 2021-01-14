@@ -519,8 +519,9 @@ button > a {
 }
 
 .swiper-button-next,
-.swiper-button-prev {
-  top: 60%;
+.swiper-button-prev,
+.swiper-btn-next,
+.swiper-btn-prev {
   width: 35px !important;
   height: 35px !important;
   border-radius: 50%;
@@ -532,24 +533,26 @@ button > a {
 }
 
 .swiper-button-next:after,
-.swiper-button-prev:after {
-  content: "" !important;
+.swiper-button-prev:after,
+.swiper-btn-next:after,
+.swiper-btn-prev:after {
+  content: "";
 }
 
 .swiper-button-next:active,
 .swiper-button-next:focus,
 .swiper-button-prev:active,
-.swiper-button-prev:focus {
+.swiper-button-prev:focus,
+.swiper-btn-next:active,
+.swiper-btn-next:focus,
+.swiper-btn-prev:active,
+.swiper-btn-prev:focus {
   box-shadow: inset 2 2 20px grey;
 }
 
-.swiper-button-next {
-  right: -30px;
+.swiper-button-next,
+.swiper-btn-next {
   transform: rotate(180deg);
-}
-
-.swiper-button-prev {
-  left: -30px;
 }
 
 .choices::after {
@@ -1214,6 +1217,7 @@ button > a {
 }
 
 .cart .steps__item {
+  width: 92px;
   display: flex;
   flex-direction: column;
   justify-content: center;
