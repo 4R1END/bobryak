@@ -1,13 +1,35 @@
 const btnDown = document.querySelectorAll(`.quantity-block__btn-down`); // кнопка убавить количество товара в карточке
 const btnUp = document.querySelectorAll(`.quantity-block__btn-up`); // кнопка прибавить количество товара в карточке
+const inputQuantity = document.querySelectorAll(`.quantity-block__input`);
 const price = document.querySelectorAll(`.card__price`);
 const btnAddToCart = document.querySelectorAll(`.card__btn-basket`);
+
+inputQuantity.forEach(el => {
+	el.addEventListener(`keydown`, (event) => {
+		console.log(event.keyCode);
+		// Разрешаем: backspace, delete, tab и escape
+    if ( event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 ||
+      // Разрешаем: Ctrl+A
+      (event.keyCode == 65 && event.ctrlKey === true) ||
+      // Разрешаем: home, end, влево, вправо
+      (event.keyCode >= 35 && event.keyCode <= 39)) {
+      // Ничего не делаем
+      return;
+    } else {
+      // Запрещаем все, кроме цифр на основной клавиатуре, а так же Num-клавиатуре
+      if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
+        event.preventDefault();
+      };
+    };
+	});
+});
+
 
 // клик по кнопке убавить количество товара
 btnDown.forEach(el => {
 	el.addEventListener('click', function () {
-		if (parseInt(el.nextElementSibling.innerText) > 1) {
-			el.nextElementSibling.innerText = parseInt(el.nextElementSibling.innerText) - 1;
+		if (parseInt(el.nextElementSibling.value) > 1) {
+			el.nextElementSibling.value = parseInt(el.nextElementSibling.value) - 1;
 		};
 	});
 });
@@ -15,7 +37,7 @@ btnDown.forEach(el => {
 // клик по кнопке прибавить количество товара
 btnUp.forEach(el => {
 	el.onclick = function () {
-		el.previousElementSibling.innerText = parseInt(el.previousElementSibling.innerText) + 1;
+		el.previousElementSibling.value = parseInt(el.previousElementSibling.value) + 1;
 	};
 });
 
@@ -162,6 +184,9 @@ const currentCountCardsBlock = document.querySelector(`.pagination__current`);
 const generalCountCardsBlock = document.querySelector(`.pagination__general`);
 
 
+// функция устанавливает аттрибут data-round элементу el (параметр1) для отображения на странице, 
+// если карточки товара раположены в 3 столбца
+// data-round назначает очередь появления элемента на странице при нажатии кнопки "Развернуть"
 
 const setDataRoundPer3 = (el, i) => {
 	if (i <= 2) {

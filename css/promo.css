@@ -237,6 +237,12 @@ template {
 
 @font-face {
   font-family: 'Montserrat';
+  font-weight: 500;
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Montserrat';
   font-weight: 400;
   src: url("../fonts/Montserrat-Regular.ttf");
 }
@@ -649,6 +655,27 @@ button > a {
 .header .auth {
   display: flex;
   align-items: baseline;
+}
+
+.header .auth__link {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+.header .auth__link.search {
+  background: url("../img/icons/icon_search.svg") no-repeat;
+  background-position: center center;
+}
+
+.header .auth__link.account {
+  background: url("../img/icons/icon_account.svg") no-repeat;
+  background-position: center center;
+}
+
+.header .auth__link.cart {
+  background: url("../img/icons/icon_shopping.svg") no-repeat;
+  background-position: center center;
 }
 
 .header .auth__link:not(:last-child) {
