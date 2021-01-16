@@ -2,7 +2,9 @@
 
 	<section class="hero">
 		<!----- SLIDER ----->
-
+		<h1 class="hero__main-title">
+			Бобряк. Интернет-магазин по продаже варенья и других ништяков
+		</h1>
 		<div class="swiper-container container">
 			<div class="swiper-wrapper">
 				<div class="swiper-slide">
@@ -10,13 +12,13 @@
 					<img class="hero__img" src="img/hero_social.jpg" alt="социальная миссия">
 
 					<div class="hero__content">
-						<h1 class="title hero__title">
+						<h2 class="title hero__title">
 							Социальная миссия
 							<span class="hero__subtitle">
 								10% с каждой покупки мы направляем <br>
 								на экологические мероприятия в Теберде!
 							</span>
-						</h1>
+						</h2>
 						<a href="aboutus.html" class="hero__link">
 							<button class="btn btn--secondary">
 								подробнее
@@ -30,13 +32,13 @@
 					<img class="hero__img" src="img/hero_natural.jpg" alt="социальная миссия">
 
 					<div class="hero__content">
-						<h1 class="title hero__title">
+						<h2 class="title hero__title">
 							Вкусно. Натурально. Полезно.
 							<span class="hero__subtitle">
 								Народные рецепты кавказского долголетия <br>
 								из экологически-чистого региона Карачаево-Черкесии.
 							</span>
-						</h1>
+						</h2>
 						<a href="catalog.html" class="hero__link">
 							<button class="btn btn--secondary">
 								в каталог
@@ -50,13 +52,13 @@
 					<img class="hero__img" src="img/hero_social.jpg" alt="социальная миссия">
 
 					<div class="hero__content">
-						<h1 class="title hero__title">
+						<h2 class="title hero__title">
 							Социальная миссия
 							<span class="hero__subtitle">
 								10% с каждой покупки мы направляем <br>
 								на экологические мероприятия в Теберде!
 							</span>
-						</h1>
+						</h2>
 						<a href="aboutus.html" class="hero__link">
 							<button class="btn btn--secondary">
 								подробнее
@@ -135,12 +137,8 @@
 					</div>
 				</div>
 			</div>
-			<button class="swiper-button-next">
-				<img src="img/icons/arrow.svg" alt="следующий">
-			</button>
-			<button class="swiper-button-prev">
-				<img src="img/icons/arrow.svg" alt="предыдущий">
-			</button>
+			<button class="swiper-button-next"></button>
+			<button class="swiper-button-prev"></button>
 		</section>
 
 		<!----- CATALOG-block ----->
@@ -150,7 +148,7 @@
 				Каталог
 			</h2>
 			<div class="catalog-block__tabs tabs">
-				<nav class="tabs__menu">
+				<div class="tabs__menu">
 					<button class="tabs__item tabs__btn-js tabs__item--active" data-tabs-path="cosmetics">
 						<img src="img/icons/icon_cosmetics.svg" alt="косметика">
 						<h3 class="tabs__title">
@@ -175,7 +173,7 @@
 							варенье
 						</h3>
 					</button>
-				</nav>
+				</div>
 				<div class="banner-promo">
 					<p>
 						Бережный ручной сбор ягод
@@ -185,19 +183,19 @@
 				<div class="tabs__body">
 					<div class="tabs__block tabs__block--active" data-tabs-target="cosmetics">
 						@@loop('_card.html', 'json/cards_data.json')
-						
+
 					</div>
 					<div class="tabs__block" data-tabs-target="honey">
 						@@loop('_card.html', 'json/cards_data.json')
-						
+
 					</div>
 					<div class="tabs__block" data-tabs-target="tea">
 						@@loop('_card.html', 'json/cards_data.json')
-						
+
 					</div>
 					<div class="tabs__block" data-tabs-target="jam">
 						@@loop('_card.html', 'json/cards_data.json')
-						
+
 					</div>
 				</div>
 				<div class="catalog-block__btn-block">
@@ -215,7 +213,7 @@
 
 		<!----- OUR-MISSION ----->
 
-		@@include('_mission_block.html', {"prefix": ""})
+		@@include('_mission_block.html')
 
 		<!----- ABOUT ----->
 
@@ -288,7 +286,12 @@
 				</div>
 
 				<div class="about__video">
-					<img src="img/video_product.png" alt="Видео о продукте">
+					<video width="1280px" height="720px">
+						<source src="img/nature.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+					</video>
+					<button class="play">
+						
+					</button>
 				</div>
 			</div>
 		</section>

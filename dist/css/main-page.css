@@ -237,6 +237,12 @@ template {
 
 @font-face {
   font-family: 'Montserrat';
+  font-weight: 500;
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Montserrat';
   font-weight: 400;
   src: url("../fonts/Montserrat-Regular.ttf");
 }
@@ -651,6 +657,27 @@ button > a {
   align-items: baseline;
 }
 
+.header .auth__link {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+}
+
+.header .auth__link.search {
+  background: url("../img/icons/icon_search.svg") no-repeat;
+  background-position: center center;
+}
+
+.header .auth__link.account {
+  background: url("../img/icons/icon_account.svg") no-repeat;
+  background-position: center center;
+}
+
+.header .auth__link.cart {
+  background: url("../img/icons/icon_shopping.svg") no-repeat;
+  background-position: center center;
+}
+
 .header .auth__link:not(:last-child) {
   margin-right: 35px;
 }
@@ -893,6 +920,7 @@ button > a {
 }
 
 .card {
+  margin-top: 73px;
   padding: 0 10px 24px;
   border-radius: 10px;
   box-shadow: 5px 4px 18px rgba(0, 0, 0, 0.11);
@@ -910,6 +938,7 @@ button > a {
 
 .card__image {
   display: block;
+  margin-top: -73px;
   margin-bottom: 25px;
   position: relative;
   cursor: pointer;
@@ -917,7 +946,10 @@ button > a {
 
 .card__image-main {
   width: 100%;
+  height: 201px;
   border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card__image-like {
@@ -974,14 +1006,14 @@ button > a {
   margin-bottom: 13px;
 }
 
-.card__includ {
+.card__include {
   margin-bottom: 20px;
   font-weight: normal;
   font-size: 12px;
   line-height: 13px;
 }
 
-.card__includ > span {
+.card__include > span {
   color: #0F5628;
 }
 
@@ -997,12 +1029,19 @@ button > a {
   justify-content: space-between;
 }
 
-.card__btn-basket {
+.card__btn-cart {
   width: 87px;
   height: 37px;
-  border: none;
+  border: 1px solid #0F5628;
   border-radius: 10px;
+  background: url("../img/icons/icon_cart.svg") no-repeat;
+  background-position: center center;
+}
+
+.card__btn-cart:hover {
+  background: url("../img/icons/icon_basket.svg") no-repeat;
   background-color: #0F5628;
+  background-position: center center;
 }
 
 .quantity-block {
@@ -1029,9 +1068,26 @@ button > a {
   line-height: 24px;
 }
 
-.quantity-block span {
+.quantity-block input[type="text"] {
   text-align: center;
-  min-width: 25px !important;
+  width: 25px !important;
+  height: 100%;
+  border: none;
+}
+
+.list .card {
+  margin-top: 0;
+}
+
+.list .card__image {
+  margin-top: 0;
+}
+
+.list .card__image-main {
+  height: auto;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .popup-container {
@@ -1295,6 +1351,10 @@ button > a {
   display: flex;
 }
 
+.hero__main-title {
+  display: none;
+}
+
 .hero__img {
   position: absolute;
   top: 0;
@@ -1454,6 +1514,33 @@ button > a {
   background-size: cover;
 }
 
+.about__video {
+  position: relative;
+}
+
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 74px;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/icons/play.svg") no-repeat #fff;
+  background-position: 56% center;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.play.hide {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
 .offer {
   position: relative;
 }
@@ -1473,6 +1560,18 @@ button > a {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
+}
+
+.offer .swiper-slide:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .offer .swiper-slide__content {

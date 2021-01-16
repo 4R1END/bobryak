@@ -16,6 +16,9 @@ const currentCountCardsBlock = document.querySelector(`.pagination__current`);
 const generalCountCardsBlock = document.querySelector(`.pagination__general`);
 
 
+// функция устанавливает аттрибут data-round элементу el (параметр1) для отображения на странице, 
+// если карточки товара раположены в 3 столбца
+// data-round назначает очередь появления элемента на странице при нажатии кнопки "Развернуть"
 
 const setDataRoundPer3 = (el, i) => {
 	if (i <= 2) {

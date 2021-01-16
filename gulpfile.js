@@ -17,7 +17,7 @@ const path = {
 		css: [sourceFolder + '/sass/**/*.{sass,scss}', '!' + sourceFolder + '/sass/**/_*.{sass.scss}'],
 		js: [sourceFolder + '/js/**/*.js', '!' + sourceFolder + '/js/**/_*.js'],
 		libs: sourceFolder + '/libs/**/*.{css,js,scss}',
-		img: sourceFolder + '/img/**/*.{jpg,gif,png,svg,ico,webp}',
+		img: sourceFolder + '/img/**/*.{jpg,gif,png,svg,ico,webp,mp4}',
 		fonts: sourceFolder + '/fonts/*.ttf'
 	},
 	watch: {
@@ -25,7 +25,7 @@ const path = {
 		css: sourceFolder + '/sass/**/*.{sass,scss}',
 		js: sourceFolder + '/js/**/*.js',
 		libs: sourceFolder + '/libs/**/*.{css,js,scss}',
-		img: sourceFolder + '/img/**/*.{jpg,gif,png,svg,ico,webp}'
+		img: sourceFolder + '/img/**/*.{jpg,gif,png,svg,ico,webp,mp4}'
 	},
 	clean: './' + projectFolder + '/'
 
@@ -48,9 +48,9 @@ const gulp = require('gulp'),
 
 const ghPages = require('gulp-gh-pages');
 
-gulp.task('deploy', function() {
-  return gulp.src('./dist/**/*')
-    .pipe(ghPages());
+gulp.task('deploy', function () {
+	return gulp.src('./dist/**/*')
+		.pipe(ghPages());
 });
 
 function browserSync() {
@@ -105,7 +105,7 @@ const js = () => {
 
 const libs = () => {
 	return gulp.src(path.src.libs)
-	.pipe(gulp.dest(path.build.libs))
+		.pipe(gulp.dest(path.build.libs))
 }
 
 const images = () => {

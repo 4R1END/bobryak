@@ -43,6 +43,21 @@
 		display: flex;
 		align-items: baseline;
 		&__link {
+			display: inline-block;
+			width: 35px;
+			height: 35px;
+			&.search {
+				background: url('../img/icons/icon_search.svg') no-repeat;
+				background-position: center center;				
+			}
+			&.account {
+				background: url('../img/icons/icon_account.svg') no-repeat;
+				background-position: center center;
+			}
+			&.cart {
+				background: url('../img/icons/icon_shopping.svg') no-repeat;
+				background-position: center center;
+			}
 		}
 		&__link:not(:last-child) {
 			margin-right: 35px;

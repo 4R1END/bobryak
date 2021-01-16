@@ -1,6 +1,10 @@
 .hero {	
 	display: flex;
 
+	&__main-title {
+		display: none;
+	}
+
 	&__img {
 		position: absolute;
 		top: 0;

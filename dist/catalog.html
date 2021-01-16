@@ -108,15 +108,9 @@
 			</ul>
 		</nav>
 		<div class="header__auth auth">
-			<a href="#" class="auth__link">
-				<img src="img/icons/icon_search.svg" alt="поиск">
-			</a>
-			<a href="#" class="auth__link">
-				<img src="img/icons/icon_account.svg" alt="личный кабинет">
-			</a>
-			<a href="cart.html" class="auth__link">
-				<img src="img/icons/icon_shopping.svg" alt="корзина">
-			</a>
+			<a href="#" class="auth__link search"></a>
+			<a href="#" class="auth__link account"></a>
+			<a href="cart.html" class="auth__link cart"></a>
 		</div>
 	</div>
 </header>
@@ -265,8 +259,7 @@
 						</p>
 					</div>
 					<div class="catalog__cards">
-						<div class="card" data-name="balham" data-f="honey" data-new="0" data-popular="10"
-	data-sale="10">
+						<div class="card" data-name="balham" data-f="honey" data-new="0" data-popular="10" data-sale="10">
 	<div class="card__image">
 		
 		<img class="card__image-main" src="img/cards/balham.png" alt="Балхам">
@@ -281,19 +274,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="balham" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="balham" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="balham" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> травяной сбор, ягоды ежевики
 			</div>
 			<div class="card__price">
@@ -304,14 +297,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -334,15 +325,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="balham" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="balham" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="balham" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -351,20 +342,18 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>
 		</div>
 	</div>
-</div><div class="card" data-name="blackberry" data-f="jam" data-new="1" data-popular="9"
-	data-sale="20">
+</div><div class="card" data-name="blackberry" data-f="jam" data-new="1" data-popular="9" data-sale="20">
 	<div class="card__image">
 		<div class='card__badge card__badge-latest'>Новинка</div>
 		<img class="card__image-main" src="img/cards/blackberry.png" alt="Варенье из ежевики">
@@ -379,19 +368,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="blackberry" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="blackberry" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="blackberry" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> травяной сбор, ягоды ежевики
 			</div>
 			<div class="card__price">
@@ -402,14 +391,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -432,15 +419,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="blackberry" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="blackberry" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="blackberry" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -449,20 +436,18 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>
 		</div>
 	</div>
-</div><div class="card" data-name="blueberry" data-f="jam" data-new="2" data-popular="8"
-	data-sale="30">
+</div><div class="card" data-name="blueberry" data-f="jam" data-new="2" data-popular="8" data-sale="30">
 	<div class="card__image">
 		
 		<img class="card__image-main" src="img/cards/blueberry.png" alt="Варенье из черники">
@@ -477,19 +462,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="blueberry" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="blueberry" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="blueberry" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> травяной сбор, ягоды ежевики
 			</div>
 			<div class="card__price">
@@ -500,14 +485,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -530,15 +513,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="blueberry" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="blueberry" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="blueberry" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -547,20 +530,18 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>
 		</div>
 	</div>
-</div><div class="card" data-name="elder" data-f="jam" data-new="3" data-popular="7"
-	data-sale="40">
+</div><div class="card" data-name="elder" data-f="jam" data-new="3" data-popular="7" data-sale="40">
 	<div class="card__image">
 		<div class='card__badge card__badge-latest'>Новинка</div>
 		<img class="card__image-main" src="img/cards/elder.png" alt="Варенье из бузины">
@@ -575,19 +556,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="elder" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="elder" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="elder" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> травяной сбор, ягоды ежевики
 			</div>
 			<div class="card__price">
@@ -598,14 +579,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -628,15 +607,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="elder" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="elder" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="elder" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -645,20 +624,18 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>
 		</div>
 	</div>
-</div><div class="card" data-name="plum" data-f="jam" data-new="4" data-popular="6"
-	data-sale="50">
+</div><div class="card" data-name="plum" data-f="jam" data-new="4" data-popular="6" data-sale="50">
 	<div class="card__image">
 		<div class='card__badge card__badge-latest'>Новинка</div>
 		<img class="card__image-main" src="img/cards/plum.png" alt="Варенье из сливы">
@@ -673,19 +650,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="plum" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="plum" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="plum" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> травяной сбор, ягоды ежевики
 			</div>
 			<div class="card__price">
@@ -696,14 +673,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -726,15 +701,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="plum" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="plum" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="plum" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -743,20 +718,18 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>
 		</div>
 	</div>
-</div><div class="card" data-name="pear" data-f="jam" data-new="5" data-popular="5"
-	data-sale="60">
+</div><div class="card" data-name="pear" data-f="jam" data-new="5" data-popular="5" data-sale="60">
 	<div class="card__image">
 		
 		<img class="card__image-main" src="img/cards/pear.png" alt="Варенье из груши">
@@ -771,19 +744,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="pear" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="pear" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="pear" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> травяной сбор, ягоды ежевики
 			</div>
 			<div class="card__price">
@@ -794,14 +767,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -824,15 +795,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="pear" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="pear" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="pear" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -841,20 +812,18 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>
 		</div>
 	</div>
-</div><div class="card" data-name="raspberry" data-f="tea" data-new="6" data-popular="4"
-	data-sale="70">
+</div><div class="card" data-name="raspberry" data-f="tea" data-new="6" data-popular="4" data-sale="70">
 	<div class="card__image">
 		<div class='card__badge card__badge-hit'>Хит</div>
 		<img class="card__image-main" src="img/cards/raspberry.png" alt="Варенье из малины">
@@ -869,19 +838,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="raspberry" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="raspberry" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="raspberry" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> травяной сбор, ягоды ежевики
 			</div>
 			<div class="card__price">
@@ -892,14 +861,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -922,15 +889,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="raspberry" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="raspberry" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="raspberry" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -939,20 +906,18 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>
 		</div>
 	</div>
-</div><div class="card" data-name="cranberry" data-f="tea" data-new="7" data-popular="3"
-	data-sale="80">
+</div><div class="card" data-name="cranberry" data-f="tea" data-new="7" data-popular="3" data-sale="80">
 	<div class="card__image">
 		
 		<img class="card__image-main" src="img/cards/cranberry.png" alt="Варенье из клюквы">
@@ -967,19 +932,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="cranberry" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="cranberry" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="cranberry" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> травяной сбор, ягоды ежевики
 			</div>
 			<div class="card__price">
@@ -990,14 +955,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -1020,15 +983,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="cranberry" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="cranberry" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="cranberry" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -1037,13 +1000,12 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>
@@ -1076,8 +1038,7 @@
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<div class="card" data-name="raspberry" data-f="tea" data-new="6" data-popular="4"
-	data-sale="70">
+						<div class="card" data-name="raspberry" data-f="tea" data-new="6" data-popular="4" data-sale="70">
 	<div class="card__image">
 		<div class='card__badge card__badge-hit'>Хит</div>
 		<img class="card__image-main" src="img/cards/raspberry.png" alt="Варенье из малины">
@@ -1092,19 +1053,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="@@weightname" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="@@weightname" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="@@weightname" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> травяной сбор, ягоды ежевики
 			</div>
 			<div class="card__price">
@@ -1115,14 +1076,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -1145,15 +1104,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="@@weightname" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="@@weightname" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="@@weightname" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -1162,13 +1121,12 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>
@@ -1177,8 +1135,7 @@
 </div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card" data-name="elder" data-f="jam" data-new="3" data-popular="7"
-	data-sale="40">
+						<div class="card" data-name="elder" data-f="jam" data-new="3" data-popular="7" data-sale="40">
 	<div class="card__image">
 		<div class='card__badge card__badge-latest'>Новинка</div>
 		<img class="card__image-main" src="img/cards/elder.png" alt="Варенье из бузины">
@@ -1193,19 +1150,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="@@weightname" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="@@weightname" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="@@weightname" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> травяной сбор, ягоды ежевики
 			</div>
 			<div class="card__price">
@@ -1216,14 +1173,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -1246,15 +1201,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="@@weightname" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="@@weightname" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="@@weightname" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -1263,13 +1218,12 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>
@@ -1278,8 +1232,7 @@
 </div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card" data-name="plum" data-f="jam" data-new="4" data-popular="6"
-	data-sale="50">
+						<div class="card" data-name="plum" data-f="jam" data-new="4" data-popular="6" data-sale="50">
 	<div class="card__image">
 		<div class='card__badge card__badge-latest'>Новинка</div>
 		<img class="card__image-main" src="img/cards/plum.png" alt="Варенье из сливы">
@@ -1294,19 +1247,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="@@weightname" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="@@weightname" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="@@weightname" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> травяной сбор, ягоды ежевики
 			</div>
 			<div class="card__price">
@@ -1317,14 +1270,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -1347,15 +1298,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="@@weightname" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="@@weightname" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="@@weightname" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -1364,13 +1315,12 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>
@@ -1379,8 +1329,7 @@
 </div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card" data-name="blackberry" data-f="jam" data-new="1" data-popular="9"
-	data-sale="20">
+						<div class="card" data-name="blackberry" data-f="jam" data-new="1" data-popular="9" data-sale="20">
 	<div class="card__image">
 		<div class='card__badge card__badge-latest'>Новинка</div>
 		<img class="card__image-main" src="img/cards/blackberry.png" alt="Варенье из ежевики">
@@ -1395,19 +1344,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="@@weightname" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="@@weightname" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="@@weightname" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> травяной сбор, ягоды ежевики
 			</div>
 			<div class="card__price">
@@ -1418,14 +1367,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -1448,15 +1395,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="@@weightname" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="@@weightname" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="@@weightname" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -1465,13 +1412,12 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>
@@ -1480,8 +1426,7 @@
 </div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card" data-name="blueberry" data-f="jam" data-new="2" data-popular="8"
-	data-sale="30">
+						<div class="card" data-name="blueberry" data-f="jam" data-new="2" data-popular="8" data-sale="30">
 	<div class="card__image">
 		
 		<img class="card__image-main" src="img/cards/blueberry.png" alt="Варенье из черники">
@@ -1496,19 +1441,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="@@weightname" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="@@weightname" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="@@weightname" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> травяной сбор, ягоды ежевики
 			</div>
 			<div class="card__price">
@@ -1519,14 +1464,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -1549,15 +1492,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="@@weightname" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="@@weightname" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="@@weightname" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -1566,13 +1509,12 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>
@@ -1581,8 +1523,7 @@
 </div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card" data-name="pear" data-f="jam" data-new="5" data-popular="5"
-	data-sale="60">
+						<div class="card" data-name="pear" data-f="jam" data-new="5" data-popular="5" data-sale="60">
 	<div class="card__image">
 		
 		<img class="card__image-main" src="img/cards/pear.png" alt="Варенье из груши">
@@ -1597,19 +1538,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="@@weightname" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="@@weightname" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="@@weightname" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> травяной сбор, ягоды ежевики
 			</div>
 			<div class="card__price">
@@ -1620,14 +1561,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -1650,15 +1589,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="@@weightname" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="@@weightname" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="@@weightname" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -1667,13 +1606,12 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>
@@ -1690,8 +1628,7 @@
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<div class="card" data-name="raspberry" data-f="tea" data-new="6" data-popular="4"
-	data-sale="70">
+						<div class="card" data-name="raspberry" data-f="tea" data-new="6" data-popular="4" data-sale="70">
 	<div class="card__image">
 		<div class='card__badge card__badge-hit'>Хит</div>
 		<img class="card__image-main" src="img/cards/raspberry.png" alt="Варенье из малины">
@@ -1706,19 +1643,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="@@weightname" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="@@weightname" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="@@weightname" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> травяной сбор, ягоды ежевики
 			</div>
 			<div class="card__price">
@@ -1729,14 +1666,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -1759,15 +1694,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="@@weightname" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="@@weightname" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="@@weightname" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -1776,13 +1711,12 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>
@@ -1791,8 +1725,7 @@
 </div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card" data-name="elder" data-f="jam" data-new="3" data-popular="7"
-	data-sale="40">
+						<div class="card" data-name="elder" data-f="jam" data-new="3" data-popular="7" data-sale="40">
 	<div class="card__image">
 		<div class='card__badge card__badge-latest'>Новинка</div>
 		<img class="card__image-main" src="img/cards/elder.png" alt="Варенье из бузины">
@@ -1807,19 +1740,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="@@weightname" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="@@weightname" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="@@weightname" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> травяной сбор, ягоды ежевики
 			</div>
 			<div class="card__price">
@@ -1830,14 +1763,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -1860,15 +1791,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="@@weightname" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="@@weightname" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="@@weightname" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -1877,13 +1808,12 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>
@@ -1892,8 +1822,7 @@
 </div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card" data-name="plum" data-f="jam" data-new="4" data-popular="6"
-	data-sale="50">
+						<div class="card" data-name="plum" data-f="jam" data-new="4" data-popular="6" data-sale="50">
 	<div class="card__image">
 		<div class='card__badge card__badge-latest'>Новинка</div>
 		<img class="card__image-main" src="img/cards/plum.png" alt="Варенье из сливы">
@@ -1908,19 +1837,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="@@weightname" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="@@weightname" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="@@weightname" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> травяной сбор, ягоды ежевики
 			</div>
 			<div class="card__price">
@@ -1931,14 +1860,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -1961,15 +1888,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="@@weightname" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="@@weightname" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="@@weightname" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -1978,13 +1905,12 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>
@@ -1993,8 +1919,7 @@
 </div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card" data-name="blackberry" data-f="jam" data-new="1" data-popular="9"
-	data-sale="20">
+						<div class="card" data-name="blackberry" data-f="jam" data-new="1" data-popular="9" data-sale="20">
 	<div class="card__image">
 		<div class='card__badge card__badge-latest'>Новинка</div>
 		<img class="card__image-main" src="img/cards/blackberry.png" alt="Варенье из ежевики">
@@ -2009,19 +1934,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="@@weightname" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="@@weightname" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="@@weightname" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> травяной сбор, ягоды ежевики
 			</div>
 			<div class="card__price">
@@ -2032,14 +1957,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -2062,15 +1985,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="@@weightname" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="@@weightname" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="@@weightname" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -2079,13 +2002,12 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>
@@ -2094,8 +2016,7 @@
 </div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card" data-name="blueberry" data-f="jam" data-new="2" data-popular="8"
-	data-sale="30">
+						<div class="card" data-name="blueberry" data-f="jam" data-new="2" data-popular="8" data-sale="30">
 	<div class="card__image">
 		
 		<img class="card__image-main" src="img/cards/blueberry.png" alt="Варенье из черники">
@@ -2110,19 +2031,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="@@weightname" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="@@weightname" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="@@weightname" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> травяной сбор, ягоды ежевики
 			</div>
 			<div class="card__price">
@@ -2133,14 +2054,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -2163,15 +2082,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="@@weightname" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="@@weightname" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="@@weightname" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -2180,13 +2099,12 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>
@@ -2195,8 +2113,7 @@
 </div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card" data-name="pear" data-f="jam" data-new="5" data-popular="5"
-	data-sale="60">
+						<div class="card" data-name="pear" data-f="jam" data-new="5" data-popular="5" data-sale="60">
 	<div class="card__image">
 		
 		<img class="card__image-main" src="img/cards/pear.png" alt="Варенье из груши">
@@ -2211,19 +2128,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="@@weightname" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="@@weightname" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="@@weightname" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> травяной сбор, ягоды ежевики
 			</div>
 			<div class="card__price">
@@ -2234,14 +2151,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -2264,15 +2179,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="@@weightname" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="@@weightname" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="@@weightname" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -2281,13 +2196,12 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>

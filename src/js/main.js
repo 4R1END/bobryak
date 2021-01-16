@@ -10,6 +10,8 @@ const teaBlock = document.querySelector(`.tabs__block[data-tabs-target="tea"]`)
 const cardsTea = teaBlock.querySelectorAll(`.card`);
 const jamBlock = document.querySelector(`.tabs__block[data-tabs-target="jam"]`)
 const cardsJam = jamBlock.querySelectorAll(`.card`);
+const btnPlay = document.querySelector(`.play`);
+const video =document.querySelector(`.about__video video`);
 
 const setDataRoundPer4 = (el, i) => {
 	if (i <= 3) {
@@ -38,6 +40,17 @@ cardsTea.forEach((el,i) => {
 cardsJam.forEach((el,i) => {
 	setDataRoundPer4(el, i)
 });
+
+btnPlay.addEventListener(`click`, () => {
+	video.play();
+	btnPlay.classList.add(`hide`);
+});
+
+video.addEventListener(`ended`, () => {
+	btnPlay.classList.remove(`hide`);
+});
+
+
 
 
 

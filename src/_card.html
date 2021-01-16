@@ -1,5 +1,4 @@
-<div class="card" data-name="@@name" data-f="@@filter" data-new="@@new" data-popular="@@popular"
-	data-sale="@@sale">
+<div class="card" data-name="@@name" data-f="@@filter" data-new="@@new" data-popular="@@popular" data-sale="@@sale">
 	<div class="card__image">
 		@@badge
 		<img class="card__image-main" src="@@imgsrc" alt="@@title">
@@ -14,19 +13,19 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="weight_balhav" value="150" checked>
+					<input type="radio" name="@@weightname" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="weight_balhav" value="200">
+					<input type="radio" name="@@weightname" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="weight_balhav" value="250">
+					<input type="radio" name="@@weightname" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
-			<div class="card__includ">
+			<div class="card__include">
 				<span>Состав:</span> @@structure
 			</div>
 			<div class="card__price">
@@ -37,14 +36,12 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
 				</div>
-				<button class="card__btn-basket">
-					<img src="img/icons/icon_basket.svg" alt="корзина">
-				</button>
+				<button class="card__btn-cart"></button>
 			</div>
 		</div>
 		<div class="card__content--list content">
@@ -67,15 +64,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="weight_balhav" value="150" checked>
+						<input type="radio" name="@@weightname" value="150" checked>
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="weight_balhav" value="200">
+						<input type="radio" name="@@weightname" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="weight_balhav" value="250">
+						<input type="radio" name="@@weightname" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -84,13 +81,12 @@
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>
 					</div>
-					<button class="card__btn-basket">
-						<img src="img/icons/icon_basket.svg" alt="корзина">
+					<button class="card__btn-cart">						
 					</button>
 				</div>
 			</div>
