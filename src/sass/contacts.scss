@@ -85,6 +85,10 @@
 		font-weight: 300;
 		font-size: 14px;
 		line-height: 17px;
+		& a {
+			display: block;
+			color: #000;
+		}
 	}
 
 	&__socail-list {
@@ -93,11 +97,8 @@
 		margin-bottom: 31px;
 	}
 
-	&__social-link:not(:last-child) {
-		margin-right: 30px;
-	}
-
-	&__social-item {
+	&__social-link {
+		display: inline-block;
 		width: 60px;
 		height: 48px;
 		background: #FFFFFF;
@@ -107,19 +108,26 @@
 		border-radius: 10px;
 	}
 
-	&__social-link:nth-child(1) > li {
+	&__social-item {
+		
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+
+	&__social-item:nth-child(1) > a {
 		background-image: url('../img/contacts/instagram.svg');
 	}
 
-	&__social-link:nth-child(2) > li {
+	&__social-item:nth-child(2) > a {
 		background-image: url('../img/contacts/vk.svg');
 	}
 
-	&__social-link:nth-child(3) > li {
+	&__social-item:nth-child(3) > a {
 		background-image: url('../img/contacts/youtube.svg');
 	}
 
-	&__social-link:nth-child(4) > li {
+	&__social-item:nth-child(4) > a {
 		background-image: url('../img/contacts/fb.svg');
 	}
 

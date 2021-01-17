@@ -1,17 +1,11 @@
 @import "main.sass";
 
 .promo {
+	padding-top: 85px;
 
-	&__title {
-		margin-top: 85px;
+	&__title {		
 		margin-bottom: 70px;
 		text-align: center;			
-	}
-
-	&__crumbs {
-		position: absolute;
-		left: 0;
-		top: 0;
 	}
 
 	&__content {
@@ -39,15 +33,15 @@
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+	color: $main_color;
 
 	&__title {	
 		font-weight: 600;
 		font-size: 52px;
-		line-height: 63px;
-		color: $main_color;
+		line-height: 63px;	
 	}
 
-	&__subtitle {
+	&__text {
 		margin-top: 23px;
 		display: block;
 		font-size: 24px;

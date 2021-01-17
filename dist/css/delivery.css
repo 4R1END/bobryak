@@ -369,9 +369,6 @@ button > a {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-}
-
-.crumbs a {
   color: #818181;
 }
 
@@ -563,6 +560,7 @@ button > a {
 
 .choices::after {
   content: url("../img/icons/arrow-select.svg") !important;
+  margin-top: 0;
   border-style: none !important;
   right: 30px !important;
   top: 30% !important;
@@ -790,14 +788,11 @@ button > a {
   background-image: url("../img/icons/Facebook.svg");
 }
 
-.delivery__crumbs {
-  position: absolute;
-  left: 0;
-  top: 0;
+.delivery {
+  padding-top: 100px;
 }
 
 .delivery__content {
-  margin-bottom: 100px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 50px;

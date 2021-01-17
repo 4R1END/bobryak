@@ -1,14 +1,14 @@
 <main class="card-page">
 	<div class="container">
 		<div class="crumbs card-page__crumbs">
-			<a href="index.html">
+			<a href="index.html" class="crumbs--active">
 				Главная
 			</a> -
-			<a href="catalog.html">
+			<a href="catalog.html" class="crumbs--active">
 				Каталог
 			</a>
 			- Варенье -
-			<span class="crumbs--active">@@title</span>
+			<span>@@title</span>
 		</div>
 		<section class="card-page__content">
 			<div class="card-page__images">
@@ -35,13 +35,13 @@
 						</label>
 					</div>
 					<div class="card-page__price">
-						@@price &nbsp; ₽
+						@@price&nbsp;₽
 					</div>
 					<div class="card-page__quantity-block quantity-block">
 						<button class="quantity-block__btn-down">
 							-
 						</button>
-						<span>1</span>
+						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 						<button class="quantity-block__btn-up">
 							+
 						</button>

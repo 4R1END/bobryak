@@ -369,9 +369,6 @@ button > a {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-}
-
-.crumbs a {
   color: #818181;
 }
 
@@ -563,6 +560,7 @@ button > a {
 
 .choices::after {
   content: url("../img/icons/arrow-select.svg") !important;
+  margin-top: 0;
   border-style: none !important;
   right: 30px !important;
   top: 30% !important;

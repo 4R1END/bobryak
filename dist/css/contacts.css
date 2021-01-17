@@ -369,9 +369,6 @@ button > a {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-}
-
-.crumbs a {
   color: #818181;
 }
 
@@ -563,6 +560,7 @@ button > a {
 
 .choices::after {
   content: url("../img/icons/arrow-select.svg") !important;
+  margin-top: 0;
   border-style: none !important;
   right: 30px !important;
   top: 30% !important;
@@ -915,6 +913,10 @@ button > a {
   height: 75px;
 }
 
+.quantity-block__input {
+  width: 30px;
+}
+
 .popup-contacts {
   width: 500px;
   height: 600px;
@@ -1002,17 +1004,19 @@ button > a {
   line-height: 17px;
 }
 
+.contacts__text a {
+  display: block;
+  color: #000;
+}
+
 .contacts__socail-list {
   margin-top: 60px;
   display: flex;
   margin-bottom: 31px;
 }
 
-.contacts__social-link:not(:last-child) {
-  margin-right: 30px;
-}
-
-.contacts__social-item {
+.contacts__social-link {
+  display: inline-block;
   width: 60px;
   height: 48px;
   background: #FFFFFF;
@@ -1022,19 +1026,23 @@ button > a {
   border-radius: 10px;
 }
 
-.contacts__social-link:nth-child(1) > li {
+.contacts__social-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts__social-item:nth-child(1) > a {
   background-image: url("../img/contacts/instagram.svg");
 }
 
-.contacts__social-link:nth-child(2) > li {
+.contacts__social-item:nth-child(2) > a {
   background-image: url("../img/contacts/vk.svg");
 }
 
-.contacts__social-link:nth-child(3) > li {
+.contacts__social-item:nth-child(3) > a {
   background-image: url("../img/contacts/youtube.svg");
 }
 
-.contacts__social-link:nth-child(4) > li {
+.contacts__social-item:nth-child(4) > a {
   background-image: url("../img/contacts/fb.svg");
 }
 

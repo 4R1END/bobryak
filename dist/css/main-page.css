@@ -369,9 +369,6 @@ button > a {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-}
-
-.crumbs a {
   color: #818181;
 }
 
@@ -563,6 +560,7 @@ button > a {
 
 .choices::after {
   content: url("../img/icons/arrow-select.svg") !important;
+  margin-top: 0;
   border-style: none !important;
   right: 30px !important;
   top: 30% !important;
@@ -1068,9 +1066,9 @@ button > a {
   line-height: 24px;
 }
 
-.quantity-block input[type="text"] {
+.quantity-block__input {
   text-align: center;
-  width: 25px !important;
+  width: 25px;
   height: 100%;
   border: none;
 }
@@ -1213,6 +1211,10 @@ button > a {
   display: inline-block;
   width: 295px;
   height: 75px;
+}
+
+.quantity-block__input {
+  width: 30px;
 }
 
 .about {

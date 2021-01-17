@@ -1,15 +1,13 @@
 @import "main.sass";
 
 .aboutus {
-	&__title {
-		margin-top: 85px;
+	padding-top: 85px;
+	&__title {		
 		margin-bottom: 44px;
 		text-align: center;			
 	}
 	&__crumbs {
-		position: absolute;		
-		left: 0;
-		top: 0;
+		
 	}
 	.team {		
 		.people-block {
@@ -136,10 +134,7 @@
 			margin-right: 60px;
 			border-radius: 10px;
 		}
-	
-		&__descr {
-		}
-	
+		
 		&__name {
 			margin-bottom: 24px;
 			font-weight: 600;
@@ -340,5 +335,9 @@
 	.hide {
 		display: none;
 		transition: all 0.3s;
+	}
+
+	.swiper-button-next, .swiper-button-prev {
+		top: 60%;
 	}
 }

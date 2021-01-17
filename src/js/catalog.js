@@ -105,7 +105,7 @@ cards.forEach(el => {
 			popupContainer.querySelector(`.popup__img`).setAttribute('src', `${cardImg}`);
 			popupContainer.querySelector(`.popup__title`).innerText = cardTitle;
 			popupContainer.querySelector(`.popup__price`).innerText = cardPrice;
-			popupContainer.querySelector(`.popup__quantity-block`).children[1].innerText = cardQuantity[0].children[1].textContent;
+			popupContainer.querySelector(`.popup__quantity-block`).children[1].value = cardQuantity[0].children[1].value;
 			popupContainer.querySelector(`.popup__descr`).innerText = cardDescr;
 			popupContainer.querySelector(`.popup__more-link`).setAttribute(`href`, `card_${linkPath}.html`);
 		};

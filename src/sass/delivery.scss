@@ -2,15 +2,9 @@
 
 
 .delivery {
+	padding-top: 100px;
 
-	&__crumbs {
-		position: absolute;
-		left: 0;
-		top: 0;
-	}
-
-	&__content {
-		margin-bottom: 100px;
+	&__content {	
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-column-gap: 50px;

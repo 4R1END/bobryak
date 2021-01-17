@@ -1,6 +1,7 @@
 .choices {
 	&::after {
 		content: url('../img/icons/arrow-select.svg') !important;
+		margin-top: 0;
 		border-style: none !important;
 		right: 30px !important;
 		top: 30% !important;

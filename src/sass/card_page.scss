@@ -68,15 +68,15 @@
 		}
 		& label:nth-child(2) > span,
 		& label:nth-child(3) > span {
-		margin-left: -6px;
+			margin-left: -6px;
 		}
 	}
 
 	&__price {
 		font-weight: 500;
 		font-size: 26px;
-		line-height: 32px;	
-		letter-spacing: 1.8px
+		line-height: 32px;
+		letter-spacing: 1.8px;
 	}
 
 	&__quantity-block {
@@ -85,6 +85,9 @@
 		font-size: 24px;
 		line-height: 29px;
 		letter-spacing: 1.8px;
+		.quantity-block__input {
+			width: 30px;
+		}
 	}
 
 	&__descr {
@@ -122,10 +125,8 @@
 	}
 
 	&__product-pluses {
-		display: flex;		
-	}
-
-	&__info {
+		display: flex;
+		justify-content: space-between;
 	}
 
 	.mission__content {
@@ -138,7 +139,6 @@
 	height: 75px;
 	display: block;
 	margin-left: auto;
-	
 }
 .pluses {
 	margin-bottom: 120px;
@@ -149,16 +149,14 @@
 		font-size: 18px;
 		line-height: 23px;
 		color: $main_color;
-		&:not(:last-child) {
-			margin-right: 20px;
-		}
+		// &:not(:last-child) {
+		// 	margin-right: 20px;
+		// }
 
 		& > img {
 			margin-right: 15px;
 		}
-	
 	}
-	
 }
 .info {
 	margin-bottom: 67px;
@@ -179,7 +177,6 @@
 	&__text {
 		font-weight: 300;
 		font-size: 16px;
-		line-height: 20px;
-
+		line-height: 25px;
 	}
 }
