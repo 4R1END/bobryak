@@ -56,7 +56,7 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>
@@ -118,10 +118,10 @@
 	<main class="catalog">
 		<div class="container">
 			<div class="catalog__crumbs crumbs">
-				<a href="index.html" class="crumbs__link">
+				<a href="index.html" class="crumbs__link crumbs--active">
 					Главная
 				</a>
-				&nbsp; - <span class="crumbs--active">Каталог</span>
+				&nbsp; - <span>Каталог</span>
 			</div>
 			<h2 class="catalog__title title">
 				Каталог
@@ -325,7 +325,7 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="balham" value="150" checked>
+						<input type="radio" name="balham" value="150">
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
@@ -419,7 +419,7 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="blackberry" value="150" checked>
+						<input type="radio" name="blackberry" value="150">
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
@@ -513,7 +513,7 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="blueberry" value="150" checked>
+						<input type="radio" name="blueberry" value="150">
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
@@ -607,7 +607,7 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="elder" value="150" checked>
+						<input type="radio" name="elder" value="150">
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
@@ -701,7 +701,7 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="plum" value="150" checked>
+						<input type="radio" name="plum" value="150">
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
@@ -795,7 +795,7 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="pear" value="150" checked>
+						<input type="radio" name="pear" value="150">
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
@@ -889,7 +889,7 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="raspberry" value="150" checked>
+						<input type="radio" name="raspberry" value="150">
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
@@ -983,7 +983,7 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="cranberry" value="150" checked>
+						<input type="radio" name="cranberry" value="150">
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
@@ -1038,7 +1038,7 @@
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<div class="card" data-name="raspberry" data-f="tea" data-new="6" data-popular="4" data-sale="70">
+						<div class="card" data-name="_raspberry" data-f="tea" data-new="6" data-popular="4" data-sale="70">
 	<div class="card__image">
 		<div class='card__badge card__badge-hit'>Хит</div>
 		<img class="card__image-main" src="img/cards/raspberry.png" alt="Варенье из малины">
@@ -1053,15 +1053,15 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="@@weightname" value="150" checked>
+					<input type="radio" name="_raspberry" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="@@weightname" value="200">
+					<input type="radio" name="_raspberry" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="@@weightname" value="250">
+					<input type="radio" name="_raspberry" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
@@ -1104,15 +1104,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="@@weightname" value="150" checked>
+						<input type="radio" name="_raspberry" value="150">
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="@@weightname" value="200">
+						<input type="radio" name="_raspberry" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="@@weightname" value="250">
+						<input type="radio" name="_raspberry" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -1135,7 +1135,7 @@
 </div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card" data-name="elder" data-f="jam" data-new="3" data-popular="7" data-sale="40">
+						<div class="card" data-name="_elder" data-f="jam" data-new="3" data-popular="7" data-sale="40">
 	<div class="card__image">
 		<div class='card__badge card__badge-latest'>Новинка</div>
 		<img class="card__image-main" src="img/cards/elder.png" alt="Варенье из бузины">
@@ -1150,15 +1150,15 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="@@weightname" value="150" checked>
+					<input type="radio" name="_elder" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="@@weightname" value="200">
+					<input type="radio" name="_elder" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="@@weightname" value="250">
+					<input type="radio" name="_elder" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
@@ -1201,15 +1201,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="@@weightname" value="150" checked>
+						<input type="radio" name="_elder" value="150">
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="@@weightname" value="200">
+						<input type="radio" name="_elder" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="@@weightname" value="250">
+						<input type="radio" name="_elder" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -1232,7 +1232,7 @@
 </div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card" data-name="plum" data-f="jam" data-new="4" data-popular="6" data-sale="50">
+						<div class="card" data-name="_plum" data-f="jam" data-new="4" data-popular="6" data-sale="50">
 	<div class="card__image">
 		<div class='card__badge card__badge-latest'>Новинка</div>
 		<img class="card__image-main" src="img/cards/plum.png" alt="Варенье из сливы">
@@ -1247,15 +1247,15 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="@@weightname" value="150" checked>
+					<input type="radio" name="_plum" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="@@weightname" value="200">
+					<input type="radio" name="_plum" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="@@weightname" value="250">
+					<input type="radio" name="_plum" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
@@ -1298,15 +1298,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="@@weightname" value="150" checked>
+						<input type="radio" name="_plum" value="150">
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="@@weightname" value="200">
+						<input type="radio" name="_plum" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="@@weightname" value="250">
+						<input type="radio" name="_plum" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -1329,7 +1329,7 @@
 </div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card" data-name="blackberry" data-f="jam" data-new="1" data-popular="9" data-sale="20">
+						<div class="card" data-name="_blackberry" data-f="jam" data-new="1" data-popular="9" data-sale="20">
 	<div class="card__image">
 		<div class='card__badge card__badge-latest'>Новинка</div>
 		<img class="card__image-main" src="img/cards/blackberry.png" alt="Варенье из ежевики">
@@ -1344,15 +1344,15 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="@@weightname" value="150" checked>
+					<input type="radio" name="_blackberry" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="@@weightname" value="200">
+					<input type="radio" name="_blackberry" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="@@weightname" value="250">
+					<input type="radio" name="_blackberry" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
@@ -1395,15 +1395,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="@@weightname" value="150" checked>
+						<input type="radio" name="_blackberry" value="150">
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="@@weightname" value="200">
+						<input type="radio" name="_blackberry" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="@@weightname" value="250">
+						<input type="radio" name="_blackberry" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -1426,7 +1426,7 @@
 </div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card" data-name="blueberry" data-f="jam" data-new="2" data-popular="8" data-sale="30">
+						<div class="card" data-name="_blueberry" data-f="jam" data-new="2" data-popular="8" data-sale="30">
 	<div class="card__image">
 		
 		<img class="card__image-main" src="img/cards/blueberry.png" alt="Варенье из черники">
@@ -1441,15 +1441,15 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="@@weightname" value="150" checked>
+					<input type="radio" name="_blueberry" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="@@weightname" value="200">
+					<input type="radio" name="_blueberry" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="@@weightname" value="250">
+					<input type="radio" name="_blueberry" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
@@ -1492,15 +1492,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="@@weightname" value="150" checked>
+						<input type="radio" name="_blueberry" value="150">
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="@@weightname" value="200">
+						<input type="radio" name="_blueberry" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="@@weightname" value="250">
+						<input type="radio" name="_blueberry" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -1523,7 +1523,7 @@
 </div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card" data-name="pear" data-f="jam" data-new="5" data-popular="5" data-sale="60">
+						<div class="card" data-name="_pear" data-f="jam" data-new="5" data-popular="5" data-sale="60">
 	<div class="card__image">
 		
 		<img class="card__image-main" src="img/cards/pear.png" alt="Варенье из груши">
@@ -1538,15 +1538,15 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="@@weightname" value="150" checked>
+					<input type="radio" name="_pear" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="@@weightname" value="200">
+					<input type="radio" name="_pear" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="@@weightname" value="250">
+					<input type="radio" name="_pear" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
@@ -1589,15 +1589,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="@@weightname" value="150" checked>
+						<input type="radio" name="_pear" value="150">
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="@@weightname" value="200">
+						<input type="radio" name="_pear" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="@@weightname" value="250">
+						<input type="radio" name="_pear" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -1628,7 +1628,7 @@
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<div class="card" data-name="raspberry" data-f="tea" data-new="6" data-popular="4" data-sale="70">
+						<div class="card" data-name="_raspberry" data-f="tea" data-new="6" data-popular="4" data-sale="70">
 	<div class="card__image">
 		<div class='card__badge card__badge-hit'>Хит</div>
 		<img class="card__image-main" src="img/cards/raspberry.png" alt="Варенье из малины">
@@ -1643,15 +1643,15 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="@@weightname" value="150" checked>
+					<input type="radio" name="_raspberry" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="@@weightname" value="200">
+					<input type="radio" name="_raspberry" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="@@weightname" value="250">
+					<input type="radio" name="_raspberry" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
@@ -1694,15 +1694,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="@@weightname" value="150" checked>
+						<input type="radio" name="_raspberry" value="150">
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="@@weightname" value="200">
+						<input type="radio" name="_raspberry" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="@@weightname" value="250">
+						<input type="radio" name="_raspberry" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -1725,7 +1725,7 @@
 </div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card" data-name="elder" data-f="jam" data-new="3" data-popular="7" data-sale="40">
+						<div class="card" data-name="_elder" data-f="jam" data-new="3" data-popular="7" data-sale="40">
 	<div class="card__image">
 		<div class='card__badge card__badge-latest'>Новинка</div>
 		<img class="card__image-main" src="img/cards/elder.png" alt="Варенье из бузины">
@@ -1740,15 +1740,15 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="@@weightname" value="150" checked>
+					<input type="radio" name="_elder" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="@@weightname" value="200">
+					<input type="radio" name="_elder" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="@@weightname" value="250">
+					<input type="radio" name="_elder" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
@@ -1791,15 +1791,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="@@weightname" value="150" checked>
+						<input type="radio" name="_elder" value="150">
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="@@weightname" value="200">
+						<input type="radio" name="_elder" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="@@weightname" value="250">
+						<input type="radio" name="_elder" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -1822,7 +1822,7 @@
 </div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card" data-name="plum" data-f="jam" data-new="4" data-popular="6" data-sale="50">
+						<div class="card" data-name="_plum" data-f="jam" data-new="4" data-popular="6" data-sale="50">
 	<div class="card__image">
 		<div class='card__badge card__badge-latest'>Новинка</div>
 		<img class="card__image-main" src="img/cards/plum.png" alt="Варенье из сливы">
@@ -1837,15 +1837,15 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="@@weightname" value="150" checked>
+					<input type="radio" name="_plum" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="@@weightname" value="200">
+					<input type="radio" name="_plum" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="@@weightname" value="250">
+					<input type="radio" name="_plum" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
@@ -1888,15 +1888,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="@@weightname" value="150" checked>
+						<input type="radio" name="_plum" value="150">
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="@@weightname" value="200">
+						<input type="radio" name="_plum" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="@@weightname" value="250">
+						<input type="radio" name="_plum" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -1919,7 +1919,7 @@
 </div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card" data-name="blackberry" data-f="jam" data-new="1" data-popular="9" data-sale="20">
+						<div class="card" data-name="_blackberry" data-f="jam" data-new="1" data-popular="9" data-sale="20">
 	<div class="card__image">
 		<div class='card__badge card__badge-latest'>Новинка</div>
 		<img class="card__image-main" src="img/cards/blackberry.png" alt="Варенье из ежевики">
@@ -1934,15 +1934,15 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="@@weightname" value="150" checked>
+					<input type="radio" name="_blackberry" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="@@weightname" value="200">
+					<input type="radio" name="_blackberry" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="@@weightname" value="250">
+					<input type="radio" name="_blackberry" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
@@ -1985,15 +1985,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="@@weightname" value="150" checked>
+						<input type="radio" name="_blackberry" value="150">
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="@@weightname" value="200">
+						<input type="radio" name="_blackberry" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="@@weightname" value="250">
+						<input type="radio" name="_blackberry" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -2016,7 +2016,7 @@
 </div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card" data-name="blueberry" data-f="jam" data-new="2" data-popular="8" data-sale="30">
+						<div class="card" data-name="_blueberry" data-f="jam" data-new="2" data-popular="8" data-sale="30">
 	<div class="card__image">
 		
 		<img class="card__image-main" src="img/cards/blueberry.png" alt="Варенье из черники">
@@ -2031,15 +2031,15 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="@@weightname" value="150" checked>
+					<input type="radio" name="_blueberry" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="@@weightname" value="200">
+					<input type="radio" name="_blueberry" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="@@weightname" value="250">
+					<input type="radio" name="_blueberry" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
@@ -2082,15 +2082,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="@@weightname" value="150" checked>
+						<input type="radio" name="_blueberry" value="150">
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="@@weightname" value="200">
+						<input type="radio" name="_blueberry" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="@@weightname" value="250">
+						<input type="radio" name="_blueberry" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -2113,7 +2113,7 @@
 </div>
 					</div>
 					<div class="swiper-slide">
-						<div class="card" data-name="pear" data-f="jam" data-new="5" data-popular="5" data-sale="60">
+						<div class="card" data-name="_pear" data-f="jam" data-new="5" data-popular="5" data-sale="60">
 	<div class="card__image">
 		
 		<img class="card__image-main" src="img/cards/pear.png" alt="Варенье из груши">
@@ -2128,15 +2128,15 @@
 			</h3>
 			<div class="card__weight weight-checkbox">
 				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="@@weightname" value="150" checked>
+					<input type="radio" name="_pear" value="150" checked>
 					<span>150 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="@@weightname" value="200">
+					<input type="radio" name="_pear" value="200">
 					<span>200 гр</span>
 				</label>
 				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="@@weightname" value="250">
+					<input type="radio" name="_pear" value="250">
 					<span>250 гр</span>
 				</label>
 			</div>
@@ -2179,15 +2179,15 @@
 				</div>
 				<div class="card__weight weight-checkbox">
 					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="@@weightname" value="150" checked>
+						<input type="radio" name="_pear" value="150">
 						<span>150 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="@@weightname" value="200">
+						<input type="radio" name="_pear" value="200">
 						<span>200 гр</span>
 					</label>
 					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="@@weightname" value="250">
+						<input type="radio" name="_pear" value="250">
 						<span>250 гр</span>
 					</label>
 				</div>
@@ -2358,7 +2358,7 @@
 					<button class="quantity-block__btn-down">
 						-
 					</button>
-					<span>1</span>
+					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
 					<button class="quantity-block__btn-up">
 						+
 					</button>

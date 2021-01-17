@@ -369,9 +369,6 @@ button > a {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-}
-
-.crumbs a {
   color: #818181;
 }
 
@@ -563,6 +560,7 @@ button > a {
 
 .choices::after {
   content: url("../img/icons/arrow-select.svg") !important;
+  margin-top: 0;
   border-style: none !important;
   right: 30px !important;
   top: 30% !important;
@@ -790,16 +788,13 @@ button > a {
   background-image: url("../img/icons/Facebook.svg");
 }
 
-.promo__title {
-  margin-top: 85px;
-  margin-bottom: 70px;
-  text-align: center;
+.promo {
+  padding-top: 85px;
 }
 
-.promo__crumbs {
-  position: absolute;
-  left: 0;
-  top: 0;
+.promo__title {
+  margin-bottom: 70px;
+  text-align: center;
 }
 
 .promo__content {
@@ -826,16 +821,16 @@ button > a {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  color: #0F5628;
 }
 
 .promo-item__title {
   font-weight: 600;
   font-size: 52px;
   line-height: 63px;
-  color: #0F5628;
 }
 
-.promo-item__subtitle {
+.promo-item__text {
   margin-top: 23px;
   display: block;
   font-size: 24px;

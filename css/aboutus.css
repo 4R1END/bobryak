@@ -369,9 +369,6 @@ button > a {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-}
-
-.crumbs a {
   color: #818181;
 }
 
@@ -563,6 +560,7 @@ button > a {
 
 .choices::after {
   content: url("../img/icons/arrow-select.svg") !important;
+  margin-top: 0;
   border-style: none !important;
   right: 30px !important;
   top: 30% !important;
@@ -790,16 +788,13 @@ button > a {
   background-image: url("../img/icons/Facebook.svg");
 }
 
-.aboutus__title {
-  margin-top: 85px;
-  margin-bottom: 44px;
-  text-align: center;
+.aboutus {
+  padding-top: 85px;
 }
 
-.aboutus__crumbs {
-  position: absolute;
-  left: 0;
-  top: 0;
+.aboutus__title {
+  margin-bottom: 44px;
+  text-align: center;
 }
 
 .aboutus .team .people-block {
@@ -1141,4 +1136,9 @@ button > a {
 .aboutus .hide {
   display: none;
   transition: all 0.3s;
+}
+
+.aboutus .swiper-button-next,
+.aboutus .swiper-button-prev {
+  top: 60%;
 }

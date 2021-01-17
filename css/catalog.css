@@ -369,9 +369,6 @@ button > a {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
-}
-
-.crumbs a {
   color: #818181;
 }
 
@@ -563,6 +560,7 @@ button > a {
 
 .choices::after {
   content: url("../img/icons/arrow-select.svg") !important;
+  margin-top: 0;
   border-style: none !important;
   right: 30px !important;
   top: 30% !important;
@@ -1068,9 +1066,9 @@ button > a {
   line-height: 24px;
 }
 
-.quantity-block input[type="text"] {
+.quantity-block__input {
   text-align: center;
-  width: 25px !important;
+  width: 25px;
   height: 100%;
   border: none;
 }
@@ -1133,8 +1131,18 @@ button > a {
 }
 
 .tabs .swiper-container {
-  padding: 0 15px;
+  padding: 50px 15px;
+  margin-top: -50px;
+  margin-bottom: -50px;
   width: 95%;
+}
+
+.tabs .swiper-button-prev {
+  left: -15px;
+}
+
+.tabs .swiper-button-next {
+  right: -15px;
 }
 
 .popup-container {
@@ -1260,6 +1268,10 @@ button > a {
   display: inline-block;
   width: 295px;
   height: 75px;
+}
+
+.quantity-block__input {
+  width: 30px;
 }
 
 .popup-catalog {

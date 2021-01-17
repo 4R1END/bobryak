@@ -58,9 +58,17 @@
 		<div class="container">
 			<section class="aboutus__content">
 				<section class="team hide">
+					<div class="aboutus__crumbs crumbs">
+						<a href="index.html">
+							<span class="crumbs--active">Главная</span>
+						</a>
+						- 
+						<span>
+							Наша команда
+						</span>
+					</div>
 					<h2 class="aboutus__title title">
-						<span class="aboutus__crumbs crumbs"><a href="index.html">Главная</a> - <span class="crumbs--active">Наша
-								команда</span></span> Наша команда
+						Наша команда
 					</h2>
 					<div class="aboutus__navigation navigation">
 						<button class="navigation__btn navigation__btn--mission-js">
@@ -203,9 +211,17 @@
 				</section>
 
 				<section class="mission">
+					<div class="aboutus__crumbs crumbs">
+						<a href="index.html">
+							<span class="crumbs--active">Главная</span>
+						</a>
+						- 
+						<span>
+							Наша миссия
+						</span>
+					</div>
 					<h2 class="aboutus__title title">
-						<span class="aboutus__crumbs crumbs"><a href="index.html">Главная</a> - <span class="crumbs--active">Наша миссия</span></span> Наша
-						миссия
+						Наша миссия
 					</h2>
 					<div class="aboutus__navigation navigation">
 						<button class="navigation__btn navigation__btn--active navigation__btn--mission-js">
@@ -235,7 +251,7 @@
 								</p>
 							</div>
 							<div class="block__slider top-offset">
-								<div class="swiper-container">
+								<div class="swiper-container-1">
 									<div class="swiper-wrapper">
 										<div class="swiper-slide block__slide-img">
 											<img src="img/aboutus/mission_1.png" alt="миссия">
@@ -277,7 +293,7 @@
 								</p>
 							</div>
 							<div class="block__slider">
-								<div class="swiper-container">
+								<div class="swiper-container-2">
 									<div class="swiper-wrapper">
 										<div class="swiper-slide block__slide-img">
 											<img src="img/aboutus/mission_2.png" alt="миссия">
@@ -291,7 +307,7 @@
 									</div>
 
 								</div>
-								<div class="swiper-pagination swiper-pagination-mission"></div>
+								<div class="swiper-pagination swiper-pagination-mission swiper-pagination-mission--second"></div>
 							</div>
 						</div>
 
@@ -464,6 +480,69 @@
 	<script src="libs/swiper.min.js"></script>
 	<script src="js/aboutus.min.js"></script>
 	<script>
+		const mySwiper1 = new Swiper('.swiper-container-1', {
+			// Optional parameters
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
+			speed: 1200,
+			loop: true,
+			autoplay: {
+				delay: 4000,
+				disableOnInteraction: false,
+			},
+			observer: true,
+			observeParents: true,
+
+			pagination: {
+				el: '.swiper-pagination-mission--first',
+				clickable: true
+			},
+		});
+
+		const mySwiper2 = new Swiper('.swiper-container-2', {
+			// Optional parameters
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
+			speed: 1000,
+			loop: true,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+			observer: true,
+			observeParents: true,
+
+			pagination: {
+				el: '.swiper-pagination-mission--second',
+				clickable: true
+			},
+		});
+
+		const mySwiper3 = new Swiper('.swiper-container-banner', {
+			// Optional parameters
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
+			speed: 1000,
+			loop: true,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+			observer: true,
+			observeParents: true,
+
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true
+			},
+		});
+
 		const mySwiperOffer = new Swiper('.swiper-container-coverflow', {
 			// Optional parameters
 			effect: 'coverflow',
@@ -486,26 +565,7 @@
 			},
 		});
 
-		const mySwiper = new Swiper('.swiper-container', {
-			// Optional parameters
-			effect: 'fade',
-			fadeEffect: {
-				crossFade: true
-			},
-			speed: 1000,
-			loop: true,
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: false,
-			},
-			observer: true,
-			observeParents: true,
-
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true
-			},
-		});
+		
 	</script>
 </body>
 

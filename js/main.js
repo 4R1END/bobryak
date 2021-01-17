@@ -39,7 +39,6 @@ const btnAddToCart = document.querySelectorAll(`.card__btn-basket`);
 
 inputQuantity.forEach(el => {
 	el.addEventListener(`keydown`, (event) => {
-		console.log(event.keyCode);
 		// Разрешаем: backspace, delete, tab и escape
     if ( event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 ||
       // Разрешаем: Ctrl+A
