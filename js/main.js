@@ -36,6 +36,7 @@ const btnUp = document.querySelectorAll(`.quantity-block__btn-up`); // кноп�
 const inputQuantity = document.querySelectorAll(`.quantity-block__input`);
 const price = document.querySelectorAll(`.card__price`);
 const btnAddToCart = document.querySelectorAll(`.card__btn-basket`);
+const weightBlock = document.querySelectorAll(`.weight-checkbox`);
 
 inputQuantity.forEach(el => {
 	el.addEventListener(`keydown`, (event) => {

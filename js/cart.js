@@ -3,6 +3,7 @@ const btnUp = document.querySelectorAll(`.quantity-block__btn-up`); // кноп�
 const inputQuantity = document.querySelectorAll(`.quantity-block__input`);
 const price = document.querySelectorAll(`.card__price`);
 const btnAddToCart = document.querySelectorAll(`.card__btn-basket`);
+const weightBlock = document.querySelectorAll(`.weight-checkbox`);
 
 inputQuantity.forEach(el => {
 	el.addEventListener(`keydown`, (event) => {
@@ -203,7 +204,7 @@ product.forEach(el => {
 
 	const counterHandler = () => {
 		const productPrice = parseInt( el.querySelector(`.product__price`).textContent );
-		const productQuantity = parseInt( productQuantityBlock.querySelector(`span`).textContent );
+		const productQuantity = parseInt( productQuantityBlock.querySelector(`input`).value );
 		const productNumeralSum = productPrice * productQuantity;
 		productSum.innerText = `${productNumeralSum} ₽`;
 		const allProductSum = document.querySelectorAll(`.product__sum`);
@@ -224,7 +225,8 @@ product.forEach(el => {
 	});
 	
 	btnCountUp.addEventListener(`click`, counterHandler);	
-	btnCountDown.addEventListener(`click`, counterHandler);	
+	btnCountDown.addEventListener(`click`, counterHandler);
+	productQuantityBlock.querySelector(`input`).addEventListener(`change`, counterHandler)	
 
 	btnDeleteProduct.addEventListener(`click`, () => {
 		el.remove();

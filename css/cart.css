@@ -280,6 +280,19 @@ html {
   overflow-anchor: none;
 }
 
+body {
+  position: relative;
+}
+
+body.scroll-disable {
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
 h1,
 h2,
 h3 {
@@ -413,6 +426,10 @@ button > a {
   height: 50px;
   border: 1px solid #0F5628;
   border-radius: 10px;
+}
+
+input[type="submit"] {
+  cursor: pointer;
 }
 
 .btn--primary {
@@ -560,7 +577,7 @@ button > a {
 
 .choices::after {
   content: url("../img/icons/arrow-select.svg") !important;
-  margin-top: 0;
+  margin-top: 0 !important;
   border-style: none !important;
   right: 30px !important;
   top: 30% !important;
@@ -614,7 +631,8 @@ button > a {
   position: relative;
 }
 
-.header__bg {
+.header:after {
+  content: '';
   position: absolute;
   bottom: -27%;
   left: 0;
@@ -739,10 +757,6 @@ button > a {
   text-align: right;
 }
 
-.footer .contacts__phone {
-  margin-bottom: 14px;
-}
-
 .footer .contacts__link {
   font-style: normal;
   font-weight: 300;
@@ -751,11 +765,25 @@ button > a {
   color: #000000;
 }
 
-.footer .contacts__email {
+.footer .contacts__link-phone {
+  margin-bottom: 14px;
+}
+
+.footer .contacts__link-email {
   margin-bottom: 19px;
+  position: relative;
   font-size: 16px;
   line-height: 20px;
-  text-decoration: underline;
+}
+
+.footer .contacts__link-email:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 81%;
+  height: 1px;
+  background-color: #000;
 }
 
 .footer .social-icons__list {
@@ -919,7 +947,7 @@ button > a {
 
 .card {
   margin-top: 73px;
-  padding: 0 10px 24px;
+  padding: 1px 10px 24px;
   border-radius: 10px;
   box-shadow: 5px 4px 18px rgba(0, 0, 0, 0.11);
 }
@@ -954,8 +982,10 @@ button > a {
   position: absolute;
   bottom: 10px;
   right: 8px;
+  width: 35px;
+  height: 32px;
   border: none;
-  background: transparent;
+  background: url("../img/icons/icon_like.svg") no-repeat center center;
 }
 
 .card__badge {
@@ -1270,17 +1300,13 @@ button > a {
   opacity: 1;
 }
 
-.cart {
-  margin-top: 126px;
-}
-
-.cart .steps {
+.steps {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.cart .steps__item {
+.steps__item {
   width: 92px;
   display: flex;
   flex-direction: column;
@@ -1288,7 +1314,24 @@ button > a {
   align-items: center;
 }
 
-.cart .steps__item span {
+.steps__item:not(:last-child) {
+  margin-right: 100px;
+  position: relative;
+}
+
+.steps__item:not(:last-child):after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: calc(75px / 2);
+  right: -16px;
+  width: 74px;
+  height: 2px;
+  background-color: #d1e5d1;
+  transform: translateX(100%);
+}
+
+.steps__item span {
   display: block;
   margin-top: 20px;
   font-weight: 600;
@@ -1297,35 +1340,24 @@ button > a {
   color: #d1e5d1;
 }
 
-.cart .steps__item.active {
+.steps__item.active {
   color: #0F5628;
 }
 
-.cart .steps__item.active .step {
+.steps__item.active .step {
   border: 2px solid #0F5628;
   color: #0F5628;
 }
 
-.cart .steps__item.active span {
+.steps__item.active span {
   color: #0F5628;
 }
 
-.cart .steps__item:nth-child(2),
-.cart .steps__item:nth-child(4) {
-  margin-top: -40px;
-  width: 74px;
-  height: 1px;
-  background: #d1e5d1;
-  border: 1px solid #d1e5d1;
+.steps__item.active:after {
+  background-color: #0F5628;
 }
 
-.cart .steps__item:nth-child(2).active,
-.cart .steps__item:nth-child(4).active {
-  background: #0F5628;
-  border: 1px solid #0F5628;
-}
-
-.cart .step {
+.step {
   width: 75px;
   height: 75px;
   display: flex;
@@ -1338,21 +1370,20 @@ button > a {
   color: #d1e5d1;
 }
 
-.cart .info {
+.mission-text {
   margin-bottom: 80px;
+  padding-top: 46px;
   width: 460px;
+  background-image: url("../img/cart/leaf.png");
+  background-repeat: no-repeat;
+  background-position: 15px 0px;
   font-weight: 300;
   font-size: 20px;
   line-height: 24px;
 }
 
-.cart .info img {
-  display: block;
-}
-
-.cart__mission-text img {
-  margin-left: 20px;
-  margin-bottom: -15px;
+.cart .container {
+  padding-top: 126px;
 }
 
 .cart__content {
@@ -1458,9 +1489,10 @@ button > a {
   padding-right: 0 !important;
 }
 
-.product__delete img {
+.product__delete button {
   width: 16px;
   height: 16px;
+  background: url("../img/icons/close-16.svg") no-repeat center center;
 }
 
 .product__quantity-block {
