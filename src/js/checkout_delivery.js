@@ -13,7 +13,9 @@ const btnNextStep = document.querySelector(`.info__btn-next`);
 const btnMapSeen = document.querySelector(`.delivery-method__link`);
 const calendar = document.querySelector(`.calendar`);
 
-
+setTimeout(() => {
+	calendar.setAttribute('value', 'Другая дата');
+}, 500);
 
 newAdressRadio.addEventListener(`click`, () => {
 	if (newAdressRadio.checked) {
