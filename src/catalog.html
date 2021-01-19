@@ -34,91 +34,116 @@
 			</div>
 			<div class="catalog__content">
 				<sidebar class="catalog__filters filters">
-					<div class="filters__checked-filters">
-						
-					</div>
-					<button class="filters__btn-clear">Очистить фильтр</button>
-					<ul class="filters__list">
-						<li class="filters__item category-filter">
-							<h4 class="filters__title">
-								Категории
-							</h4>
-							<div class="filters__body">
-								<label class="filters__label custom-checkbox">
-									<input type="checkbox" class="filters__checkbox category-filter__item" name="category" value="tea">
-									<span>Чай</span>
-								</label>
-								<label class="filters__label custom-checkbox">
-									<input type="checkbox" class="filters__checkbox category-filter__item" name="category" value="honey">
-									<span>Мёд</span>
-								</label>
-								<label class="filters__label custom-checkbox">
-									<input type="checkbox" class="filters__checkbox category-filter__item" name="category" value="jam">
-									<span>Варенье</span>
-								</label>
-							</div>
-						</li>
-						<li class="filters__item">
-							<h4 class="filters__title">
-								Объём
-							</h4>
-							<div class="filters__body">
+					<form action="#" class="sidebar__form">
+						<div class="filters__checked-filters">
 
-							</div>
-						</li>
-						<li class="filters__item type-filters">
-							<h4 class="filters__title">
-								Вид
-							</h4>
-							<div class="filters__body type-filters__body">
-								<label class="filters__label custom-checkbox">
-									<input type="checkbox" class="filters__checkbox" name="type" value="high-mount">
-									<span>Высокогорный</span>
-								</label>
-								<label class="filters__label custom-checkbox">
-									<input type="checkbox" class="filters__checkbox" name="type" value="low-mount">
-									<span>Низкогорный</span>
-								</label>
-								<label class="filters__label custom-checkbox">
-									<input type="checkbox" class="filters__checkbox" name="type" value="deal">
-									<span>Еловый</span>
-								</label>
-								<label class="filters__label custom-checkbox">
-									<input type="checkbox" class="filters__checkbox" name="type" value="tonic">
-									<span>Тонизирующий</span>
-								</label>
-								<label class="filters__label custom-checkbox">
-									<input type="checkbox" class="filters__checkbox" name="type" value="calmig">
-									<span>Успокаивающий</span>
-								</label>
-								<button class="filters__more-btn type-filter__btn"></button>
-							</div>
-						</li>
-						<li class="filters__item price-filter">
-							<h4 class="filters__title">
-								Цена
-							</h4>
-							<div class="filters__body price-filter__body">
-								<input type="text" class="price-filter__input" placeholder="100" id="input-min">
-								<span>-</span>
-								<input type="text" class="price-filter__input" placeholder="10000" id="input-max">
-								<div class="price-filter__slider" id="range-slider"></div>
-								<div class="price-filter__price-index">
-									<span>100 p</span>
-									<span>10000 p</span>
+						</div>
+						<button class="filters__btn-clear">Очистить фильтр</button>
+						<ul class="filters__list">
+							<li class="filters__item category-filter">
+								<h4 class="filters__title">
+									Категории
+								</h4>
+								<div class="filters__body">
+									<label class="filters__label custom-checkbox visible">
+										<input type="checkbox" class="filters__checkbox category-filter__item" name="category" value="tea">
+										<span>Чай</span>
+									</label>
+									<label class="filters__label custom-checkbox visible">
+										<input type="checkbox" class="filters__checkbox category-filter__item" name="category" value="honey">
+										<span>Мёд</span>
+									</label>
+									<label class="filters__label custom-checkbox visible">
+										<input type="checkbox" class="filters__checkbox category-filter__item" name="category" value="jam">
+										<span>Варенье</span>
+									</label>
 								</div>
-							</div>
-						</li>
-						<li class="filters__item">
-							<h4 class="filters__title">
-								Цвет
-							</h4>
-							<div class="filters__body">
-
-							</div>
-						</li>
-					</ul>
-					<button class="btn btn--primary filters__btn--apply">Применить</button>
+							</li>
+							<li class="filters__item">
+								<h4 class="filters__title">
+									Объём
+								</h4>
+								<div class="filters__body">
+									<label class="filters__label custom-checkbox visible">
+										<input type="checkbox" class="filters__checkbox" name="weight" value="150">
+										<span>150 гр</span>
+									</label>
+									<label class="filters__label custom-checkbox visible">
+										<input type="checkbox" class="filters__checkbox" name="weight" value="200">
+										<span>200 гр</span>
+									</label>
+									<label class="filters__label custom-checkbox visible">
+										<input type="checkbox" class="filters__checkbox" name="weight" value="250">
+										<span>250 гр</span>
+									</label>
+								</div>
+							</li>
+							<li class="filters__item type-filters">
+								<h4 class="filters__title">
+									Вид
+								</h4>
+								<div class="filters__body type-filters__body">
+									<label class="filters__label custom-checkbox visible">
+										<input type="checkbox" class="filters__checkbox" name="type" value="high-mount">
+										<span>Высокогорный</span>
+									</label>
+									<label class="filters__label custom-checkbox visible">
+										<input type="checkbox" class="filters__checkbox" name="type" value="low-mount">
+										<span>Низкогорный</span>
+									</label>
+									<label class="filters__label custom-checkbox visible">
+										<input type="checkbox" class="filters__checkbox" name="type" value="deal">
+										<span>Еловый</span>
+									</label>
+									<label class="filters__label custom-checkbox visible">
+										<input type="checkbox" class="filters__checkbox" name="type" value="tonic">
+										<span>Тонизирующий</span>
+									</label>
+									<label class="filters__label custom-checkbox visible">
+										<input type="checkbox" class="filters__checkbox" name="type" value="calmig">
+										<span>Успокаивающий</span>
+									</label>
+									<label class="filters__label custom-checkbox hide">
+										<input type="checkbox" class="filters__checkbox" name="type" value="calmig">
+										<span>Штырящий</span>
+									</label>
+									<label class="filters__label custom-checkbox hide">
+										<input type="checkbox" class="filters__checkbox" name="type" value="calmig">
+										<span>Веселящий</span>
+									</label>
+									<label class="filters__label custom-checkbox hide">
+										<input type="checkbox" class="filters__checkbox" name="type" value="calmig">
+										<span>Убаюкивающий</span>
+									</label>
+								</div>
+								<button class="filters__more-btn btn-more-filters-js">+</button>
+							</li>
+							<li class="filters__item price-filter">
+								<h4 class="filters__title">
+									Цена
+								</h4>
+								<div class="filters__body price-filter__body">
+									<input type="text" class="price-filter__input" placeholder="100" id="input-min">
+									<span>-</span>
+									<input type="text" class="price-filter__input" placeholder="10000" id="input-max">
+									<div class="price-filter__slider" id="range-slider"></div>
+									<div class="price-filter__price-index">
+										<span>100 p</span>
+										<span>10000 p</span>
+									</div>
+								</div>
+							</li>
+							<li class="filters__item">
+								<h4 class="filters__title">
+									Цвет
+								</h4>
+								<div class="filters__body">
+	
+								</div>
+							</li>
+						</ul>
+						<input type="submit" class="btn btn--primary filters__btn--apply" value="Применить">
+					</form>
 				</sidebar>
 				<section class="catalog__main">
 					<div class="catalog__options">
@@ -160,7 +185,7 @@
 						</p>
 					</div>
 					<div class="catalog__cards">
-						@@loop('_card.html', 'json/cards_data.json')						
+						@@loop('_card.html', 'json/cards_data.json')
 					</div>
 					<div class="catalog__pagination pagination">
 						<span class="pagination__current">12</span> из <span class="pagination__general">40</span>

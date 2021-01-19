@@ -1,0 +1,58 @@
+.sidebar {
+	padding: 27px;
+	margin-bottom: 245px;
+	width: 522px;
+	border: 1px solid $main_color;
+	box-sizing: border-box;
+	border-radius: 30px;
+
+	&__title {
+		margin-bottom: 30px;
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 29px;
+	}
+}
+
+.sidebar__list {
+	margin-right: -27px;
+	margin-bottom: 40px;
+	height: 328px;
+	overflow: auto;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 17px;
+}
+.sidebar__table {
+	border-collapse: collapse;
+	td {
+		padding: 15px 0;		
+	}
+	tr:last-child {
+		padding-bottom: 0;
+	}
+	tr td:nth-child(2) {
+		padding-left: 18px;
+		width: 106px;
+	}
+	tr td:nth-child(3) {
+		width: 76px;
+	}
+	tr td:nth-child(4) {
+		width: 62px;
+	}
+	tr td:nth-child(5) {
+		width: 69px;
+	}
+	& img {
+		width: 88px;
+		height: 88px;
+		object-fit: cover;
+		border-radius: 10px;
+	}
+	.sidebar__btn-delete-product {
+		width: 10px;
+		height: 10px;
+		background: url('../img/cart/close.svg') no-repeat center center;
+	}
+}

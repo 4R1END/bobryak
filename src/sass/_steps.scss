@@ -1,0 +1,75 @@
+.steps {
+	display: flex;
+	justify-content: center;
+	align-items: center;		
+}
+
+.steps__item {
+	width: 92px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&:not(:last-child) {
+		margin-right: 100px;
+		position: relative;
+	}
+	&:not(:last-child):after {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: calc(75px / 2);
+		right: -16px;
+		width: 74px;
+		height: 2px;
+		background-color: $green-light;
+		transform: translateX(100%);
+		
+	}
+	& span {
+		display: block;
+		margin-top: 20px;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 24px;
+		color: $green-light;			
+	}
+	&.active {
+		color: $main_color;
+		& .step {
+			border: 2px solid $main_color;
+			color: $main_color
+		}		
+		& span {
+			color: $main_color;
+		}	
+		&:after {
+			background-color: $main-color;
+		}
+	}	
+}
+
+.step {
+	width: 75px;
+	height: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid $green-light;
+	border-radius: 50%;
+	font-size: 36px;		
+	line-height: 44px;
+	color: $green-light;
+}
+
+.mission-text {
+	margin-bottom: 80px;
+	padding-top: 46px;
+	width: 460px;
+	background-image: url('../img/cart/leaf.png');
+	background-repeat: no-repeat;
+	background-position: 15px 0px;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 24px;		
+}

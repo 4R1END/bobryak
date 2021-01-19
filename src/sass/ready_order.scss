@@ -1,4 +1,7 @@
 @import "main.sass";
+h1 {
+	display: none;
+}
 
 .order {
 	padding-top: 145px;
@@ -117,28 +120,22 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		justify-content: flex-end;
+		height: 95px;
 		&:nth-child(1) {
-			& > img {
-				margin-bottom: 8px;
-			}
+			background: url('../img/icons/loading.png') no-repeat center top;
 			& span {
 				color: #35492E;
 			}
 		}
 		&:nth-child(2) {
-			& > img {
-				margin-bottom: 11px;
-			}
+			background: url('../img/icons/bundle_order.png') no-repeat center -3px;
 		}
 		&:nth-child(3) {
-			& > img {
-				margin-bottom: 17px;
-			}
+			background: url('../img/icons/worldwide_delivery.png') no-repeat center top;
 		}
 		&:nth-child(4) {
-			& > img {
-				margin-bottom: 5px;
-			}
+			background: url('../img/icons/happy_getting.png') no-repeat center -3px;
 		}
 		& > span {
 			font-weight: 700;

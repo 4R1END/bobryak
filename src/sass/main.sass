@@ -16,6 +16,16 @@ html
 	font-family: "Montserrat", sans-serif
 	overflow-anchor: none
 
+body
+	position: relative
+	&.scroll-disable
+		overflow: hidden
+		height: 100vh
+		position: fixed
+		width: 100%
+		left: 0
+		top: 0
+
 h1, h2, h3
 	margin: 0
 	padding: 0
@@ -121,6 +131,9 @@ button
 	height: 50px	
 	border: 1px solid $main-color
 	border-radius: 10px
+
+input[type="submit"]
+	cursor: pointer
 
 .btn--primary
 	background-color: $main-color

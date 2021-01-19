@@ -59,7 +59,6 @@
 		</div>
 	</div>
 	<header class="header">
-	<div class="header__bg"></div>
 	<div class="container header__container">
 		<nav class="menu header__menu">
 			<ul class="menu__list">
@@ -79,7 +78,7 @@
 					</a>
 				</li>
 				<li class="menu__list-item">
-					<a href="index.html" class="menu__link">
+					<a class="menu__link">
 						<img src="img/logo.png" alt="бобряк">
 					</a>
 				</li>
@@ -112,17 +111,11 @@
 					<span>Корзина</span>
 				</div>
 				<div class="steps__item active">
-
-				</div>
-				<div class="steps__item active">
 					<div class="step">
 						2
 					</div>
 					<span>Доставка</span>
-				</div>
-				<div class="steps__item">
-
-				</div>
+				</div>				
 				<div class="steps__item">
 					<div class="step">
 						3
@@ -130,8 +123,7 @@
 					<span>Оплата</span>
 				</div>
 			</div>
-			<div class="delivery__mission-text">
-				<img src="img/cart/leaf.png" alt="Свежесть">
+			<div class="mission-text">
 				<p>
 					10% от суммы заказа мы направляем на создание экологичной инфраструктуры в регионе
 				</p>
@@ -226,7 +218,7 @@
 								<div class="info__cell date-js">
 									1 октября
 								</div>
-								<input type="button" id="calendar" class="info__cell date-js calendar" placeholder="Другая дата" data-date>
+								<input type="button" id="calendar" class="info__cell date-js calendar" value="Другая дата" data-date>
 								
 								
 							</div>
@@ -270,80 +262,99 @@
 					<h2 class="sidebar__title">
 						Ваш заказ
 					</h2>
-					<ul class="sidebar__order-list" data-simplebar>
-						<li class="sidebar__order-item order-item">
-							<img src="img/cards/balham.png" alt="балхам">
-							<div class="order-item__name">
-								Балхам
-							</div>
-							<div class="order-item__weight">
-								150 гр
-							</div>
-							<div class="order-item__quantity">
-								1 шт
-							</div>
-							<div class="order-item__price">
-								350₽
-							</div>
-							<button class="order-item__close">
-								<img src="img/cart/close.svg" alt="удалить">
-							</button>
-						</li>
-						<li class="sidebar__order-item order-item">
-							<img src="img/cards/balham.png" alt="балхам">
-							<div class="order-item__name">
-								Балхам
-							</div>
-							<div class="order-item__weight">
-								150 гр
-							</div>
-							<div class="order-item__quantity">
-								1 шт
-							</div>
-							<div class="order-item__price">
-								350₽
-							</div>
-							<button class="order-item__close">
-								<img src="img/cart/close.svg" alt="удалить">
-							</button>
-						</li>
-						<li class="sidebar__order-item order-item">
-							<img src="img/cards/balham.png" alt="балхам">
-							<div class="order-item__name">
-								Балхам
-							</div>
-							<div class="order-item__weight">
-								150 гр
-							</div>
-							<div class="order-item__quantity">
-								1 шт
-							</div>
-							<div class="order-item__price">
-								350₽
-							</div>
-							<button class="order-item__close">
-								<img src="img/cart/close.svg" alt="удалить">
-							</button>
-						</li>
-						<li class="sidebar__order-item order-item">
-							<img src="img/cards/balham.png" alt="балхам">
-							<div class="order-item__name">
-								Балхам
-							</div>
-							<div class="order-item__weight">
-								150 гр
-							</div>
-							<div class="order-item__quantity">
-								1 шт
-							</div>
-							<div class="order-item__price">
-								350₽
-							</div>
-							<button class="order-item__close">
-								<img src="img/cart/close.svg" alt="удалить">
-							</button>
-						</li>
-					</ul>
+					
+					<div class="sidebar__list" data-simplebar>
+						<table class="sidebar__table">
+							<tr class="product-js">
+								<td>
+									<img src="img/cards/balham.png" alt="балхам">
+								</td>
+								<td>
+									Балхам
+								</td>
+								<td>
+									150 гр
+								</td>
+								<td>
+									1 шт
+								</td>
+								<td>
+									350₽
+								</td>
+								<td>
+									<button class="sidebar__btn-delete-product">
+										
+									</button>
+								</td>
+							</tr>
+							<tr class="product-js">
+								<td>
+									<img src="img/cards/balham.png" alt="балхам">
+								</td>
+								<td>
+									Балхам
+								</td>
+								<td>
+									150 гр
+								</td>
+								<td>
+									1 шт
+								</td>
+								<td>
+									350₽
+								</td>
+								<td>
+									<button class="sidebar__btn-delete-product">
+										
+									</button>
+								</td>
+							</tr>
+							<tr class="product-js">
+								<td>
+									<img src="img/cards/balham.png" alt="балхам">
+								</td>
+								<td>
+									Балхам
+								</td>
+								<td>
+									150 гр
+								</td>
+								<td>
+									1 шт
+								</td>
+								<td>
+									350₽
+								</td>
+								<td>
+									<button class="sidebar__btn-delete-product">
+	
+									</button>
+								</td>
+							</tr>
+							<tr class="product-js">
+								<td>
+									<img src="img/cards/balham.png" alt="балхам">
+								</td>
+								<td>
+									Балхам
+								</td>
+								<td>
+									150 гр
+								</td>
+								<td>
+									1 шт
+								</td>
+								<td>
+									350₽
+								</td>
+								<td>
+									<button class="sidebar__btn-delete-product">
+										
+									</button>
+								</td>
+							</tr>
+						</table>
+					</div>
 
 					<button class="btn btn--secondary sidebar__btn-order">
 						изменить заказ
@@ -397,12 +408,12 @@
 			</ul>
 		</nav>
 		<div class="footer__paymethod paymethod">
-			<div class="paymethod__text">
+			<h3 class="paymethod__text">
 				Cпособы оплаты:
 				<span>
 					Картой или наличными
 				</span>
-			</div>
+			</h3>
 			<div class="paymethod__icons">
 				<ul class="paymethod__list">
 					<li class="paymethod__item">
@@ -417,17 +428,13 @@
 				</ul>
 			</div>
 		</div>
-		<div class="footer__contacts contacts">
-			<div class="contacts__phone">
-				<a href="tel:+79257006828" class="contacts__link contacts__link-phone">
-					+79257006828
-				</a>
-			</div>
-			<div class="contacts__email">
-				<a href="mailto:bobryak.community@gmail.com" class="contacts__link contacts__link-email">
-					bobryak.community@gmail.com
-				</a>
-			</div>
+		<div class="footer__contacts contacts">			
+			<a href="tel:+79257006828" class="contacts__link contacts__link-phone">
+				+79257006828
+			</a>		
+			<a href="mailto:bobryak.community@gmail.com" class="contacts__link contacts__link-email">
+				bobryak.community@gmail.com
+			</a>			
 			<div class="contacts__social-icons social-icons">
 				<ul class="social-icons__list">
 					<li class="social-icons__item">
@@ -453,7 +460,7 @@
 	<script src="libs/simplebar.js"></script>
 	<script src="libs/choices.min.js"></script>
 	<script src="libs/datepicker.js"></script>
-	<!-- <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.1/dist/js/locales/ru.js"></script> -->
+	
 	<script src="js/checkout_delivery.min.js"></script>
 	<script>
 		const defaultSelect = () => {

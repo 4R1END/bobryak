@@ -8,23 +8,8 @@
 		padding-bottom: 50px;
 	}
 
-	&__logo {
-	}
-
-	&__menu {
-	}
-
-	&__paymethod {
-	}
-
-	&__contacts {
-	}
-
 	.menu {
 
-		&__list {
-		}
-	
 		&__list-item {
 			margin-bottom: 20px;
 		}
@@ -71,27 +56,31 @@
 		display: flex;
 		flex-direction: column;
 		text-align: right;
-	
-		&__phone {
-			margin-bottom: 14px;
-		}
-	
+		
 		&__link {
 			font-style: normal;
 			font-weight: 300;
 			font-size: 18px;
 			line-height: 22px;
 			color: #000000;
-		}
-	
-		&__link-phone {
-		}
-	
-		&__email {
-			margin-bottom: 19px;
-			font-size: 16px;
-			line-height: 20px;
-			text-decoration: underline;
+			&-phone {
+				margin-bottom: 14px;
+			}
+			&-email {					
+				margin-bottom: 19px;
+				position: relative;			
+				font-size: 16px;
+				line-height: 20px;
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					width: 81%;
+					height: 1px;
+					background-color: #000;
+				}
+			}
 		}
 	}
 	.social-icons {

@@ -48,7 +48,7 @@ product.forEach(el => {
 
 	const counterHandler = () => {
 		const productPrice = parseInt( el.querySelector(`.product__price`).textContent );
-		const productQuantity = parseInt( productQuantityBlock.querySelector(`span`).textContent );
+		const productQuantity = parseInt( productQuantityBlock.querySelector(`input`).value );
 		const productNumeralSum = productPrice * productQuantity;
 		productSum.innerText = `${productNumeralSum} ₽`;
 		const allProductSum = document.querySelectorAll(`.product__sum`);
@@ -69,7 +69,8 @@ product.forEach(el => {
 	});
 	
 	btnCountUp.addEventListener(`click`, counterHandler);	
-	btnCountDown.addEventListener(`click`, counterHandler);	
+	btnCountDown.addEventListener(`click`, counterHandler);
+	productQuantityBlock.querySelector(`input`).addEventListener(`change`, counterHandler)	
 
 	btnDeleteProduct.addEventListener(`click`, () => {
 		el.remove();

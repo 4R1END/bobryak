@@ -69,17 +69,11 @@
 					<span>Корзина</span>
 				</div>
 				<div class="steps__item active">
-
-				</div>
-				<div class="steps__item active">
 					<div class="step">
 						2
 					</div>
 					<span>Доставка</span>
-				</div>
-				<div class="steps__item">
-
-				</div>
+				</div>				
 				<div class="steps__item">
 					<div class="step">
 						3
@@ -87,8 +81,7 @@
 					<span>Оплата</span>
 				</div>
 			</div>
-			<div class="delivery__mission-text">
-				<img src="img/cart/leaf.png" alt="Свежесть">
+			<div class="mission-text">
 				<p>
 					10% от суммы заказа мы направляем на создание экологичной инфраструктуры в регионе
 				</p>
@@ -183,7 +176,7 @@
 								<div class="info__cell date-js">
 									1 октября
 								</div>
-								<input type="button" id="calendar" class="info__cell date-js calendar" placeholder="Другая дата" data-date>
+								<input type="button" id="calendar" class="info__cell date-js calendar" value="Другая дата" data-date>
 								
 								
 							</div>
@@ -227,80 +220,99 @@
 					<h2 class="sidebar__title">
 						Ваш заказ
 					</h2>
-					<ul class="sidebar__order-list" data-simplebar>
-						<li class="sidebar__order-item order-item">
-							<img src="img/cards/balham.png" alt="балхам">
-							<div class="order-item__name">
-								Балхам
-							</div>
-							<div class="order-item__weight">
-								150 гр
-							</div>
-							<div class="order-item__quantity">
-								1 шт
-							</div>
-							<div class="order-item__price">
-								350₽
-							</div>
-							<button class="order-item__close">
-								<img src="img/cart/close.svg" alt="удалить">
-							</button>
-						</li>
-						<li class="sidebar__order-item order-item">
-							<img src="img/cards/balham.png" alt="балхам">
-							<div class="order-item__name">
-								Балхам
-							</div>
-							<div class="order-item__weight">
-								150 гр
-							</div>
-							<div class="order-item__quantity">
-								1 шт
-							</div>
-							<div class="order-item__price">
-								350₽
-							</div>
-							<button class="order-item__close">
-								<img src="img/cart/close.svg" alt="удалить">
-							</button>
-						</li>
-						<li class="sidebar__order-item order-item">
-							<img src="img/cards/balham.png" alt="балхам">
-							<div class="order-item__name">
-								Балхам
-							</div>
-							<div class="order-item__weight">
-								150 гр
-							</div>
-							<div class="order-item__quantity">
-								1 шт
-							</div>
-							<div class="order-item__price">
-								350₽
-							</div>
-							<button class="order-item__close">
-								<img src="img/cart/close.svg" alt="удалить">
-							</button>
-						</li>
-						<li class="sidebar__order-item order-item">
-							<img src="img/cards/balham.png" alt="балхам">
-							<div class="order-item__name">
-								Балхам
-							</div>
-							<div class="order-item__weight">
-								150 гр
-							</div>
-							<div class="order-item__quantity">
-								1 шт
-							</div>
-							<div class="order-item__price">
-								350₽
-							</div>
-							<button class="order-item__close">
-								<img src="img/cart/close.svg" alt="удалить">
-							</button>
-						</li>
-					</ul>
+					
+					<div class="sidebar__list" data-simplebar>
+						<table class="sidebar__table">
+							<tr class="product-js">
+								<td>
+									<img src="img/cards/balham.png" alt="балхам">
+								</td>
+								<td>
+									Балхам
+								</td>
+								<td>
+									150 гр
+								</td>
+								<td>
+									1 шт
+								</td>
+								<td>
+									350₽
+								</td>
+								<td>
+									<button class="sidebar__btn-delete-product">
+										
+									</button>
+								</td>
+							</tr>
+							<tr class="product-js">
+								<td>
+									<img src="img/cards/balham.png" alt="балхам">
+								</td>
+								<td>
+									Балхам
+								</td>
+								<td>
+									150 гр
+								</td>
+								<td>
+									1 шт
+								</td>
+								<td>
+									350₽
+								</td>
+								<td>
+									<button class="sidebar__btn-delete-product">
+										
+									</button>
+								</td>
+							</tr>
+							<tr class="product-js">
+								<td>
+									<img src="img/cards/balham.png" alt="балхам">
+								</td>
+								<td>
+									Балхам
+								</td>
+								<td>
+									150 гр
+								</td>
+								<td>
+									1 шт
+								</td>
+								<td>
+									350₽
+								</td>
+								<td>
+									<button class="sidebar__btn-delete-product">
+	
+									</button>
+								</td>
+							</tr>
+							<tr class="product-js">
+								<td>
+									<img src="img/cards/balham.png" alt="балхам">
+								</td>
+								<td>
+									Балхам
+								</td>
+								<td>
+									150 гр
+								</td>
+								<td>
+									1 шт
+								</td>
+								<td>
+									350₽
+								</td>
+								<td>
+									<button class="sidebar__btn-delete-product">
+										
+									</button>
+								</td>
+							</tr>
+						</table>
+					</div>
 
 					<button class="btn btn--secondary sidebar__btn-order">
 						изменить заказ
@@ -323,7 +335,7 @@
 	<script src="libs/simplebar.js"></script>
 	<script src="libs/choices.min.js"></script>
 	<script src="libs/datepicker.js"></script>
-	<!-- <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.1/dist/js/locales/ru.js"></script> -->
+	
 	<script src="js/checkout_delivery.min.js"></script>
 	<script>
 		const defaultSelect = () => {

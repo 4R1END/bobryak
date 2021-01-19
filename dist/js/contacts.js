@@ -1,4 +1,16 @@
 const popupContainer = document.querySelector(`.popup-container`);
+const body = document.body;
+
+const diableScroll = () => {
+	let pagePosition = window.scrollY;
+	body.classList.add(`scroll-disable`);
+	body.dataset.position = pagePosition;
+	body.style.top
+};
+
+const enableScroll = () => {
+	body.classList.remove(`scroll-disable`);
+};
 
 const popupOpen = (elem) => {
 	elem.addEventListener(`click`, () => {

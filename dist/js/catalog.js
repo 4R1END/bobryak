@@ -3,6 +3,7 @@ const btnUp = document.querySelectorAll(`.quantity-block__btn-up`); // кноп�
 const inputQuantity = document.querySelectorAll(`.quantity-block__input`);
 const price = document.querySelectorAll(`.card__price`);
 const btnAddToCart = document.querySelectorAll(`.card__btn-basket`);
+const weightBlock = document.querySelectorAll(`.weight-checkbox`);
 
 inputQuantity.forEach(el => {
 	el.addEventListener(`keydown`, (event) => {
@@ -142,6 +143,18 @@ const inputsArray = [inputMin, inputMax];
 
 rangeSlider.noUiSlider.on(`update`, function(values, handle) {
 	inputsArray[handle].value = Math.round(values[handle]);
+});
+
+const setRangeValue = (i, value) => {
+	let arr = [null, null];
+	arr[i] = value;
+	rangeSlider.noUiSlider.set(arr)
+};
+
+inputsArray.forEach((el, i) => {
+	el.addEventListener(`change`, (e) => {
+		setRangeValue(i, e.currentTarget.value);
+	});
 });;
 // инициализация объекта кастомного селекта
 
@@ -154,6 +167,18 @@ const defaultSelect = () => {
 
 defaultSelect();;
 const popupContainer = document.querySelector(`.popup-container`);
+const body = document.body;
+
+const diableScroll = () => {
+	let pagePosition = window.scrollY;
+	body.classList.add(`scroll-disable`);
+	body.dataset.position = pagePosition;
+	body.style.top
+};
+
+const enableScroll = () => {
+	body.classList.remove(`scroll-disable`);
+};
 
 const popupOpen = (elem) => {
 	elem.addEventListener(`click`, () => {
@@ -173,14 +198,17 @@ popupContainer.addEventListener(`click`, (e) => {
 const cards = document.querySelectorAll(`.card`);
 const catalog = document.querySelector(`.catalog__cards`);
 const cardsOfCatalog = catalog.querySelectorAll(`.card`);
-const rangeListBtn = document.querySelector(`.btn-range-list`);
-const rangeQuadroBtn = document.querySelector(`.btn-range-quadro`);
+const RangeBtnsBlock = document.querySelector(`.catalog__range-view`);
 const filtersTitle = document.querySelectorAll(`.filters__title`);
 const paginationLine = document.querySelector(`.pagination__line`);
 const paginationLineComplete = document.querySelector(`.pagination__line`);
 const generalCountCards = cardsOfCatalog.length;
 const currentCountCardsBlock = document.querySelector(`.pagination__current`);
 const generalCountCardsBlock = document.querySelector(`.pagination__general`);
+const btnMoreFilters = document.querySelectorAll(`.btn-more-filters-js`);
+const btnMoreCards = document.querySelector(`.btn--more-js`);
+const filtersForm = document.querySelector(`.sidebar__form`);
+
 
 
 // функция устанавливает аттрибут data-round элементу el (параметр1) для отображения на странице, 
@@ -211,36 +239,48 @@ cardsOfCatalog.forEach((el, i) => {
 
 
 filtersTitle.forEach(el => {
-	el.addEventListener(`click`, function () {
-		el.classList.toggle(`active`);
+	el.addEventListener(`click`, function () { // обработчик клика по названию фильтра
+		el.classList.toggle(`active`); 
 		el.nextElementSibling.classList.toggle(`active`);
+		if(el.closest(`.filters__item`).querySelector(`.filters__more-btn`) != null) { // если кнопка "показать фильтры" существует в категории
+			el.closest(`.filters__item`).querySelector(`.filters__more-btn`).classList.toggle(`active`);  // сделать ее видимой
+		}
+		let currentFilters = Array.from(el.nextElementSibling.children); // все фильтры в текущей категории
+		currentFilters.forEach(elem => {
+			if(!elem.classList.contains(`visible`)) { // при нажатии всегда скрывать изначально скрытые фильтры
+				elem.classList.add(`hide`);
+			};			
+		});
 	});
 });
 
-
-
-rangeListBtn.addEventListener(`click`, () => {
-	rangeListBtn.querySelectorAll(`.btn-range-list rect`).forEach(el => {
-		el.setAttribute(`fill`, `#0F5628`);
-		el.setAttribute(`stroke`, `#0F5628`);
+btnMoreFilters.forEach(el => {
+	el.addEventListener(`click`, () => {
+		if(!el.classList.contains(`less`)) {
+			el.closest(`.filters__item`).querySelectorAll(`.filters__label`).forEach(elem => {
+				elem.classList.remove(`hide`);
+				if(!elem.classList.contains(`hide`)) {
+					el.innerText = `-`;
+					el.classList.add(`less`);
+				};
+			});
+		} else {
+			el.closest(`.filters__item`).querySelectorAll(`.filters__label`).forEach(elem => {
+				if(!elem.classList.contains(`visible`)) {
+					elem.classList.add(`hide`);
+				};				
+			});
+			el.innerText = `+`;
+			el.classList.remove(`less`);
+		}
 	});
-	rangeQuadroBtn.querySelectorAll(`.btn-range-quadro rect`).forEach(el => {
-		el.setAttribute(`fill`, `#9D9D9C`);
-		el.setAttribute(`stroke`, `#9D9D9C`);
-	});
-	catalog.classList.add(`list`);
 });
-
-rangeQuadroBtn.addEventListener(`click`, () => {
-	rangeQuadroBtn.querySelectorAll(`.btn-range-quadro rect`).forEach(el => {
-		el.setAttribute(`fill`, `#0F5628`);
-		el.setAttribute(`stroke`, `#0F5628`);
+// переключение вида карточек в каталоге
+RangeBtnsBlock.addEventListener(`click`, () => {
+	Array.from(RangeBtnsBlock.children).forEach(el => {	
+		el.classList.toggle(`active`);
 	});
-	rangeListBtn.querySelectorAll(`.btn-range-list rect`).forEach(el => {
-		el.setAttribute(`fill`, `#9D9D9C`);
-		el.setAttribute(`stroke`, `#9D9D9C`);
-	});
-	catalog.classList.remove(`list`);
+	catalog.classList.toggle(`list`);
 });
 
 cards.forEach(el => {
@@ -294,13 +334,21 @@ const fillPaginationLine = (i, j) => {
 document.addEventListener(`DOMContentLoaded`, () => {
 	generalCountCardsBlock.innerText = generalCountCards;
 	let countActiveCards = document.querySelectorAll(`.card.active`).length;
-		currentCountCardsBlock.innerText = countActiveCards;
-		paginationLineComplete.style.width = `${fillPaginationLine(generalCountCards, countActiveCards)}%`
-	document.querySelector(`.btn--more-js`).addEventListener(`click`, () => {
+	currentCountCardsBlock.innerText = countActiveCards;
+	paginationLineComplete.style.width = `${fillPaginationLine(generalCountCards, countActiveCards)}%`
+	btnMoreCards.addEventListener(`click`, () => {
 		countActiveCards = document.querySelectorAll(`.card.active`).length;
 		currentCountCardsBlock.innerText = countActiveCards;
-		paginationLineComplete.style.width = `${fillPaginationLine(generalCountCards, countActiveCards)}%`
+		paginationLineComplete.style.width = `${fillPaginationLine(generalCountCards, countActiveCards)}%`;
+		if(countActiveCards === generalCountCards) {
+			btnMoreCards.classList.remove(`btn--primary`);
+			btnMoreCards.classList.add(`btn--disable`);
+		}
 	});
+});
+
+filtersForm.addEventListener(`submit`, (e) => {
+	e.preventDefault();
 });
 
 
@@ -359,6 +407,7 @@ btnApplyFilters.addEventListener(`click`, () => {
 
 	clearFilters();
 	getCheckedCheckBoxes();
+	clearFiltersBtn.classList.add(`active`);
 	
 	cardsOfCatalog.forEach(el => {
 		const cardPrice = el.dataset['price'];
@@ -393,7 +442,7 @@ btnApplyFilters.addEventListener(`click`, () => {
 		checkedFiltersBlock.insertAdjacentHTML('afterBegin',`
 			<div class="filters__checked-filter"  data-f="${selectedCheckBoxes[i].value}">
 				<span>${selectedCheckBoxesName[i]}</span>
-				<button class="filter-remove">x</button>
+				<button class="filter-remove"></button>
 			</div>
 		`);
 	});
@@ -402,6 +451,7 @@ btnApplyFilters.addEventListener(`click`, () => {
 
 clearFiltersBtn.addEventListener(`click`, () => {
 	clearFilters();
+	clearFiltersBtn.classList.remove(`active`);
 	document.querySelectorAll(`input[type="checkbox"]`).forEach(el => {
 		el.checked = false;
 	});
@@ -418,6 +468,10 @@ clearFiltersBtn.addEventListener(`click`, () => {
 				if (el.value === e.target.closest(`.filters__checked-filter`).dataset['f']) {
 					el.checked = false;
 				};
+				if(!checkedFiltersBlock.firstChild) {
+					clearFiltersBtn.classList.add(`hide`);
+				};
+				
 			});
 			const filterValue = e.target.closest(`filters__checked-filter`).dataset['f'];
 			document.querySelectorAll(`.card[data-f="${filterValue}"]`).forEach(el => {

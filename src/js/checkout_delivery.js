@@ -8,7 +8,7 @@ const newAdressInput = document.querySelector(`.info__new-adress-input`);
 const timeCell = document.querySelectorAll(`.time-js`);
 const dateCell = document.querySelectorAll(`.date-js`);
 const productsList = document.querySelector(`.simplebar-content`);
-const btnProductDelete = document.querySelectorAll(`.order-item__close`);
+const btnProductDelete = document.querySelectorAll(`.sidebar__btn-delete-product`);
 const btnNextStep = document.querySelector(`.info__btn-next`);
 const btnMapSeen = document.querySelector(`.delivery-method__link`);
 const calendar = document.querySelector(`.calendar`);
@@ -62,9 +62,10 @@ changeCell(dateCell);
 toggleTabsMethod();
 
 btnProductDelete.forEach(el => {
+	console.log(el.closest(`.product-js`));
 	el.addEventListener(`click`, () => {
-		el.closest(`.order-item`).remove();
-		let produts = document.querySelectorAll(`.sidebar__order-item`);
+		el.closest(`.product-js`).remove();
+		let produts = document.querySelectorAll(`.product-js`);
 		if(produts.length === 0) {
 			document.querySelector(`.simplebar-content`).insertAdjacentHTML(`afterbegin`, `
 				<h3 class="order-list-empty">Список пуст</h3>
@@ -79,8 +80,3 @@ document.addEventListener(`click`, (e) => {
 	}
 });
 
-const calendarWrapper = document.querySelector(`.datepicker__wrapper`);
-
-// calendar.addEventListener(`click`, (e) => {
-// 	calendar.innerHTML = calendar.getAttribute(`data-value`);
-// })

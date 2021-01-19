@@ -1,6 +1,7 @@
 .header {
 	position: relative;
-	&__bg {
+	&:after {
+		content: '';
 		position: absolute;
 		bottom: -27%;
 		left: 0;

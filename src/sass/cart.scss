@@ -2,85 +2,12 @@
 @import "_card.scss";
 @import "_tabs_products.scss";
 @import "_custom-checkbox.scss";
+@import '_steps.scss';
 
 .cart {
-	margin-top: 126px;
-
-	.steps {
-		display: flex;
-		justify-content: center;
-		align-items: center;		
+	.container {
+		padding-top: 126px;
 	}
-
-	.steps__item {
-		width: 92px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		& span {
-			display: block;
-			margin-top: 20px;
-			font-weight: 600;
-			font-size: 20px;
-			line-height: 24px;
-			color: $green-light;			
-		}
-		&.active {
-			color: $main_color;
-			& .step {
-				border: 2px solid $main_color;
-				color: $main_color
-			}		
-			& span {
-				color: $main_color;
-			}	
-		}
-		&:nth-child(2),
-		&:nth-child(4) {
-			margin-top: -40px;
-			width: 74px;
-			height: 1px;
-			background: $green-light;
-			border: 1px solid $green-light;
-			&.active {
-				background: $main_color;
-				border: 1px solid $main_color;
-			}
-		}		 
-	}
-
-	.step {
-		width: 75px;
-		height: 75px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border: 2px solid $green-light;
-		border-radius: 50%;
-		font-size: 36px;		
-		line-height: 44px;
-		color: $green-light;
-	}
-
-	.info {
-		margin-bottom: 80px;
-		width: 460px;
-		font-weight: 300;
-		font-size: 20px;
-		line-height: 24px;
-		& img {
-			display: block;
-		}
-	}
-
-	&__mission-text {
-		& img {
-			margin-left: 20px;
-			margin-bottom: -15px;
-		}
-	}
-
 	&__content {
 		display: flex;
 		justify-content: space-between;
@@ -184,9 +111,10 @@
 
 	&__delete {
 		padding-right: 0 !important;
-		& img {
+		& button {
 			width: 16px;
 			height: 16px;
+			background: url('../img/icons/close-16.svg') no-repeat center center;
 		}
 	}
 

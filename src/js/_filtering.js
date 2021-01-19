@@ -27,6 +27,7 @@ btnApplyFilters.addEventListener(`click`, () => {
 
 	clearFilters();
 	getCheckedCheckBoxes();
+	clearFiltersBtn.classList.add(`active`);
 	
 	cardsOfCatalog.forEach(el => {
 		const cardPrice = el.dataset['price'];
@@ -61,7 +62,7 @@ btnApplyFilters.addEventListener(`click`, () => {
 		checkedFiltersBlock.insertAdjacentHTML('afterBegin',`
 			<div class="filters__checked-filter"  data-f="${selectedCheckBoxes[i].value}">
 				<span>${selectedCheckBoxesName[i]}</span>
-				<button class="filter-remove">x</button>
+				<button class="filter-remove"></button>
 			</div>
 		`);
 	});
@@ -70,6 +71,7 @@ btnApplyFilters.addEventListener(`click`, () => {
 
 clearFiltersBtn.addEventListener(`click`, () => {
 	clearFilters();
+	clearFiltersBtn.classList.remove(`active`);
 	document.querySelectorAll(`input[type="checkbox"]`).forEach(el => {
 		el.checked = false;
 	});
@@ -86,6 +88,10 @@ clearFiltersBtn.addEventListener(`click`, () => {
 				if (el.value === e.target.closest(`.filters__checked-filter`).dataset['f']) {
 					el.checked = false;
 				};
+				if(!checkedFiltersBlock.firstChild) {
+					clearFiltersBtn.classList.add(`hide`);
+				};
+				
 			});
 			const filterValue = e.target.closest(`filters__checked-filter`).dataset['f'];
 			document.querySelectorAll(`.card[data-f="${filterValue}"]`).forEach(el => {

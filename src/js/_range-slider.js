@@ -19,3 +19,15 @@ const inputsArray = [inputMin, inputMax];
 rangeSlider.noUiSlider.on(`update`, function(values, handle) {
 	inputsArray[handle].value = Math.round(values[handle]);
 });
+
+const setRangeValue = (i, value) => {
+	let arr = [null, null];
+	arr[i] = value;
+	rangeSlider.noUiSlider.set(arr)
+};
+
+inputsArray.forEach((el, i) => {
+	el.addEventListener(`change`, (e) => {
+		setRangeValue(i, e.currentTarget.value);
+	});
+});
