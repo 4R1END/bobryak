@@ -116,7 +116,7 @@ cards.forEach(el => {
 
 	const setParam = (e) => {		
 		if (e.target.classList.contains(`card__image-main`) || e.target.classList.contains(`card__title`) || e.target.classList.contains(`card__btn--more-descr`)) {
-			popupContainer.classList.add(`active`);
+			popupOpen();
 			popupContainer.querySelector(`.popup__img`).setAttribute('src', `${cardImg}`);
 			popupContainer.querySelector(`.popup__title`).innerText = cardTitle;
 			popupContainer.querySelector(`.popup__price`).innerText = cardPrice;

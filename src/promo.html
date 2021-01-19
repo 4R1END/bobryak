@@ -8,59 +8,61 @@
 </head>
 <body>
 	@@include('_header.html', {"prefix": ""})
-	<main class="promo">
+	<main class="main">
 		<div class="container">
-			<div class="aboutus__crumbs crumbs">
-				<a href="index.html">
-					<span class="crumbs--active">Главная</span>
-				</a>
-				- 
-				<span>
+			<section class="promo">
+				<div class="aboutus__crumbs crumbs">
+					<a href="index.html">
+						<span class="crumbs--active">Главная</span>
+					</a>
+					- 
+					<span>
+						Акции
+					</span>
+				</div>
+				<h2 class="title promo__title">				
 					Акции
-				</span>
-			</div>
-			<h2 class="title promo__title">				
-				Акции
-			</h2>
-			<section class="promo__content">
-				<div class="promo__item promo-item promo-item--present">
-					<h3 class="promo-item__title">
-						Подарок за покупку!						
-					</h3>
-					<p class="promo-item__text">
-						промокод: BOBR
-					</p>
+				</h2>
+				<div class="promo__content">
+					<div class="promo__item promo-item promo-item--present">
+						<h3 class="promo-item__title">
+							Подарок за покупку!						
+						</h3>
+						<p class="promo-item__text">
+							промокод: BOBR
+						</p>
+					</div>
+	
+					<div class="promo__item promo-item promo-item--delivery">
+						<h3 class="promo-item__title">
+							Бесплатная доставка!						
+						</h3>
+						<p class="promo-item__text">
+							При заказе на сумму <br> от 2000 руб.
+						</p>
+					</div>
+	
+					<div class="promo__item promo-item promo-item--sale">
+						<h3 class="promo-item__title">
+							-25% на варенье 						
+						</h3>
+					</div>
+	
+					<div class="promo__item promo-item promo-item--register">
+						<h3 class="promo-item__title">
+							Скидка 10% <br> за регистрацию						
+						</h3>
+					</div>
 				</div>
-
-				<div class="promo__item promo-item promo-item--delivery">
-					<h3 class="promo-item__title">
-						Бесплатная доставка!						
-					</h3>
-					<p class="promo-item__text">
-						При заказе на сумму <br> от 2000 руб.
-					</p>
-				</div>
-
-				<div class="promo__item promo-item promo-item--sale">
-					<h3 class="promo-item__title">
-						-25% на варенье 						
-					</h3>
-				</div>
-
-				<div class="promo__item promo-item promo-item--register">
-					<h3 class="promo-item__title">
-						Скидка 10% <br> за регистрацию						
-					</h3>
+				<div class="promo__btn-block">
+					<button class="btn btn--primary btn__more-js">
+						Развернуть
+					</button>
+					<button class="btn btn--disable">
+						Свернуть
+					</button>
 				</div>
 			</section>
-			<div class="promo__btn-block">
-				<button class="btn btn--primary btn__more-js">
-					Развернуть
-				</button>
-				<button class="btn btn--disable">
-					Свернуть
-				</button>
-			</div>
 			@@include('_mailing-section.html')
 		</div>	
 	</main>

@@ -15,7 +15,6 @@ const calendar = document.querySelector(`.calendar`);
 
 
 
-
 newAdressRadio.addEventListener(`click`, () => {
 	if (newAdressRadio.checked) {
 		newAdressInput.classList.add(`active`);

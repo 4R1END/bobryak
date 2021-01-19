@@ -5,17 +5,20 @@ const diableScroll = () => {
 	let pagePosition = window.scrollY;
 	body.classList.add(`scroll-disable`);
 	body.dataset.position = pagePosition;
-	body.style.top
+	body.style.top = -pagePosition + 'px';
 };
 
 const enableScroll = () => {
+	let pagePosition = parseInt(body.dataset.position, 10);
+	body.style.top = 'auto';
 	body.classList.remove(`scroll-disable`);
+	window.scroll({top: pagePosition, left: 0});
+	body.removeAttribute(`data-position`);
 };
 
-const popupOpen = (elem) => {
-	elem.addEventListener(`click`, () => {
-		popupContainer.classList.add(`active`);
-	});
+const popupOpen = () => {	
+	popupContainer.classList.add(`active`);	
+	// diableScroll();
 };
 
 popupContainer.addEventListener(`click`, (e) => {
@@ -25,8 +28,9 @@ popupContainer.addEventListener(`click`, (e) => {
 	if (e.target.classList.contains(`popup-container`)) {
 		popupContainer.classList.remove(`active`);
 	};
+	// enableScroll();
 });;
 
 const btnOpenForm = document.querySelector(`.btn-open-form`);
 
-popupOpen(btnOpenForm);
+btnOpenForm.addEventListener(`click`, popupOpen);

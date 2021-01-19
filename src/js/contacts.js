@@ -2,4 +2,4 @@
 
 const btnOpenForm = document.querySelector(`.btn-open-form`);
 
-popupOpen(btnOpenForm);
+btnOpenForm.addEventListener(`click`, popupOpen);

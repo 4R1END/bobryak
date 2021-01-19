@@ -1,7 +1,9 @@
 @import "main.sass";
+@import "_swiper.scss";
 @import "_card.scss";
 @import "_tabs_products.scss";
 @import "_popup.scss";
+@import '_custom-select.scss';
 
 .popup-catalog {
 	max-height: 508px;

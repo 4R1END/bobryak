@@ -173,17 +173,20 @@ const diableScroll = () => {
 	let pagePosition = window.scrollY;
 	body.classList.add(`scroll-disable`);
 	body.dataset.position = pagePosition;
-	body.style.top
+	body.style.top = -pagePosition + 'px';
 };
 
 const enableScroll = () => {
+	let pagePosition = parseInt(body.dataset.position, 10);
+	body.style.top = 'auto';
 	body.classList.remove(`scroll-disable`);
+	window.scroll({top: pagePosition, left: 0});
+	body.removeAttribute(`data-position`);
 };
 
-const popupOpen = (elem) => {
-	elem.addEventListener(`click`, () => {
-		popupContainer.classList.add(`active`);
-	});
+const popupOpen = () => {	
+	popupContainer.classList.add(`active`);	
+	// diableScroll();
 };
 
 popupContainer.addEventListener(`click`, (e) => {
@@ -193,6 +196,7 @@ popupContainer.addEventListener(`click`, (e) => {
 	if (e.target.classList.contains(`popup-container`)) {
 		popupContainer.classList.remove(`active`);
 	};
+	// enableScroll();
 });;
 
 const cards = document.querySelectorAll(`.card`);
@@ -308,7 +312,7 @@ cards.forEach(el => {
 
 	const setParam = (e) => {		
 		if (e.target.classList.contains(`card__image-main`) || e.target.classList.contains(`card__title`) || e.target.classList.contains(`card__btn--more-descr`)) {
-			popupContainer.classList.add(`active`);
+			popupOpen();
 			popupContainer.querySelector(`.popup__img`).setAttribute('src', `${cardImg}`);
 			popupContainer.querySelector(`.popup__title`).innerText = cardTitle;
 			popupContainer.querySelector(`.popup__price`).innerText = cardPrice;
