@@ -794,7 +794,7 @@ input[type="submit"] {
 }
 
 .aboutus .team__persons-slide-ahmed {
-  background-image: url("/../img/aboutus/aboutus_banner.png");
+  background-image: url("../img/aboutus/aboutus_banner.png");
 }
 
 .aboutus .team__persons-slide:after {
@@ -969,23 +969,23 @@ input[type="submit"] {
 }
 
 .aboutus .production-block__slide-1 {
-  background-image: url("/../img/aboutus/production_bg1.png");
+  background-image: url("../img/aboutus/production_bg1.png");
 }
 
 .aboutus .production-block__slide-2 {
-  background-image: url("/../img/aboutus/production_bg1.png");
+  background-image: url("../img/aboutus/production_bg1.png");
 }
 
 .aboutus .production-block__slide-3 {
-  background-image: url("/../img/aboutus/production_bg1.png");
+  background-image: url("../img/aboutus/production_bg1.png");
 }
 
 .aboutus .production-block__slide-4 {
-  background-image: url("/../img/aboutus/production_bg1.png");
+  background-image: url("../img/aboutus/production_bg1.png");
 }
 
 .aboutus .production-block__slide-5 {
-  background-image: url("/../img/aboutus/production_bg1.png");
+  background-image: url("../img/aboutus/production_bg1.png");
 }
 
 .aboutus .production-block__slide-title {
@@ -1117,3 +1117,17 @@ input[type="submit"] {
 .aboutus .swiper-button-prev {
   top: 60%;
 }
+
+.webp .banner-promo { background-image: url(../img/blueberries-bg.webp); }
+
+.webp .aboutus .team__persons-slide-ahmed { background-image: url(../img/aboutus/aboutus_banner.webp); }
+
+.webp .aboutus .production-block__slide-1 { background-image: url(../img/aboutus/production_bg1.webp); }
+
+.webp .aboutus .production-block__slide-2 { background-image: url(../img/aboutus/production_bg1.webp); }
+
+.webp .aboutus .production-block__slide-3 { background-image: url(../img/aboutus/production_bg1.webp); }
+
+.webp .aboutus .production-block__slide-4 { background-image: url(../img/aboutus/production_bg1.webp); }
+
+.webp .aboutus .production-block__slide-5 { background-image: url(../img/aboutus/production_bg1.webp); }

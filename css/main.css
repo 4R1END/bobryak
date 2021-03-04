@@ -709,3 +709,5 @@ input[type="submit"] {
   height: 33px;
   background-image: url("../img/icons/Facebook.svg");
 }
+
+.webp .banner-promo { background-image: url(../img/blueberries-bg.webp); }

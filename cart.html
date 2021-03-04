@@ -1,1530 +1,1 @@
-<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Бобряк | Корзина товаров</title>
-	<link rel="stylesheet" href="libs/swiper.min.css">
-	<link rel="stylesheet" href="css/cart.min.css">
-</head>
-
-<body>
-	<header class="header">
-	<div class="container header__container">
-		<nav class="menu header__menu">
-			<ul class="menu__list">
-				<li class="menu__list-item">
-					<a href="aboutus.html" class="menu__link">
-						О нас
-					</a>
-				</li>
-				<li class="menu__list-item">
-					<a href="promo.html" class="menu__link">
-						Акции
-					</a>
-				</li>
-				<li class="menu__list-item">
-					<a href="catalog.html" class="menu__link">
-						Каталог
-					</a>
-				</li>
-				<li class="menu__list-item">
-					<a href="index.html" class="menu__link">
-						<img src="img/logo.png" alt="бобряк">
-					</a>
-				</li>
-				<li class="menu__list-item">
-					<a href="delivery.html" class="menu__link">
-						Доставка
-					</a>
-				</li>
-				<li class="menu__list-item">
-					<a href="contacts.html" class="menu__link">
-						Контакты
-					</a>
-				</li>				
-			</ul>
-		</nav>
-		<div class="header__auth auth">
-			<a href="#" class="auth__link search"></a>
-			<a href="#" class="auth__link account"></a>
-			<a href="cart.html" class="auth__link cart"></a>
-		</div>
-	</div>
-</header>
-	<main class="cart">
-		<div class="container">
-			<div class="steps">
-				<div class="steps__item active">
-					<div class="step">
-						1
-					</div>
-					<span>Корзина</span>
-				</div>
-				
-				<div class="steps__item">
-					<div class="step">
-						2
-					</div>
-					<span>Доставка</span>
-				</div>
-				
-				<div class="steps__item">
-					<div class="step">
-						3
-					</div>
-					<span>Оплата</span>
-				</div>
-			</div>
-			<div class="cart__info mission-text">				
-				<p>
-					10% от суммы заказа мы направляем на создание экологичной инфраструктуры в регионе
-				</p>
-			</div>
-			<div class="cart__content">
-				<table class="cart__products-list products">
-					<caption class="products__title">
-						Корзина
-					</caption>
-					<thead class="thead">
-						<tr>
-							<th>
-								Наименование товара
-							</th>
-							<th>
-								Цена за ед.
-							</th>
-							<th>
-								Количество
-							</th>
-							<th class="thead__sum">
-								Итого
-							</th>
-							<th>
-								
-							</th>
-						</tr>
-					</thead>
-					<tbody class="tbody">
-						<tr class="product">
-							<td class="product__name">
-								<img src="img/cards/balham.png" alt="Балхам">
-								<div class="product__options">
-									<h3 class="product__title">
-										Балхам
-									</h3>
-									<div class="product__weight weight-checkbox">
-										<label class="weight-checkbox__weight-light">
-											<input type="radio" name="weight_balham" value="150" >
-											<span>150 гр</span>
-										</label>
-										<label class="weight-checkbox__weight-middle">
-											<input type="radio" name="weight_balham" value="200" checked>
-											<span>200 гр</span>
-										</label>
-										<label class="weight-checkbox__weight-big">
-											<input type="radio" name="weight_balham" value="250">
-											<span>250 гр</span>
-										</label>
-									</div>
-								</div>
-							</td>
-							<td class="product__price" data-150="1350" data-200="1570" data-250="1800">
-								1350 ₽
-							</td>
-							<td class="product__quantity">
-								<div class="product__quantity-block quantity-block">
-									<button class="quantity-block__btn-down">
-										-
-									</button>
-									<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-									<button class="quantity-block__btn-up">
-										+
-									</button>
-								</div>
-							</td>
-							<td class="product__sum">
-								1350 ₽
-							</td>
-							<td class="product__delete">
-								<button class="btn-remove-product-js"></button>
-							</td>
-						</tr>
-						<tr class="product">
-							<td class="product__name">
-								<img src="img/cards/balham.png" alt="Балхам">
-								<div class="product__options">
-									<h3 class="product__title">
-										Балхам
-									</h3>
-									<div class="product__weight weight-checkbox">
-										<label class="weight-checkbox__weight-light">
-											<input type="radio" name="weight_balham" value="150">
-											<span>150 гр</span>
-										</label>
-										<label class="weight-checkbox__weight-middle">
-											<input type="radio" name="weight_balham" value="200">
-											<span>200 гр</span>
-										</label>
-										<label class="weight-checkbox__weight-big">
-											<input type="radio" name="weight_balham" value="250">
-											<span>250 гр</span>
-										</label>
-									</div>
-								</div>
-							</td>
-							<td class="product__price" data-150="1350" data-200="1570" data-250="1800">
-								1350 ₽
-							</td>
-							<td class="product__quantity">
-								<div class="product__quantity-block quantity-block">
-									<button class="quantity-block__btn-down">
-										-
-									</button>
-									<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-									<button class="quantity-block__btn-up">
-										+
-									</button>
-								</div>
-							</td>
-							<td class="product__sum">
-								1350 ₽
-							</td>
-							<td class="product__delete">
-								<button class="btn-remove-product-js">
-								</button>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-				<aside class="cart__sidebar sidebar">
-					<h2 class="sidebar__title">
-						Итого <span class="sidebar__sum">0 ₽</span>
-					</h2>
-					<div class="sidebar__sale">
-						Скидка <span>0 ₽</span>
-					</div>
-					<div class="sidebar__promocode">
-						<label class="custom-checkbox sidebar__label-checkbox">
-							<input class="promo-checkbox" type="checkbox" name="promocode" value="promocode">
-							<span>У вас есть промокод?</span>
-						</label>
-						<input type="text" class="input sidebar__input">
-						<button class="clear-input">
-							<img src="img/cart/close.svg" alt="стереть	">
-						</button>
-					</div>					
-						<a href="checkout_delivery.html" class="sidebar__btn-order btn btn--primary">
-							Оформить заказ
-						</a>							
-					<div class="sidebar__free-delivery">
-						Бесплатная доставка от 2000₽
-					</div>
-					<div class="sidebar__good-quality">
-						<img src="img/cart/good_quality.svg" alt="Гарантия качества">
-						<p>
-							<span>Гарантия качества</span>
-							Не понравилось? <br> Вернем или обменяем товар в течение недели
-						</p>
-					</div>
-				</aside>
-			</div>
-
-			<section class="tabs">
-	<nav class="tabs__menu">
-		<button class="tabs__item tabs__item--active tabs__btn-js" data-tabs-path="would_like">
-			Вам может понравиться
-		</button>
-		<button class="tabs__item tabs__btn-js" data-tabs-path="last_seen">
-			Просмотренные товары
-		</button>
-	</nav>
-	<div class="tabs__body">
-		<div class="tabs__block tabs__block--active" data-tabs-target="would_like">
-			<div class="swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<article class="card" data-name="_raspberry" data-f="tea" data-new="6" data-popular="4" data-sale="70">
-	<div class="card__image">
-		<div class='card__badge card__badge-hit'>Хит</div>
-		<img class="card__image-main" src="img/cards/raspberry.png" alt="Варенье из малины">
-		<button class="card__image-like">
-		</button>
-	</div>
-	<div class="card__content">
-		<div class="card__content--quadro">
-			<h3 class="card__title">
-				Варенье из малины
-			</h3>
-			<div class="card__weight weight-checkbox">
-				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="_raspberry" value="150" checked>
-					<span>150 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="_raspberry" value="200">
-					<span>200 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="_raspberry" value="250">
-					<span>250 гр</span>
-				</label>
-			</div>
-			<div class="card__include">
-				<span>Состав:</span> травяной сбор, ягоды ежевики
-			</div>
-			<div class="card__price">
-				800&nbsp;₽
-			</div>
-			<div class="card__btn-block">
-				<div class="card__quantity-block quantity-block">
-					<button class="quantity-block__btn-down">
-						-
-					</button>
-					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-					<button class="quantity-block__btn-up">
-						+
-					</button>
-				</div>
-				<button class="card__btn-cart"></button>
-			</div>
-		</div>
-		<div class="card__content--list content">
-			<div class="content__block">
-				<div class="card__badge card__badge-hit">
-					Хит
-				</div>
-				<h3 class="card__title">
-					Варенье из малины
-				</h3>
-				<div class="card__descr">
-					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...
-				</div>
-				<button class="card__btn--more-descr">Подробнее</button>
-			</div>
-
-			<div class="content__block">
-				<div class="card__price">
-					800&nbsp;₽
-				</div>
-				<div class="card__weight weight-checkbox">
-					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="___raspberry" value="150" checked>
-						<span>150 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="___raspberry" value="200">
-						<span>200 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="___raspberry" value="250">
-						<span>250 гр</span>
-					</label>
-				</div>
-				<div class="card__btn-block">
-					<div class="card__quantity-block quantity-block">
-						<button class="quantity-block__btn-down">
-							-
-						</button>
-						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-						<button class="quantity-block__btn-up">
-							+
-						</button>
-					</div>
-					<button class="card__btn-cart">						
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</article>
-					</div>
-					<div class="swiper-slide">
-						<article class="card" data-name="_elder" data-f="jam" data-new="3" data-popular="7" data-sale="40">
-	<div class="card__image">
-		<div class='card__badge card__badge-latest'>Новинка</div>
-		<img class="card__image-main" src="img/cards/elder.png" alt="Варенье из бузины">
-		<button class="card__image-like">
-		</button>
-	</div>
-	<div class="card__content">
-		<div class="card__content--quadro">
-			<h3 class="card__title">
-				Варенье из бузины
-			</h3>
-			<div class="card__weight weight-checkbox">
-				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="_elder" value="150" checked>
-					<span>150 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="_elder" value="200">
-					<span>200 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="_elder" value="250">
-					<span>250 гр</span>
-				</label>
-			</div>
-			<div class="card__include">
-				<span>Состав:</span> травяной сбор, ягоды ежевики
-			</div>
-			<div class="card__price">
-				500&nbsp;₽
-			</div>
-			<div class="card__btn-block">
-				<div class="card__quantity-block quantity-block">
-					<button class="quantity-block__btn-down">
-						-
-					</button>
-					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-					<button class="quantity-block__btn-up">
-						+
-					</button>
-				</div>
-				<button class="card__btn-cart"></button>
-			</div>
-		</div>
-		<div class="card__content--list content">
-			<div class="content__block">
-				<div class="card__badge card__badge-hit">
-					Хит
-				</div>
-				<h3 class="card__title">
-					Варенье из бузины
-				</h3>
-				<div class="card__descr">
-					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...
-				</div>
-				<button class="card__btn--more-descr">Подробнее</button>
-			</div>
-
-			<div class="content__block">
-				<div class="card__price">
-					500&nbsp;₽
-				</div>
-				<div class="card__weight weight-checkbox">
-					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="___elder" value="150" checked>
-						<span>150 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="___elder" value="200">
-						<span>200 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="___elder" value="250">
-						<span>250 гр</span>
-					</label>
-				</div>
-				<div class="card__btn-block">
-					<div class="card__quantity-block quantity-block">
-						<button class="quantity-block__btn-down">
-							-
-						</button>
-						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-						<button class="quantity-block__btn-up">
-							+
-						</button>
-					</div>
-					<button class="card__btn-cart">						
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</article>
-					</div>
-					<div class="swiper-slide">
-						<article class="card" data-name="_plum" data-f="jam" data-new="4" data-popular="6" data-sale="50">
-	<div class="card__image">
-		<div class='card__badge card__badge-latest'>Новинка</div>
-		<img class="card__image-main" src="img/cards/plum.png" alt="Варенье из сливы">
-		<button class="card__image-like">
-		</button>
-	</div>
-	<div class="card__content">
-		<div class="card__content--quadro">
-			<h3 class="card__title">
-				Варенье из сливы
-			</h3>
-			<div class="card__weight weight-checkbox">
-				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="_plum" value="150" checked>
-					<span>150 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="_plum" value="200">
-					<span>200 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="_plum" value="250">
-					<span>250 гр</span>
-				</label>
-			</div>
-			<div class="card__include">
-				<span>Состав:</span> травяной сбор, ягоды ежевики
-			</div>
-			<div class="card__price">
-				600&nbsp;₽
-			</div>
-			<div class="card__btn-block">
-				<div class="card__quantity-block quantity-block">
-					<button class="quantity-block__btn-down">
-						-
-					</button>
-					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-					<button class="quantity-block__btn-up">
-						+
-					</button>
-				</div>
-				<button class="card__btn-cart"></button>
-			</div>
-		</div>
-		<div class="card__content--list content">
-			<div class="content__block">
-				<div class="card__badge card__badge-hit">
-					Хит
-				</div>
-				<h3 class="card__title">
-					Варенье из сливы
-				</h3>
-				<div class="card__descr">
-					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...
-				</div>
-				<button class="card__btn--more-descr">Подробнее</button>
-			</div>
-
-			<div class="content__block">
-				<div class="card__price">
-					600&nbsp;₽
-				</div>
-				<div class="card__weight weight-checkbox">
-					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="___plum" value="150" checked>
-						<span>150 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="___plum" value="200">
-						<span>200 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="___plum" value="250">
-						<span>250 гр</span>
-					</label>
-				</div>
-				<div class="card__btn-block">
-					<div class="card__quantity-block quantity-block">
-						<button class="quantity-block__btn-down">
-							-
-						</button>
-						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-						<button class="quantity-block__btn-up">
-							+
-						</button>
-					</div>
-					<button class="card__btn-cart">						
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</article>
-					</div>
-					<div class="swiper-slide">
-						<article class="card" data-name="_blackberry" data-f="jam" data-new="1" data-popular="9" data-sale="20">
-	<div class="card__image">
-		<div class='card__badge card__badge-latest'>Новинка</div>
-		<img class="card__image-main" src="img/cards/blackberry.png" alt="Варенье из ежевики">
-		<button class="card__image-like">
-		</button>
-	</div>
-	<div class="card__content">
-		<div class="card__content--quadro">
-			<h3 class="card__title">
-				Варенье из ежевики
-			</h3>
-			<div class="card__weight weight-checkbox">
-				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="_blackberry" value="150" checked>
-					<span>150 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="_blackberry" value="200">
-					<span>200 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="_blackberry" value="250">
-					<span>250 гр</span>
-				</label>
-			</div>
-			<div class="card__include">
-				<span>Состав:</span> травяной сбор, ягоды ежевики
-			</div>
-			<div class="card__price">
-				300&nbsp;₽
-			</div>
-			<div class="card__btn-block">
-				<div class="card__quantity-block quantity-block">
-					<button class="quantity-block__btn-down">
-						-
-					</button>
-					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-					<button class="quantity-block__btn-up">
-						+
-					</button>
-				</div>
-				<button class="card__btn-cart"></button>
-			</div>
-		</div>
-		<div class="card__content--list content">
-			<div class="content__block">
-				<div class="card__badge card__badge-hit">
-					Хит
-				</div>
-				<h3 class="card__title">
-					Варенье из ежевики
-				</h3>
-				<div class="card__descr">
-					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...
-				</div>
-				<button class="card__btn--more-descr">Подробнее</button>
-			</div>
-
-			<div class="content__block">
-				<div class="card__price">
-					300&nbsp;₽
-				</div>
-				<div class="card__weight weight-checkbox">
-					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="___blackberry" value="150" checked>
-						<span>150 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="___blackberry" value="200">
-						<span>200 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="___blackberry" value="250">
-						<span>250 гр</span>
-					</label>
-				</div>
-				<div class="card__btn-block">
-					<div class="card__quantity-block quantity-block">
-						<button class="quantity-block__btn-down">
-							-
-						</button>
-						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-						<button class="quantity-block__btn-up">
-							+
-						</button>
-					</div>
-					<button class="card__btn-cart">						
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</article>
-					</div>
-					<div class="swiper-slide">
-						<article class="card" data-name="_blueberry" data-f="jam" data-new="2" data-popular="8" data-sale="30">
-	<div class="card__image">
-		
-		<img class="card__image-main" src="img/cards/blueberry.png" alt="Варенье из черники">
-		<button class="card__image-like">
-		</button>
-	</div>
-	<div class="card__content">
-		<div class="card__content--quadro">
-			<h3 class="card__title">
-				Варенье из черники
-			</h3>
-			<div class="card__weight weight-checkbox">
-				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="_blueberry" value="150" checked>
-					<span>150 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="_blueberry" value="200">
-					<span>200 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="_blueberry" value="250">
-					<span>250 гр</span>
-				</label>
-			</div>
-			<div class="card__include">
-				<span>Состав:</span> травяной сбор, ягоды ежевики
-			</div>
-			<div class="card__price">
-				400&nbsp;₽
-			</div>
-			<div class="card__btn-block">
-				<div class="card__quantity-block quantity-block">
-					<button class="quantity-block__btn-down">
-						-
-					</button>
-					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-					<button class="quantity-block__btn-up">
-						+
-					</button>
-				</div>
-				<button class="card__btn-cart"></button>
-			</div>
-		</div>
-		<div class="card__content--list content">
-			<div class="content__block">
-				<div class="card__badge card__badge-hit">
-					Хит
-				</div>
-				<h3 class="card__title">
-					Варенье из черники
-				</h3>
-				<div class="card__descr">
-					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...
-				</div>
-				<button class="card__btn--more-descr">Подробнее</button>
-			</div>
-
-			<div class="content__block">
-				<div class="card__price">
-					400&nbsp;₽
-				</div>
-				<div class="card__weight weight-checkbox">
-					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="___blueberry" value="150" checked>
-						<span>150 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="___blueberry" value="200">
-						<span>200 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="___blueberry" value="250">
-						<span>250 гр</span>
-					</label>
-				</div>
-				<div class="card__btn-block">
-					<div class="card__quantity-block quantity-block">
-						<button class="quantity-block__btn-down">
-							-
-						</button>
-						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-						<button class="quantity-block__btn-up">
-							+
-						</button>
-					</div>
-					<button class="card__btn-cart">						
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</article>
-					</div>
-					<div class="swiper-slide">
-						<article class="card" data-name="_pear" data-f="jam" data-new="5" data-popular="5" data-sale="60">
-	<div class="card__image">
-		
-		<img class="card__image-main" src="img/cards/pear.png" alt="Варенье из груши">
-		<button class="card__image-like">
-		</button>
-	</div>
-	<div class="card__content">
-		<div class="card__content--quadro">
-			<h3 class="card__title">
-				Варенье из груши
-			</h3>
-			<div class="card__weight weight-checkbox">
-				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="_pear" value="150" checked>
-					<span>150 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="_pear" value="200">
-					<span>200 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="_pear" value="250">
-					<span>250 гр</span>
-				</label>
-			</div>
-			<div class="card__include">
-				<span>Состав:</span> травяной сбор, ягоды ежевики
-			</div>
-			<div class="card__price">
-				700&nbsp;₽
-			</div>
-			<div class="card__btn-block">
-				<div class="card__quantity-block quantity-block">
-					<button class="quantity-block__btn-down">
-						-
-					</button>
-					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-					<button class="quantity-block__btn-up">
-						+
-					</button>
-				</div>
-				<button class="card__btn-cart"></button>
-			</div>
-		</div>
-		<div class="card__content--list content">
-			<div class="content__block">
-				<div class="card__badge card__badge-hit">
-					Хит
-				</div>
-				<h3 class="card__title">
-					Варенье из груши
-				</h3>
-				<div class="card__descr">
-					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...
-				</div>
-				<button class="card__btn--more-descr">Подробнее</button>
-			</div>
-
-			<div class="content__block">
-				<div class="card__price">
-					700&nbsp;₽
-				</div>
-				<div class="card__weight weight-checkbox">
-					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="___pear" value="150" checked>
-						<span>150 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="___pear" value="200">
-						<span>200 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="___pear" value="250">
-						<span>250 гр</span>
-					</label>
-				</div>
-				<div class="card__btn-block">
-					<div class="card__quantity-block quantity-block">
-						<button class="quantity-block__btn-down">
-							-
-						</button>
-						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-						<button class="quantity-block__btn-up">
-							+
-						</button>
-					</div>
-					<button class="card__btn-cart">						
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</article>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-button-next"></div>
-		</div>
-		<div class="tabs__block" data-tabs-target="last_seen">
-			<div class="swiper-container">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<article class="card" data-name="_raspberry" data-f="tea" data-new="6" data-popular="4" data-sale="70">
-	<div class="card__image">
-		<div class='card__badge card__badge-hit'>Хит</div>
-		<img class="card__image-main" src="img/cards/raspberry.png" alt="Варенье из малины">
-		<button class="card__image-like">
-		</button>
-	</div>
-	<div class="card__content">
-		<div class="card__content--quadro">
-			<h3 class="card__title">
-				Варенье из малины
-			</h3>
-			<div class="card__weight weight-checkbox">
-				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="_raspberry" value="150" checked>
-					<span>150 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="_raspberry" value="200">
-					<span>200 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="_raspberry" value="250">
-					<span>250 гр</span>
-				</label>
-			</div>
-			<div class="card__include">
-				<span>Состав:</span> травяной сбор, ягоды ежевики
-			</div>
-			<div class="card__price">
-				800&nbsp;₽
-			</div>
-			<div class="card__btn-block">
-				<div class="card__quantity-block quantity-block">
-					<button class="quantity-block__btn-down">
-						-
-					</button>
-					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-					<button class="quantity-block__btn-up">
-						+
-					</button>
-				</div>
-				<button class="card__btn-cart"></button>
-			</div>
-		</div>
-		<div class="card__content--list content">
-			<div class="content__block">
-				<div class="card__badge card__badge-hit">
-					Хит
-				</div>
-				<h3 class="card__title">
-					Варенье из малины
-				</h3>
-				<div class="card__descr">
-					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...
-				</div>
-				<button class="card__btn--more-descr">Подробнее</button>
-			</div>
-
-			<div class="content__block">
-				<div class="card__price">
-					800&nbsp;₽
-				</div>
-				<div class="card__weight weight-checkbox">
-					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="___raspberry" value="150" checked>
-						<span>150 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="___raspberry" value="200">
-						<span>200 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="___raspberry" value="250">
-						<span>250 гр</span>
-					</label>
-				</div>
-				<div class="card__btn-block">
-					<div class="card__quantity-block quantity-block">
-						<button class="quantity-block__btn-down">
-							-
-						</button>
-						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-						<button class="quantity-block__btn-up">
-							+
-						</button>
-					</div>
-					<button class="card__btn-cart">						
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</article>
-					</div>
-					<div class="swiper-slide">
-						<article class="card" data-name="_elder" data-f="jam" data-new="3" data-popular="7" data-sale="40">
-	<div class="card__image">
-		<div class='card__badge card__badge-latest'>Новинка</div>
-		<img class="card__image-main" src="img/cards/elder.png" alt="Варенье из бузины">
-		<button class="card__image-like">
-		</button>
-	</div>
-	<div class="card__content">
-		<div class="card__content--quadro">
-			<h3 class="card__title">
-				Варенье из бузины
-			</h3>
-			<div class="card__weight weight-checkbox">
-				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="_elder" value="150" checked>
-					<span>150 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="_elder" value="200">
-					<span>200 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="_elder" value="250">
-					<span>250 гр</span>
-				</label>
-			</div>
-			<div class="card__include">
-				<span>Состав:</span> травяной сбор, ягоды ежевики
-			</div>
-			<div class="card__price">
-				500&nbsp;₽
-			</div>
-			<div class="card__btn-block">
-				<div class="card__quantity-block quantity-block">
-					<button class="quantity-block__btn-down">
-						-
-					</button>
-					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-					<button class="quantity-block__btn-up">
-						+
-					</button>
-				</div>
-				<button class="card__btn-cart"></button>
-			</div>
-		</div>
-		<div class="card__content--list content">
-			<div class="content__block">
-				<div class="card__badge card__badge-hit">
-					Хит
-				</div>
-				<h3 class="card__title">
-					Варенье из бузины
-				</h3>
-				<div class="card__descr">
-					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...
-				</div>
-				<button class="card__btn--more-descr">Подробнее</button>
-			</div>
-
-			<div class="content__block">
-				<div class="card__price">
-					500&nbsp;₽
-				</div>
-				<div class="card__weight weight-checkbox">
-					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="___elder" value="150" checked>
-						<span>150 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="___elder" value="200">
-						<span>200 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="___elder" value="250">
-						<span>250 гр</span>
-					</label>
-				</div>
-				<div class="card__btn-block">
-					<div class="card__quantity-block quantity-block">
-						<button class="quantity-block__btn-down">
-							-
-						</button>
-						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-						<button class="quantity-block__btn-up">
-							+
-						</button>
-					</div>
-					<button class="card__btn-cart">						
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</article>
-					</div>
-					<div class="swiper-slide">
-						<article class="card" data-name="_plum" data-f="jam" data-new="4" data-popular="6" data-sale="50">
-	<div class="card__image">
-		<div class='card__badge card__badge-latest'>Новинка</div>
-		<img class="card__image-main" src="img/cards/plum.png" alt="Варенье из сливы">
-		<button class="card__image-like">
-		</button>
-	</div>
-	<div class="card__content">
-		<div class="card__content--quadro">
-			<h3 class="card__title">
-				Варенье из сливы
-			</h3>
-			<div class="card__weight weight-checkbox">
-				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="_plum" value="150" checked>
-					<span>150 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="_plum" value="200">
-					<span>200 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="_plum" value="250">
-					<span>250 гр</span>
-				</label>
-			</div>
-			<div class="card__include">
-				<span>Состав:</span> травяной сбор, ягоды ежевики
-			</div>
-			<div class="card__price">
-				600&nbsp;₽
-			</div>
-			<div class="card__btn-block">
-				<div class="card__quantity-block quantity-block">
-					<button class="quantity-block__btn-down">
-						-
-					</button>
-					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-					<button class="quantity-block__btn-up">
-						+
-					</button>
-				</div>
-				<button class="card__btn-cart"></button>
-			</div>
-		</div>
-		<div class="card__content--list content">
-			<div class="content__block">
-				<div class="card__badge card__badge-hit">
-					Хит
-				</div>
-				<h3 class="card__title">
-					Варенье из сливы
-				</h3>
-				<div class="card__descr">
-					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...
-				</div>
-				<button class="card__btn--more-descr">Подробнее</button>
-			</div>
-
-			<div class="content__block">
-				<div class="card__price">
-					600&nbsp;₽
-				</div>
-				<div class="card__weight weight-checkbox">
-					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="___plum" value="150" checked>
-						<span>150 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="___plum" value="200">
-						<span>200 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="___plum" value="250">
-						<span>250 гр</span>
-					</label>
-				</div>
-				<div class="card__btn-block">
-					<div class="card__quantity-block quantity-block">
-						<button class="quantity-block__btn-down">
-							-
-						</button>
-						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-						<button class="quantity-block__btn-up">
-							+
-						</button>
-					</div>
-					<button class="card__btn-cart">						
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</article>
-					</div>
-					<div class="swiper-slide">
-						<article class="card" data-name="_blackberry" data-f="jam" data-new="1" data-popular="9" data-sale="20">
-	<div class="card__image">
-		<div class='card__badge card__badge-latest'>Новинка</div>
-		<img class="card__image-main" src="img/cards/blackberry.png" alt="Варенье из ежевики">
-		<button class="card__image-like">
-		</button>
-	</div>
-	<div class="card__content">
-		<div class="card__content--quadro">
-			<h3 class="card__title">
-				Варенье из ежевики
-			</h3>
-			<div class="card__weight weight-checkbox">
-				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="_blackberry" value="150" checked>
-					<span>150 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="_blackberry" value="200">
-					<span>200 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="_blackberry" value="250">
-					<span>250 гр</span>
-				</label>
-			</div>
-			<div class="card__include">
-				<span>Состав:</span> травяной сбор, ягоды ежевики
-			</div>
-			<div class="card__price">
-				300&nbsp;₽
-			</div>
-			<div class="card__btn-block">
-				<div class="card__quantity-block quantity-block">
-					<button class="quantity-block__btn-down">
-						-
-					</button>
-					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-					<button class="quantity-block__btn-up">
-						+
-					</button>
-				</div>
-				<button class="card__btn-cart"></button>
-			</div>
-		</div>
-		<div class="card__content--list content">
-			<div class="content__block">
-				<div class="card__badge card__badge-hit">
-					Хит
-				</div>
-				<h3 class="card__title">
-					Варенье из ежевики
-				</h3>
-				<div class="card__descr">
-					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...
-				</div>
-				<button class="card__btn--more-descr">Подробнее</button>
-			</div>
-
-			<div class="content__block">
-				<div class="card__price">
-					300&nbsp;₽
-				</div>
-				<div class="card__weight weight-checkbox">
-					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="___blackberry" value="150" checked>
-						<span>150 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="___blackberry" value="200">
-						<span>200 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="___blackberry" value="250">
-						<span>250 гр</span>
-					</label>
-				</div>
-				<div class="card__btn-block">
-					<div class="card__quantity-block quantity-block">
-						<button class="quantity-block__btn-down">
-							-
-						</button>
-						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-						<button class="quantity-block__btn-up">
-							+
-						</button>
-					</div>
-					<button class="card__btn-cart">						
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</article>
-					</div>
-					<div class="swiper-slide">
-						<article class="card" data-name="_blueberry" data-f="jam" data-new="2" data-popular="8" data-sale="30">
-	<div class="card__image">
-		
-		<img class="card__image-main" src="img/cards/blueberry.png" alt="Варенье из черники">
-		<button class="card__image-like">
-		</button>
-	</div>
-	<div class="card__content">
-		<div class="card__content--quadro">
-			<h3 class="card__title">
-				Варенье из черники
-			</h3>
-			<div class="card__weight weight-checkbox">
-				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="_blueberry" value="150" checked>
-					<span>150 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="_blueberry" value="200">
-					<span>200 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="_blueberry" value="250">
-					<span>250 гр</span>
-				</label>
-			</div>
-			<div class="card__include">
-				<span>Состав:</span> травяной сбор, ягоды ежевики
-			</div>
-			<div class="card__price">
-				400&nbsp;₽
-			</div>
-			<div class="card__btn-block">
-				<div class="card__quantity-block quantity-block">
-					<button class="quantity-block__btn-down">
-						-
-					</button>
-					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-					<button class="quantity-block__btn-up">
-						+
-					</button>
-				</div>
-				<button class="card__btn-cart"></button>
-			</div>
-		</div>
-		<div class="card__content--list content">
-			<div class="content__block">
-				<div class="card__badge card__badge-hit">
-					Хит
-				</div>
-				<h3 class="card__title">
-					Варенье из черники
-				</h3>
-				<div class="card__descr">
-					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...
-				</div>
-				<button class="card__btn--more-descr">Подробнее</button>
-			</div>
-
-			<div class="content__block">
-				<div class="card__price">
-					400&nbsp;₽
-				</div>
-				<div class="card__weight weight-checkbox">
-					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="___blueberry" value="150" checked>
-						<span>150 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="___blueberry" value="200">
-						<span>200 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="___blueberry" value="250">
-						<span>250 гр</span>
-					</label>
-				</div>
-				<div class="card__btn-block">
-					<div class="card__quantity-block quantity-block">
-						<button class="quantity-block__btn-down">
-							-
-						</button>
-						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-						<button class="quantity-block__btn-up">
-							+
-						</button>
-					</div>
-					<button class="card__btn-cart">						
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</article>
-					</div>
-					<div class="swiper-slide">
-						<article class="card" data-name="_pear" data-f="jam" data-new="5" data-popular="5" data-sale="60">
-	<div class="card__image">
-		
-		<img class="card__image-main" src="img/cards/pear.png" alt="Варенье из груши">
-		<button class="card__image-like">
-		</button>
-	</div>
-	<div class="card__content">
-		<div class="card__content--quadro">
-			<h3 class="card__title">
-				Варенье из груши
-			</h3>
-			<div class="card__weight weight-checkbox">
-				<label class="weight-checkbox__weight-light">
-					<input type="radio" name="_pear" value="150" checked>
-					<span>150 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-middle">
-					<input type="radio" name="_pear" value="200">
-					<span>200 гр</span>
-				</label>
-				<label class="weight-checkbox__weight-big">
-					<input type="radio" name="_pear" value="250">
-					<span>250 гр</span>
-				</label>
-			</div>
-			<div class="card__include">
-				<span>Состав:</span> травяной сбор, ягоды ежевики
-			</div>
-			<div class="card__price">
-				700&nbsp;₽
-			</div>
-			<div class="card__btn-block">
-				<div class="card__quantity-block quantity-block">
-					<button class="quantity-block__btn-down">
-						-
-					</button>
-					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-					<button class="quantity-block__btn-up">
-						+
-					</button>
-				</div>
-				<button class="card__btn-cart"></button>
-			</div>
-		</div>
-		<div class="card__content--list content">
-			<div class="content__block">
-				<div class="card__badge card__badge-hit">
-					Хит
-				</div>
-				<h3 class="card__title">
-					Варенье из груши
-				</h3>
-				<div class="card__descr">
-					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...
-				</div>
-				<button class="card__btn--more-descr">Подробнее</button>
-			</div>
-
-			<div class="content__block">
-				<div class="card__price">
-					700&nbsp;₽
-				</div>
-				<div class="card__weight weight-checkbox">
-					<label class="weight-checkbox__weight-light">
-						<input type="radio" name="___pear" value="150" checked>
-						<span>150 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-middle">
-						<input type="radio" name="___pear" value="200">
-						<span>200 гр</span>
-					</label>
-					<label class="weight-checkbox__weight-big">
-						<input type="radio" name="___pear" value="250">
-						<span>250 гр</span>
-					</label>
-				</div>
-				<div class="card__btn-block">
-					<div class="card__quantity-block quantity-block">
-						<button class="quantity-block__btn-down">
-							-
-						</button>
-						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">
-						<button class="quantity-block__btn-up">
-							+
-						</button>
-					</div>
-					<button class="card__btn-cart">						
-					</button>
-				</div>
-			</div>
-		</div>
-	</div>
-</article>
-					</div>
-				</div>
-			</div>
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-button-next"></div>			
-		</div>
-	</div>
-</section>
-			<section class="mailing">
-	<div class="mailing__text">
-		Подпишитесь и будьте в курсе - акции, скидки, новинки ждут Вас !
-	</div>
-	<form action="#" class="mailing__form">
-		<input class="mailing__email" type="email" placeholder="example@mail.ru">
-		<input class="btn btn--primary mailing__btn-submit" type="submit" value="Подписаться">
-	</form>
-</section>	
-		</div>
-	</main>
-	<footer class="footer">
-	<div class="container footer__container">
-		<div class="footer__logo">
-			<a href="index.html">
-				<img src="img/logo_footer.png" alt="Бобряк">
-			</a>
-		</div>
-		<nav class="footer__menu menu">
-			<ul class="menu__list">
-				<li class="menu__list-item">
-					<a href="aboutus.html" class="menu__link">
-						О нас
-					</a>
-				</li>
-				<li class="menu__list-item">
-					<a href="catalog.html" class="menu__link">
-						Каталог
-					</a>
-				</li>
-				<li class="menu__list-item">
-					<a href="promo.html" class="menu__link">
-						Акции
-					</a>
-				</li>
-				<li class="menu__list-item">
-					<a href="delivery.html" class="menu__link">
-						Доставка
-					</a>
-				</li>
-				<li class="menu__list-item">
-					<a href="contacts.html" class="menu__link">
-						Контакты
-					</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="footer__paymethod paymethod">
-			<h3 class="paymethod__text">
-				Cпособы оплаты:
-				<span>
-					Картой или наличными
-				</span>
-			</h3>
-			<div class="paymethod__icons">
-				<ul class="paymethod__list">
-					<li class="paymethod__item">
-						<img src="img/icons/mastercard.png" alt="mastercard">
-					</li>
-					<li class="paymethod__item">
-						<img src="img/icons/mir.png" alt="mir">
-					</li>
-					<li class="paymethod__item">
-						<img src="img/icons/visa.png" alt="visa">
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="footer__contacts contacts">			
-			<a href="tel:+79257006828" class="contacts__link contacts__link-phone">
-				+79257006828
-			</a>		
-			<a href="mailto:bobryak.community@gmail.com" class="contacts__link contacts__link-email">
-				bobryak.community@gmail.com
-			</a>			
-			<div class="contacts__social-icons social-icons">
-				<ul class="social-icons__list">
-					<li class="social-icons__item">
-						<a href="#" class="social-icons__link-vk">
-							
-						</a>
-					</li>
-					<li class="social-icons__item">
-						<a href="#" class="social-icons__link-insta">
-							
-						</a>
-					</li>
-					<li class="social-icons__item">
-						<a href="#" class="social-icons__link-fb">
-							
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</footer>
-	<script src="js/cart.min.js"></script>
-	<script src="libs/swiper.min.js"></script>
-	<script>
-		const swiper = new Swiper('.swiper-container', {
-			slidesPerView: 4,
-			spaceBetween: 65,
-			loop: true,
-			observer: true,
-			observeParents: true,
-			observeSlideChildren: true,
-
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
-		});
-	</script>
-</body>
-
-</html>
+<!DOCTYPE html><html lang="ru"><head>	<meta charset="UTF-8">	<meta name="viewport" content="width=device-width, initial-scale=1.0">	<title>Бобряк | Корзина товаров</title>	<link rel="stylesheet" href="libs/swiper.min.css">	<link rel="stylesheet" href="css/cart.min.css"></head><body>	<header class="header">	<div class="container header__container">		<nav class="menu header__menu">			<ul class="menu__list">				<li class="menu__list-item">					<a href="aboutus.html" class="menu__link">						О нас					</a>				</li>				<li class="menu__list-item">					<a href="promo.html" class="menu__link">						Акции					</a>				</li>				<li class="menu__list-item">					<a href="catalog.html" class="menu__link">						Каталог					</a>				</li>				<li class="menu__list-item">					<a href="index.html" class="menu__link">						<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="бобряк"></picture>					</a>				</li>				<li class="menu__list-item">					<a href="delivery.html" class="menu__link">						Доставка					</a>				</li>				<li class="menu__list-item">					<a href="contacts.html" class="menu__link">						Контакты					</a>				</li>							</ul>		</nav>		<div class="header__auth auth">			<a href="#" class="auth__link search"></a>			<a href="#" class="auth__link account"></a>			<a href="cart.html" class="auth__link cart"></a>		</div>	</div></header>	<main class="cart">		<div class="container">			<div class="steps">				<div class="steps__item active">					<div class="step">						1					</div>					<span>Корзина</span>				</div>								<div class="steps__item">					<div class="step">						2					</div>					<span>Доставка</span>				</div>								<div class="steps__item">					<div class="step">						3					</div>					<span>Оплата</span>				</div>			</div>			<div class="cart__info mission-text">								<p>					10% от суммы заказа мы направляем на создание экологичной инфраструктуры в регионе				</p>			</div>			<div class="cart__content">				<table class="cart__products-list products">					<caption class="products__title">						Корзина					</caption>					<thead class="thead">						<tr>							<th>								Наименование товара							</th>							<th>								Цена за ед.							</th>							<th>								Количество							</th>							<th class="thead__sum">								Итого							</th>							<th>															</th>						</tr>					</thead>					<tbody class="tbody">						<tr class="product">							<td class="product__name">								<picture><source srcset="img/cards/balham.webp" type="image/webp"><img src="img/cards/balham.png" alt="Балхам"></picture>								<div class="product__options">									<h3 class="product__title">										Балхам									</h3>									<div class="product__weight weight-checkbox">										<label class="weight-checkbox__weight-light">											<input type="radio" name="weight_balham" value="150" >											<span>150 гр</span>										</label>										<label class="weight-checkbox__weight-middle">											<input type="radio" name="weight_balham" value="200" checked>											<span>200 гр</span>										</label>										<label class="weight-checkbox__weight-big">											<input type="radio" name="weight_balham" value="250">											<span>250 гр</span>										</label>									</div>								</div>							</td>							<td class="product__price" data-150="1350" data-200="1570" data-250="1800">								1350 ₽							</td>							<td class="product__quantity">								<div class="product__quantity-block quantity-block">									<button class="quantity-block__btn-down">										-									</button>									<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">									<button class="quantity-block__btn-up">										+									</button>								</div>							</td>							<td class="product__sum">								1350 ₽							</td>							<td class="product__delete">								<button class="btn-remove-product-js"></button>							</td>						</tr>						<tr class="product">							<td class="product__name">								<picture><source srcset="img/cards/balham.webp" type="image/webp"><img src="img/cards/balham.png" alt="Балхам"></picture>								<div class="product__options">									<h3 class="product__title">										Балхам									</h3>									<div class="product__weight weight-checkbox">										<label class="weight-checkbox__weight-light">											<input type="radio" name="weight_balham" value="150">											<span>150 гр</span>										</label>										<label class="weight-checkbox__weight-middle">											<input type="radio" name="weight_balham" value="200">											<span>200 гр</span>										</label>										<label class="weight-checkbox__weight-big">											<input type="radio" name="weight_balham" value="250">											<span>250 гр</span>										</label>									</div>								</div>							</td>							<td class="product__price" data-150="1350" data-200="1570" data-250="1800">								1350 ₽							</td>							<td class="product__quantity">								<div class="product__quantity-block quantity-block">									<button class="quantity-block__btn-down">										-									</button>									<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">									<button class="quantity-block__btn-up">										+									</button>								</div>							</td>							<td class="product__sum">								1350 ₽							</td>							<td class="product__delete">								<button class="btn-remove-product-js">								</button>							</td>						</tr>					</tbody>				</table>				<aside class="cart__sidebar sidebar">					<h2 class="sidebar__title">						Итого <span class="sidebar__sum">0 ₽</span>					</h2>					<div class="sidebar__sale">						Скидка <span>0 ₽</span>					</div>					<div class="sidebar__promocode">						<label class="custom-checkbox sidebar__label-checkbox">							<input class="promo-checkbox" type="checkbox" name="promocode" value="promocode">							<span>У вас есть промокод?</span>						</label>						<input type="text" class="input sidebar__input">						<button class="clear-input">							<picture><source srcset="img/cart/close.svg" type="image/webp"><img src="img/cart/close.svg" alt="стереть	"></picture>						</button>					</div>											<a href="checkout_delivery.html" class="sidebar__btn-order btn btn--primary">							Оформить заказ						</a>												<div class="sidebar__free-delivery">						Бесплатная доставка от 2000₽					</div>					<div class="sidebar__good-quality">						<picture><source srcset="img/cart/good_quality.svg" type="image/webp"><img src="img/cart/good_quality.svg" alt="Гарантия качества"></picture>						<p>							<span>Гарантия качества</span>							Не понравилось? <br> Вернем или обменяем товар в течение недели						</p>					</div>				</aside>			</div>			<section class="tabs">	<nav class="tabs__menu">		<button class="tabs__item tabs__item--active tabs__btn-js" data-tabs-path="would_like">			Вам может понравиться		</button>		<button class="tabs__item tabs__btn-js" data-tabs-path="last_seen">			Просмотренные товары		</button>	</nav>	<div class="tabs__body">		<div class="tabs__block tabs__block--active" data-tabs-target="would_like">			<div class="swiper-container">				<div class="swiper-wrapper">					<div class="swiper-slide">						<article class="card" data-name="_raspberry" data-f="tea" data-new="6" data-popular="4" data-sale="70">	<div class="card__image">		<div class='card__badge card__badge-hit'>Хит</div>		<picture><source srcset="img/cards/raspberry.webp" type="image/webp"><img class="card__image-main" src="img/cards/raspberry.png" alt="Варенье из малины"></picture>		<button class="card__image-like">		</button>	</div>	<div class="card__content">		<div class="card__content--quadro">			<h3 class="card__title">				Варенье из малины			</h3>			<div class="card__weight weight-checkbox">				<label class="weight-checkbox__weight-light">					<input type="radio" name="_raspberry" value="150" checked>					<span>150 гр</span>				</label>				<label class="weight-checkbox__weight-middle">					<input type="radio" name="_raspberry" value="200">					<span>200 гр</span>				</label>				<label class="weight-checkbox__weight-big">					<input type="radio" name="_raspberry" value="250">					<span>250 гр</span>				</label>			</div>			<div class="card__include">				<span>Состав:</span> травяной сбор, ягоды ежевики			</div>			<div class="card__price">				800&nbsp;₽			</div>			<div class="card__btn-block">				<div class="card__quantity-block quantity-block">					<button class="quantity-block__btn-down">						-					</button>					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">					<button class="quantity-block__btn-up">						+					</button>				</div>				<button class="card__btn-cart"></button>			</div>		</div>		<div class="card__content--list content">			<div class="content__block">				<div class="card__badge card__badge-hit">					Хит				</div>				<h3 class="card__title">					Варенье из малины				</h3>				<div class="card__descr">					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...				</div>				<button class="card__btn--more-descr">Подробнее</button>			</div>			<div class="content__block">				<div class="card__price">					800&nbsp;₽				</div>				<div class="card__weight weight-checkbox">					<label class="weight-checkbox__weight-light">						<input type="radio" name="___raspberry" value="150" checked>						<span>150 гр</span>					</label>					<label class="weight-checkbox__weight-middle">						<input type="radio" name="___raspberry" value="200">						<span>200 гр</span>					</label>					<label class="weight-checkbox__weight-big">						<input type="radio" name="___raspberry" value="250">						<span>250 гр</span>					</label>				</div>				<div class="card__btn-block">					<div class="card__quantity-block quantity-block">						<button class="quantity-block__btn-down">							-						</button>						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">						<button class="quantity-block__btn-up">							+						</button>					</div>					<button class="card__btn-cart">											</button>				</div>			</div>		</div>	</div></article>					</div>					<div class="swiper-slide">						<article class="card" data-name="_elder" data-f="jam" data-new="3" data-popular="7" data-sale="40">	<div class="card__image">		<div class='card__badge card__badge-latest'>Новинка</div>		<picture><source srcset="img/cards/elder.webp" type="image/webp"><img class="card__image-main" src="img/cards/elder.png" alt="Варенье из бузины"></picture>		<button class="card__image-like">		</button>	</div>	<div class="card__content">		<div class="card__content--quadro">			<h3 class="card__title">				Варенье из бузины			</h3>			<div class="card__weight weight-checkbox">				<label class="weight-checkbox__weight-light">					<input type="radio" name="_elder" value="150" checked>					<span>150 гр</span>				</label>				<label class="weight-checkbox__weight-middle">					<input type="radio" name="_elder" value="200">					<span>200 гр</span>				</label>				<label class="weight-checkbox__weight-big">					<input type="radio" name="_elder" value="250">					<span>250 гр</span>				</label>			</div>			<div class="card__include">				<span>Состав:</span> травяной сбор, ягоды ежевики			</div>			<div class="card__price">				500&nbsp;₽			</div>			<div class="card__btn-block">				<div class="card__quantity-block quantity-block">					<button class="quantity-block__btn-down">						-					</button>					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">					<button class="quantity-block__btn-up">						+					</button>				</div>				<button class="card__btn-cart"></button>			</div>		</div>		<div class="card__content--list content">			<div class="content__block">				<div class="card__badge card__badge-hit">					Хит				</div>				<h3 class="card__title">					Варенье из бузины				</h3>				<div class="card__descr">					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...				</div>				<button class="card__btn--more-descr">Подробнее</button>			</div>			<div class="content__block">				<div class="card__price">					500&nbsp;₽				</div>				<div class="card__weight weight-checkbox">					<label class="weight-checkbox__weight-light">						<input type="radio" name="___elder" value="150" checked>						<span>150 гр</span>					</label>					<label class="weight-checkbox__weight-middle">						<input type="radio" name="___elder" value="200">						<span>200 гр</span>					</label>					<label class="weight-checkbox__weight-big">						<input type="radio" name="___elder" value="250">						<span>250 гр</span>					</label>				</div>				<div class="card__btn-block">					<div class="card__quantity-block quantity-block">						<button class="quantity-block__btn-down">							-						</button>						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">						<button class="quantity-block__btn-up">							+						</button>					</div>					<button class="card__btn-cart">											</button>				</div>			</div>		</div>	</div></article>					</div>					<div class="swiper-slide">						<article class="card" data-name="_plum" data-f="jam" data-new="4" data-popular="6" data-sale="50">	<div class="card__image">		<div class='card__badge card__badge-latest'>Новинка</div>		<picture><source srcset="img/cards/plum.webp" type="image/webp"><img class="card__image-main" src="img/cards/plum.png" alt="Варенье из сливы"></picture>		<button class="card__image-like">		</button>	</div>	<div class="card__content">		<div class="card__content--quadro">			<h3 class="card__title">				Варенье из сливы			</h3>			<div class="card__weight weight-checkbox">				<label class="weight-checkbox__weight-light">					<input type="radio" name="_plum" value="150" checked>					<span>150 гр</span>				</label>				<label class="weight-checkbox__weight-middle">					<input type="radio" name="_plum" value="200">					<span>200 гр</span>				</label>				<label class="weight-checkbox__weight-big">					<input type="radio" name="_plum" value="250">					<span>250 гр</span>				</label>			</div>			<div class="card__include">				<span>Состав:</span> травяной сбор, ягоды ежевики			</div>			<div class="card__price">				600&nbsp;₽			</div>			<div class="card__btn-block">				<div class="card__quantity-block quantity-block">					<button class="quantity-block__btn-down">						-					</button>					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">					<button class="quantity-block__btn-up">						+					</button>				</div>				<button class="card__btn-cart"></button>			</div>		</div>		<div class="card__content--list content">			<div class="content__block">				<div class="card__badge card__badge-hit">					Хит				</div>				<h3 class="card__title">					Варенье из сливы				</h3>				<div class="card__descr">					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...				</div>				<button class="card__btn--more-descr">Подробнее</button>			</div>			<div class="content__block">				<div class="card__price">					600&nbsp;₽				</div>				<div class="card__weight weight-checkbox">					<label class="weight-checkbox__weight-light">						<input type="radio" name="___plum" value="150" checked>						<span>150 гр</span>					</label>					<label class="weight-checkbox__weight-middle">						<input type="radio" name="___plum" value="200">						<span>200 гр</span>					</label>					<label class="weight-checkbox__weight-big">						<input type="radio" name="___plum" value="250">						<span>250 гр</span>					</label>				</div>				<div class="card__btn-block">					<div class="card__quantity-block quantity-block">						<button class="quantity-block__btn-down">							-						</button>						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">						<button class="quantity-block__btn-up">							+						</button>					</div>					<button class="card__btn-cart">											</button>				</div>			</div>		</div>	</div></article>					</div>					<div class="swiper-slide">						<article class="card" data-name="_blackberry" data-f="jam" data-new="1" data-popular="9" data-sale="20">	<div class="card__image">		<div class='card__badge card__badge-latest'>Новинка</div>		<picture><source srcset="img/cards/blackberry.webp" type="image/webp"><img class="card__image-main" src="img/cards/blackberry.png" alt="Варенье из ежевики"></picture>		<button class="card__image-like">		</button>	</div>	<div class="card__content">		<div class="card__content--quadro">			<h3 class="card__title">				Варенье из ежевики			</h3>			<div class="card__weight weight-checkbox">				<label class="weight-checkbox__weight-light">					<input type="radio" name="_blackberry" value="150" checked>					<span>150 гр</span>				</label>				<label class="weight-checkbox__weight-middle">					<input type="radio" name="_blackberry" value="200">					<span>200 гр</span>				</label>				<label class="weight-checkbox__weight-big">					<input type="radio" name="_blackberry" value="250">					<span>250 гр</span>				</label>			</div>			<div class="card__include">				<span>Состав:</span> травяной сбор, ягоды ежевики			</div>			<div class="card__price">				300&nbsp;₽			</div>			<div class="card__btn-block">				<div class="card__quantity-block quantity-block">					<button class="quantity-block__btn-down">						-					</button>					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">					<button class="quantity-block__btn-up">						+					</button>				</div>				<button class="card__btn-cart"></button>			</div>		</div>		<div class="card__content--list content">			<div class="content__block">				<div class="card__badge card__badge-hit">					Хит				</div>				<h3 class="card__title">					Варенье из ежевики				</h3>				<div class="card__descr">					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...				</div>				<button class="card__btn--more-descr">Подробнее</button>			</div>			<div class="content__block">				<div class="card__price">					300&nbsp;₽				</div>				<div class="card__weight weight-checkbox">					<label class="weight-checkbox__weight-light">						<input type="radio" name="___blackberry" value="150" checked>						<span>150 гр</span>					</label>					<label class="weight-checkbox__weight-middle">						<input type="radio" name="___blackberry" value="200">						<span>200 гр</span>					</label>					<label class="weight-checkbox__weight-big">						<input type="radio" name="___blackberry" value="250">						<span>250 гр</span>					</label>				</div>				<div class="card__btn-block">					<div class="card__quantity-block quantity-block">						<button class="quantity-block__btn-down">							-						</button>						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">						<button class="quantity-block__btn-up">							+						</button>					</div>					<button class="card__btn-cart">											</button>				</div>			</div>		</div>	</div></article>					</div>					<div class="swiper-slide">						<article class="card" data-name="_blueberry" data-f="jam" data-new="2" data-popular="8" data-sale="30">	<div class="card__image">				<picture><source srcset="img/cards/blueberry.webp" type="image/webp"><img class="card__image-main" src="img/cards/blueberry.png" alt="Варенье из черники"></picture>		<button class="card__image-like">		</button>	</div>	<div class="card__content">		<div class="card__content--quadro">			<h3 class="card__title">				Варенье из черники			</h3>			<div class="card__weight weight-checkbox">				<label class="weight-checkbox__weight-light">					<input type="radio" name="_blueberry" value="150" checked>					<span>150 гр</span>				</label>				<label class="weight-checkbox__weight-middle">					<input type="radio" name="_blueberry" value="200">					<span>200 гр</span>				</label>				<label class="weight-checkbox__weight-big">					<input type="radio" name="_blueberry" value="250">					<span>250 гр</span>				</label>			</div>			<div class="card__include">				<span>Состав:</span> травяной сбор, ягоды ежевики			</div>			<div class="card__price">				400&nbsp;₽			</div>			<div class="card__btn-block">				<div class="card__quantity-block quantity-block">					<button class="quantity-block__btn-down">						-					</button>					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">					<button class="quantity-block__btn-up">						+					</button>				</div>				<button class="card__btn-cart"></button>			</div>		</div>		<div class="card__content--list content">			<div class="content__block">				<div class="card__badge card__badge-hit">					Хит				</div>				<h3 class="card__title">					Варенье из черники				</h3>				<div class="card__descr">					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...				</div>				<button class="card__btn--more-descr">Подробнее</button>			</div>			<div class="content__block">				<div class="card__price">					400&nbsp;₽				</div>				<div class="card__weight weight-checkbox">					<label class="weight-checkbox__weight-light">						<input type="radio" name="___blueberry" value="150" checked>						<span>150 гр</span>					</label>					<label class="weight-checkbox__weight-middle">						<input type="radio" name="___blueberry" value="200">						<span>200 гр</span>					</label>					<label class="weight-checkbox__weight-big">						<input type="radio" name="___blueberry" value="250">						<span>250 гр</span>					</label>				</div>				<div class="card__btn-block">					<div class="card__quantity-block quantity-block">						<button class="quantity-block__btn-down">							-						</button>						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">						<button class="quantity-block__btn-up">							+						</button>					</div>					<button class="card__btn-cart">											</button>				</div>			</div>		</div>	</div></article>					</div>					<div class="swiper-slide">						<article class="card" data-name="_pear" data-f="jam" data-new="5" data-popular="5" data-sale="60">	<div class="card__image">				<picture><source srcset="img/cards/pear.webp" type="image/webp"><img class="card__image-main" src="img/cards/pear.png" alt="Варенье из груши"></picture>		<button class="card__image-like">		</button>	</div>	<div class="card__content">		<div class="card__content--quadro">			<h3 class="card__title">				Варенье из груши			</h3>			<div class="card__weight weight-checkbox">				<label class="weight-checkbox__weight-light">					<input type="radio" name="_pear" value="150" checked>					<span>150 гр</span>				</label>				<label class="weight-checkbox__weight-middle">					<input type="radio" name="_pear" value="200">					<span>200 гр</span>				</label>				<label class="weight-checkbox__weight-big">					<input type="radio" name="_pear" value="250">					<span>250 гр</span>				</label>			</div>			<div class="card__include">				<span>Состав:</span> травяной сбор, ягоды ежевики			</div>			<div class="card__price">				700&nbsp;₽			</div>			<div class="card__btn-block">				<div class="card__quantity-block quantity-block">					<button class="quantity-block__btn-down">						-					</button>					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">					<button class="quantity-block__btn-up">						+					</button>				</div>				<button class="card__btn-cart"></button>			</div>		</div>		<div class="card__content--list content">			<div class="content__block">				<div class="card__badge card__badge-hit">					Хит				</div>				<h3 class="card__title">					Варенье из груши				</h3>				<div class="card__descr">					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...				</div>				<button class="card__btn--more-descr">Подробнее</button>			</div>			<div class="content__block">				<div class="card__price">					700&nbsp;₽				</div>				<div class="card__weight weight-checkbox">					<label class="weight-checkbox__weight-light">						<input type="radio" name="___pear" value="150" checked>						<span>150 гр</span>					</label>					<label class="weight-checkbox__weight-middle">						<input type="radio" name="___pear" value="200">						<span>200 гр</span>					</label>					<label class="weight-checkbox__weight-big">						<input type="radio" name="___pear" value="250">						<span>250 гр</span>					</label>				</div>				<div class="card__btn-block">					<div class="card__quantity-block quantity-block">						<button class="quantity-block__btn-down">							-						</button>						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">						<button class="quantity-block__btn-up">							+						</button>					</div>					<button class="card__btn-cart">											</button>				</div>			</div>		</div>	</div></article>					</div>				</div>			</div>			<div class="swiper-button-prev"></div>			<div class="swiper-button-next"></div>		</div>		<div class="tabs__block" data-tabs-target="last_seen">			<div class="swiper-container">				<div class="swiper-wrapper">					<div class="swiper-slide">						<article class="card" data-name="_raspberry" data-f="tea" data-new="6" data-popular="4" data-sale="70">	<div class="card__image">		<div class='card__badge card__badge-hit'>Хит</div>		<picture><source srcset="img/cards/raspberry.webp" type="image/webp"><img class="card__image-main" src="img/cards/raspberry.png" alt="Варенье из малины"></picture>		<button class="card__image-like">		</button>	</div>	<div class="card__content">		<div class="card__content--quadro">			<h3 class="card__title">				Варенье из малины			</h3>			<div class="card__weight weight-checkbox">				<label class="weight-checkbox__weight-light">					<input type="radio" name="_raspberry" value="150" checked>					<span>150 гр</span>				</label>				<label class="weight-checkbox__weight-middle">					<input type="radio" name="_raspberry" value="200">					<span>200 гр</span>				</label>				<label class="weight-checkbox__weight-big">					<input type="radio" name="_raspberry" value="250">					<span>250 гр</span>				</label>			</div>			<div class="card__include">				<span>Состав:</span> травяной сбор, ягоды ежевики			</div>			<div class="card__price">				800&nbsp;₽			</div>			<div class="card__btn-block">				<div class="card__quantity-block quantity-block">					<button class="quantity-block__btn-down">						-					</button>					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">					<button class="quantity-block__btn-up">						+					</button>				</div>				<button class="card__btn-cart"></button>			</div>		</div>		<div class="card__content--list content">			<div class="content__block">				<div class="card__badge card__badge-hit">					Хит				</div>				<h3 class="card__title">					Варенье из малины				</h3>				<div class="card__descr">					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...				</div>				<button class="card__btn--more-descr">Подробнее</button>			</div>			<div class="content__block">				<div class="card__price">					800&nbsp;₽				</div>				<div class="card__weight weight-checkbox">					<label class="weight-checkbox__weight-light">						<input type="radio" name="___raspberry" value="150" checked>						<span>150 гр</span>					</label>					<label class="weight-checkbox__weight-middle">						<input type="radio" name="___raspberry" value="200">						<span>200 гр</span>					</label>					<label class="weight-checkbox__weight-big">						<input type="radio" name="___raspberry" value="250">						<span>250 гр</span>					</label>				</div>				<div class="card__btn-block">					<div class="card__quantity-block quantity-block">						<button class="quantity-block__btn-down">							-						</button>						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">						<button class="quantity-block__btn-up">							+						</button>					</div>					<button class="card__btn-cart">											</button>				</div>			</div>		</div>	</div></article>					</div>					<div class="swiper-slide">						<article class="card" data-name="_elder" data-f="jam" data-new="3" data-popular="7" data-sale="40">	<div class="card__image">		<div class='card__badge card__badge-latest'>Новинка</div>		<picture><source srcset="img/cards/elder.webp" type="image/webp"><img class="card__image-main" src="img/cards/elder.png" alt="Варенье из бузины"></picture>		<button class="card__image-like">		</button>	</div>	<div class="card__content">		<div class="card__content--quadro">			<h3 class="card__title">				Варенье из бузины			</h3>			<div class="card__weight weight-checkbox">				<label class="weight-checkbox__weight-light">					<input type="radio" name="_elder" value="150" checked>					<span>150 гр</span>				</label>				<label class="weight-checkbox__weight-middle">					<input type="radio" name="_elder" value="200">					<span>200 гр</span>				</label>				<label class="weight-checkbox__weight-big">					<input type="radio" name="_elder" value="250">					<span>250 гр</span>				</label>			</div>			<div class="card__include">				<span>Состав:</span> травяной сбор, ягоды ежевики			</div>			<div class="card__price">				500&nbsp;₽			</div>			<div class="card__btn-block">				<div class="card__quantity-block quantity-block">					<button class="quantity-block__btn-down">						-					</button>					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">					<button class="quantity-block__btn-up">						+					</button>				</div>				<button class="card__btn-cart"></button>			</div>		</div>		<div class="card__content--list content">			<div class="content__block">				<div class="card__badge card__badge-hit">					Хит				</div>				<h3 class="card__title">					Варенье из бузины				</h3>				<div class="card__descr">					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...				</div>				<button class="card__btn--more-descr">Подробнее</button>			</div>			<div class="content__block">				<div class="card__price">					500&nbsp;₽				</div>				<div class="card__weight weight-checkbox">					<label class="weight-checkbox__weight-light">						<input type="radio" name="___elder" value="150" checked>						<span>150 гр</span>					</label>					<label class="weight-checkbox__weight-middle">						<input type="radio" name="___elder" value="200">						<span>200 гр</span>					</label>					<label class="weight-checkbox__weight-big">						<input type="radio" name="___elder" value="250">						<span>250 гр</span>					</label>				</div>				<div class="card__btn-block">					<div class="card__quantity-block quantity-block">						<button class="quantity-block__btn-down">							-						</button>						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">						<button class="quantity-block__btn-up">							+						</button>					</div>					<button class="card__btn-cart">											</button>				</div>			</div>		</div>	</div></article>					</div>					<div class="swiper-slide">						<article class="card" data-name="_plum" data-f="jam" data-new="4" data-popular="6" data-sale="50">	<div class="card__image">		<div class='card__badge card__badge-latest'>Новинка</div>		<picture><source srcset="img/cards/plum.webp" type="image/webp"><img class="card__image-main" src="img/cards/plum.png" alt="Варенье из сливы"></picture>		<button class="card__image-like">		</button>	</div>	<div class="card__content">		<div class="card__content--quadro">			<h3 class="card__title">				Варенье из сливы			</h3>			<div class="card__weight weight-checkbox">				<label class="weight-checkbox__weight-light">					<input type="radio" name="_plum" value="150" checked>					<span>150 гр</span>				</label>				<label class="weight-checkbox__weight-middle">					<input type="radio" name="_plum" value="200">					<span>200 гр</span>				</label>				<label class="weight-checkbox__weight-big">					<input type="radio" name="_plum" value="250">					<span>250 гр</span>				</label>			</div>			<div class="card__include">				<span>Состав:</span> травяной сбор, ягоды ежевики			</div>			<div class="card__price">				600&nbsp;₽			</div>			<div class="card__btn-block">				<div class="card__quantity-block quantity-block">					<button class="quantity-block__btn-down">						-					</button>					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">					<button class="quantity-block__btn-up">						+					</button>				</div>				<button class="card__btn-cart"></button>			</div>		</div>		<div class="card__content--list content">			<div class="content__block">				<div class="card__badge card__badge-hit">					Хит				</div>				<h3 class="card__title">					Варенье из сливы				</h3>				<div class="card__descr">					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...				</div>				<button class="card__btn--more-descr">Подробнее</button>			</div>			<div class="content__block">				<div class="card__price">					600&nbsp;₽				</div>				<div class="card__weight weight-checkbox">					<label class="weight-checkbox__weight-light">						<input type="radio" name="___plum" value="150" checked>						<span>150 гр</span>					</label>					<label class="weight-checkbox__weight-middle">						<input type="radio" name="___plum" value="200">						<span>200 гр</span>					</label>					<label class="weight-checkbox__weight-big">						<input type="radio" name="___plum" value="250">						<span>250 гр</span>					</label>				</div>				<div class="card__btn-block">					<div class="card__quantity-block quantity-block">						<button class="quantity-block__btn-down">							-						</button>						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">						<button class="quantity-block__btn-up">							+						</button>					</div>					<button class="card__btn-cart">											</button>				</div>			</div>		</div>	</div></article>					</div>					<div class="swiper-slide">						<article class="card" data-name="_blackberry" data-f="jam" data-new="1" data-popular="9" data-sale="20">	<div class="card__image">		<div class='card__badge card__badge-latest'>Новинка</div>		<picture><source srcset="img/cards/blackberry.webp" type="image/webp"><img class="card__image-main" src="img/cards/blackberry.png" alt="Варенье из ежевики"></picture>		<button class="card__image-like">		</button>	</div>	<div class="card__content">		<div class="card__content--quadro">			<h3 class="card__title">				Варенье из ежевики			</h3>			<div class="card__weight weight-checkbox">				<label class="weight-checkbox__weight-light">					<input type="radio" name="_blackberry" value="150" checked>					<span>150 гр</span>				</label>				<label class="weight-checkbox__weight-middle">					<input type="radio" name="_blackberry" value="200">					<span>200 гр</span>				</label>				<label class="weight-checkbox__weight-big">					<input type="radio" name="_blackberry" value="250">					<span>250 гр</span>				</label>			</div>			<div class="card__include">				<span>Состав:</span> травяной сбор, ягоды ежевики			</div>			<div class="card__price">				300&nbsp;₽			</div>			<div class="card__btn-block">				<div class="card__quantity-block quantity-block">					<button class="quantity-block__btn-down">						-					</button>					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">					<button class="quantity-block__btn-up">						+					</button>				</div>				<button class="card__btn-cart"></button>			</div>		</div>		<div class="card__content--list content">			<div class="content__block">				<div class="card__badge card__badge-hit">					Хит				</div>				<h3 class="card__title">					Варенье из ежевики				</h3>				<div class="card__descr">					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...				</div>				<button class="card__btn--more-descr">Подробнее</button>			</div>			<div class="content__block">				<div class="card__price">					300&nbsp;₽				</div>				<div class="card__weight weight-checkbox">					<label class="weight-checkbox__weight-light">						<input type="radio" name="___blackberry" value="150" checked>						<span>150 гр</span>					</label>					<label class="weight-checkbox__weight-middle">						<input type="radio" name="___blackberry" value="200">						<span>200 гр</span>					</label>					<label class="weight-checkbox__weight-big">						<input type="radio" name="___blackberry" value="250">						<span>250 гр</span>					</label>				</div>				<div class="card__btn-block">					<div class="card__quantity-block quantity-block">						<button class="quantity-block__btn-down">							-						</button>						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">						<button class="quantity-block__btn-up">							+						</button>					</div>					<button class="card__btn-cart">											</button>				</div>			</div>		</div>	</div></article>					</div>					<div class="swiper-slide">						<article class="card" data-name="_blueberry" data-f="jam" data-new="2" data-popular="8" data-sale="30">	<div class="card__image">				<picture><source srcset="img/cards/blueberry.webp" type="image/webp"><img class="card__image-main" src="img/cards/blueberry.png" alt="Варенье из черники"></picture>		<button class="card__image-like">		</button>	</div>	<div class="card__content">		<div class="card__content--quadro">			<h3 class="card__title">				Варенье из черники			</h3>			<div class="card__weight weight-checkbox">				<label class="weight-checkbox__weight-light">					<input type="radio" name="_blueberry" value="150" checked>					<span>150 гр</span>				</label>				<label class="weight-checkbox__weight-middle">					<input type="radio" name="_blueberry" value="200">					<span>200 гр</span>				</label>				<label class="weight-checkbox__weight-big">					<input type="radio" name="_blueberry" value="250">					<span>250 гр</span>				</label>			</div>			<div class="card__include">				<span>Состав:</span> травяной сбор, ягоды ежевики			</div>			<div class="card__price">				400&nbsp;₽			</div>			<div class="card__btn-block">				<div class="card__quantity-block quantity-block">					<button class="quantity-block__btn-down">						-					</button>					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">					<button class="quantity-block__btn-up">						+					</button>				</div>				<button class="card__btn-cart"></button>			</div>		</div>		<div class="card__content--list content">			<div class="content__block">				<div class="card__badge card__badge-hit">					Хит				</div>				<h3 class="card__title">					Варенье из черники				</h3>				<div class="card__descr">					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...				</div>				<button class="card__btn--more-descr">Подробнее</button>			</div>			<div class="content__block">				<div class="card__price">					400&nbsp;₽				</div>				<div class="card__weight weight-checkbox">					<label class="weight-checkbox__weight-light">						<input type="radio" name="___blueberry" value="150" checked>						<span>150 гр</span>					</label>					<label class="weight-checkbox__weight-middle">						<input type="radio" name="___blueberry" value="200">						<span>200 гр</span>					</label>					<label class="weight-checkbox__weight-big">						<input type="radio" name="___blueberry" value="250">						<span>250 гр</span>					</label>				</div>				<div class="card__btn-block">					<div class="card__quantity-block quantity-block">						<button class="quantity-block__btn-down">							-						</button>						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">						<button class="quantity-block__btn-up">							+						</button>					</div>					<button class="card__btn-cart">											</button>				</div>			</div>		</div>	</div></article>					</div>					<div class="swiper-slide">						<article class="card" data-name="_pear" data-f="jam" data-new="5" data-popular="5" data-sale="60">	<div class="card__image">				<picture><source srcset="img/cards/pear.webp" type="image/webp"><img class="card__image-main" src="img/cards/pear.png" alt="Варенье из груши"></picture>		<button class="card__image-like">		</button>	</div>	<div class="card__content">		<div class="card__content--quadro">			<h3 class="card__title">				Варенье из груши			</h3>			<div class="card__weight weight-checkbox">				<label class="weight-checkbox__weight-light">					<input type="radio" name="_pear" value="150" checked>					<span>150 гр</span>				</label>				<label class="weight-checkbox__weight-middle">					<input type="radio" name="_pear" value="200">					<span>200 гр</span>				</label>				<label class="weight-checkbox__weight-big">					<input type="radio" name="_pear" value="250">					<span>250 гр</span>				</label>			</div>			<div class="card__include">				<span>Состав:</span> травяной сбор, ягоды ежевики			</div>			<div class="card__price">				700&nbsp;₽			</div>			<div class="card__btn-block">				<div class="card__quantity-block quantity-block">					<button class="quantity-block__btn-down">						-					</button>					<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">					<button class="quantity-block__btn-up">						+					</button>				</div>				<button class="card__btn-cart"></button>			</div>		</div>		<div class="card__content--list content">			<div class="content__block">				<div class="card__badge card__badge-hit">					Хит				</div>				<h3 class="card__title">					Варенье из груши				</h3>				<div class="card__descr">					Варенье готовится на основе традиционного рецепта, благодаря которому ягода сохраняет свои полезные свойства...				</div>				<button class="card__btn--more-descr">Подробнее</button>			</div>			<div class="content__block">				<div class="card__price">					700&nbsp;₽				</div>				<div class="card__weight weight-checkbox">					<label class="weight-checkbox__weight-light">						<input type="radio" name="___pear" value="150" checked>						<span>150 гр</span>					</label>					<label class="weight-checkbox__weight-middle">						<input type="radio" name="___pear" value="200">						<span>200 гр</span>					</label>					<label class="weight-checkbox__weight-big">						<input type="radio" name="___pear" value="250">						<span>250 гр</span>					</label>				</div>				<div class="card__btn-block">					<div class="card__quantity-block quantity-block">						<button class="quantity-block__btn-down">							-						</button>						<input class="quantity-block__input" type="text" inputmode="numeric" maxlength="2" value="1">						<button class="quantity-block__btn-up">							+						</button>					</div>					<button class="card__btn-cart">											</button>				</div>			</div>		</div>	</div></article>					</div>				</div>			</div>			<div class="swiper-button-prev"></div>			<div class="swiper-button-next"></div>					</div>	</div></section>			<section class="mailing">	<div class="mailing__text">		Подпишитесь и будьте в курсе - акции, скидки, новинки ждут Вас !	</div>	<form action="#" class="mailing__form">		<input class="mailing__email" type="email" placeholder="example@mail.ru">		<input class="btn btn--primary mailing__btn-submit" type="submit" value="Подписаться">	</form></section>			</div>	</main>	<footer class="footer">	<div class="container footer__container">		<div class="footer__logo">			<a href="index.html">				<picture><source srcset="img/logo_footer.webp" type="image/webp"><img src="img/logo_footer.png" alt="Бобряк"></picture>			</a>		</div>		<nav class="footer__menu menu">			<ul class="menu__list">				<li class="menu__list-item">					<a href="aboutus.html" class="menu__link">						О нас					</a>				</li>				<li class="menu__list-item">					<a href="catalog.html" class="menu__link">						Каталог					</a>				</li>				<li class="menu__list-item">					<a href="promo.html" class="menu__link">						Акции					</a>				</li>				<li class="menu__list-item">					<a href="delivery.html" class="menu__link">						Доставка					</a>				</li>				<li class="menu__list-item">					<a href="contacts.html" class="menu__link">						Контакты					</a>				</li>			</ul>		</nav>		<div class="footer__paymethod paymethod">			<h3 class="paymethod__text">				Cпособы оплаты:				<span>					Картой или наличными				</span>			</h3>			<div class="paymethod__icons">				<ul class="paymethod__list">					<li class="paymethod__item">						<picture><source srcset="img/icons/mastercard.webp" type="image/webp"><img src="img/icons/mastercard.png" alt="mastercard"></picture>					</li>					<li class="paymethod__item">						<picture><source srcset="img/icons/mir.webp" type="image/webp"><img src="img/icons/mir.png" alt="mir"></picture>					</li>					<li class="paymethod__item">						<picture><source srcset="img/icons/visa.webp" type="image/webp"><img src="img/icons/visa.png" alt="visa"></picture>					</li>				</ul>			</div>		</div>		<div class="footer__contacts contacts">						<a href="tel:+79257006828" class="contacts__link contacts__link-phone">				+79257006828			</a>					<a href="mailto:bobryak.community@gmail.com" class="contacts__link contacts__link-email">				bobryak.community@gmail.com			</a>						<div class="contacts__social-icons social-icons">				<ul class="social-icons__list">					<li class="social-icons__item">						<a href="#" class="social-icons__link-vk">													</a>					</li>					<li class="social-icons__item">						<a href="#" class="social-icons__link-insta">													</a>					</li>					<li class="social-icons__item">						<a href="#" class="social-icons__link-fb">													</a>					</li>				</ul>			</div>		</div>	</div></footer>	<script src="js/cart.min.js"></script>	<script src="libs/swiper.min.js"></script>	<script>		const swiper = new Swiper('.swiper-container', {			slidesPerView: 4,			spaceBetween: 65,			loop: true,			observer: true,			observeParents: true,			observeSlideChildren: true,			navigation: {				nextEl: '.swiper-button-next',				prevEl: '.swiper-button-prev',			},		});	</script></body></html>

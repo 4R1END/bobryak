@@ -1670,3 +1670,21 @@ input[type="submit"] {
 h1 {
   display: none;
 }
+
+.webp .banner-promo { background-image: url(../img/blueberries-bg.webp); }
+
+.webp .mailing-main { background-image: url(../img/mailing_banner.webp); }
+
+.webp .mission__banner { background-image: url(../img/mission_banner.webp); }
+
+.webp .offer .swiper-slide { background-image: url(../img/offers_bg/sale_img5.webp); }
+
+.webp .offer .swiper-slide[data-swiper-slide-index="2"] { background-image: url(../img/offers_bg/sale_img2.webp) !important; }
+
+.webp .offer .swiper-slide[data-swiper-slide-index="3"] { background-image: url(../img/offers_bg/sale_img4.webp); }
+
+.webp .offer .swiper-slide[data-swiper-slide-index="4"] { background-image: url(../img/offers_bg/sale_img2.webp); }
+
+.webp .offer .swiper-slide[data-swiper-slide-index="5"] { background-image: url(../img/offers_bg/sale_img4.webp); }
+
+.webp .poster__banner { background-image: url(../img/poster_banner.webp); }

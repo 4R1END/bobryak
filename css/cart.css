@@ -1846,3 +1846,7 @@ input[type="submit"] {
 .sidebar__good-quality img {
   margin-right: 35px;
 }
+
+.webp .banner-promo { background-image: url(../img/blueberries-bg.webp); }
+
+.webp .mission-text { background-image: url(../img/cart/leaf.webp); }

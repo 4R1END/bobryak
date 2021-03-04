@@ -1462,3 +1462,7 @@ input[type="submit"] {
 .datepicker-cell.focused:not(.selected) {
   border-radius: 50%;
 }
+
+.webp .banner-promo { background-image: url(../img/blueberries-bg.webp); }
+
+.webp .mission-text { background-image: url(../img/cart/leaf.webp); }

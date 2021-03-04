@@ -776,3 +776,13 @@ input[type="submit"] {
   padding: 135px 50px 0 90px;
   background-image: url("../img/promo/register_bg.png");
 }
+
+.webp .banner-promo { background-image: url(../img/blueberries-bg.webp); }
+
+.webp .promo-item--present { background-image: url(../img/promo/present_bg.webp); }
+
+.webp .promo-item--delivery { background-image: url(../img/promo/delivery_bg.webp); }
+
+.webp .promo-item--sale { background-image: url(../img/promo/sale_bg.webp); }
+
+.webp .promo-item--register { background-image: url(../img/promo/register_bg.webp); }
