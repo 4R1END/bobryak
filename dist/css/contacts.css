@@ -984,3 +984,7 @@ input[type="submit"] {
   padding-top: 100px;
   padding-right: 108px;
 }
+
+.webp .banner-promo { background-image: url(../img/blueberries-bg.webp); }
+
+.webp .contacts__content { background-image: url(../img/contacts/contacts_bg.webp); }

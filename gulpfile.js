@@ -41,10 +41,10 @@ const gulp = require('gulp'),
 	cssClean = require('gulp-clean-css'),
 	rename = require('gulp-rename'),
 	uglify = require('gulp-uglify-es').default,
-	image = require('gulp-image');
-// webp = require('gulp-webp'),
-// webpHtml = require('gulp-webp-html'),
-// webpCss = require('gulp-webpcss');
+	image = require('gulp-image'),
+	webp = require('gulp-webp'),
+	webpHtml = require('gulp-webp-html'),
+	webpCss = require('gulp-webpcss');
 
 const ghPages = require('gulp-gh-pages');
 
@@ -66,7 +66,7 @@ function browserSync() {
 const html = () => {
 	return gulp.src(path.src.html)
 		.pipe(fileinclude())
-		// .pipe(webpHtml())
+		.pipe(webpHtml())
 		.pipe(gulp.dest(path.build.html))
 		.pipe(browsersync.stream())
 };
@@ -81,7 +81,7 @@ const css = () => {
 			overrideBrowserlist: ['last 5 versions'],
 			cascade: true
 		}))
-		// .pipe(webpCss())
+		.pipe(webpCss())
 		.pipe(gulp.dest(path.build.css))
 		.pipe(cssClean())
 		.pipe(rename({
@@ -110,11 +110,11 @@ const libs = () => {
 
 const images = () => {
 	return gulp.src(path.src.img)
-		// .pipe(webp({
-		//         quality: 70
-		// })) 
-		// .pipe(gulp.dest(path.build.img))
-		// .pipe(gulp.src(path.src.img))
+		.pipe(webp({
+		        quality: 70
+		})) 
+		.pipe(gulp.dest(path.build.img))
+		.pipe(gulp.src(path.src.img))
 		.pipe(image({
 			pngquant: true,
 			optipng: false,

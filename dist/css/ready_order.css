@@ -961,3 +961,19 @@ h1 {
 .swiper-container-coverflow .swiper-slide-next {
   opacity: 1;
 }
+
+.webp .banner-promo { background-image: url(../img/blueberries-bg.webp); }
+
+.webp .slide { background: url(../img/cart/mounts2.webp) no-repeat; }
+
+.webp .slide:nth-child(2) { background: url(../img/cart/mounts.webp) no-repeat; }
+
+.webp .slide:nth-child(3) { background: url(../img/cart/mounts3.webp) no-repeat; }
+
+.webp .steps__item:nth-child(1) { background: url(../img/icons/loading.webp) no-repeat center top; }
+
+.webp .steps__item:nth-child(2) { background: url(../img/icons/bundle_order.webp) no-repeat center -3px; }
+
+.webp .steps__item:nth-child(3) { background: url(../img/icons/worldwide_delivery.webp) no-repeat center top; }
+
+.webp .steps__item:nth-child(4) { background: url(../img/icons/happy_getting.webp) no-repeat center -3px; }

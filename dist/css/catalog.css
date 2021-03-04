@@ -1780,3 +1780,5 @@ input[type="submit"] {
   height: 100%;
   background-color: #C4C4C4;
 }
+
+.webp .banner-promo { background-image: url(../img/blueberries-bg.webp); }

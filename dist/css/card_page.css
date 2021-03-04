@@ -1340,3 +1340,7 @@ input[type="submit"] {
   font-size: 16px;
   line-height: 25px;
 }
+
+.webp .banner-promo { background-image: url(../img/blueberries-bg.webp); }
+
+.webp .mission__banner { background-image: url(../img/mission_banner.webp); }
